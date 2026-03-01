@@ -3,6 +3,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import HeroAnimation from "@/components/HeroAnimation";
 import { CheckIcon, XMarkIcon, StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
 
 export default function Home() {
@@ -48,18 +49,10 @@ export default function Home() {
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
 
-        {/* Full-width illustrated food background with left-to-right reveal */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/hero-illustrated.jpg')",
-            filter: "saturate(0.6) contrast(1.2) sepia(0.3) hue-rotate(80deg) brightness(0.7)",
-          }}
-        />
-        {/* Strong left-side gradient for text readability, fading to reveal image on right */}
-        <div className="absolute inset-0" style={{
-          background: "linear-gradient(to right, rgba(5,30,18,0.97) 0%, rgba(5,30,18,0.92) 30%, rgba(5,30,18,0.7) 50%, rgba(5,30,18,0.3) 70%, rgba(5,30,18,0.15) 85%, rgba(5,30,18,0.1) 100%)"
-        }} />
+        {/* Animated illustration on the right side */}
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
+          <HeroAnimation />
+        </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
           <div className="relative">
