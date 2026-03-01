@@ -44,12 +44,16 @@ export default function HeroAnimation() {
 
     // A few scattered leaf icons - concentrated bottom-right, fading toward top-left
     const leaves = [
-      { x: 0.92, y: 0.88, size: 18, angle: 0.3, baseAlpha: 0.18 },
-      { x: 0.78, y: 0.92, size: 14, angle: -0.5, baseAlpha: 0.15 },
-      { x: 0.85, y: 0.72, size: 12, angle: 0.8, baseAlpha: 0.12 },
-      { x: 0.95, y: 0.65, size: 10, angle: -0.2, baseAlpha: 0.10 },
-      { x: 0.7, y: 0.82, size: 11, angle: 1.2, baseAlpha: 0.10 },
-      { x: 0.65, y: 0.7, size: 8, angle: 0.6, baseAlpha: 0.07 },
+      { x: 0.92, y: 0.88, size: 28, angle: 0.3, baseAlpha: 0.35 },
+      { x: 0.75, y: 0.92, size: 22, angle: -0.5, baseAlpha: 0.30 },
+      { x: 0.85, y: 0.68, size: 20, angle: 0.8, baseAlpha: 0.25 },
+      { x: 0.95, y: 0.55, size: 16, angle: -0.2, baseAlpha: 0.20 },
+      { x: 0.68, y: 0.78, size: 18, angle: 1.2, baseAlpha: 0.22 },
+      { x: 0.6, y: 0.65, size: 14, angle: 0.6, baseAlpha: 0.15 },
+      { x: 0.82, y: 0.48, size: 12, angle: -0.8, baseAlpha: 0.12 },
+      { x: 0.55, y: 0.85, size: 16, angle: 0.4, baseAlpha: 0.18 },
+      { x: 0.9, y: 0.35, size: 10, angle: 1.0, baseAlpha: 0.10 },
+      { x: 0.5, y: 0.55, size: 10, angle: -0.3, baseAlpha: 0.08 },
     ];
 
     // Dot grid texture - denser bottom-right, sparse top-left
@@ -60,11 +64,11 @@ export default function HeroAnimation() {
       // Weight toward bottom-right
       const dist = Math.sqrt((1 - x) ** 2 + (1 - y) ** 2); // 0 = bottom-right, ~1.4 = top-left
       const prob = Math.max(0, 1 - dist * 1.2);
-      if (Math.random() < prob + 0.05) {
+      if (Math.random() < prob + 0.1) {
         dots.push({
           x, y,
-          r: Math.random() * 1.5 + 0.5,
-          baseAlpha: Math.max(0.03, prob * 0.12),
+          r: Math.random() * 2 + 0.8,
+          baseAlpha: Math.max(0.05, prob * 0.2),
         });
       }
     }
@@ -75,15 +79,15 @@ export default function HeroAnimation() {
 
       // Subtle gradient glow from bottom-right corner
       const grad = ctx.createRadialGradient(cw * 0.95, ch * 0.95, 0, cw * 0.85, ch * 0.85, cw * 0.6);
-      grad.addColorStop(0, "rgba(72, 187, 120, 0.08)");
-      grad.addColorStop(0.5, "rgba(72, 187, 120, 0.03)");
+      grad.addColorStop(0, "rgba(72, 187, 120, 0.15)");
+      grad.addColorStop(0.5, "rgba(72, 187, 120, 0.06)");
       grad.addColorStop(1, "transparent");
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, cw, ch);
 
       // Second subtle warm glow
       const grad2 = ctx.createRadialGradient(cw * 0.85, ch * 0.8, 0, cw * 0.8, ch * 0.75, cw * 0.35);
-      grad2.addColorStop(0, "rgba(251, 191, 36, 0.04)");
+      grad2.addColorStop(0, "rgba(251, 191, 36, 0.08)");
       grad2.addColorStop(1, "transparent");
       ctx.fillStyle = grad2;
       ctx.fillRect(0, 0, cw, ch);
