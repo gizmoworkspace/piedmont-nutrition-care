@@ -52,7 +52,7 @@ export default function ConditionPage({
       {/* AGITATION */}
       <section className="section-padding bg-cream">
         <div className="container-wide">
-          <div className="space-y-6 text-warm-600 leading-relaxed text-lg max-w-4xl mx-auto">
+          <div className="space-y-6 text-warm-600 leading-relaxed text-lg max-w-4xl mx-auto text-center">
             {agitation.map((p, i) => (
               <AnimateOnScroll key={i} delay={i * 100}>
                 <p>{p}</p>
@@ -71,7 +71,7 @@ export default function ConditionPage({
               How It Works
             </h2>
           </AnimateOnScroll>
-          <div className="space-y-6 text-warm-600 leading-relaxed text-lg max-w-4xl mx-auto">
+          <div className="space-y-6 text-warm-600 leading-relaxed text-lg max-w-4xl mx-auto text-center">
             {howItWorks.map((p, i) => (
               <AnimateOnScroll key={i} delay={i * 100}>
                 <p>{p}</p>
