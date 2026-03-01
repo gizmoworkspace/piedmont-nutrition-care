@@ -2,10 +2,13 @@ import Link from "next/link";
 
 interface CTASectionProps {
   headline: string;
+  primaryCTA?: { text: string; href: string };
   primaryLabel?: string;
   primaryHref?: string;
+  secondaryCTA?: { text: string; href: string };
   secondaryLabel?: string;
   secondaryHref?: string;
+  clickTriggers?: string[];
   triggers?: string[];
   testimonial?: { quote: string; author: string };
   showPhone?: boolean;
@@ -13,47 +16,62 @@ interface CTASectionProps {
 
 export default function CTASection({
   headline,
-  primaryLabel = "Book Your Assessment",
-  primaryHref = "/contact",
+  primaryCTA,
+  primaryLabel,
+  primaryHref,
+  secondaryCTA,
   secondaryLabel,
   secondaryHref,
+  clickTriggers,
   triggers,
   testimonial,
   showPhone = true,
 }: CTASectionProps) {
+  const pText = primaryCTA?.text || primaryLabel || "Book Your Assessment";
+  const pHref = primaryCTA?.href || primaryHref || "/contact";
+  const sText = secondaryCTA?.text || secondaryLabel;
+  const sHref = secondaryCTA?.href || secondaryHref;
+  const trigs = clickTriggers || triggers;
+
   return (
-    <section className="section-padding bg-sage-50">
-      <div className="container-narrow text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-6">
-          {headline}
-        </h2>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <Link href={primaryHref} className="btn-primary text-lg">
-            {primaryLabel}
+    <section className="bg-sage-700 text-white">
+      <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
+        <h2 className="font-heading text-2xl md:text-4xl mb-8">{headline}</h2>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <Link
+            href={pHref}
+            className="inline-block bg-white text-sage-800 px-8 py-4 rounded-lg text-lg font-sans font-semibold hover:bg-warm-100 transition-colors"
+          >
+            {pText}
           </Link>
-          {secondaryLabel && secondaryHref && (
-            <Link href={secondaryHref} className="btn-secondary">
-              {secondaryLabel}
+          {sText && sHref && (
+            <Link
+              href={sHref}
+              className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-sans font-semibold hover:bg-sage-600 transition-colors"
+            >
+              {sText}
             </Link>
           )}
         </div>
-        {triggers && (
-          <p className="text-sage-600 text-sm mb-4">
-            {triggers.join(" · ")}
+        {trigs && (
+          <p className="text-sage-200 text-sm font-sans mb-6">
+            {trigs.join(" · ")}
           </p>
         )}
         {showPhone && (
-          <p className="text-gray-500 text-sm">
+          <p className="font-sans text-sm text-sage-200">
             Prefer to call?{" "}
-            <a href="tel:3369865388" className="text-sage-700 font-semibold hover:underline">
+            <a href="tel:3369865388" className="text-white underline hover:no-underline">
               336-986-5388
             </a>
           </p>
         )}
         {testimonial && (
-          <div className="mt-8 max-w-2xl mx-auto">
-            <p className="text-gray-600 italic">&ldquo;{testimonial.quote}&rdquo;</p>
-            <p className="text-sage-600 font-semibold text-sm mt-2">— {testimonial.author}</p>
+          <div className="mt-8 pt-8 border-t border-sage-600">
+            <p className="italic text-sage-100 text-sm max-w-lg mx-auto">
+              &ldquo;{testimonial.quote}&rdquo;
+            </p>
+            <p className="text-sage-300 text-xs font-sans mt-2">— {testimonial.author}</p>
           </div>
         )}
       </div>

@@ -48,7 +48,7 @@ const approachQuestions = [
 const insuranceQuestions = [
   {
     question: "Does my insurance cover this?",
-    answer: "Piedmont Nutrition Care accepts BCBS, Aetna, and Medicare. Medical Nutrition Therapy is covered by most major plans for qualifying conditions. You can verify your specific coverage before your first session — call 336-986-5388 or use the insurance verification tool on our Insurance & Pricing page.",
+    answer: "Piedmont Nutrition Care accepts BCBS, Aetna, and Medicare. Medical Nutrition Therapy is covered by most major plans for qualifying conditions. You can verify your specific coverage before your first session — call 336-986-5388 or visit our Insurance & Pricing page.",
   },
   {
     question: "What if I don't have insurance or my plan doesn't cover MNT?",
@@ -67,14 +67,13 @@ const gettingStartedQuestions = [
   },
   {
     question: "How do I book?",
-    answer: "Book online through this website, or call 336-986-5388. If you want to verify insurance coverage first, use the tool on our Insurance & Pricing page or call the office directly.",
+    answer: "Book online through this website, or call 336-986-5388. If you want to verify insurance coverage first, visit our Insurance & Pricing page or call the office directly.",
   },
 ];
 
 export default function FAQ() {
   return (
     <>
-      {/* HERO */}
       <section className="section-padding bg-gradient-to-br from-sage-50 via-warm-50 to-cream">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
@@ -111,13 +110,11 @@ export default function FAQ() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className="section-padding bg-sage-50">
         <div className="container-narrow text-center">
           <p className="text-lg text-gray-600 mb-6">
             Still have questions? Call{" "}
             <a href="tel:3369865388" className="text-sage-700 font-semibold hover:underline">336-986-5388</a>.
-            Ready to start?
           </p>
         </div>
       </section>
