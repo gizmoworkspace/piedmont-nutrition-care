@@ -1,6 +1,5 @@
 import Link from "next/link";
 import TestimonialCard from "./TestimonialCard";
-import CTASection from "./CTASection";
 import AnimateOnScroll from "./AnimateOnScroll";
 import { ArrowLeftIcon } from "./Icons";
 
@@ -10,8 +9,8 @@ interface ConditionPageProps {
   agitation: string[];
   howItWorks: string[];
   testimonial: { quote: string; author: string; context?: string };
-  ctaLabel: string;
-  ctaTriggers: string[];
+  ctaLabel?: string;
+  ctaTriggers?: string[];
 }
 
 export default function ConditionPage({
@@ -132,11 +131,6 @@ export default function ConditionPage({
         </div>
       </section>
 
-      {/* CTA */}
-      <CTASection
-        headline={ctaLabel}
-        triggers={ctaTriggers}
-      />
     </>
   );
 }
