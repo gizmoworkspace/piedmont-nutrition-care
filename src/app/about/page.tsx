@@ -147,18 +147,25 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="relative py-10 md:py-14 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
-        <div className="container-narrow text-center relative z-10">
+      <section className="relative py-16 md:py-24 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="container-narrow relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">The Invitation</h2>
-            <p className="text-lg text-warm-600 leading-relaxed mb-4 max-w-2xl mx-auto">
-              If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.
-            </p>
-            <p className="text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
-              Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.
-            </p>
+            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-3 text-center">The Invitation</h2>
+            <div className="w-12 h-1 bg-gradient-to-r from-green-400 to-amber-400 rounded-full mx-auto mb-10" />
           </AnimateOnScroll>
+          <div className="max-w-2xl mx-auto space-y-6">
+            <AnimateOnScroll delay={100}>
+              <p className="text-lg text-warm-600 leading-relaxed">
+                If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={200}>
+              <p className="text-lg text-warm-600 leading-relaxed">
+                Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.
+              </p>
+            </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
