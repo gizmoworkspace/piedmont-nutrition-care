@@ -276,45 +276,37 @@ export default function Home() {
             <p className="text-warm-500 text-center mb-16 text-lg max-w-xl mx-auto">Four steps from confused to confident</p>
           </AnimateOnScroll>
 
-          {/* Desktop timeline */}
-          <div className="hidden md:block relative">
-            <div className="absolute top-10 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-0.5 bg-gradient-to-r from-green-300 via-green-400 to-green-300 z-0" />
-
-            <div className="grid md:grid-cols-4 gap-8 relative z-10 stagger-children">
-              {steps.map((item) => (
-                <AnimateOnScroll key={item.step} className="text-center group h-full">
-                  <div className="w-16 h-16 rounded-2xl bg-white shadow-card mx-auto mb-6 flex items-center justify-center group-hover:shadow-deep group-hover:-translate-y-[2px] transition-all duration-300 border border-green-100">
-                    <item.Icon className="w-7 h-7 text-green-600" />
+          {/* Desktop grid */}
+          <div className="hidden md:grid md:grid-cols-4 gap-6 lg:gap-8 stagger-children">
+            {steps.map((item) => (
+              <AnimateOnScroll key={item.step} className="h-full group">
+                <div className="relative bg-white rounded-2xl p-6 lg:p-8 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50 h-full flex flex-col hover:-translate-y-[2px] overflow-hidden">
+                  {/* Big background number */}
+                  <span className="absolute -top-4 -left-2 text-[7rem] lg:text-[8rem] font-heading font-bold text-green-100/40 leading-none select-none pointer-events-none">
+                    {item.step}
+                  </span>
+                  <div className="relative z-10">
+                    <h3 className="font-heading text-base lg:text-lg text-warm-900 leading-snug mb-3">{item.title}</h3>
+                    <p className="text-warm-600 leading-relaxed text-sm">{item.body}</p>
                   </div>
-                  <div className="bg-white rounded-2xl p-6 shadow-card hover:shadow-deep transition-all duration-300 text-left border border-warm-100/50 h-full flex flex-col hover:-translate-y-[2px]">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="w-8 h-8 rounded-full bg-green-500 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">
-                        {item.step}
-                      </span>
-                      <h3 className="font-heading text-base text-warm-900 leading-snug">{item.title}</h3>
-                    </div>
-                    <p className="text-warm-600 leading-relaxed text-sm flex-grow">{item.body}</p>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
+                </div>
+              </AnimateOnScroll>
+            ))}
           </div>
 
           {/* Mobile stack */}
-          <div className="md:hidden space-y-6 stagger-children">
+          <div className="md:hidden space-y-4 stagger-children">
             {steps.map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="bg-white rounded-2xl p-6 shadow-card border-l-4 border-green-400">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0">
-                      <item.Icon className="w-5 h-5 text-green-600" />
-                    </div>
-                    <span className="w-8 h-8 rounded-full bg-green-500 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">
-                      {item.step}
-                    </span>
-                    <h3 className="font-heading text-base text-warm-900">{item.title}</h3>
+                <div className="relative bg-white rounded-2xl p-5 pl-16 shadow-card border border-warm-100/50 overflow-hidden">
+                  {/* Background number */}
+                  <span className="absolute -top-2 -left-1 text-[5rem] font-heading font-bold text-green-100/40 leading-none select-none pointer-events-none">
+                    {item.step}
+                  </span>
+                  <div className="relative z-10">
+                    <h3 className="font-heading text-base text-warm-900 mb-2">{item.title}</h3>
+                    <p className="text-warm-600 leading-relaxed text-sm">{item.bodyShort}</p>
                   </div>
-                  <p className="text-warm-600 leading-relaxed text-sm">{item.bodyShort}</p>
                 </div>
               </AnimateOnScroll>
             ))}
