@@ -25,7 +25,7 @@
     @apply inline-block bg-white text-green-800 px-8 py-4 rounded-[8px] font-body font-semibold transition-all duration-300 shadow-card hover:shadow-deep hover:-translate-y-0.5;
   }
   .section-padding {
-    @apply py-24 md:py-32 px-6 md:px-8;
+    @apply py-14 sm:py-16 md:py-20 lg:py-24 px-6 md:px-8;
   }
   .container-narrow {
     @apply max-w-3xl mx-auto;

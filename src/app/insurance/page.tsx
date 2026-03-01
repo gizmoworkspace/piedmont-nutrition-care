@@ -105,7 +105,7 @@ export default function Insurance() {
       </section>
 
       {/* ROI FRAMING */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">

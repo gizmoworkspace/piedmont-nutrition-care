@@ -65,8 +65,8 @@ export default function Services() {
       </section>
 
       {/* CROSSHEAD */}
-      <section className="relative py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-r-full" />
+      <section className="relative py-10 md:py-14 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+        <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll animation="scale-up">
             <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug">
@@ -77,7 +77,7 @@ export default function Services() {
       </section>
 
       {/* WHAT IS MNT */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
@@ -155,7 +155,7 @@ export default function Services() {
       </section>
 
       {/* WHAT'S INCLUDED */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
@@ -278,7 +278,7 @@ export default function Services() {
       </section>
 
       {/* CLOSE */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-narrow text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">For People Still Deciding</h2>

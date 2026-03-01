@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       {/* HERO */}
-      <section className="relative py-16 md:py-24 lg:py-28 bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="container-wide relative z-10">
@@ -63,7 +63,7 @@ export default function About() {
       ]} />
 
       {/* ORIGIN STORY */}
-      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
+      <section className="py-14 md:py-20 px-6 md:px-8 bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
@@ -85,7 +85,7 @@ export default function About() {
       </section>
 
       {/* WHAT MAKES JEANNE DIFFERENT */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="relative py-14 md:py-20 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10 px-6 md:px-8">
           <AnimateOnScroll>
@@ -126,7 +126,7 @@ export default function About() {
       </section>
 
       {/* DEEP PROOF */}
-      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
+      <section className="py-14 md:py-20 px-6 md:px-8 bg-white">
         <div className="container-narrow">
           <div className="grid md:grid-cols-2 gap-6 stagger-children">
             <AnimateOnScroll>
@@ -147,7 +147,7 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="relative py-10 md:py-14 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>

@@ -134,7 +134,7 @@ export default function Contact() {
       </section>
 
       {/* LOCATION + MAP */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <AnimateOnScroll animation="fade-left">
@@ -182,7 +182,7 @@ export default function Contact() {
       </section>
 
       {/* INSURANCE QUICK CHECK */}
-      <section className="relative py-16 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="relative py-10 md:py-14 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-4">Not sure if your insurance covers it?</h2>
