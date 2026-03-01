@@ -141,7 +141,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-heading text-lg text-warm-900 mb-3">The symptoms you can&apos;t explain</h3>
                 <p className="text-warm-600 leading-relaxed text-sm">
-                  <span className="hidden md:inline">Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.</span>
+                  <span className="hidden md:inline">Your A1C keeps creeping up. Your stomach bloats painfully after meals, no matter how carefully you eat. You&apos;re mentally mapping public restrooms before you leave the house.</span>
                   <span className="md:hidden">Rising A1C, severe bloating after meals, and constant digestive anxiety.</span>
                 </p>
               </div>
