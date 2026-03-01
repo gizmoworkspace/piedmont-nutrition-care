@@ -403,7 +403,7 @@ export default function Home() {
               Your questions, answered honestly
             </h2>
           </AnimateOnScroll>
-          <div className="space-y-8 stagger-children">
+          <div className="space-y-8">
             {[
               {
                 q: "\"I've tried everything. My body is just broken.\"",
