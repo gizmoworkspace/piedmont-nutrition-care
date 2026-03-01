@@ -60,7 +60,7 @@ const conditions = [
 export default function Conditions() {
   return (
     <>
-      <section className="relative py-12 md:py-16 lg:py-20 px-6 md:px-8 bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -79,7 +79,7 @@ export default function Conditions() {
         </div>
       </section>
 
-      <section className="py-14 md:py-20 px-6 md:px-8 bg-cream">
+      <section className="section-padding bg-cream">
         <div className="container-wide">
           {/* Top row: 3 cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-6 stagger-children">

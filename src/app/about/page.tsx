@@ -63,7 +63,7 @@ export default function About() {
       ]} />
 
       {/* ORIGIN STORY */}
-      <section className="py-14 md:py-20 px-6 md:px-8 bg-cream">
+      <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
@@ -85,9 +85,9 @@ export default function About() {
       </section>
 
       {/* WHAT MAKES JEANNE DIFFERENT */}
-      <section className="relative py-14 md:py-20 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10 px-6 md:px-8">
+        <div className="container-wide relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
               What Makes Jeanne Different
@@ -126,7 +126,7 @@ export default function About() {
       </section>
 
       {/* DEEP PROOF */}
-      <section className="py-14 md:py-20 px-6 md:px-8 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-narrow">
           <div className="grid md:grid-cols-2 gap-6 stagger-children">
             <AnimateOnScroll>
@@ -147,7 +147,7 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="relative py-16 md:py-24 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="relative section-padding bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>

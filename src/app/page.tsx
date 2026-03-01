@@ -54,7 +54,7 @@ export default function Home() {
           <HeroAnimation />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24 lg:py-32 w-full">
           <div className="relative">
             {/* Left column: text */}
             <div className="max-w-3xl">
@@ -101,7 +101,7 @@ export default function Home() {
       />
 
       {/* AGITATION */}
-      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
+      <section className="section-padding bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-14 tracking-tight text-center max-w-3xl mx-auto">
@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
+      <section className="section-padding bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-4 text-center tracking-tight">
@@ -286,7 +286,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="relative py-20 md:py-28 px-6 md:px-8 bg-warm-50 overflow-hidden">
+      <section className="relative section-padding bg-warm-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* COMPARISON */}
-      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
+      <section className="section-padding bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center tracking-tight">
@@ -389,7 +389,7 @@ export default function Home() {
       </section>
 
       {/* OBJECTION HANDLING */}
-      <section className="relative py-20 md:py-28 px-6 md:px-8 bg-warm-50 overflow-hidden">
+      <section className="relative section-padding bg-warm-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>

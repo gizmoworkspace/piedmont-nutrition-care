@@ -20,7 +20,7 @@ interface ProofBarProps {
 
 export default function ProofBar({ items, floating = false }: ProofBarProps) {
   return (
-    <section className={`relative z-10 ${floating ? "-mt-8 mb-4 px-6" : ""}`}>
+    <section className={`relative z-10 ${floating ? "-mt-8 mb-4 px-6 md:px-8" : ""}`}>
       <div className={`${floating ? "max-w-5xl mx-auto" : ""}`}>
         <div
           className={`${
@@ -29,7 +29,7 @@ export default function ProofBar({ items, floating = false }: ProofBarProps) {
               : "bg-green-800/95 backdrop-blur-sm py-5"
           }`}
         >
-          <div className={`${floating ? "" : "max-w-6xl mx-auto px-6"}`}>
+          <div className={`${floating ? "" : "max-w-6xl mx-auto px-6 md:px-8"}`}>
             <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm font-body font-medium">
               {items.map((item, i) => {
                 const Icon = item.icon ? iconMap[item.icon] : null;

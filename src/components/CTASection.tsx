@@ -40,7 +40,7 @@ export default function CTASection({
   return (
     <section className="bg-gradient-cta relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-green-400/5 rounded-full blur-3xl" />
-      <div className="max-w-3xl mx-auto px-6 py-12 md:py-16 text-center relative z-10">
+      <div className="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16 text-center relative z-10">
         <h2 className="font-heading text-2xl md:text-4xl text-white mb-10 leading-snug tracking-tight">{headline}</h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <Link

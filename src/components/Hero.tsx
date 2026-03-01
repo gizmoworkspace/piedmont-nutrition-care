@@ -22,7 +22,7 @@ export default function Hero({
       <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
       <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 lg:py-32 w-full">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28 lg:py-32 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
