@@ -4,6 +4,7 @@ import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Accordion from "@/components/Accordion";
+
 export default function Home() {
   const steps = [
     {
@@ -49,28 +50,38 @@ export default function Home() {
 
   return (
     <>
-      {/* ===== 01. HERO ===== */}
-      <section className="relative min-h-[85svh] sm:min-h-[90svh] max-h-[860px] flex items-center bg-gradient-hero overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      {/* ===== 01. HERO — "The Storm" ===== */}
+      <section className="relative min-h-[85svh] sm:min-h-[90svh] max-h-[860px] flex items-center world-storm overflow-hidden">
+        {/* Floating organic shape — slow drift, biological feeling */}
+        <div className="organic-shape organic-drift" style={{
+          width: '500px', height: '500px',
+          top: '-80px', right: '-120px',
+          background: 'radial-gradient(ellipse, rgba(106,168,79,0.06) 0%, transparent 70%)',
+        }} />
+        <div className="organic-shape organic-drift-slow" style={{
+          width: '300px', height: '300px',
+          bottom: '40px', left: '-60px',
+          background: 'radial-gradient(ellipse, rgba(230,145,56,0.04) 0%, transparent 70%)',
+        }} />
 
         <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 w-full py-8 sm:py-0">
           <div className="max-w-2xl lg:max-w-3xl">
             <h1 className="font-heading text-[1.6rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] xl:text-[3.5rem] text-white leading-[1.3] sm:leading-[1.25] md:leading-[1.2] mb-4 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
               Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
-              <span className="text-green-300">They&apos;re gut health failures.</span>
+              <span className="text-green-300/80">They&apos;re gut health failures.</span>
             </h1>
-            <p className="text-[0.875rem] sm:text-base md:text-lg text-white/55 leading-relaxed mb-5 sm:mb-8 max-w-xl lg:max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-[0.875rem] sm:text-base md:text-lg text-white/45 leading-relaxed mb-5 sm:mb-8 max-w-xl lg:max-w-2xl animate-fade-in-up-delay-1">
               No one looked at the root cause: what&apos;s happening inside your digestive tract. Clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to.
             </p>
             <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 mb-4 sm:mb-5 animate-fade-in-up-delay-2">
               <Link href="/contact" className="btn-primary text-center text-[0.8rem] sm:text-sm md:text-base !py-2.5 sm:!py-3 sm:!px-6 md:!px-8">
                 Book Your Assessment
               </Link>
-              <Link href="/insurance" className="inline-block border border-white/20 text-white hover:bg-white/10 font-medium py-2.5 px-5 sm:py-3 sm:px-6 md:py-3.5 md:px-8 rounded-[8px] transition-colors duration-300 text-center text-[0.8rem] sm:text-sm md:text-base">
+              <Link href="/insurance" className="inline-block border border-white/15 text-white/70 hover:text-white hover:border-white/30 font-medium py-2.5 px-5 sm:py-3 sm:px-6 md:py-3.5 md:px-8 rounded-[8px] transition-colors duration-300 text-center text-[0.8rem] sm:text-sm md:text-base">
                 Check Insurance Coverage
               </Link>
             </div>
-            <p className="text-white/25 text-[0.7rem] sm:text-xs md:text-sm animate-fade-in-up-delay-3">
+            <p className="text-white/20 text-[0.7rem] sm:text-xs md:text-sm animate-fade-in-up-delay-3">
               60-min consultations · Insurance accepted · In-person or virtual
             </p>
           </div>
@@ -87,10 +98,29 @@ export default function Home() {
         ]}
       />
 
-      {/* ===== 03. THE PROBLEM / SOLUTION ===== */}
-      {/* Cool color temperature — tension */}
-      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-gradient-to-b from-cream to-warm-50">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+      {/* ===== 03. THE PROBLEM — "Inflammation" ===== */}
+      <section className="relative py-20 sm:py-24 md:py-32 lg:py-40 world-inflammation grain overflow-hidden">
+        {/* Chaotic organic shapes — disorder, imbalance */}
+        <div className="organic-shape hidden lg:block" style={{
+          width: '260px', height: '220px',
+          top: '15%', right: '5%',
+          background: 'radial-gradient(ellipse, rgba(230,145,56,0.06) 0%, transparent 70%)',
+          borderRadius: '60% 40% 50% 50%',
+        }} />
+        <div className="organic-shape hidden lg:block" style={{
+          width: '180px', height: '200px',
+          top: '40%', right: '12%',
+          background: 'radial-gradient(ellipse, rgba(196,186,169,0.08) 0%, transparent 70%)',
+          borderRadius: '40% 60% 45% 55%',
+        }} />
+        <div className="organic-shape hidden lg:block" style={{
+          width: '140px', height: '160px',
+          bottom: '20%', right: '8%',
+          background: 'radial-gradient(ellipse, rgba(230,145,56,0.05) 0%, transparent 70%)',
+          borderRadius: '55% 45% 50% 50%',
+        }} />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <div className="max-w-2xl mb-10 md:mb-14">
             <AnimateOnScroll>
               <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3">The Problem</p>
@@ -100,82 +130,38 @@ export default function Home() {
             </AnimateOnScroll>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
-            <div className="lg:col-span-3 space-y-6 text-warm-600 leading-relaxed text-[0.95rem] sm:text-base md:text-lg">
-              <AnimateOnScroll>
-                <p>
-                  Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll>
-                <p>
-                  You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll>
-                <p>
-                  And every doctor you&apos;ve seen has said the same thing: eat less, move more. In a 10-minute appointment that felt more like a lecture than a conversation.
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll>
-                <p className="font-medium text-warm-800">
-                  None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll>
-                <p>
-                  It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
-                </p>
-              </AnimateOnScroll>
-            </div>
-
-            {/* Visual — organic illustration evoking healing/nature */}
-            <div className="lg:col-span-2 lg:sticky lg:top-32 hidden lg:block">
-              <AnimateOnScroll animation="fade-up">
-                <div className="relative aspect-square max-w-[360px] mx-auto">
-                  {/* Organic rings representing the gut/body system */}
-                  <svg viewBox="0 0 400 400" fill="none" className="w-full h-full" aria-hidden="true">
-                    {/* Outer ring — the body */}
-                    <circle cx="200" cy="200" r="180" stroke="#c4baa9" strokeWidth="1" opacity="0.3" />
-                    <circle cx="200" cy="200" r="150" stroke="#c4baa9" strokeWidth="0.5" opacity="0.2" />
-                    {/* Middle rings — the gut system */}
-                    <circle cx="200" cy="200" r="110" stroke="#6AA84F" strokeWidth="1.5" opacity="0.25" />
-                    <circle cx="200" cy="200" r="80" stroke="#6AA84F" strokeWidth="1" opacity="0.35" />
-                    {/* Core — the root cause */}
-                    <circle cx="200" cy="200" r="45" fill="#6AA84F" opacity="0.08" />
-                    <circle cx="200" cy="200" r="45" stroke="#6AA84F" strokeWidth="1.5" opacity="0.4" />
-                    {/* Organic leaf shapes radiating outward */}
-                    <path d="M200 155 Q215 130 200 100 Q185 130 200 155Z" fill="#6AA84F" opacity="0.12" />
-                    <path d="M245 200 Q270 185 300 200 Q270 215 245 200Z" fill="#6AA84F" opacity="0.12" />
-                    <path d="M200 245 Q215 270 200 300 Q185 270 200 245Z" fill="#6AA84F" opacity="0.12" />
-                    <path d="M155 200 Q130 185 100 200 Q130 215 155 200Z" fill="#6AA84F" opacity="0.12" />
-                    {/* Small dots — nutrients/molecules */}
-                    <circle cx="200" cy="200" r="4" fill="#6AA84F" opacity="0.5" />
-                    <circle cx="230" cy="170" r="2.5" fill="#E69138" opacity="0.4" />
-                    <circle cx="170" cy="230" r="2.5" fill="#E69138" opacity="0.4" />
-                    <circle cx="240" cy="230" r="2" fill="#6AA84F" opacity="0.3" />
-                    <circle cx="160" cy="170" r="2" fill="#6AA84F" opacity="0.3" />
-                    <circle cx="200" cy="130" r="2" fill="#E69138" opacity="0.3" />
-                    <circle cx="200" cy="270" r="2" fill="#E69138" opacity="0.3" />
-                    <circle cx="270" cy="200" r="2" fill="#6AA84F" opacity="0.25" />
-                    <circle cx="130" cy="200" r="2" fill="#6AA84F" opacity="0.25" />
-                  </svg>
-                  {/* Text overlay inside the illustration */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="font-heading text-lg text-warm-400 italic text-center leading-snug max-w-[180px]">
-                      It starts<br />in the gut.
-                    </p>
-                  </div>
-                </div>
-              </AnimateOnScroll>
-            </div>
+          <div className="max-w-2xl space-y-6 text-warm-600 leading-relaxed text-[0.95rem] sm:text-base md:text-lg">
+            <AnimateOnScroll>
+              <p>
+                Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <p>
+                You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <p>
+                And every doctor you&apos;ve seen has said the same thing: eat less, move more. In a 10-minute appointment that felt more like a lecture than a conversation.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <p className="font-medium text-warm-800">
+                None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <p>
+                It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
+              </p>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
 
-      {/* ===== 04. HOW IT WORKS ===== */}
-      {/* Warming back up — confidence builds */}
-      <section className="py-16 sm:py-20 md:py-28 lg:py-32 bg-gradient-to-b from-warm-50 to-green-50/30">
+      {/* ===== 04. HOW IT WORKS — "The Path Clears" ===== */}
+      <section className="py-16 sm:py-20 md:py-28 lg:py-32 world-clarity">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">How It Works</p>
@@ -185,24 +171,35 @@ export default function Home() {
             <p className="text-warm-500 text-center mb-10 md:mb-14 text-sm sm:text-base md:text-lg max-w-xl mx-auto">A clinical process, not a cookie-cutter program.</p>
           </AnimateOnScroll>
 
-          <div className="grid sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8">
-            {steps.map((item) => (
-              <AnimateOnScroll key={item.step} className="h-full">
-                <div className="bg-white rounded-2xl p-6 sm:p-7 md:p-8 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col">
-                  <span className="font-heading text-3xl sm:text-4xl font-bold text-green-500/20 leading-none mb-3">{item.step}</span>
-                  <h3 className="font-heading text-base sm:text-lg md:text-xl text-warm-900 mb-2">{item.title}</h3>
-                  <p className="text-warm-600 leading-relaxed text-sm md:text-base flex-grow">{item.body}</p>
-                </div>
-              </AnimateOnScroll>
-            ))}
+          <div className="relative">
+            {/* Timeline thread — desktop only */}
+            <div className="hidden sm:block absolute left-1/2 top-0 bottom-0 w-px bg-warm-200/40" aria-hidden="true" />
+
+            <div className="grid sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8 relative z-10">
+              {steps.map((item) => (
+                <AnimateOnScroll key={item.step} className="h-full">
+                  <div className="bg-white rounded-2xl p-6 sm:p-7 md:p-8 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col">
+                    <span className="font-heading text-3xl sm:text-4xl font-bold text-green-500/15 leading-none mb-3">{item.step}</span>
+                    <h3 className="font-heading text-base sm:text-lg md:text-xl text-warm-900 mb-2">{item.title}</h3>
+                    <p className="text-warm-600 leading-relaxed text-sm md:text-base flex-grow">{item.body}</p>
+                  </div>
+                </AnimateOnScroll>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ===== 05. SOCIAL PROOF ===== */}
-      {/* Warm — trust and humanity */}
-      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-cream">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+      {/* ===== 05. SOCIAL PROOF — "Sunlight" ===== */}
+      <section className="relative py-20 sm:py-24 md:py-32 lg:py-40 world-sunlight overflow-hidden">
+        {/* Calm organic shape — resolved, peaceful */}
+        <div className="organic-shape organic-drift-slow hidden md:block" style={{
+          width: '400px', height: '400px',
+          top: '10%', right: '-100px',
+          background: 'radial-gradient(ellipse, rgba(106,168,79,0.04) 0%, transparent 70%)',
+        }} />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">What Patients Say</p>
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-10 md:mb-14 text-center tracking-tight leading-[1.1]">
@@ -234,8 +231,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 06. OBJECTION HANDLING (Accordion) ===== */}
-      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-warm-50">
+      {/* ===== 06. OBJECTION HANDLING — "Grounded" ===== */}
+      <section className="py-20 sm:py-24 md:py-32 lg:py-40 world-grounded">
         <div className="max-w-3xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">Common Concerns</p>
@@ -249,14 +246,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 07. FINAL CTA ===== */}
-      <CTASection
-        headline="Your gut has been trying to tell you something. Let's find out what."
-        primaryLabel="Book Your Gut & Metabolic Foundation Assessment"
-        secondaryLabel="Check If Your Insurance Covers It"
-        secondaryHref="/insurance"
-        triggers={["60-minute sessions", "Same practitioner every visit", "BCBS, Aetna & Medicare accepted", "In-person or virtual"]}
-      />
+      {/* ===== 07. FINAL CTA — "Resolution" ===== */}
+      <section className="relative world-resolution overflow-hidden">
+        {/* Same organic shape from hero — but still now, resolved */}
+        <div className="organic-shape organic-still" style={{
+          width: '500px', height: '500px',
+          top: '-100px', right: '-150px',
+          background: 'radial-gradient(ellipse, rgba(106,168,79,0.05) 0%, transparent 70%)',
+        }} />
+        <div className="organic-shape organic-still" style={{
+          width: '300px', height: '300px',
+          bottom: '-50px', left: '-80px',
+          background: 'radial-gradient(ellipse, rgba(230,145,56,0.03) 0%, transparent 70%)',
+        }} />
+
+        <div className="relative z-10 max-w-3xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-20 sm:py-24 md:py-32 lg:py-40 text-center">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-white mb-8 sm:mb-10 leading-[1.15] tracking-tight">
+            Your gut has been trying to tell you something. Let&apos;s find out what.
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
+            <Link
+              href="/contact"
+              className="inline-block bg-white text-green-800 px-6 sm:px-8 py-3.5 sm:py-4 rounded-[8px] font-body font-semibold hover:bg-green-50 transition-colors duration-200 shadow-card text-sm sm:text-base"
+            >
+              Book Your Gut &amp; Metabolic Foundation Assessment
+            </Link>
+            <Link
+              href="/insurance"
+              className="inline-block border border-white/15 text-white/70 hover:text-white hover:border-white/30 px-6 sm:px-8 py-3.5 sm:py-4 rounded-[8px] font-body font-semibold transition-colors duration-200 text-sm sm:text-base"
+            >
+              Check If Your Insurance Covers It
+            </Link>
+          </div>
+          <p className="text-white/30 text-xs sm:text-sm font-body mb-4">
+            60-minute sessions  ·  Same practitioner every visit  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
+          </p>
+          <p className="font-body text-xs sm:text-sm text-white/20">
+            Prefer to call?{" "}
+            <a href="tel:3369865388" className="text-white/40 underline decoration-white/10 hover:text-white/60 transition-colors">
+              336-986-5388
+            </a>
+          </p>
+        </div>
+      </section>
     </>
   );
 }
