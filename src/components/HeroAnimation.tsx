@@ -266,9 +266,155 @@ export default function HeroAnimation() {
         ctx.restore();
       };
 
-      drawBarChart(cw * 0.85, ch * 0.82 + bob(1), 50, 0.25);
-      drawDonut(cw * 0.7, ch * 0.6 + bob(2), 18, 0.2);
-      drawLineChart(cw * 0.55, ch * 0.78 + bob(3), 55, 0.18);
+      // White paper chart cards
+      const drawChartCard = (cx: number, cy: number, w: number, h: number, alpha: number, drawContent: (x: number, y: number, w: number, h: number) => void) => {
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.translate(cx, cy);
+        // Card shadow
+        ctx.shadowColor = "rgba(0,0,0,0.15)";
+        ctx.shadowBlur = 12;
+        ctx.shadowOffsetY = 4;
+        // White card
+        ctx.beginPath();
+        ctx.roundRect(-w / 2, -h / 2, w, h, 8);
+        ctx.fillStyle = "rgba(255,255,255,0.95)";
+        ctx.fill();
+        ctx.shadowColor = "transparent";
+        // Content area
+        drawContent(-w / 2, -h / 2, w, h);
+        ctx.restore();
+      };
+
+      // Card 1: Bar chart with title + grid
+      drawChartCard(cw * 0.82, ch * 0.78 + bob(1), 120, 90, 0.3, (x, y, w, h) => {
+        // Title bar
+        ctx.beginPath();
+        ctx.roundRect(x + 10, y + 8, w * 0.5, 6, 3);
+        ctx.fillStyle = "#cbd5e0";
+        ctx.fill();
+        // Subtitle
+        ctx.beginPath();
+        ctx.roundRect(x + 10, y + 18, w * 0.35, 4, 2);
+        ctx.fillStyle = "#e2e8f0";
+        ctx.fill();
+        // Grid lines
+        for (let i = 0; i < 4; i++) {
+          const gy = y + 32 + i * 13;
+          ctx.beginPath();
+          ctx.moveTo(x + 10, gy);
+          ctx.lineTo(x + w - 10, gy);
+          ctx.strokeStyle = "#f0f0f0";
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+        // Bars
+        const barData = [0.5, 0.8, 0.6, 0.9, 0.7, 0.85];
+        const barW = 10;
+        const barGap = (w - 30) / barData.length;
+        const maxH = 40;
+        barData.forEach((v, i) => {
+          const bx = x + 15 + i * barGap;
+          const bh = maxH * v;
+          ctx.beginPath();
+          ctx.roundRect(bx, y + h - 15 - bh, barW, bh, 2);
+          ctx.fillStyle = i === 3 ? "#48bb78" : "#c6f6d5";
+          ctx.fill();
+        });
+      });
+
+      // Card 2: Line chart with area fill
+      drawChartCard(cw * 0.62, ch * 0.58 + bob(2), 130, 95, 0.25, (x, y, w, h) => {
+        // Title
+        ctx.beginPath();
+        ctx.roundRect(x + 10, y + 8, w * 0.45, 6, 3);
+        ctx.fillStyle = "#cbd5e0";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.roundRect(x + 10, y + 18, w * 0.3, 4, 2);
+        ctx.fillStyle = "#e2e8f0";
+        ctx.fill();
+        // Big number
+        ctx.font = "bold 16px system-ui";
+        ctx.fillStyle = "#2d3748";
+        ctx.fillText("87%", x + w - 42, y + 18);
+        // Grid
+        for (let i = 0; i < 3; i++) {
+          const gy = y + 35 + i * 16;
+          ctx.beginPath();
+          ctx.moveTo(x + 10, gy); ctx.lineTo(x + w - 10, gy);
+          ctx.strokeStyle = "#f0f0f0"; ctx.lineWidth = 0.5; ctx.stroke();
+        }
+        // Line + area
+        const pts = [0.6, 0.45, 0.55, 0.3, 0.2, 0.15, 0.1];
+        const chartX = x + 12;
+        const chartW = w - 24;
+        const chartY = y + 32;
+        const chartH = 48;
+        ctx.beginPath();
+        pts.forEach((p, i) => {
+          const px = chartX + (i / (pts.length - 1)) * chartW;
+          const py = chartY + p * chartH;
+          if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+        });
+        ctx.strokeStyle = "#48bb78";
+        ctx.lineWidth = 2;
+        ctx.lineCap = "round";
+        ctx.stroke();
+        // Area fill
+        ctx.lineTo(chartX + chartW, chartY + chartH);
+        ctx.lineTo(chartX, chartY + chartH);
+        ctx.closePath();
+        ctx.fillStyle = "rgba(72,187,120,0.1)";
+        ctx.fill();
+        // Dots
+        pts.forEach((p, i) => {
+          const px = chartX + (i / (pts.length - 1)) * chartW;
+          const py = chartY + p * chartH;
+          ctx.beginPath();
+          ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = "#48bb78";
+          ctx.fill();
+        });
+      });
+
+      // Card 3: Donut + stats (smaller, higher up)
+      drawChartCard(cw * 0.9, ch * 0.42 + bob(3), 100, 80, 0.2, (x, y, w, h) => {
+        // Title
+        ctx.beginPath();
+        ctx.roundRect(x + 10, y + 8, w * 0.55, 5, 3);
+        ctx.fillStyle = "#cbd5e0";
+        ctx.fill();
+        // Donut
+        const dcx = x + 35;
+        const dcy = y + 48;
+        const dr = 18;
+        const segs = [0.4, 0.25, 0.2, 0.15];
+        const cols = ["#48bb78", "#86efac", "#fbbf24", "#c6f6d5"];
+        let sa = -Math.PI / 2;
+        segs.forEach((s, i) => {
+          const ea = sa + s * Math.PI * 2;
+          ctx.beginPath();
+          ctx.arc(dcx, dcy, dr, sa, ea);
+          ctx.arc(dcx, dcy, dr * 0.55, ea, sa, true);
+          ctx.closePath();
+          ctx.fillStyle = cols[i];
+          ctx.fill();
+          sa = ea;
+        });
+        // Stats lines on right
+        for (let i = 0; i < 3; i++) {
+          const sy = y + 30 + i * 16;
+          ctx.beginPath();
+          ctx.roundRect(x + 60, sy, 6, 6, 2);
+          ctx.fillStyle = cols[i];
+          ctx.fill();
+          ctx.beginPath();
+          ctx.roundRect(x + 70, sy + 1, 18, 4, 2);
+          ctx.fillStyle = "#e2e8f0";
+          ctx.fill();
+        }
+      });
 
       animId = requestAnimationFrame(draw);
     };
