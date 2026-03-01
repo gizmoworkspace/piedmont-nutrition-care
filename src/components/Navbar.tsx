@@ -32,7 +32,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"

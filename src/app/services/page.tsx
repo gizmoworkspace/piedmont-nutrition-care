@@ -15,15 +15,14 @@ export default function Services() {
   return (
     <>
       {/* HERO */}
-      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400/5 rounded-full blur-3xl" />
-        <div className="container-wide relative z-10">
+      <section className="relative bg-gradient-hero overflow-hidden min-h-[60vh] flex items-center">
+        <div className="absolute inset-0 bg-black/15" />
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
               Clinical nutrition therapy that fixes the cause — not just the symptoms
             </h1>
-            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out.
             </p>
           </div>
@@ -36,94 +35,63 @@ export default function Services() {
       </section>
 
       {/* PROOF BAR */}
-      <ProofBar floating items={[
-        { icon: "shield", text: "Registered Dietitian Nutritionist (RDN)" },
-        { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
-        { icon: "academic", text: "MS in Nutrition from UNCG" },
-        { icon: "beaker", text: "Food Chemistry Specialization" },
-        { icon: "star", text: "5.0 Google Rating" },
+      <ProofBar items={[
+        { text: "Registered Dietitian Nutritionist (RDN)" },
+        { text: "Licensed Dietitian Nutritionist (LDN)" },
+        { text: "MS in Nutrition from UNCG" },
+        { text: "Food Chemistry Specialization" },
+        { text: "5.0 Google Rating" },
       ]} />
-
-      {/* AGITATION */}
-      <section className="section-padding bg-cream">
-        <div className="container-narrow">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
-              Why the advice you&apos;ve been following was designed to fail
-            </h2>
-          </AnimateOnScroll>
-          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
-            <AnimateOnScroll delay={100}><p>
-              Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.
-            </p></AnimateOnScroll>
-            <AnimateOnScroll delay={200}><p>
-              These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction. Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.
-            </p></AnimateOnScroll>
-            <AnimateOnScroll delay={300}><p className="font-semibold text-green-700 text-xl">That&apos;s not your failure. That&apos;s biology.</p></AnimateOnScroll>
-          </div>
-        </div>
-      </section>
-
-      {/* CROSSHEAD */}
-      <section className="relative py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-r-full" />
-        <div className="container-narrow text-center relative z-10">
-          <AnimateOnScroll animation="scale-up">
-            <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug">
-              Restore the system, and the symptoms resolve themselves.
-            </p>
-          </AnimateOnScroll>
-        </div>
-      </section>
 
       {/* WHAT IS MNT */}
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">The Approach</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-10 tracking-tight leading-[1.1]">
               What Medical Nutrition Therapy Actually Is
             </h2>
-            <p className="text-lg text-warm-600 leading-relaxed">
+            <p className="text-base md:text-lg text-warm-600 leading-relaxed max-w-2xl">
               Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes.
             </p>
           </AnimateOnScroll>
         </div>
       </section>
 
-      {/* 4-STEP PROCESS */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10">
+      {/* 4-STEP PROCESS (EXPANDED) */}
+      <section className="section-padding bg-warm-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">The Process</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               Your 4-Step Process
             </h2>
           </AnimateOnScroll>
-          <div className="space-y-6 stagger-children">
+          <div className="space-y-8 stagger-children">
             {[
               {
-                step: "1",
+                step: "01",
                 Icon: EarIcon,
                 label: "Hear You",
                 title: "Comprehensive Health Assessment",
                 body: "Your first 60-minute session is designed to do what no 10-minute appointment ever could. Jeanne reviews your full health history, current medications, family medical context, lifestyle demands, food preferences, and the things you've already tried — so that you have a clinician who sees the whole picture, not a fragment of it. You'll also discuss your goals: what does \"better\" actually look like for your life?",
               },
               {
-                step: "2",
+                step: "02",
                 Icon: BeakerIcon,
                 label: "Gather Specifics",
                 title: "Lab Analysis & Root-Cause Identification",
                 body: "Jeanne analyzes your blood panels, A1C, cholesterol markers (LDL, HDL, triglycerides), inflammatory indicators, and digestive function — not at a glance, but in depth. She identifies the specific biological mechanisms driving your symptoms: gut dysbiosis (imbalanced gut bacteria), leptin resistance, insulin sensitivity issues, micronutrient deficiencies, or hormonal disruption — so that you finally understand the WHY behind what your body has been doing.",
               },
               {
-                step: "3",
+                step: "03",
                 Icon: TestTubeIcon,
                 label: "Learn Better Foods",
                 title: "Food Chemistry Education",
                 body: "This isn't a lecture about calories. Jeanne teaches you how different foods interact with your specific biology at the molecular level: why certain carbohydrates spike your blood sugar while others stabilize it, how specific fiber types feed beneficial gut bacteria, which protein sources support your metabolic goals — so that you make food choices from understanding, not from a rules list you'll eventually abandon.",
               },
               {
-                step: "4",
+                step: "04",
                 Icon: DocumentTextIcon,
                 label: "Your Food Rx",
                 title: "Personalized Nutrition Protocol",
@@ -131,20 +99,18 @@ export default function Services() {
               },
             ].map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50">
-                  <div className="flex items-start gap-5">
-                    <div className="flex-shrink-0 flex flex-col items-center gap-2">
-                      <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center">
-                        <item.Icon className="w-5 h-5 text-green-600" />
+                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-lifted transition-all duration-300 border border-warm-100/50 hover:-translate-y-[2px]">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                      <span className="text-warm-200 font-heading font-bold text-2xl">{item.step}</span>
+                      <div className="w-12 h-12 rounded-2xl bg-green-50 flex items-center justify-center">
+                        <item.Icon className="w-6 h-6 text-green-600" />
                       </div>
-                      <span className="w-12 h-12 rounded-2xl bg-gradient-btn text-white font-heading text-lg font-bold flex items-center justify-center shadow-glow-green">
-                        {item.step}
-                      </span>
                     </div>
                     <div>
-                      <p className="text-green-600 font-medium text-sm uppercase tracking-wide mb-1">{item.label}</p>
-                      <h3 className="font-heading text-xl md:text-2xl text-warm-900 mb-3">{item.title}</h3>
-                      <p className="text-warm-600 leading-relaxed">{item.body}</p>
+                      <p className="text-xs uppercase tracking-[0.2em] text-green-600 font-medium mb-2">{item.label}</p>
+                      <h3 className="font-heading text-xl md:text-2xl text-warm-900 mb-4">{item.title}</h3>
+                      <p className="text-warm-600 leading-relaxed text-base max-w-2xl">{item.body}</p>
                     </div>
                   </div>
                 </div>
@@ -158,11 +124,12 @@ export default function Services() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
-              What&apos;s Included in Every Session
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Every Session</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
+              What&apos;s Included
             </h2>
           </AnimateOnScroll>
-          <div className="grid sm:grid-cols-2 gap-4 stagger-children">
+          <div className="grid sm:grid-cols-2 gap-6 stagger-children">
             {[
               "60-minute one-on-one consultation with Jeanne (never a substitute provider)",
               "Review and interpretation of current lab work and clinical markers",
@@ -172,9 +139,9 @@ export default function Services() {
               "Coordination with your primary care physician when clinically appropriate",
             ].map((item, i) => (
               <AnimateOnScroll key={i}>
-                <div className="flex items-start gap-3 bg-green-50 rounded-2xl p-5 border border-green-100/50 hover:shadow-card transition-all duration-300">
+                <div className="flex items-start gap-4 bg-white rounded-2xl p-6 border border-warm-100/50 hover:shadow-card transition-all duration-300 hover:-translate-y-[1px]">
                   <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <p className="text-warm-700 text-sm">{item}</p>
+                  <p className="text-warm-700 text-sm leading-relaxed">{item}</p>
                 </div>
               </AnimateOnScroll>
             ))}
@@ -183,14 +150,15 @@ export default function Services() {
       </section>
 
       {/* CONDITIONS */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
-        <div className="container-wide relative z-10">
+      <section className="section-padding bg-warm-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Specializations</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               Conditions We Specialize In
             </h2>
           </AnimateOnScroll>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
             {[
               { title: "Diabetes & Blood Sugar", desc: "A1C reduction, insulin sensitivity, blood sugar stabilization", href: "/conditions/diabetes" },
               { title: "IBS & Digestive Disorders", desc: "Bloating, abdominal pain, gut microbiome restoration", href: "/conditions/ibs" },
@@ -199,9 +167,9 @@ export default function Services() {
               { title: "Weight Management", desc: "Root-cause metabolic repair, GLP-1 off-ramp support", href: "/conditions/weight-management" },
             ].map((c) => (
               <AnimateOnScroll key={c.href}>
-                <Link href={c.href} className="block h-full bg-white rounded-2xl p-6 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/50 hover:-translate-y-[2px]">
-                  <h3 className="font-heading text-lg text-warm-900 group-hover:text-green-600 mb-2 transition-colors">{c.title}</h3>
-                  <p className="text-warm-500 text-sm mb-4">{c.desc}</p>
+                <Link href={c.href} className="block h-full bg-white rounded-2xl p-8 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/50 hover:-translate-y-[2px]">
+                  <h3 className="font-heading text-lg md:text-xl text-warm-900 group-hover:text-green-600 mb-3 transition-colors">{c.title}</h3>
+                  <p className="text-warm-500 text-sm mb-6 leading-relaxed">{c.desc}</p>
                   <span className="inline-flex items-center gap-1 text-green-600 text-sm font-medium group-hover:gap-2 transition-all duration-300">
                     Learn more
                     <ArrowRightIcon className="w-4 h-4" />
@@ -227,18 +195,19 @@ export default function Services() {
       </section>
 
       {/* COMPARISON */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
-        <div className="container-wide relative z-10">
+      <section className="section-padding bg-warm-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">The Difference</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               How this compares to what you&apos;ve tried
             </h2>
           </AnimateOnScroll>
           <AnimateOnScroll>
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <div className="bg-warm-100/80 rounded-2xl p-8 border border-warm-200/50">
-                <h3 className="font-heading text-lg text-warm-500 uppercase tracking-wide mb-6">The Old Way</h3>
-                <div className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+              <div className="bg-warm-100/60 rounded-2xl p-8 md:p-10 border border-warm-200/40">
+                <h3 className="font-heading text-lg text-warm-400 uppercase tracking-widest mb-8">The Old Way</h3>
+                <div className="space-y-5">
                   {[
                     "Calorie-counting apps",
                     "Generic meal plan handouts",
@@ -248,15 +217,15 @@ export default function Services() {
                     "GLP-1 dependency with no exit plan",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <XMarkIcon className="w-4 h-4 text-warm-400 flex-shrink-0 mt-1" />
-                      <span className="text-warm-500 text-sm">{item}</span>
+                      <XMarkIcon className="w-4 h-4 text-warm-300 flex-shrink-0 mt-1" />
+                      <span className="text-warm-400 text-sm leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="bg-green-50 rounded-2xl p-8 border border-green-200/50 shadow-card">
-                <h3 className="font-heading text-lg text-green-700 uppercase tracking-wide mb-6">Piedmont Nutrition Care</h3>
-                <div className="space-y-4">
+              <div className="bg-white rounded-2xl p-8 md:p-10 border border-green-200/50 shadow-card">
+                <h3 className="font-heading text-lg text-green-700 uppercase tracking-widest mb-8">Piedmont Nutrition Care</h3>
+                <div className="space-y-5">
                   {[
                     "Clinical food chemistry based on your lab data",
                     "Personalized protocols built from your biochemistry",
@@ -267,7 +236,7 @@ export default function Services() {
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <CheckIcon className="w-4 h-4 text-green-500 flex-shrink-0 mt-1" />
-                      <span className="text-warm-800 text-sm font-medium">{item}</span>
+                      <span className="text-warm-800 text-sm font-medium leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -281,8 +250,8 @@ export default function Services() {
       <section className="section-padding bg-cream">
         <div className="container-narrow text-center">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">For People Still Deciding</h2>
-            <p className="text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
+            <h2 className="font-heading text-3xl md:text-4xl text-warm-950 mb-8 tracking-tight leading-[1.1]">For People Still Deciding</h2>
+            <p className="text-base md:text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
               If you&apos;re comparing providers, here&apos;s what matters: Piedmont Nutrition Care is a one-on-one clinical practice, not a platform. You see the same credentialed practitioner at every session. Your plan is built from your actual lab data, not a template. And the goal isn&apos;t to manage your symptoms indefinitely — it&apos;s to resolve the underlying cause so your body starts working for you again.
             </p>
           </AnimateOnScroll>

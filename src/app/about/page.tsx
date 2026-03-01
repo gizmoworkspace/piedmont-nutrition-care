@@ -14,15 +14,14 @@ export default function About() {
   return (
     <>
       {/* HERO */}
-      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
-        <div className="container-wide relative z-10">
+      <section className="relative bg-gradient-hero overflow-hidden min-h-[60vh] flex items-center">
+        <div className="absolute inset-0 bg-black/15" />
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
               You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
             </h1>
-            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.
             </p>
           </div>
@@ -35,23 +34,24 @@ export default function About() {
       </section>
 
       {/* PROOF BAR */}
-      <ProofBar floating items={[
-        { icon: "academic", text: "MS in Nutrition (UNCG)" },
-        { icon: "shield", text: "Registered Dietitian Nutritionist (RDN)" },
-        { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
-        { icon: "building", text: "20+ Years Health Industry Experience" },
-        { icon: "star", text: "5.0 Google Rating" },
+      <ProofBar items={[
+        { text: "MS in Nutrition (UNCG)" },
+        { text: "Registered Dietitian Nutritionist (RDN)" },
+        { text: "Licensed Dietitian Nutritionist (LDN)" },
+        { text: "20+ Years Health Industry Experience" },
+        { text: "5.0 Google Rating" },
       ]} />
 
       {/* ORIGIN STORY */}
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">The Origin</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-10 tracking-tight leading-[1.1]">
               Why Piedmont Nutrition Care Exists
             </h2>
           </AnimateOnScroll>
-          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
+          <div className="space-y-8 text-warm-600 leading-relaxed text-base md:text-lg max-w-2xl">
             <AnimateOnScroll delay={100}><p>
               For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern thousands of times: a patient develops a chronic condition. Their doctor prescribes medication and tells them to &ldquo;eat less, move more.&rdquo; The patient tries. It doesn&apos;t work. They blame themselves. The condition worsens. More medication. More co-pays. More shame.
             </p></AnimateOnScroll>
@@ -66,15 +66,15 @@ export default function About() {
       </section>
 
       {/* WHAT MAKES JEANNE DIFFERENT */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10">
+      <section className="section-padding bg-warm-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">What Sets Her Apart</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               What Makes Jeanne Different
             </h2>
           </AnimateOnScroll>
-          <div className="grid md:grid-cols-3 gap-6 stagger-children">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12 stagger-children">
             {[
               {
                 icon: BeakerIcon,
@@ -93,11 +93,11 @@ export default function About() {
               },
             ].map((item) => (
               <AnimateOnScroll key={item.title} className="h-full">
-                <div className="bg-white rounded-2xl p-8 shadow-card border border-warm-100/50 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 group h-full flex flex-col">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mb-5 group-hover:from-green-100 group-hover:to-green-200 transition-all duration-300">
-                    <item.icon className="w-7 h-7 text-green-500" />
+                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 group h-full flex flex-col">
+                  <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green-100 transition-colors">
+                    <item.icon className="w-7 h-7 text-green-600" />
                   </div>
-                  <h3 className="font-heading text-lg text-warm-900 mb-3">{item.title}</h3>
+                  <h3 className="font-heading text-lg md:text-xl text-warm-900 mb-4">{item.title}</h3>
                   <p className="text-warm-600 leading-relaxed text-sm flex-grow">{item.body}</p>
                 </div>
               </AnimateOnScroll>
@@ -109,7 +109,7 @@ export default function About() {
       {/* DEEP PROOF */}
       <section className="section-padding bg-cream">
         <div className="container-narrow">
-          <div className="grid md:grid-cols-2 gap-6 stagger-children">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 stagger-children">
             <AnimateOnScroll>
               <TestimonialCard
                 quote="She understands the science of food as well as how to share it with me, apply it to my specific needs, and guide me to helpful resources. I'm excited about moving forward with the plan she has developed for me."
@@ -128,15 +128,15 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="relative py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-r-full" />
-        <div className="container-narrow text-center relative z-10">
+      <section className="section-padding bg-warm-50">
+        <div className="container-narrow text-center">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">The Invitation</h2>
-            <p className="text-lg text-warm-600 leading-relaxed mb-4 max-w-2xl mx-auto">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">The Invitation</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-10 tracking-tight leading-[1.1]">Take the Next Step</h2>
+            <p className="text-base md:text-lg text-warm-600 leading-relaxed mb-6 max-w-2xl mx-auto">
               If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.
             </p>
-            <p className="text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
               Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.
             </p>
           </AnimateOnScroll>
