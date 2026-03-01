@@ -3,7 +3,6 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import BackgroundTexture from "@/components/BackgroundTexture";
 import { CheckIcon, XMarkIcon, StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
 
 export default function Home() {
@@ -47,7 +46,6 @@ export default function Home() {
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <BackgroundTexture variant="particles" color="rgba(134, 239, 172, 0.5)" opacity={0.6} />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 md:py-32 lg:py-40 w-full">
           <div className="max-w-3xl">
@@ -142,8 +140,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="relative py-24 md:py-32 px-6 md:px-8 bg-cream overflow-hidden">
-        <BackgroundTexture variant="grid" color="rgba(106, 168, 79, 0.4)" opacity={0.5} />
+      <section className="py-24 md:py-32 px-6 md:px-8 bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-4 text-center tracking-tight">
@@ -243,8 +240,7 @@ export default function Home() {
       </section>
 
       {/* COMPARISON */}
-      <section className="relative py-24 md:py-32 px-6 md:px-8 bg-cream overflow-hidden">
-        <BackgroundTexture variant="particles" color="rgba(106, 168, 79, 0.35)" opacity={0.4} />
+      <section className="py-24 md:py-32 px-6 md:px-8 bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center tracking-tight">
