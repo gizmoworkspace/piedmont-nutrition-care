@@ -20,17 +20,17 @@ interface ProofBarProps {
 
 export default function ProofBar({ items, floating = false }: ProofBarProps) {
   return (
-    <section className={`relative z-10 ${floating ? "-mt-8 mb-4 px-6" : ""}`}>
+    <section className={`relative z-10 ${floating ? "-mt-6 sm:-mt-8 mb-4 px-4 sm:px-6" : ""}`}>
       <div className={`${floating ? "max-w-5xl mx-auto" : ""}`}>
         <div
           className={`${
             floating
-              ? "glass-card rounded-2xl px-6 py-4 shadow-deep"
-              : "bg-green-800/95 backdrop-blur-sm py-5"
+              ? "glass-card rounded-xl sm:rounded-2xl px-4 sm:px-6 py-3 sm:py-4 shadow-deep"
+              : "bg-green-800/95 backdrop-blur-sm py-4 sm:py-5"
           }`}
         >
-          <div className={`${floating ? "" : "max-w-6xl mx-auto px-6"}`}>
-            <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm font-body font-medium">
+          <div className={`${floating ? "" : "max-w-6xl mx-auto px-4 sm:px-6"}`}>
+            <div className="flex flex-wrap justify-center items-center gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-2 sm:gap-y-3 text-xs sm:text-sm font-body font-medium">
               {items.map((item, i) => {
                 const Icon = item.icon ? iconMap[item.icon] : null;
                 const isRating = item.text.includes("5.0");

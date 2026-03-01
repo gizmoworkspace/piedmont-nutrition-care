@@ -31,21 +31,21 @@ export default function Navbar() {
           : "bg-white/70 backdrop-blur-md border-b border-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center gap-3">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
+          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
             <Image
               src="/logo.png"
               alt="Piedmont Nutrition Care"
               width={160}
               height={48}
-              className="h-10 md:h-12 w-auto object-contain"
+              className="h-8 sm:h-10 md:h-12 w-auto object-contain"
               style={{ mixBlendMode: "multiply" }}
               priority
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

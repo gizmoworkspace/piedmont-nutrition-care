@@ -36,7 +36,7 @@ export default function Insurance() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
               Your insurance likely covers Medical Nutrition Therapy
             </h2>
             <p className="text-lg text-warm-600 leading-relaxed mb-10">
@@ -108,12 +108,12 @@ export default function Insurance() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
               Compare the real cost
             </h2>
           </AnimateOnScroll>
           <AnimateOnScroll>
-            <div className="relative bg-gradient-cta text-white rounded-2xl p-8 md:p-10 overflow-hidden">
+            <div className="relative bg-gradient-cta text-white rounded-2xl p-5 sm:p-6 md:p-8 lg:p-10 overflow-hidden">
               <div className="absolute top-0 right-0 w-48 h-48 bg-green-400/10 rounded-full blur-3xl" />
               <p className="text-lg leading-relaxed text-green-50 relative z-10">
                 A single month of GLP-1 medication costs $800–$1,500 out of pocket — and the weight returns when you stop. A year of calorie-counting app subscriptions, supplements, and 30-day challenges adds up to hundreds of dollars that bought you no lasting results. A session with a credentialed clinical dietitian who identifies the root cause and builds a permanent protocol? That&apos;s the investment that actually resolves the problem.

@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-dark text-warm-300 pb-24 md:pb-0">
       <div className="border-t border-warm-800" />
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-16">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 md:px-8 py-12 sm:py-16">
         {/* Mini CTA */}
         <div className="text-center mb-12 pb-12 border-b border-warm-800">
           <h3 className="font-heading text-2xl md:text-3xl text-white mb-4">

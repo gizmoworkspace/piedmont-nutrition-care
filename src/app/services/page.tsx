@@ -48,7 +48,7 @@ export default function Services() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
               Why the advice you&apos;ve been following was designed to fail
             </h2>
           </AnimateOnScroll>
@@ -80,7 +80,7 @@ export default function Services() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
               What Medical Nutrition Therapy Actually Is
             </h2>
             <p className="text-lg text-warm-600 leading-relaxed">
@@ -95,7 +95,7 @@ export default function Services() {
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
               Your 4-Step Process
             </h2>
           </AnimateOnScroll>
@@ -131,7 +131,7 @@ export default function Services() {
               },
             ].map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50">
+                <div className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 lg:p-10 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50">
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0 flex flex-col items-center gap-2">
                       <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center">
@@ -158,7 +158,7 @@ export default function Services() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
               What&apos;s Included in Every Session
             </h2>
           </AnimateOnScroll>
@@ -186,7 +186,7 @@ export default function Services() {
       <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
               Conditions We Specialize In
             </h2>
           </AnimateOnScroll>
@@ -230,7 +230,7 @@ export default function Services() {
       <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
               How this compares to what you&apos;ve tried
             </h2>
           </AnimateOnScroll>
