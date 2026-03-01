@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "id": "cooper",
+      "quote": "After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better. I'm living and eating with far less abdominal pain and digestive issues.",
+      "author": "M. Cooper",
+      "context": ""
+    },
+    {
+      "id": "liz",
+      "quote": "Jeanne is extremely knowledgeable about food, food chemistry, and the latest research findings on nutrition. She can suggest dietary changes to prevent cancer, boost a sluggish metabolism, improve blood sugar, or lower LDL. Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun.",
+      "author": "Liz",
+      "context": ""
+    },
+    {
+      "id": "ann",
+      "quote": "As a cancer survivor struggling with weight and gut issues, I'm so grateful to have found Jeanne. She understands the science of food as well as how to share it with me, apply it to my specific needs, and guide me to helpful resources. I'm excited about moving forward with the plan she has developed for me.",
+      "author": "Ann",
+      "context": "Cancer survivor"
+    },
+    {
+      "id": "doug",
+      "quote": "I highly recommend Jeanne Doherty as a nutritionist. Recently I have worked with her to lower my blood sugars and improve cholesterol. Her advice is practical and food suggestions are enjoyable, better versions of my favorite foods. I am grateful for the transformative impact she has had on my lifestyle and wellbeing.",
+      "author": "Doug",
+      "context": ""
+    }
+  ]
+}

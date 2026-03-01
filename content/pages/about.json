@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "headline": "You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.",
+    "subheadline": "Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people's lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn't: connect the science of food chemistry to the real lives of real people."
+  },
+  "proofBar": [
+    { "icon": "academic", "text": "MS in Nutrition (UNCG)" },
+    { "icon": "shield", "text": "Registered Dietitian Nutritionist (RDN)" },
+    { "icon": "clipboard", "text": "Licensed Dietitian Nutritionist (LDN)" },
+    { "icon": "building", "text": "20+ Years Health Industry Experience" },
+    { "icon": "star", "text": "5.0 Google Rating" }
+  ],
+  "originStory": {
+    "headline": "Why Piedmont Nutrition Care Exists",
+    "paragraphs": [
+      "For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern thousands of times: a patient develops a chronic condition. Their doctor prescribes medication and tells them to \"eat less, move more.\" The patient tries. It doesn't work. They blame themselves. The condition worsens. More medication. More co-pays. More shame.",
+      "The missing piece was always the same: no one was looking at the food. Not the calories — the actual chemistry of what they were eating and how their body was processing it.",
+      "Jeanne earned her MS in Nutrition from UNCG with a focus on food science and food chemistry. She founded Piedmont Nutrition Care to be the practice she wished existed for every patient she'd watched struggle: one where a credentialed clinician takes 60 minutes (not 10), reviews your actual lab work (not just your weight), and builds a plan around better versions of the foods you love (not a generic handout you'll throw away)."
+    ]
+  },
+  "differentiators": {
+    "headline": "What Makes Jeanne Different",
+    "items": [
+      {
+        "icon": "beaker",
+        "title": "Clinical Credentials",
+        "body": "Your nutrition plan is built by a Registered Dietitian Nutritionist with a Master of Science in Nutrition and a specialization in food chemistry. That's different from a health coach, a wellness influencer, or a telehealth provider matched to you by an algorithm. Jeanne understands the molecular mechanisms behind why certain foods affect your blood sugar, your gut bacteria, and your inflammatory markers — and she translates that into plain-English recommendations you can act on today."
+      },
+      {
+        "icon": "building",
+        "title": "Health System Expertise",
+        "body": "Twenty years inside the health insurance industry gave Jeanne something most dietitians don't have: a deep understanding of how the healthcare system actually works — the billing, the coverage gaps, the reasons patients fall through the cracks. That experience shapes everything about how Piedmont Nutrition Care operates, from upfront pricing transparency to insurance coordination to ensuring you never feel like a number in a system designed to process you as fast as possible."
+      },
+      {
+        "icon": "chat",
+        "title": "Communication Skill",
+        "body": "Jeanne is a former TV host and live cooking demo presenter. She's spent years making nutrition science engaging and accessible to real audiences — not dumbing it down, but translating it. When she explains why your gut microbiome is affecting your cravings, you'll understand it. When she walks you through your lab results, you'll know exactly what the numbers mean and what to do about them."
+      }
+    ]
+  },
+  "invitation": {
+    "headline": "The Invitation",
+    "paragraphs": [
+      "If your doctor's advice hasn't worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you're tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.",
+      "Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You'll walk out of your first appointment with a clear understanding of what's driving your symptoms and a concrete plan to address it."
+    ]
+  },
+  "finalCTA": {
+    "headline": "Book Your Assessment with Jeanne",
+    "triggers": ["60 minutes, one-on-one", "Same practitioner every visit", "Insurance accepted", "In-person or virtual"]
+  }
+}

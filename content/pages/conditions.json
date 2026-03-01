@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "headline": "Your condition is specific. Your nutrition plan should be, too.",
+    "subheadline": "Piedmont Nutrition Care provides evidence-based Medical Nutrition Therapy for chronic metabolic, gastrointestinal, and weight-related conditions. Select your condition below to see how a root-cause, food-chemistry approach applies to your specific situation."
+  },
+  "conditions": [
+    {
+      "title": "Diabetes & Blood Sugar Management",
+      "hook": "A1C reduction, insulin sensitivity, and blood sugar stabilization through food chemistry — not just calorie restriction.",
+      "href": "/conditions/diabetes"
+    },
+    {
+      "title": "IBS & Digestive Disorders",
+      "hook": "Bloating, abdominal pain, and unpredictable bowel habits resolved through targeted gut microbiome restoration.",
+      "href": "/conditions/ibs"
+    },
+    {
+      "title": "Oncology Nutrition",
+      "hook": "Post-treatment gut recovery, immune support, and weight management for cancer survivors.",
+      "href": "/conditions/oncology"
+    },
+    {
+      "title": "Cardiovascular Health",
+      "hook": "Cholesterol optimization and blood pressure support through targeted food chemistry protocols.",
+      "href": "/conditions/heart-health"
+    },
+    {
+      "title": "Sustainable Weight Management",
+      "hook": "Root-cause metabolic repair, GLP-1 medication off-ramp support, and perimenopause weight resistance solutions.",
+      "href": "/conditions/weight-management"
+    }
+  ]
+}

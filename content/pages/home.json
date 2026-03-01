@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "headline": "Your cravings, weight resistance, and gut pain aren't willpower failures. They're gut health failures.",
+    "headlineHighlight": "They're gut health failures.",
+    "subheadline": "You've done everything \"right\" — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with \"eat less, move more.\" Your body kept fighting back. Because no one looked at the root cause: what's happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.",
+    "primaryCTA": "Book Your Assessment",
+    "secondaryCTA": "Check If Your Insurance Covers It",
+    "secondaryCTAHref": "/insurance",
+    "clickTriggers": "60-minute consultations  ·  BCBS, Aetna & Medicare accepted  ·  In-person or virtual"
+  },
+  "proofBar": [
+    { "icon": "star", "text": "5.0 Google Rating" },
+    { "icon": "academic", "text": "MS, RD, LDN Credentials" },
+    { "icon": "clipboard", "text": "20+ Years Clinical Experience" },
+    { "icon": "building", "text": "Accepted by Major NC Insurers" }
+  ],
+  "agitation": {
+    "headline": "You've been doing everything right. So why does your body keep working against you?",
+    "paragraphs": [
+      "Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You're mentally mapping public restrooms before you leave the house.",
+      "You've cut your calories to 1,200 a day. You've tried Keto, Whole30, calorie-counting apps. Maybe you're on Ozempic and dreading the day you have to stop. You've spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.",
+      "And every doctor you've seen has said the same thing: eat less, move more. In a 10-minute appointment that felt more like a lecture than a conversation.",
+      "None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.",
+      "It didn't work because no one addressed the actual problem: a compromised gut that can't properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You've been fighting your biology with restriction — and biology always wins."
+    ]
+  },
+  "crosshead": "Your metabolism isn't broken. It's been getting the wrong instructions.",
+  "howSection": {
+    "headline": "How Piedmont Nutrition Care works: four steps from confused to confident",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Your Gut & Metabolic Foundation Assessment",
+        "body": "Your first session is 60 minutes, one-on-one, with Jeanne — not a rotating roster of providers. You'll walk through your full health history, your current symptoms, your medications, your lab work, and the things you've already tried. This is the appointment your doctor never had time for — so that you finally have a clinician who understands your complete picture, not just a snapshot."
+      },
+      {
+        "step": "2",
+        "title": "Clinical Lab Analysis & Gut Health Assessment",
+        "body": "Jeanne reviews your blood panels, cholesterol markers, A1C, inflammation levels, and digestive function — the data most providers glance at for 30 seconds. She identifies the specific biological mechanisms driving your symptoms: gut microbiome disruption, leptin resistance (when your brain stops hearing the \"I'm full\" signal), blood sugar dysregulation, or hormonal imbalances — so that you understand exactly WHY your body has been working against you, not just that it has."
+      },
+      {
+        "step": "3",
+        "title": "Personalized Food Chemistry Protocol",
+        "body": "You receive a nutrition plan built from your unique biochemistry — not a generic handout. It's designed around better versions of the foods you already love, including Southern staples. No calorie counting. No elimination diets. No separate meals for you and your family — so that eating becomes something you enjoy again instead of a source of anxiety and guilt."
+      },
+      {
+        "step": "4",
+        "title": "Continued Clinical Monitoring & Adjustment",
+        "body": "You aren't handed a plan and sent on your way. Jeanne tracks your lab markers, adjusts your protocol as your body responds, and serves as your ongoing clinical partner — so that you have someone carrying the cognitive load with you, translating the science into simple daily steps as your health evolves."
+      }
+    ]
+  },
+  "comparisonTable": {
+    "headline": "You've tried the old way. Here's what's different.",
+    "rows": [
+      {
+        "old": "Starving yourself on restrictive diets, losing 20 lbs, gaining 30 back",
+        "new": "Understanding your gut chemistry and building a sustainable metabolic foundation"
+      },
+      {
+        "old": "10-minute doctor visits ending with \"eat less, move more\"",
+        "new": "60-minute consultations where your symptoms are validated and your labs are analyzed"
+      },
+      {
+        "old": "Generic meal plan handouts that ignore your life",
+        "new": "Personalized food chemistry protocols with better versions of your favorite foods"
+      },
+      {
+        "old": "Fighting daily cravings with willpower",
+        "new": "Healing the gut dysfunction that's creating the cravings"
+      },
+      {
+        "old": "Spending thousands on supplements and 30-day challenges",
+        "new": "One qualified expert who identifies the root cause and gives you a clear, permanent map"
+      },
+      {
+        "old": "Faceless telehealth where your dietitian might not show up",
+        "new": "A dedicated local practitioner who knows your name, family, and full medical history"
+      },
+      {
+        "old": "GLP-1 injections and dreading the day you stop",
+        "new": "Rebuilding your metabolic resilience so your body maintains results naturally"
+      }
+    ]
+  },
+  "objections": {
+    "headline": "Your questions, answered honestly",
+    "items": [
+      {
+        "question": "\"I've tried everything. My body is just broken.\"",
+        "answer": "Your body isn't broken. It's been responding logically to years of conflicting instructions: starvation diets that triggered metabolic adaptation, medications that masked symptoms without addressing causes, and advice that ignored your unique biochemistry. When your gut flora is compromised, leptin resistance increases (your brain stops hearing the \"I'm full\" signal), blood sugar swings become uncontrollable, and cravings intensify — no matter how disciplined you are. The problem was never your effort. It was the approach."
+      },
+      {
+        "question": "\"Will my insurance cover this?\"",
+        "answer": "Piedmont Nutrition Care accepts BCBS, Aetna, and Medicare. Medical Nutrition Therapy is a covered benefit under most plans for conditions including diabetes, high cholesterol, IBS, and obesity. You can verify your specific coverage before your first session — no surprises, no hidden fees."
+      },
+      {
+        "question": "\"I don't want to give up my favorite foods.\"",
+        "answer": "You won't. This isn't an elimination diet. Jeanne's approach builds on the foods you already enjoy — including Southern staples — and finds better versions that support your gut health and metabolic goals. Your family eats the same foundational meals with minor adjustments. No separate cooking. No guilt."
+      },
+      {
+        "question": "\"Another expert is just going to judge me.\"",
+        "answer": "Every appointment at Piedmont Nutrition Care is 60 minutes, one-on-one, unhurried. Jeanne's patients consistently describe feeling heard, validated, and respected for the first time in their medical journey. This is a partnership, not a lecture."
+      }
+    ]
+  },
+  "stakes": "Your A1C doesn't pause while you decide. Your gut symptoms don't improve on their own. Every month without addressing the root cause is another month of cravings you can't explain, energy you don't have, and lab numbers moving in the wrong direction. You've spent years trying to solve this alone. The next step isn't another app or another 30-day challenge.",
+  "finalCTA": {
+    "headline": "Your gut has been trying to tell you something. Let's find out what.",
+    "primaryLabel": "Book Your Gut & Metabolic Foundation Assessment",
+    "secondaryLabel": "Check If Your Insurance Covers It",
+    "secondaryHref": "/insurance",
+    "triggers": ["60-minute sessions", "Same practitioner every visit", "BCBS, Aetna & Medicare accepted", "In-person or virtual"],
+    "testimonial": {
+      "quote": "Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun.",
+      "author": "Liz"
+    }
+  }
+}

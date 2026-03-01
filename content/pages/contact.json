@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "headline": "Your next step: 60 minutes that change how you understand your body.",
+    "subheadline": "Book your Gut & Metabolic Foundation Assessment with Jeanne Doherty, MS, RD, LDN. Your first session is a comprehensive 60-minute evaluation of your health history, current symptoms, lab work, and goals — so you leave with a clear understanding of what's been driving your symptoms and a concrete plan to address it."
+  },
+  "bookOnline": {
+    "headline": "Book Online",
+    "body": "Select a time that works for you. In-person or virtual appointments available.",
+    "buttonText": "Call to Schedule",
+    "note": "Online booking coming soon"
+  },
+  "call": {
+    "headline": "Call",
+    "body": "Prefer to talk first? Call during office hours and we'll walk you through what to expect, verify your insurance, and find a time that works."
+  },
+  "emailSection": {
+    "headline": "Email",
+    "body": "Have questions before booking? Send an email and we'll respond within one business day."
+  },
+  "whatToExpect": {
+    "headline": "What to Expect",
+    "items": [
+      {
+        "label": "Before your appointment",
+        "text": "You'll receive intake forms to complete at your own pace, including health history and current medications."
+      },
+      {
+        "label": "At your appointment",
+        "text": "60 minutes, one-on-one with Jeanne. Bring your recent lab work, insurance card, and any questions."
+      },
+      {
+        "label": "After your appointment",
+        "text": "You'll leave with a clear assessment, initial recommendations, and a plan for next steps."
+      }
+    ]
+  },
+  "location": {
+    "headline": "Our Location",
+    "note": "Located in the Bethesda Place professional building. Free parking available.",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.5!2d-80.3!3d36.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2990+Bethesda+Place+Winston-Salem+NC+27104!5e0!3m2!1sen!2sus!4v1234567890"
+  },
+  "insuranceQuickCheck": {
+    "headline": "Not sure if your insurance covers it?",
+    "body": "Call or visit our Insurance & Pricing page to verify your coverage before booking.",
+    "triggers": "BCBS, Aetna & Medicare accepted  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual"
+  }
+}

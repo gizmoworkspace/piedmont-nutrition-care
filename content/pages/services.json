@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "headline": "Clinical nutrition therapy that fixes the cause — not just the symptoms",
+    "subheadline": "Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out."
+  },
+  "proofBar": [
+    { "icon": "shield", "text": "Registered Dietitian Nutritionist (RDN)" },
+    { "icon": "clipboard", "text": "Licensed Dietitian Nutritionist (LDN)" },
+    { "icon": "academic", "text": "MS in Nutrition from UNCG" },
+    { "icon": "beaker", "text": "Food Chemistry Specialization" },
+    { "icon": "star", "text": "5.0 Google Rating" }
+  ],
+  "agitation": {
+    "headline": "Why the advice you've been following was designed to fail",
+    "paragraphs": [
+      "Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor's 10-minute appointment doesn't leave time to investigate why your body stopped responding in the first place.",
+      "These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction. Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.",
+      "That's not your failure. That's biology."
+    ]
+  },
+  "crosshead": "Restore the system, and the symptoms resolve themselves.",
+  "mnt": {
+    "headline": "What Medical Nutrition Therapy Actually Is",
+    "body": "Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It's not a meal plan from an app. It's not advice from a wellness influencer. It's a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes."
+  },
+  "process": {
+    "headline": "Your 4-Step Process",
+    "steps": [
+      {
+        "step": "1",
+        "label": "Hear You",
+        "title": "Comprehensive Health Assessment",
+        "body": "Your first 60-minute session is designed to do what no 10-minute appointment ever could. Jeanne reviews your full health history, current medications, family medical context, lifestyle demands, food preferences, and the things you've already tried — so that you have a clinician who sees the whole picture, not a fragment of it. You'll also discuss your goals: what does \"better\" actually look like for your life?"
+      },
+      {
+        "step": "2",
+        "label": "Gather Specifics",
+        "title": "Lab Analysis & Root-Cause Identification",
+        "body": "Jeanne analyzes your blood panels, A1C, cholesterol markers (LDL, HDL, triglycerides), inflammatory indicators, and digestive function — not at a glance, but in depth. She identifies the specific biological mechanisms driving your symptoms: gut dysbiosis (imbalanced gut bacteria), leptin resistance, insulin sensitivity issues, micronutrient deficiencies, or hormonal disruption — so that you finally understand the WHY behind what your body has been doing."
+      },
+      {
+        "step": "3",
+        "label": "Learn Better Foods",
+        "title": "Food Chemistry Education",
+        "body": "This isn't a lecture about calories. Jeanne teaches you how different foods interact with your specific biology at the molecular level: why certain carbohydrates spike your blood sugar while others stabilize it, how specific fiber types feed beneficial gut bacteria, which protein sources support your metabolic goals — so that you make food choices from understanding, not from a rules list you'll eventually abandon."
+      },
+      {
+        "step": "4",
+        "label": "Your Food Rx",
+        "title": "Personalized Nutrition Protocol",
+        "body": "You receive a clinical nutrition plan built from your unique data. It centers on better versions of the foods you already enjoy — not elimination, not deprivation. Your family can eat the same foundational meals with minor adjustments. The plan evolves with you through ongoing sessions as your lab markers improve and your goals shift — so that you have a living, adaptable strategy instead of a static document that stops working in three weeks."
+      }
+    ]
+  },
+  "included": {
+    "headline": "What's Included in Every Session",
+    "items": [
+      "60-minute one-on-one consultation with Jeanne (never a substitute provider)",
+      "Review and interpretation of current lab work and clinical markers",
+      "Personalized food chemistry recommendations based on your biochemistry",
+      "Practical meal strategies adapted to your family, schedule, and food preferences",
+      "Ongoing progress tracking with objective, measurable benchmarks",
+      "Coordination with your primary care physician when clinically appropriate"
+    ]
+  },
+  "conditions": {
+    "headline": "Conditions We Specialize In",
+    "items": [
+      { "title": "Diabetes & Blood Sugar", "desc": "A1C reduction, insulin sensitivity, blood sugar stabilization", "href": "/conditions/diabetes" },
+      { "title": "IBS & Digestive Disorders", "desc": "Bloating, abdominal pain, gut microbiome restoration", "href": "/conditions/ibs" },
+      { "title": "Oncology Nutrition", "desc": "Post-treatment gut recovery, immune support, weight management", "href": "/conditions/oncology" },
+      { "title": "Cardiovascular Health", "desc": "Cholesterol optimization, blood pressure support", "href": "/conditions/heart-health" },
+      { "title": "Weight Management", "desc": "Root-cause metabolic repair, GLP-1 off-ramp support", "href": "/conditions/weight-management" }
+    ]
+  },
+  "comparison": {
+    "headline": "How this compares to what you've tried",
+    "rows": [
+      { "old": "Calorie-counting apps", "new": "Clinical food chemistry based on your lab data" },
+      { "old": "Generic meal plan handouts", "new": "Personalized protocols built from your biochemistry" },
+      { "old": "10-minute rushed appointments", "new": "60-minute unhurried consultations" },
+      { "old": "Rotating providers who don't know you", "new": "Same credentialed practitioner every visit" },
+      { "old": "Symptom management forever", "new": "Root-cause resolution" },
+      { "old": "GLP-1 dependency with no exit plan", "new": "Medication Off-Ramp that rebuilds metabolic resilience" }
+    ]
+  },
+  "closing": {
+    "headline": "For People Still Deciding",
+    "body": "If you're comparing providers, here's what matters: Piedmont Nutrition Care is a one-on-one clinical practice, not a platform. You see the same credentialed practitioner at every session. Your plan is built from your actual lab data, not a template. And the goal isn't to manage your symptoms indefinitely — it's to resolve the underlying cause so your body starts working for you again."
+  },
+  "finalCTA": {
+    "headline": "Your next step isn't another app. It's a real assessment with a real clinician.",
+    "primaryLabel": "Book Your Gut & Metabolic Foundation Assessment",
+    "triggers": ["60-minute sessions", "Insurance accepted", "In-person or virtual", "336-986-5388"]
+  }
+}

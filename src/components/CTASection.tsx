@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getGlobal } from "@/lib/content";
 
 interface CTASectionProps {
   headline: string;
@@ -27,8 +28,11 @@ export default function CTASection({
   testimonial,
   showPhone = true,
 }: CTASectionProps) {
+  const global = getGlobal();
+  const phoneClean = global.phone.replace(/-/g, "");
+
   const pText = primaryCTA?.text || primaryLabel || "Book Your Assessment";
-  const pHref = primaryCTA?.href || primaryHref || "/contact";
+  const pHref = primaryCTA?.href || primaryHref || global.bookingUrl;
   const sText = secondaryCTA?.text || secondaryLabel;
   const sHref = secondaryCTA?.href || secondaryHref;
   const trigs = clickTriggers || triggers;
@@ -61,8 +65,8 @@ export default function CTASection({
         {showPhone && (
           <p className="font-body text-sm text-green-300">
             Prefer to call?{" "}
-            <a href="tel:3369865388" className="text-white underline decoration-green-400 hover:decoration-white transition-colors">
-              336-986-5388
+            <a href={`tel:${phoneClean}`} className="text-white underline decoration-green-400 hover:decoration-white transition-colors">
+              {global.phone}
             </a>
           </p>
         )}

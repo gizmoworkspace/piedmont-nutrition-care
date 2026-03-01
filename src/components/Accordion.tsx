@@ -12,7 +12,7 @@ function AccordionItem({ question, answer }: AccordionItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-warm-200">
+    <div className="border-b border-warm-200/60">
       <button
         className="w-full text-left py-5 px-1 flex items-center justify-between gap-4 group"
         onClick={() => setIsOpen(!isOpen)}
@@ -21,18 +21,16 @@ function AccordionItem({ question, answer }: AccordionItemProps) {
         <span className="font-heading text-lg text-warm-900 group-hover:text-green-600 transition-colors">
           {question}
         </span>
-        <ChevronDownIcon
-          className={`w-5 h-5 text-warm-400 transition-transform duration-200 flex-shrink-0 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
+        <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? "bg-green-100 rotate-180" : "bg-warm-100 group-hover:bg-green-50"}`}>
+          <ChevronDownIcon
+            className={`w-4 h-4 transition-colors duration-200 ${isOpen ? "text-green-600" : "text-warm-400"}`}
+          />
+        </div>
       </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[1000px] pb-5" : "max-h-0"
-        }`}
-      >
-        <p className="text-warm-600 leading-relaxed px-1">{answer}</p>
+      <div className={`accordion-content ${isOpen ? "is-open" : ""}`}>
+        <div>
+          <p className="text-warm-600 leading-relaxed px-1 pb-5">{answer}</p>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Accordion from "@/components/Accordion";
 import CTASection from "@/components/CTASection";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | Piedmont Nutrition Care",
@@ -74,48 +75,64 @@ const gettingStartedQuestions = [
 export default function FAQ() {
   return (
     <>
-      <section className="section-padding bg-warm-50">
-        <div className="container-wide">
+      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="container-wide relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 leading-tight mb-6">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Frequently Asked Questions
             </h1>
-            <p className="text-lg text-warm-600">
+            <p className="text-lg text-green-100/80 animate-fade-in-up-delay-1">
               Everything you need to know before your first appointment.
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[50px]">
+            <path d="M0,60 C300,20 900,20 1200,60 L1200,60 L0,60 Z" fill="#FDFBF7" />
+          </svg>
+        </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding bg-cream">
         <div className="container-narrow">
           <div className="space-y-12">
-            <div>
-              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">About the Practice</h2>
-              <Accordion items={practiceQuestions} />
-            </div>
-            <div>
-              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">About the Approach</h2>
-              <Accordion items={approachQuestions} />
-            </div>
-            <div>
-              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">About Insurance &amp; Cost</h2>
-              <Accordion items={insuranceQuestions} />
-            </div>
-            <div>
-              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">Getting Started</h2>
-              <Accordion items={gettingStartedQuestions} />
-            </div>
+            <AnimateOnScroll>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About the Practice</h2>
+                <Accordion items={practiceQuestions} />
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About the Approach</h2>
+                <Accordion items={approachQuestions} />
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About Insurance &amp; Cost</h2>
+                <Accordion items={insuranceQuestions} />
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">Getting Started</h2>
+                <Accordion items={gettingStartedQuestions} />
+              </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-green-50">
-        <div className="container-narrow text-center">
-          <p className="text-lg text-warm-600 mb-6">
-            Still have questions? Call{" "}
-            <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>.
-          </p>
+      <section className="relative py-16 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+        <div className="container-narrow text-center relative z-10">
+          <AnimateOnScroll>
+            <p className="text-lg text-warm-600 mb-6">
+              Still have questions? Call{" "}
+              <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>.
+            </p>
+          </AnimateOnScroll>
         </div>
       </section>
 

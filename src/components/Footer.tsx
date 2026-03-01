@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { StarIcon } from "./Icons";
+import { getGlobal } from "@/lib/content";
 
 export default function Footer() {
+  const global = getGlobal();
+  const phoneClean = global.phone.replace(/-/g, "");
+
   return (
     <footer className="bg-warm-950 text-warm-300 pb-24 md:pb-0">
       <div className="border-t border-warm-800" />
@@ -14,28 +18,28 @@ export default function Footer() {
           <p className="text-warm-400 mb-8 max-w-xl mx-auto leading-relaxed">
             Book your Gut &amp; Metabolic Foundation Assessment and take the first step toward understanding what your body has been trying to tell you.
           </p>
-          <Link href="/contact" className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-3.5 px-8 rounded-[8px] transition-colors shadow-soft">
+          <Link href={global.bookingUrl} className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-3.5 px-8 rounded-[8px] transition-colors shadow-soft">
             Book Your Assessment
           </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <h4 className="font-heading text-lg text-white mb-4">Piedmont Nutrition Care</h4>
+            <h4 className="font-heading text-lg text-white mb-4">{global.siteName}</h4>
             <p className="text-warm-400 text-sm leading-relaxed">
-              Jeanne Doherty, MS, RD, LDN<br />
-              2990 Bethesda Place, Suite 603C<br />
-              Winston-Salem, NC 27104
+              {global.practitionerName}, {global.credentials}<br />
+              {global.address.street}<br />
+              {global.address.city}, {global.address.state} {global.address.zip}
             </p>
             <div className="mt-4 space-y-1">
               <p>
-                <a href="tel:3369865388" className="text-warm-300 hover:text-white transition-colors text-sm">
-                  336-986-5388
+                <a href={`tel:${phoneClean}`} className="text-warm-300 hover:text-white transition-colors text-sm">
+                  {global.phone}
                 </a>
               </p>
               <p>
-                <a href="mailto:jeanne@piedmontnutritioncare.com" className="text-warm-300 hover:text-white transition-colors text-sm">
-                  jeanne@piedmontnutritioncare.com
+                <a href={`mailto:${global.email}`} className="text-warm-300 hover:text-white transition-colors text-sm">
+                  {global.email}
                 </a>
               </p>
             </div>
@@ -56,21 +60,21 @@ export default function Footer() {
           <div>
             <h4 className="font-heading text-lg text-white mb-4">Insurance Accepted</h4>
             <ul className="space-y-2.5 text-sm text-warm-400">
-              <li>Blue Cross Blue Shield (BCBS)</li>
-              <li>Aetna</li>
-              <li>Medicare</li>
+              {global.insuranceCarriers.map((carrier) => (
+                <li key={carrier}>{carrier}</li>
+              ))}
             </ul>
             <div className="mt-5 flex items-center gap-2">
               <div className="flex items-center gap-1.5 bg-warm-900 rounded-[8px] px-3 py-2 text-sm">
                 <StarIcon className="w-4 h-4 text-amber-400" />
-                <span className="text-warm-200">5.0 Google Rating</span>
+                <span className="text-warm-200">{global.googleRating} Google Rating</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-warm-800 text-center text-warm-600 text-xs">
-          <p>&copy; {new Date().getFullYear()} Piedmont Nutrition Care. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {global.siteName}. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,21 @@
+{
+  "siteName": "Piedmont Nutrition Care",
+  "practitionerName": "Jeanne Doherty",
+  "credentials": "MS, RD, LDN",
+  "phone": "336-986-5388",
+  "email": "jeanne@piedmontnutritioncare.com",
+  "bookingUrl": "/contact",
+  "address": {
+    "street": "2990 Bethesda Place, Suite 603C",
+    "city": "Winston-Salem",
+    "state": "NC",
+    "zip": "27104"
+  },
+  "insuranceCarriers": [
+    "Blue Cross Blue Shield (BCBS)",
+    "Aetna",
+    "Medicare"
+  ],
+  "googleRating": "5.0",
+  "yearsExperience": "20+"
+}

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,18 +15,34 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-warm-100">
+    <nav
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/90 backdrop-blur-xl shadow-card border-b border-warm-100/50"
+          : "bg-white/70 backdrop-blur-md border-b border-transparent"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex flex-col">
-            <span className="font-heading text-lg md:text-xl text-warm-950 font-semibold leading-tight">
-              Piedmont Nutrition Care
-            </span>
-            <span className="text-xs text-warm-500 font-body hidden sm:block">
-              Jeanne Doherty, MS, RD, LDN
-            </span>
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="Piedmont Nutrition Care"
+              width={160}
+              height={48}
+              className="h-10 md:h-12 w-auto object-contain"
+              style={{ mixBlendMode: "multiply" }}
+              priority
+            />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -33,7 +50,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-warm-600 hover:text-green-600 transition-colors"
+                className="text-sm text-warm-600 hover:text-green-600 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-green-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
@@ -44,7 +61,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="lg:hidden p-2 text-warm-700"
+            className="lg:hidden p-2 text-warm-700 hover:text-green-600 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -59,31 +76,34 @@ export default function Navbar() {
         </div>
       </div>
 
-      {isOpen && (
-        <div className="lg:hidden bg-white border-t border-warm-100">
-          <div className="px-6 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block text-warm-700 hover:text-green-600 py-2.5 text-sm"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="pt-3">
-              <Link
-                href="/contact"
-                className="btn-primary block text-center text-sm"
-                onClick={() => setIsOpen(false)}
-              >
-                Book Now
-              </Link>
-            </div>
+      {/* Mobile menu */}
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-white/95 backdrop-blur-xl border-t border-warm-100 px-6 py-4 space-y-1">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block text-warm-700 hover:text-green-600 py-2.5 text-sm transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="pt-3">
+            <Link
+              href="/contact"
+              className="btn-primary block text-center text-sm"
+              onClick={() => setIsOpen(false)}
+            >
+              Book Now
+            </Link>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
