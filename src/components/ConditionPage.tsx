@@ -54,8 +54,6 @@ export default function ConditionPage({
           <div className="relative bg-white rounded-3xl shadow-card border border-warm-100/60 overflow-hidden">
             <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-amber-400 via-amber-500 to-green-500 rounded-l-3xl" />
             <div className="px-8 py-10 md:px-14 md:py-14 lg:px-20 lg:py-16">
-              <AnimateOnScroll>
-              </AnimateOnScroll>
               <div className="space-y-6 text-warm-600 leading-relaxed text-base md:text-lg max-w-3xl">
                 {agitation.map((p, i) => {
                   // First paragraph = story, last = punchline, middle = pullquote
