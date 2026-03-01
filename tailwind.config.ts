@@ -66,7 +66,7 @@ const config: Config = {
         "glass": "0 8px 32px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.2)",
       },
       backgroundImage: {
-        "gradient-hero": "linear-gradient(135deg, #1A2420 0%, #1e2e28 30%, #243830 60%, #2d4938 100%)",
+        "gradient-hero": "linear-gradient(135deg, #1A2420 0%, #1A2420 100%)",
         "gradient-hero-light": "linear-gradient(180deg, #f4f9f2 0%, #FDFBF7 100%)",
         "gradient-green-warm": "linear-gradient(135deg, #f4f9f2 0%, #FDFBF7 50%, #fef8f0 100%)",
         "gradient-section": "linear-gradient(180deg, #FDFBF7 0%, #f4f9f2 100%)",

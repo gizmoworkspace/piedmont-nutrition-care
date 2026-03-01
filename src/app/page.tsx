@@ -46,15 +46,15 @@ export default function Home() {
         <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] bg-amber-500/8 rounded-full blur-[100px]" />
 
         {/* Right side: generated food scene, strong gradient blend to left */}
-        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[65%] overflow-hidden">
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-full overflow-hidden">
           <img
             src="/hero-generated.png"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-right"
+            className="absolute top-0 right-0 bottom-0 w-[65%] h-full object-cover object-right"
           />
-          {/* Strong left gradient — 100% solid at 50% (middle of screen), fades to right */}
+          {/* Left gradient: solid #1A2420 through 50% of screen, then fade */}
           <div className="absolute inset-0" style={{
-            background: "linear-gradient(to right, #1A2420 0%, #1A2420 50%, rgba(26,36,32,0.85) 65%, rgba(26,36,32,0.5) 78%, rgba(26,36,32,0.2) 88%, transparent 100%)"
+            background: "linear-gradient(to right, #1A2420 0%, #1A2420 52%, rgba(26,36,32,0.9) 60%, rgba(26,36,32,0.6) 72%, rgba(26,36,32,0.25) 84%, transparent 95%)"
           }} />
           {/* Top/bottom edge fade */}
           <div className="absolute inset-0" style={{
