@@ -1,5 +1,4 @@
 import Link from "next/link";
-import TestimonialCard from "./TestimonialCard";
 import AnimateOnScroll from "./AnimateOnScroll";
 import { ArrowLeftIcon } from "./Icons";
 
@@ -115,19 +114,6 @@ export default function ConditionPage({
               </AnimateOnScroll>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIAL */}
-      <section className="py-10 md:py-14 px-6 md:px-8 bg-cream">
-        <div className="container-wide max-w-3xl mx-auto text-center">
-          <AnimateOnScroll>
-            <TestimonialCard
-              quote={testimonial.quote}
-              author={testimonial.author}
-              context={testimonial.context}
-            />
-          </AnimateOnScroll>
         </div>
       </section>
 
