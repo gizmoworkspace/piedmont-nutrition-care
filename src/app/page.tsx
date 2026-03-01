@@ -48,19 +48,18 @@ export default function Home() {
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
 
-        {/* Right-side food image — blended into background */}
-        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-1/2 overflow-hidden">
+        {/* Right-side food image — dark photo, blended into background */}
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1200&h=900&fit=crop"
+            src="/hero-food.jpg"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
             style={{
-              opacity: 0.55,
-              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.7) 50%, black 80%)",
-              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.7) 50%, black 80%)",
+              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.8) 60%, black 90%)",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.8) 60%, black 90%)",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/40 to-green-950/20" />
+          <div className="absolute inset-0 bg-green-950/40" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
