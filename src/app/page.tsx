@@ -4,31 +4,25 @@ import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Accordion from "@/components/Accordion";
-import { StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
-
 export default function Home() {
   const steps = [
     {
       step: "01",
-      Icon: StethoscopeIcon,
       title: "Gut & Metabolic Foundation Assessment",
       body: "A 60-minute, one-on-one session where Jeanne reviews your full health history, symptoms, medications, and lab work. The appointment your doctor never had time for.",
     },
     {
       step: "02",
-      Icon: BeakerIcon,
       title: "Clinical Lab Analysis",
       body: "In-depth review of your blood panels, A1C, cholesterol markers, and digestive function to identify the specific biological mechanisms driving your symptoms.",
     },
     {
       step: "03",
-      Icon: LeafIcon,
       title: "Personalized Food Chemistry Protocol",
       body: "A nutrition plan built from your unique biochemistry — not a generic handout. Better versions of the foods you already love, including Southern staples.",
     },
     {
       step: "04",
-      Icon: ChartUpIcon,
       title: "Continued Clinical Monitoring",
       body: "Ongoing tracking of your lab markers with protocol adjustments as your body responds. A clinical partner carrying the cognitive load with you.",
     },
@@ -61,7 +55,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 w-full py-8 sm:py-0">
           <div className="max-w-2xl lg:max-w-3xl">
-            <h1 className="font-heading text-[1.6rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] xl:text-[3.5rem] text-white leading-[1.15] mb-4 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
+            <h1 className="font-heading text-[1.6rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] xl:text-[3.5rem] text-white leading-[1.3] sm:leading-[1.25] md:leading-[1.2] mb-4 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
               Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
               <span className="text-green-300">They&apos;re gut health failures.</span>
             </h1>
@@ -135,12 +129,44 @@ export default function Home() {
               </AnimateOnScroll>
             </div>
 
-            {/* Pull quote — typographic anchor */}
-            <div className="lg:col-span-2 lg:sticky lg:top-32">
+            {/* Visual — organic illustration evoking healing/nature */}
+            <div className="lg:col-span-2 lg:sticky lg:top-32 hidden lg:block">
               <AnimateOnScroll animation="fade-up">
-                <p className="font-heading text-2xl sm:text-3xl md:text-4xl text-green-700 italic leading-[1.2] tracking-tight">
-                  Your metabolism isn&apos;t broken. It&apos;s been getting the wrong instructions.
-                </p>
+                <div className="relative aspect-square max-w-[360px] mx-auto">
+                  {/* Organic rings representing the gut/body system */}
+                  <svg viewBox="0 0 400 400" fill="none" className="w-full h-full" aria-hidden="true">
+                    {/* Outer ring — the body */}
+                    <circle cx="200" cy="200" r="180" stroke="#c4baa9" strokeWidth="1" opacity="0.3" />
+                    <circle cx="200" cy="200" r="150" stroke="#c4baa9" strokeWidth="0.5" opacity="0.2" />
+                    {/* Middle rings — the gut system */}
+                    <circle cx="200" cy="200" r="110" stroke="#6AA84F" strokeWidth="1.5" opacity="0.25" />
+                    <circle cx="200" cy="200" r="80" stroke="#6AA84F" strokeWidth="1" opacity="0.35" />
+                    {/* Core — the root cause */}
+                    <circle cx="200" cy="200" r="45" fill="#6AA84F" opacity="0.08" />
+                    <circle cx="200" cy="200" r="45" stroke="#6AA84F" strokeWidth="1.5" opacity="0.4" />
+                    {/* Organic leaf shapes radiating outward */}
+                    <path d="M200 155 Q215 130 200 100 Q185 130 200 155Z" fill="#6AA84F" opacity="0.12" />
+                    <path d="M245 200 Q270 185 300 200 Q270 215 245 200Z" fill="#6AA84F" opacity="0.12" />
+                    <path d="M200 245 Q215 270 200 300 Q185 270 200 245Z" fill="#6AA84F" opacity="0.12" />
+                    <path d="M155 200 Q130 185 100 200 Q130 215 155 200Z" fill="#6AA84F" opacity="0.12" />
+                    {/* Small dots — nutrients/molecules */}
+                    <circle cx="200" cy="200" r="4" fill="#6AA84F" opacity="0.5" />
+                    <circle cx="230" cy="170" r="2.5" fill="#E69138" opacity="0.4" />
+                    <circle cx="170" cy="230" r="2.5" fill="#E69138" opacity="0.4" />
+                    <circle cx="240" cy="230" r="2" fill="#6AA84F" opacity="0.3" />
+                    <circle cx="160" cy="170" r="2" fill="#6AA84F" opacity="0.3" />
+                    <circle cx="200" cy="130" r="2" fill="#E69138" opacity="0.3" />
+                    <circle cx="200" cy="270" r="2" fill="#E69138" opacity="0.3" />
+                    <circle cx="270" cy="200" r="2" fill="#6AA84F" opacity="0.25" />
+                    <circle cx="130" cy="200" r="2" fill="#6AA84F" opacity="0.25" />
+                  </svg>
+                  {/* Text overlay inside the illustration */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="font-heading text-lg text-warm-400 italic text-center leading-snug max-w-[180px]">
+                      It starts<br />in the gut.
+                    </p>
+                  </div>
+                </div>
               </AnimateOnScroll>
             </div>
           </div>
@@ -149,26 +175,21 @@ export default function Home() {
 
       {/* ===== 04. HOW IT WORKS ===== */}
       {/* Warming back up — confidence builds */}
-      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-gradient-to-b from-warm-50 to-green-50/30">
+      <section className="py-16 sm:py-20 md:py-28 lg:py-32 bg-gradient-to-b from-warm-50 to-green-50/30">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">How It Works</p>
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-4 text-center tracking-tight leading-[1.1]">
               Four steps from confused to confident
             </h2>
-            <p className="text-warm-500 text-center mb-12 md:mb-16 text-sm sm:text-base md:text-lg max-w-xl mx-auto">A clinical process, not a cookie-cutter program.</p>
+            <p className="text-warm-500 text-center mb-10 md:mb-14 text-sm sm:text-base md:text-lg max-w-xl mx-auto">A clinical process, not a cookie-cutter program.</p>
           </AnimateOnScroll>
 
           <div className="grid sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8">
             {steps.map((item) => (
               <AnimateOnScroll key={item.step} className="h-full">
-                <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col group">
-                  <div className="flex items-start gap-4 mb-4">
-                    <span className="text-warm-200 font-heading font-bold text-xl leading-none mt-0.5">{item.step}</span>
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
-                      <item.Icon className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
-                    </div>
-                  </div>
+                <div className="bg-white rounded-2xl p-6 sm:p-7 md:p-8 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col">
+                  <span className="font-heading text-3xl sm:text-4xl font-bold text-green-500/20 leading-none mb-3">{item.step}</span>
                   <h3 className="font-heading text-base sm:text-lg md:text-xl text-warm-900 mb-2">{item.title}</h3>
                   <p className="text-warm-600 leading-relaxed text-sm md:text-base flex-grow">{item.body}</p>
                 </div>
