@@ -182,7 +182,7 @@ export default function Services() {
               "Coordination with your primary care physician when clinically appropriate",
             ].map((item, i) => (
               <AnimateOnScroll key={i}>
-                <div className="flex items-start gap-3 bg-green-50 rounded-2xl p-5 border border-green-100/50 hover:shadow-card transition-all duration-300">
+                <div className="flex items-start gap-3 bg-green-50 rounded-2xl p-5 border border-green-100/50 hover:shadow-card transition-all duration-300 h-full">
                   <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                   <p className="text-warm-700 text-sm">{item}</p>
                 </div>
