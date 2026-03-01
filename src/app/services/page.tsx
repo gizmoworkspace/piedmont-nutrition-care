@@ -54,10 +54,12 @@ export default function Services() {
           </AnimateOnScroll>
           <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
             <AnimateOnScroll delay={100}><p>
-              Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.
+              <span className="hidden md:inline">Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.</span>
+              <span className="md:hidden">Calorie apps, elimination diets, and GLP-1 medications all share the same flaw: they manage symptoms without rebuilding the metabolic foundation that produces lasting results.</span>
             </p></AnimateOnScroll>
             <AnimateOnScroll delay={200}><p>
-              These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction. Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.
+              <span className="hidden md:inline">These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction. Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.</span>
+              <span className="md:hidden">Your gut microbiome controls blood sugar, hunger hormones, and inflammation. When that ecosystem is damaged, no amount of willpower or restriction can produce sustainable results.</span>
             </p></AnimateOnScroll>
             <AnimateOnScroll delay={300}><p className="font-semibold text-green-700 text-xl">That&apos;s not your failure. That&apos;s biology.</p></AnimateOnScroll>
           </div>
@@ -65,7 +67,7 @@ export default function Services() {
       </section>
 
       {/* CROSSHEAD */}
-      <section className="relative py-10 md:py-14 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="relative py-10 md:py-14 px-6 md:px-8 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll animation="scale-up">
@@ -84,7 +86,8 @@ export default function Services() {
               What Medical Nutrition Therapy Actually Is
             </h2>
             <p className="text-lg text-warm-600 leading-relaxed">
-              Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes.
+              <span className="hidden md:inline">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes.</span>
+              <span className="md:hidden">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment using your lab data and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans.</span>
             </p>
           </AnimateOnScroll>
         </div>
@@ -107,6 +110,7 @@ export default function Services() {
                 label: "Hear You",
                 title: "Comprehensive Health Assessment",
                 body: "Your first 60-minute session is designed to do what no 10-minute appointment ever could. Jeanne reviews your full health history, current medications, family medical context, lifestyle demands, food preferences, and the things you've already tried — so that you have a clinician who sees the whole picture, not a fragment of it. You'll also discuss your goals: what does \"better\" actually look like for your life?",
+                bodyShort: "60 minutes with Jeanne reviewing your full health history, medications, lifestyle, and food preferences. The appointment your doctor never had time for.",
               },
               {
                 step: "2",
@@ -114,6 +118,7 @@ export default function Services() {
                 label: "Gather Specifics",
                 title: "Lab Analysis & Root-Cause Identification",
                 body: "Jeanne analyzes your blood panels, A1C, cholesterol markers (LDL, HDL, triglycerides), inflammatory indicators, and digestive function — not at a glance, but in depth. She identifies the specific biological mechanisms driving your symptoms: gut dysbiosis (imbalanced gut bacteria), leptin resistance, insulin sensitivity issues, micronutrient deficiencies, or hormonal disruption — so that you finally understand the WHY behind what your body has been doing.",
+                bodyShort: "In-depth analysis of your blood panels, A1C, cholesterol, and digestive function. Identifies the specific biological mechanisms driving your symptoms.",
               },
               {
                 step: "3",
@@ -121,6 +126,7 @@ export default function Services() {
                 label: "Learn Better Foods",
                 title: "Food Chemistry Education",
                 body: "This isn't a lecture about calories. Jeanne teaches you how different foods interact with your specific biology at the molecular level: why certain carbohydrates spike your blood sugar while others stabilize it, how specific fiber types feed beneficial gut bacteria, which protein sources support your metabolic goals — so that you make food choices from understanding, not from a rules list you'll eventually abandon.",
+                bodyShort: "Learn how foods interact with your specific biology — why certain carbs spike your blood sugar while others stabilize it, and which foods feed beneficial gut bacteria.",
               },
               {
                 step: "4",
@@ -128,23 +134,27 @@ export default function Services() {
                 label: "Your Food Rx",
                 title: "Personalized Nutrition Protocol",
                 body: "You receive a clinical nutrition plan built from your unique data. It centers on better versions of the foods you already enjoy — not elimination, not deprivation. Your family can eat the same foundational meals with minor adjustments. The plan evolves with you through ongoing sessions as your lab markers improve and your goals shift — so that you have a living, adaptable strategy instead of a static document that stops working in three weeks.",
+                bodyShort: "A nutrition plan built from your data — better versions of foods you love, not elimination. Your family eats the same meals. The plan evolves as your markers improve.",
               },
             ].map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50">
-                  <div className="flex items-start gap-5">
+                <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-10 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50">
+                  <div className="flex items-start gap-4 md:gap-5">
                     <div className="flex-shrink-0 flex flex-col items-center gap-2">
                       <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center">
                         <item.Icon className="w-5 h-5 text-green-600" />
                       </div>
-                      <span className="w-12 h-12 rounded-2xl bg-gradient-btn text-white font-heading text-lg font-bold flex items-center justify-center shadow-glow-green">
+                      <span className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-gradient-btn text-white font-heading text-base md:text-lg font-bold flex items-center justify-center shadow-glow-green">
                         {item.step}
                       </span>
                     </div>
                     <div>
                       <p className="text-green-600 font-medium text-sm uppercase tracking-wide mb-1">{item.label}</p>
-                      <h3 className="font-heading text-xl md:text-2xl text-warm-900 mb-3">{item.title}</h3>
-                      <p className="text-warm-600 leading-relaxed">{item.body}</p>
+                      <h3 className="font-heading text-lg md:text-xl lg:text-2xl text-warm-900 mb-3">{item.title}</h3>
+                      <p className="text-warm-600 leading-relaxed text-sm md:text-base">
+                        <span className="hidden md:inline">{item.body}</span>
+                        <span className="md:hidden">{item.bodyShort}</span>
+                      </p>
                     </div>
                   </div>
                 </div>
