@@ -102,37 +102,73 @@ export default function Home() {
 
       {/* AGITATION */}
       <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
-        <div className="container-narrow">
+        <div className="container-wide">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 tracking-tight">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-14 tracking-tight text-center max-w-3xl mx-auto">
               You&apos;ve been doing everything right. So why does your body keep working against you?
             </h2>
           </AnimateOnScroll>
-          <div className="space-y-8 text-warm-600 leading-relaxed text-lg max-w-2xl">
+
+          {/* Top row: two cards */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
             <AnimateOnScroll delay={100}>
-              <p className="border-l-2 border-green-300/40 pl-6">
-                Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
-              </p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 shadow-card h-full">
+                <div className="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center mb-4">
+                  <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                  </svg>
+                </div>
+                <h3 className="font-heading text-lg text-warm-900 mb-3">The symptoms you can&apos;t explain</h3>
+                <p className="text-warm-600 leading-relaxed">
+                  Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
+                </p>
+              </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
-              <p className="pl-6">
-                You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
-              </p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 shadow-card h-full">
+                <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center mb-4">
+                  <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                  </svg>
+                </div>
+                <h3 className="font-heading text-lg text-warm-900 mb-3">The things you&apos;ve already tried</h3>
+                <p className="text-warm-600 leading-relaxed">
+                  You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
+                </p>
+              </div>
             </AnimateOnScroll>
-            <AnimateOnScroll delay={300}>
-              <p className="border-l-2 border-amber-300/40 pl-6">
+          </div>
+
+          {/* Center callout card */}
+          <AnimateOnScroll delay={300}>
+            <div className="bg-warm-100/60 rounded-2xl p-6 md:p-8 border border-warm-200/40 mb-6 max-w-2xl mx-auto text-center">
+              <p className="text-warm-500 leading-relaxed italic text-lg">
                 And every doctor you&apos;ve seen has said the same thing: eat less, move more. In a 10-minute appointment that felt more like a lecture than a conversation.
               </p>
-            </AnimateOnScroll>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Bottom row: the answer */}
+          <div className="grid md:grid-cols-2 gap-6">
             <AnimateOnScroll delay={400}>
-              <p className="pl-6 font-medium text-warm-700">
-                None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
-              </p>
+              <div className="bg-green-50/50 rounded-2xl p-6 md:p-8 border border-green-200/30 h-full flex items-center">
+                <p className="text-warm-800 leading-relaxed font-medium text-lg">
+                  None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
+                </p>
+              </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={500}>
-              <p className="pl-6">
-                It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
-              </p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 border border-green-200/30 shadow-card h-full">
+                <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center mb-4">
+                  <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                  </svg>
+                </div>
+                <h3 className="font-heading text-lg text-warm-900 mb-3">The real problem</h3>
+                <p className="text-warm-600 leading-relaxed">
+                  It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
+                </p>
+              </div>
             </AnimateOnScroll>
           </div>
         </div>
