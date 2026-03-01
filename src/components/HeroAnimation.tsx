@@ -27,7 +27,7 @@ export default function HeroAnimation() {
     resize();
     window.addEventListener("resize", resize);
 
-    // Simple leaf icon (small, subtle)
+    // Leaf
     const drawLeaf = (x: number, y: number, size: number, angle: number, alpha: number) => {
       ctx.save();
       ctx.globalAlpha = alpha;
@@ -39,6 +39,78 @@ export default function HeroAnimation() {
       ctx.bezierCurveTo(-size * 0.5, size * 0.3, -size * 0.6, -size * 0.4, 0, -size);
       ctx.fillStyle = "#48bb78";
       ctx.fill();
+      // Vein
+      ctx.beginPath();
+      ctx.moveTo(0, -size * 0.7);
+      ctx.lineTo(0, size * 0.6);
+      ctx.strokeStyle = "rgba(255,255,255,0.15)";
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+      ctx.restore();
+    };
+
+    // Small tomato
+    const drawTomato = (x: number, y: number, size: number, alpha: number) => {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.beginPath();
+      ctx.arc(x, y, size, 0, Math.PI * 2);
+      const g = ctx.createRadialGradient(x - size * 0.3, y - size * 0.3, size * 0.1, x, y, size);
+      g.addColorStop(0, "#ff6b6b");
+      g.addColorStop(1, "#c53030");
+      ctx.fillStyle = g;
+      ctx.fill();
+      // Stem
+      ctx.beginPath();
+      ctx.moveTo(x - 3, y - size * 0.9);
+      ctx.lineTo(x, y - size * 1.15);
+      ctx.lineTo(x + 3, y - size * 0.9);
+      ctx.fillStyle = "#38a169";
+      ctx.fill();
+      ctx.restore();
+    };
+
+    // Small avocado half
+    const drawAvocado = (x: number, y: number, size: number, angle: number, alpha: number) => {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.translate(x, y);
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.ellipse(0, 0, size * 0.5, size * 0.7, 0, 0, Math.PI * 2);
+      ctx.fillStyle = "#2d6a30";
+      ctx.fill();
+      ctx.beginPath();
+      ctx.ellipse(0, 0, size * 0.38, size * 0.55, 0, 0, Math.PI * 2);
+      ctx.fillStyle = "#c5d97a";
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(0, size * 0.05, size * 0.17, 0, Math.PI * 2);
+      ctx.fillStyle = "#7a5530";
+      ctx.fill();
+      ctx.restore();
+    };
+
+    // Small broccoli
+    const drawBroccoli = (x: number, y: number, size: number, alpha: number) => {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.translate(x, y);
+      // Stem
+      ctx.beginPath();
+      ctx.roundRect(-size * 0.08, size * 0.1, size * 0.16, size * 0.3, 3);
+      ctx.fillStyle = "#5a8a4a";
+      ctx.fill();
+      // Florets
+      [[0, -size * 0.1, size * 0.22], [-size * 0.16, 0.02, size * 0.16], [size * 0.16, 0.02, size * 0.16], [0, -size * 0.25, size * 0.14]].forEach(([fx, fy, fr]) => {
+        ctx.beginPath();
+        ctx.arc(fx, fy, fr, 0, Math.PI * 2);
+        const g = ctx.createRadialGradient(fx - fr * 0.2, fy - fr * 0.2, fr * 0.1, fx, fy, fr);
+        g.addColorStop(0, "#68d391");
+        g.addColorStop(1, "#2f855a");
+        ctx.fillStyle = g;
+        ctx.fill();
+      });
       ctx.restore();
     };
 
@@ -101,12 +173,20 @@ export default function HeroAnimation() {
         ctx.fill();
       });
 
-      // Subtle leaf icons
+      // Leaf icons
       leaves.forEach((l) => {
         const bob = Math.sin(t * 0.8 + l.x * 5) * 3;
         const rot = l.angle + Math.sin(t * 0.5 + l.y * 4) * 0.1;
         drawLeaf(l.x * cw, l.y * ch + bob, l.size, rot, l.baseAlpha);
       });
+
+      // A few veggies - bottom-right, matching the texture style
+      const bob = (seed: number) => Math.sin(t * 0.6 + seed) * 4;
+      drawTomato(cw * 0.88, ch * 0.82 + bob(1), 14, 0.28);
+      drawTomato(cw * 0.72, ch * 0.9 + bob(3), 10, 0.22);
+      drawAvocado(cw * 0.8, ch * 0.6 + bob(2), 22, Math.sin(t * 0.4) * 0.1, 0.22);
+      drawBroccoli(cw * 0.92, ch * 0.45 + bob(4), 26, 0.18);
+      drawBroccoli(cw * 0.65, ch * 0.75 + bob(5), 18, 0.15);
 
       animId = requestAnimationFrame(draw);
     };
