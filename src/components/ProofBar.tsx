@@ -52,7 +52,7 @@ export default function ProofBar({ items, floating = false }: ProofBarProps) {
                         </>
                       ) : isYears ? (
                         <>
-                          <StatCounter end={20} suffix="+" className="font-bold" /> Years Clinical Experience
+                          <StatCounter end={20} suffix="+" className="font-bold" /> Years Health Industry Experience
                         </>
                       ) : (
                         item.text

@@ -116,7 +116,7 @@ export default function Home() {
         items={[
           { icon: "star", text: "5.0 Google Rating" },
           { icon: "academic", text: "MS, RD, LDN Credentials" },
-          { icon: "clipboard", text: "20+ Years Clinical Experience" },
+          { icon: "clipboard", text: "20+ Years Health Industry Experience" },
           { icon: "building", text: "Accepted by Major NC Insurers" },
         ]}
       />
