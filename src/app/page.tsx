@@ -49,9 +49,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
-          <div className="flex flex-col md:flex-row md:items-center md:gap-12">
-            {/* Left column: text (~55%) */}
-            <div className="md:w-[55%]">
+          <div className="relative">
+            {/* Left column: text */}
+            <div className="max-w-3xl">
               <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.2] md:leading-[1.15] mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
                 Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
                 <span className="text-green-300">They&apos;re gut health failures.</span>
@@ -72,19 +72,17 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right column: hero image (desktop only) — blends into background */}
-            <div className="hidden md:block md:w-[45%] relative">
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=900&h=700&fit=crop"
-                  alt="Fresh healthy food"
-                  className="w-full h-[550px] object-cover opacity-60"
-                />
-                {/* Heavy gradient overlays to blend into dark green hero background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/70 to-green-950/10" />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-950 via-transparent to-green-950/60" />
-                <div className="absolute inset-0 bg-gradient-to-b from-green-950/50 via-transparent to-green-950" />
-              </div>
+            {/* Right column: hero image (desktop only) — seamlessly blended */}
+            <div className="hidden md:block md:w-[45%] absolute right-0 top-0 bottom-0 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1000&h=800&fit=crop"
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover opacity-40"
+                style={{
+                  maskImage: "radial-gradient(ellipse 70% 60% at 75% 50%, black 20%, transparent 70%)",
+                  WebkitMaskImage: "radial-gradient(ellipse 70% 60% at 75% 50%, black 20%, transparent 70%)",
+                }}
+              />
             </div>
           </div>
         </div>
