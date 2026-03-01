@@ -56,10 +56,10 @@ export default function Home() {
   return (
     <>
       {/* ===== 01. HERO ===== */}
-      <section className="relative h-[100svh] min-h-[540px] max-h-[900px] flex items-end sm:items-center bg-gradient-hero overflow-hidden">
+      <section className="relative min-h-[85svh] sm:min-h-[90svh] max-h-[860px] flex items-center bg-gradient-hero overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 w-full pb-12 sm:pb-0">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 w-full py-8 sm:py-0">
           <div className="max-w-2xl lg:max-w-3xl">
             <h1 className="font-heading text-[1.6rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] xl:text-[3.5rem] text-white leading-[1.15] mb-4 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
               Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
