@@ -45,7 +45,7 @@ export default function Insurance() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h3 className="font-heading text-xl text-warm-900 mb-4">Accepted Insurance</h3>
+            <h3 className="font-heading text-xl text-warm-900 mb-4 text-center">Accepted Insurance</h3>
           </AnimateOnScroll>
           <div className="grid sm:grid-cols-3 gap-4 mb-12 stagger-children">
             {["Blue Cross Blue Shield", "Aetna", "Medicare"].map((carrier) => (
@@ -59,7 +59,7 @@ export default function Insurance() {
           </div>
 
           <AnimateOnScroll>
-            <h3 className="font-heading text-xl text-warm-900 mb-4">How to Verify Your Coverage</h3>
+            <h3 className="font-heading text-xl text-warm-900 mb-4 text-center">How to Verify Your Coverage</h3>
           </AnimateOnScroll>
           <div className="space-y-4 stagger-children">
             {[
@@ -84,7 +84,7 @@ export default function Insurance() {
       <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">Self-Pay Options</h2>
+            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6 text-center">Self-Pay Options</h2>
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
               {[
                 { service: "Initial Assessment", duration: "60 minutes" },
