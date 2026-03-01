@@ -34,12 +34,12 @@ export default function Insurance() {
 
       {/* INSURANCE COVERAGE */}
       <section className="section-padding bg-cream">
-        <div className="container-narrow">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
               Your insurance likely covers Medical Nutrition Therapy
             </h2>
-            <p className="text-lg text-warm-600 leading-relaxed mb-10">
+            <p className="text-lg text-warm-600 leading-relaxed mb-10 max-w-3xl">
               Medical Nutrition Therapy (MNT) is a recognized clinical treatment, not a wellness luxury. Most major insurance plans cover MNT for qualifying conditions including diabetes, high cholesterol, cardiovascular disease, IBS, and obesity-related diagnoses.
             </p>
           </AnimateOnScroll>
@@ -47,7 +47,7 @@ export default function Insurance() {
           <AnimateOnScroll>
             <h3 className="font-heading text-xl text-warm-900 mb-4">Accepted Insurance</h3>
           </AnimateOnScroll>
-          <div className="grid sm:grid-cols-3 gap-4 mb-12 stagger-children">
+          <div className="grid sm:grid-cols-3 gap-4 mb-12 max-w-3xl stagger-children">
             {["Blue Cross Blue Shield", "Aetna", "Medicare"].map((carrier) => (
               <AnimateOnScroll key={carrier}>
                 <div className="bg-gradient-to-br from-green-50 to-green-100/50 rounded-2xl p-6 text-center border border-green-200/50 hover:shadow-card transition-all duration-300 hover:-translate-y-0.5">
@@ -61,7 +61,7 @@ export default function Insurance() {
           <AnimateOnScroll>
             <h3 className="font-heading text-xl text-warm-900 mb-4">How to Verify Your Coverage</h3>
           </AnimateOnScroll>
-          <div className="space-y-4 stagger-children">
+          <div className="space-y-4 max-w-3xl stagger-children">
             {[
               { step: "1", text: "Call the number on the back of your insurance card or contact our office directly." },
               { step: "2", text: "Piedmont Nutrition Care will confirm your specific benefit level before your first appointment." },
@@ -82,10 +82,10 @@ export default function Insurance() {
 
       {/* SELF-PAY */}
       <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
-        <div className="container-narrow relative z-10">
+        <div className="container-wide relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">Self-Pay Options</h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-6">
+            <div className="grid sm:grid-cols-2 gap-4 mb-6 max-w-2xl">
               {[
                 { service: "Initial Assessment", duration: "60 minutes" },
                 { service: "Follow-Up Session", duration: "60 minutes" },
@@ -108,7 +108,7 @@ export default function Insurance() {
 
       {/* ROI FRAMING */}
       <section className="section-padding bg-white">
-        <div className="container-narrow">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
               Compare the real cost
@@ -127,7 +127,7 @@ export default function Insurance() {
 
       {/* OBJECTIONS */}
       <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
-        <div className="container-narrow relative z-10">
+        <div className="container-wide relative z-10">
           <div className="space-y-6 stagger-children">
             <AnimateOnScroll>
               <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50 hover:shadow-deep transition-all duration-300">
