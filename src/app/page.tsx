@@ -37,36 +37,54 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-overlay">
+        {/* Mobile: full background image */}
         <div
-          className="absolute inset-0 opacity-10 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 opacity-10 bg-cover bg-center bg-fixed md:hidden"
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1600&h=900&fit=crop')" }}
         />
         {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/20 md:hidden" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 md:py-32 lg:py-40 w-full">
-          <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.2] md:leading-[1.15] mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
-              Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
-              <span className="text-green-300">They&apos;re gut health failures.</span>
-            </h1>
-            <p className="text-lg md:text-xl text-green-100/90 leading-relaxed mb-10 max-w-2xl animate-fade-in-up-delay-1">
-              You&apos;ve done everything &ldquo;right&rdquo; — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with &ldquo;eat less, move more.&rdquo; Your body kept fighting back. Because no one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up-delay-2">
-              <Link href="/contact" className="btn-primary text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
-                Book Your Assessment
-              </Link>
-              <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5">
-                Check If Your Insurance Covers It
-              </Link>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-12">
+            {/* Left column: text (~55%) */}
+            <div className="md:w-[55%]">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.2] md:leading-[1.15] mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
+                Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
+                <span className="text-green-300">They&apos;re gut health failures.</span>
+              </h1>
+              <p className="text-lg md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
+                You&apos;ve done everything &ldquo;right&rdquo; — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with &ldquo;eat less, move more.&rdquo; Your body kept fighting back. Because no one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-in-up-delay-2">
+                <Link href="/contact" className="btn-primary text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
+                  Book Your Assessment
+                </Link>
+                <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5">
+                  Check If Your Insurance Covers It
+                </Link>
+              </div>
+              <p className="text-green-200/60 text-sm animate-fade-in-up-delay-3">
+                60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
+              </p>
             </div>
-            <p className="text-green-200/60 text-sm animate-fade-in-up-delay-3">
-              60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
-            </p>
+
+            {/* Right column: hero image (desktop only) */}
+            <div className="hidden md:block md:w-[45%] relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=800&h=600&fit=crop"
+                  alt="Fresh healthy food"
+                  className="w-full h-[500px] object-cover"
+                />
+                {/* Gradient overlay fading into the dark green background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-green-950/80 via-green-950/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-950/40 to-transparent" />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -89,7 +107,7 @@ export default function Home() {
       />
 
       {/* AGITATION */}
-      <section className="py-24 md:py-32 px-6 md:px-8 bg-cream">
+      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 tracking-tight">
@@ -103,7 +121,7 @@ export default function Home() {
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
-              <p>
+              <p className="pl-6">
                 You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
               </p>
             </AnimateOnScroll>
@@ -113,12 +131,12 @@ export default function Home() {
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={400}>
-              <p className="font-medium text-warm-700">
+              <p className="pl-6 font-medium text-warm-700">
                 None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={500}>
-              <p>
+              <p className="pl-6">
                 It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
               </p>
             </AnimateOnScroll>
@@ -127,10 +145,10 @@ export default function Home() {
       </section>
 
       {/* CROSSHEAD */}
-      <section className="relative py-24 md:py-28 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="relative py-16 md:py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.04]" />
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-r-full" />
-        <div className="container-narrow text-center relative z-10">
+        <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
+        <div className="container-narrow text-center relative z-10 flex items-center justify-center min-h-[120px]">
           <AnimateOnScroll animation="scale-up">
             <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug max-w-2xl mx-auto">
               Your metabolism isn&apos;t broken. It&apos;s been getting the wrong instructions.
@@ -140,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-24 md:py-32 px-6 md:px-8 bg-cream">
+      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-4 text-center tracking-tight">
@@ -207,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="relative py-24 md:py-32 px-6 md:px-8 bg-warm-50 overflow-hidden">
+      <section className="relative py-20 md:py-28 px-6 md:px-8 bg-warm-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
@@ -215,7 +233,7 @@ export default function Home() {
               What our patients say
             </h2>
           </AnimateOnScroll>
-          <div className="grid md:grid-cols-3 gap-8 stagger-children">
+          <div className="grid md:grid-cols-3 gap-8 stagger-children items-stretch">
             <AnimateOnScroll className="h-full">
               <TestimonialCard
                 quote="Jeanne is extremely knowledgeable about food, food chemistry, and the latest research findings on nutrition. She can suggest dietary changes to prevent cancer, boost a sluggish metabolism, improve blood sugar, or lower LDL. Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun."
@@ -240,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* COMPARISON */}
-      <section className="py-24 md:py-32 px-6 md:px-8 bg-cream">
+      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center tracking-tight">
@@ -249,16 +267,16 @@ export default function Home() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
               {/* Old Way Card */}
-              <div className="bg-warm-100/60 rounded-2xl p-8 md:p-10 border border-warm-200/40 opacity-80 h-full flex flex-col">
+              <div className="bg-warm-100/60 rounded-2xl p-6 md:p-8 border border-warm-200/40 opacity-80 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="w-10 h-10 rounded-full bg-warm-300/40 flex items-center justify-center">
                     <XMarkIcon className="w-5 h-5 text-warm-400" />
                   </div>
                   <h3 className="font-heading text-lg text-warm-400 uppercase tracking-widest">What You&apos;ve Tried</h3>
                 </div>
-                <div className="space-y-5 flex-grow">
+                <div className="space-y-4 flex-grow">
                   {[
                     "Starving yourself on restrictive diets, losing 20 lbs, gaining 30 back",
                     "10-minute doctor visits ending with \"eat less, move more\"",
@@ -277,7 +295,7 @@ export default function Home() {
               </div>
 
               {/* New Way Card */}
-              <div className="bg-white rounded-2xl p-8 md:p-10 border border-green-200/50 shadow-lifted relative overflow-hidden h-full flex flex-col">
+              <div className="bg-white rounded-2xl p-6 md:p-8 border border-green-200/50 shadow-lifted relative overflow-hidden h-full flex flex-col">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-green-200/20 rounded-full blur-2xl" />
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-8">
@@ -286,7 +304,7 @@ export default function Home() {
                     </div>
                     <h3 className="font-heading text-lg text-green-700 uppercase tracking-widest">Piedmont Nutrition Care</h3>
                   </div>
-                  <div className="space-y-5 flex-grow">
+                  <div className="space-y-4 flex-grow">
                     {[
                       "Understanding your gut chemistry and building a sustainable metabolic foundation",
                       "60-minute consultations where your symptoms are validated and your labs are analyzed",
@@ -310,7 +328,7 @@ export default function Home() {
       </section>
 
       {/* OBJECTION HANDLING */}
-      <section className="relative py-24 md:py-32 px-6 md:px-8 bg-warm-50 overflow-hidden">
+      <section className="relative py-20 md:py-28 px-6 md:px-8 bg-warm-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
@@ -14,17 +15,35 @@ export default function About() {
   return (
     <>
       {/* HERO */}
-      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+      <section className="relative py-16 md:py-24 lg:py-28 bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="container-wide relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
-              You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
-            </h1>
-            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
-              Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.
-            </p>
+          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-12">
+            {/* Left: text */}
+            <div className="md:w-[58%]">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
+                You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
+              </h1>
+              <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+                Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.
+              </p>
+            </div>
+            {/* Right: photo */}
+            <div className="md:w-[42%] flex justify-center mb-8 md:mb-0">
+              <div className="relative md:translate-y-8">
+                <div className="rounded-2xl overflow-hidden shadow-xl ring-4 ring-green-400/20">
+                  <Image
+                    src="/jeanne.jpg"
+                    alt="Jeanne Doherty, MS, RD, LDN"
+                    width={400}
+                    height={666}
+                    className="w-[260px] md:w-[340px] lg:w-[400px] h-auto object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
@@ -44,7 +63,7 @@ export default function About() {
       ]} />
 
       {/* ORIGIN STORY */}
-      <section className="section-padding bg-cream">
+      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
@@ -66,9 +85,9 @@ export default function About() {
       </section>
 
       {/* WHAT MAKES JEANNE DIFFERENT */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10">
+        <div className="container-wide relative z-10 px-6 md:px-8">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
               What Makes Jeanne Different
@@ -93,7 +112,7 @@ export default function About() {
               },
             ].map((item) => (
               <AnimateOnScroll key={item.title} className="h-full">
-                <div className="bg-white rounded-2xl p-8 shadow-card border border-warm-100/50 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 group h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 group h-full flex flex-col">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mb-5 group-hover:from-green-100 group-hover:to-green-200 transition-all duration-300">
                     <item.icon className="w-7 h-7 text-green-500" />
                   </div>
@@ -107,7 +126,7 @@ export default function About() {
       </section>
 
       {/* DEEP PROOF */}
-      <section className="section-padding bg-cream">
+      <section className="py-20 md:py-28 px-6 md:px-8 bg-cream">
         <div className="container-narrow">
           <div className="grid md:grid-cols-2 gap-6 stagger-children">
             <AnimateOnScroll>
@@ -128,8 +147,8 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="relative py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-r-full" />
+      <section className="relative py-16 md:py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+        <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">The Invitation</h2>
