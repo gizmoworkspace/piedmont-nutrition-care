@@ -18,9 +18,9 @@ export default function About() {
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="container-wide relative z-10">
-          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-16 lg:gap-20">
+          <div className="flex flex-col-reverse md:flex-row md:items-center gap-10 md:gap-20 lg:gap-28">
             {/* Left: text */}
-            <div className="md:w-[58%]">
+            <div className="md:w-[55%]">
               <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white leading-tight mb-4 md:mb-6 animate-fade-in-up drop-shadow-lg">
                 You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
               </h1>
@@ -30,7 +30,7 @@ export default function About() {
               </p>
             </div>
             {/* Right: photo */}
-            <div className="md:w-[42%] flex justify-center mb-6 md:mb-0">
+            <div className="md:w-[45%] flex justify-center mb-6 md:mb-0">
               <div className="relative md:translate-y-8">
                 <div className="rounded-2xl overflow-hidden shadow-xl ring-4 ring-green-400/20">
                   <Image
