@@ -42,49 +42,64 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-overlay">
-        {/* Mobile: full background image */}
+      <section className="relative min-h-[90vh] md:min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-overlay">
+        {/* Mobile: food image with better visibility */}
         <div
-          className="absolute inset-0 opacity-10 bg-cover bg-center bg-fixed md:hidden"
+          className="absolute inset-0 opacity-20 bg-cover bg-center md:hidden"
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1600&h=900&fit=crop')" }}
         />
-        {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-black/20 md:hidden" />
+        {/* Mobile gradient overlay — fades image out toward bottom for text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-green-950/60 via-green-950/80 to-green-950/95 md:hidden" />
+
+        {/* Shared ambient elements */}
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
 
-        {/* Animated illustration on the right side */}
+        {/* Desktop: animated illustration */}
         <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
           <HeroAnimation />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24 lg:py-32 w-full">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-24 lg:py-32 w-full">
           <div className="relative">
             {/* Left column: text */}
             <div className="max-w-3xl">
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.2] md:leading-[1.15] mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.2] md:leading-[1.15] mb-6 md:mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
                 Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
                 <span className="text-green-300">They&apos;re gut health failures.</span>
               </h1>
-              <p className="text-lg md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
+              <p className="text-base md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
                 <span className="hidden md:inline">No one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.</span>
                 <span className="md:hidden">Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to.</span>
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-in-up-delay-2">
-                <Link href="/contact" className="btn-primary text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
+
+              {/* Mobile: trust indicators inline */}
+              <div className="flex flex-wrap gap-3 mb-6 md:hidden animate-fade-in-up-delay-1">
+                {[
+                  { icon: "★", text: "5.0 Google Rating" },
+                  { icon: "🎓", text: "MS, RD, LDN" },
+                  { icon: "🏥", text: "Insurance Accepted" },
+                ].map((item) => (
+                  <span key={item.text} className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-green-100 text-xs font-medium px-3 py-1.5 rounded-full border border-white/10">
+                    <span>{item.icon}</span>
+                    {item.text}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 animate-fade-in-up-delay-2">
+                <Link href="/contact" className="btn-primary text-base md:text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
                   Book Your Assessment
                 </Link>
-                <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5">
+                <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3 md:py-3.5 px-6 md:px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5 text-sm md:text-base">
                   Check If Your Insurance Covers It
                 </Link>
               </div>
-              <p className="text-green-200/60 text-sm animate-fade-in-up-delay-3">
+              <p className="hidden md:block text-green-200/60 text-sm animate-fade-in-up-delay-3">
                 60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
               </p>
             </div>
-
-{/* Right image now placed at section level */}
           </div>
         </div>
 
