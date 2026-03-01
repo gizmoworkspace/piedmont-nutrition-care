@@ -81,23 +81,27 @@ export default function Insurance() {
 
       {/* SELF-PAY */}
       <section className="section-padding bg-white">
-        <div className="container-narrow relative z-10">
+        <div className="max-w-7xl mx-auto">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6 text-center">Self-Pay Options</h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-6">
-              {[
-                { service: "Initial Assessment", duration: "60 minutes" },
-                { service: "Follow-Up Session", duration: "60 minutes" },
-              ].map((item) => (
-                <div key={item.service} className="bg-white rounded-2xl p-6 shadow-card border border-warm-100/50 text-center">
-                  <h3 className="font-heading text-lg text-warm-900 mb-1">{item.service}</h3>
-                  <p className="text-warm-500 text-sm mb-4">{item.duration}</p>
-                  <a href="tel:3369865388" className="inline-block bg-green-50 text-green-700 font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-green-100 transition-colors">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">Self-Pay Options</h2>
+          </AnimateOnScroll>
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-3xl mx-auto mb-8">
+            {[
+              { service: "Initial Assessment", duration: "60 minutes" },
+              { service: "Follow-Up Session", duration: "60 minutes" },
+            ].map((item) => (
+              <AnimateOnScroll key={item.service}>
+                <div className="bg-cream rounded-2xl p-8 text-center border border-warm-100/50">
+                  <h3 className="font-heading text-xl text-warm-900 mb-2">{item.service}</h3>
+                  <p className="text-warm-500 text-sm mb-6">{item.duration}</p>
+                  <a href="tel:3369865388" className="btn-primary !py-3 !px-8 text-sm">
                     Call for Pricing
                   </a>
                 </div>
-              ))}
-            </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+          <AnimateOnScroll>
             <p className="text-warm-500 text-sm text-center">
               Call <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a> for current self-pay rates. Transparent, upfront pricing — no billing surprises.
             </p>
@@ -106,39 +110,49 @@ export default function Insurance() {
       </section>
 
       {/* ROI FRAMING */}
-      <section className="section-padding bg-white">
-        <div className="container-narrow">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
-              Compare the real cost
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll>
-            <div className="relative bg-gradient-cta text-white rounded-2xl p-8 md:p-10 overflow-hidden">
-              <div className="absolute top-0 right-0 w-48 h-48 bg-green-400/10 rounded-full blur-3xl" />
-              <p className="text-lg leading-relaxed text-green-50 relative z-10">
-                A single month of GLP-1 medication costs $800–$1,500 out of pocket — and the weight returns when you stop. A year of calorie-counting app subscriptions, supplements, and 30-day challenges adds up to hundreds of dollars that bought you no lasting results. A session with a credentialed clinical dietitian who identifies the root cause and builds a permanent protocol? That&apos;s the investment that actually resolves the problem.
-              </p>
+      <section className="section-padding bg-cream">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <div>
+              <AnimateOnScroll>
+                <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
+                  Compare the real cost
+                </h2>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={100}>
+                <p className="text-warm-600 leading-relaxed text-base md:text-lg">
+                  A single month of GLP-1 medication costs $800–$1,500 out of pocket — and the weight returns when you stop. A year of calorie-counting app subscriptions, supplements, and 30-day challenges adds up to hundreds of dollars that bought you no lasting results.
+                </p>
+              </AnimateOnScroll>
             </div>
-          </AnimateOnScroll>
+            <div>
+              <AnimateOnScroll delay={200}>
+                <div className="border-l-4 border-green-400 pl-6 py-2">
+                  <p className="text-warm-800 font-medium text-lg md:text-xl leading-relaxed">
+                    A session with a credentialed clinical dietitian who identifies the root cause and builds a permanent protocol? That&apos;s the investment that actually resolves the problem.
+                  </p>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* OBJECTIONS */}
       <section className="section-padding bg-white">
-        <div className="container-narrow relative z-10">
-          <div className="space-y-6 stagger-children">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50 hover:shadow-deep transition-all duration-300">
-                <h3 className="font-heading text-lg text-warm-900 mb-3">&ldquo;I&apos;m on a high-deductible plan&rdquo;</h3>
+              <div className="bg-cream rounded-2xl p-6 md:p-8 border border-warm-100/50 h-full">
+                <h3 className="font-heading text-lg text-warm-900 mb-4">&ldquo;I&apos;m on a high-deductible plan&rdquo;</h3>
                 <p className="text-warm-600 leading-relaxed">
-                  Even with a high-deductible plan, MNT sessions count toward your deductible and are often available at negotiated in-network rates. Piedmont Nutrition Care will verify your specific benefit level before your first session so there are no financial surprises. Compare this to what you&apos;ve already spent on supplements, apps, programs, and co-pays for approaches that didn&apos;t address the root cause.
+                  Even with a high-deductible plan, MNT sessions count toward your deductible and are often available at negotiated in-network rates. Piedmont Nutrition Care will verify your specific benefit level before your first session so there are no financial surprises.
                 </p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50 hover:shadow-deep transition-all duration-300">
-                <h3 className="font-heading text-lg text-warm-900 mb-3">&ldquo;I don&apos;t know if my condition qualifies&rdquo;</h3>
+              <div className="bg-cream rounded-2xl p-6 md:p-8 border border-warm-100/50 h-full">
+                <h3 className="font-heading text-lg text-warm-900 mb-4">&ldquo;I don&apos;t know if my condition qualifies&rdquo;</h3>
                 <p className="text-warm-600 leading-relaxed">
                   If you have a diagnosis of diabetes, pre-diabetes, high cholesterol, IBS, obesity, cardiovascular disease, or an oncology-related nutrition need, you likely qualify for covered Medical Nutrition Therapy. Not sure? Call{" "}
                   <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>{" "}
