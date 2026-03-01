@@ -239,7 +239,7 @@ export default function Home() {
 
       {/* HOW IT WORKS */}
       <section className="section-padding bg-cream">
-        <div className="container-wide">
+        <div className="max-w-7xl mx-auto">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-4 text-center tracking-tight">
               How Piedmont Nutrition Care works
@@ -248,7 +248,7 @@ export default function Home() {
           </AnimateOnScroll>
 
           {/* Desktop grid */}
-          <div className="hidden md:grid md:grid-cols-4 gap-6 lg:gap-8 stagger-children">
+          <div className="hidden md:grid md:grid-cols-4 gap-8 lg:gap-10 stagger-children">
             {steps.map((item) => (
               <AnimateOnScroll key={item.step} className="h-full group">
                 <div className="relative bg-white rounded-2xl p-6 lg:p-8 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50 h-full flex flex-col hover:-translate-y-[2px] overflow-hidden">
