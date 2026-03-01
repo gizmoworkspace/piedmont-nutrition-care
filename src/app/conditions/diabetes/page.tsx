@@ -1,0 +1,30 @@
+import type { Metadata } from "next";
+import ConditionPage from "@/components/ConditionPage";
+
+export const metadata: Metadata = {
+  title: "Diabetes & Blood Sugar Management | Piedmont Nutrition Care",
+  description: "A1C reduction, insulin sensitivity, and blood sugar stabilization through clinical food chemistry. Medical Nutrition Therapy for diabetes in Winston-Salem, NC.",
+};
+
+export default function Diabetes() {
+  return (
+    <ConditionPage
+      headline={"Your A1C is climbing. Your doctor said \u201ceat less.\u201d Your gut says otherwise."}
+      subheadline="Type 2 diabetes, pre-diabetes, and blood sugar dysregulation aren't solved by calorie restriction alone. When your gut microbiome is compromised, your body can't regulate insulin properly — no matter how strictly you eat. Piedmont Nutrition Care identifies the root-cause metabolic dysfunction behind your numbers and builds a food chemistry protocol that stabilizes your blood sugar from the inside out."
+      agitation={[
+        "You were given metformin and told to cut carbs. Your A1C dropped a little, then plateaued. Your doctor mentioned increasing the dose. Maybe adding insulin. And nobody asked what you're actually eating, how your gut is processing it, or why your body stopped responding to the interventions that were supposed to work.",
+        "Meanwhile, you're checking your glucose four times a day, avoiding meals you used to enjoy, and still watching the numbers refuse to cooperate. It's exhausting. And it feels like your body is betraying you.",
+      ]}
+      howItWorks={[
+        "Jeanne analyzes your full metabolic picture: A1C trends, fasting insulin, glucose patterns, inflammatory markers, and gut health indicators. She identifies the specific biological disruptions — insulin resistance at the cellular level, gut bacteria imbalances affecting glucose metabolism, or micronutrient deficiencies undermining your pancreatic function — and builds a targeted food chemistry protocol that addresses each one.",
+        "Your plan won't eliminate carbohydrates. It will teach you which carbohydrates stabilize your blood sugar, which spike it, and why — so that you make choices from understanding rather than fear. Better versions of your favorite foods, not a list of restrictions.",
+      ]}
+      testimonial={{
+        quote: "I have worked with her to lower my blood sugars and improve cholesterol. Her advice is practical and food suggestions are enjoyable, better versions of my favorite foods.",
+        author: "Doug",
+      }}
+      ctaLabel="Book Your Diabetes Nutrition Assessment"
+      ctaTriggers={["BCBS, Aetna & Medicare accepted", "Medical Nutrition Therapy for diabetes is a covered benefit under most plans"]}
+    />
+  );
+}
