@@ -272,16 +272,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Inline testimonial */}
-          <AnimateOnScroll className="mt-24 md:mt-32 relative z-20">
-            <div className="max-w-2xl mx-auto">
-              <TestimonialCard
-                quote="After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better. I'm living and eating with far less abdominal pain and digestive issues."
-                author="M. Cooper"
-                context="IBS Recovery"
-              />
-            </div>
-          </AnimateOnScroll>
         </div>
       </section>
 
@@ -294,7 +284,14 @@ export default function Home() {
               What our patients say
             </h2>
           </AnimateOnScroll>
-          <div className="grid md:grid-cols-3 gap-8 stagger-children items-stretch">
+          <div className="grid md:grid-cols-2 gap-8 stagger-children items-stretch">
+            <AnimateOnScroll className="h-full">
+              <TestimonialCard
+                quote="After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better. I'm living and eating with far less abdominal pain and digestive issues."
+                author="M. Cooper"
+                context="IBS Recovery"
+              />
+            </AnimateOnScroll>
             <AnimateOnScroll className="h-full">
               <TestimonialCard
                 quote="Jeanne is extremely knowledgeable about food, food chemistry, and the latest research findings on nutrition. She can suggest dietary changes to prevent cancer, boost a sluggish metabolism, improve blood sugar, or lower LDL. Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun."
