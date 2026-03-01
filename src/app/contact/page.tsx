@@ -20,7 +20,7 @@ export default function Contact() {
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Your next step: 60 minutes that change how you understand your body.
             </h1>
-            <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Book your Gut &amp; Metabolic Foundation Assessment with Jeanne Doherty, MS, RD, LDN. Your first session is a comprehensive 60-minute evaluation of your health history, current symptoms, lab work, and goals — so you leave with a clear understanding of what&apos;s been driving your symptoms and a concrete plan to address it.
             </p>
           </div>
@@ -38,7 +38,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-3 gap-6 stagger-children">
             {/* Book Online */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-deep transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-5">
                   <CalendarIcon className="w-7 h-7 text-green-500" />
                 </div>
@@ -58,7 +58,7 @@ export default function Contact() {
 
             {/* Call */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-deep transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-5">
                   <PhoneIcon className="w-7 h-7 text-green-500" />
                 </div>
@@ -77,7 +77,7 @@ export default function Contact() {
 
             {/* Email */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-deep transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-5">
                   <EnvelopeIcon className="w-7 h-7 text-green-500" />
                 </div>

@@ -28,7 +28,7 @@ export default function Hero({
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               {headline}
             </h1>
-            <p className="text-lg md:text-xl text-green-100/80 leading-relaxed mb-8 max-w-xl animate-fade-in-up-delay-1">
+            <p className="text-lg md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-xl animate-fade-in-up-delay-1">
               {subheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-in-up-delay-2">

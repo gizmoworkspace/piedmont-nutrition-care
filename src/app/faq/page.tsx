@@ -82,7 +82,7 @@ export default function FAQ() {
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Frequently Asked Questions
             </h1>
-            <p className="text-lg text-green-100/80 animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 animate-fade-in-up-delay-1">
               Everything you need to know before your first appointment.
             </p>
           </div>

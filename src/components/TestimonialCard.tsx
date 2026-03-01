@@ -6,7 +6,7 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ quote, author, context }: TestimonialCardProps) {
   return (
-    <blockquote className="group relative bg-white rounded-2xl p-8 shadow-card border-l-4 border-green-400 hover:shadow-deep hover:-translate-y-1 transition-all duration-300">
+    <blockquote className="group relative bg-white rounded-2xl p-8 shadow-card border-l-4 border-green-400 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 h-full flex flex-col">
       {/* Quote mark */}
       <div className="absolute top-4 right-6 text-green-200/60 text-6xl font-heading leading-none select-none group-hover:text-green-300/60 transition-colors" aria-hidden="true">
         &ldquo;
@@ -21,9 +21,9 @@ export default function TestimonialCard({ quote, author, context }: TestimonialC
         ))}
       </div>
 
-      <p className="text-warm-700 leading-relaxed italic mb-6 relative z-10">{quote}</p>
+      <p className="text-warm-700 leading-relaxed italic mb-6 relative z-10 flex-grow">{quote}</p>
 
-      <footer className="flex items-center gap-3">
+      <footer className="flex items-center gap-3 mt-auto">
         {/* Photo placeholder */}
         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-200 to-green-400 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
           {author.charAt(0)}

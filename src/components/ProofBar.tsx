@@ -25,7 +25,7 @@ export default function ProofBar({ items, floating = false }: ProofBarProps) {
         <div
           className={`${
             floating
-              ? "glass-card rounded-2xl px-8 py-5 shadow-deep"
+              ? "glass-card rounded-2xl px-6 py-4 shadow-deep"
               : "bg-green-800/95 backdrop-blur-sm py-5"
           }`}
         >

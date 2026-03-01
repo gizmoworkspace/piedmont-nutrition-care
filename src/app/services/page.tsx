@@ -4,7 +4,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { CheckIcon, XMarkIcon, ArrowRightIcon } from "@/components/Icons";
+import { CheckIcon, XMarkIcon, ArrowRightIcon, EarIcon, BeakerIcon, TestTubeIcon, DocumentTextIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Services & How It Works | Piedmont Nutrition Care",
@@ -23,7 +23,7 @@ export default function Services() {
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Clinical nutrition therapy that fixes the cause — not just the symptoms
             </h1>
-            <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out.
             </p>
           </div>
@@ -103,28 +103,28 @@ export default function Services() {
             {[
               {
                 step: "1",
-                icon: "👂",
+                Icon: EarIcon,
                 label: "Hear You",
                 title: "Comprehensive Health Assessment",
                 body: "Your first 60-minute session is designed to do what no 10-minute appointment ever could. Jeanne reviews your full health history, current medications, family medical context, lifestyle demands, food preferences, and the things you've already tried — so that you have a clinician who sees the whole picture, not a fragment of it. You'll also discuss your goals: what does \"better\" actually look like for your life?",
               },
               {
                 step: "2",
-                icon: "🔬",
+                Icon: BeakerIcon,
                 label: "Gather Specifics",
                 title: "Lab Analysis & Root-Cause Identification",
                 body: "Jeanne analyzes your blood panels, A1C, cholesterol markers (LDL, HDL, triglycerides), inflammatory indicators, and digestive function — not at a glance, but in depth. She identifies the specific biological mechanisms driving your symptoms: gut dysbiosis (imbalanced gut bacteria), leptin resistance, insulin sensitivity issues, micronutrient deficiencies, or hormonal disruption — so that you finally understand the WHY behind what your body has been doing.",
               },
               {
                 step: "3",
-                icon: "🧪",
+                Icon: TestTubeIcon,
                 label: "Learn Better Foods",
                 title: "Food Chemistry Education",
                 body: "This isn't a lecture about calories. Jeanne teaches you how different foods interact with your specific biology at the molecular level: why certain carbohydrates spike your blood sugar while others stabilize it, how specific fiber types feed beneficial gut bacteria, which protein sources support your metabolic goals — so that you make food choices from understanding, not from a rules list you'll eventually abandon.",
               },
               {
                 step: "4",
-                icon: "📋",
+                Icon: DocumentTextIcon,
                 label: "Your Food Rx",
                 title: "Personalized Nutrition Protocol",
                 body: "You receive a clinical nutrition plan built from your unique data. It centers on better versions of the foods you already enjoy — not elimination, not deprivation. Your family can eat the same foundational meals with minor adjustments. The plan evolves with you through ongoing sessions as your lab markers improve and your goals shift — so that you have a living, adaptable strategy instead of a static document that stops working in three weeks.",
@@ -134,7 +134,9 @@ export default function Services() {
                 <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-deep transition-all duration-300 border border-warm-100/50">
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0 flex flex-col items-center gap-2">
-                      <div className="text-2xl">{item.icon}</div>
+                      <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center">
+                        <item.Icon className="w-5 h-5 text-green-600" />
+                      </div>
                       <span className="w-12 h-12 rounded-2xl bg-gradient-btn text-white font-heading text-lg font-bold flex items-center justify-center shadow-glow-green">
                         {item.step}
                       </span>
@@ -197,7 +199,7 @@ export default function Services() {
               { title: "Weight Management", desc: "Root-cause metabolic repair, GLP-1 off-ramp support", href: "/conditions/weight-management" },
             ].map((c) => (
               <AnimateOnScroll key={c.href}>
-                <Link href={c.href} className="block bg-white rounded-2xl p-6 shadow-card hover:shadow-deep transition-all duration-300 group border border-warm-100/50 hover:-translate-y-1">
+                <Link href={c.href} className="block h-full bg-white rounded-2xl p-6 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/50 hover:-translate-y-[2px]">
                   <h3 className="font-heading text-lg text-warm-900 group-hover:text-green-600 mb-2 transition-colors">{c.title}</h3>
                   <p className="text-warm-500 text-sm mb-4">{c.desc}</p>
                   <span className="inline-flex items-center gap-1 text-green-600 text-sm font-medium group-hover:gap-2 transition-all duration-300">

@@ -22,7 +22,7 @@ export default function About() {
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
             </h1>
-            <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.
             </p>
           </div>
@@ -92,13 +92,13 @@ export default function About() {
                 body: "Jeanne is a former TV host and live cooking demo presenter. She's spent years making nutrition science engaging and accessible to real audiences — not dumbing it down, but translating it. When she explains why your gut microbiome is affecting your cravings, you'll understand it. When she walks you through your lab results, you'll know exactly what the numbers mean and what to do about them.",
               },
             ].map((item) => (
-              <AnimateOnScroll key={item.title}>
-                <div className="bg-white rounded-2xl p-8 shadow-card border border-warm-100/50 hover:shadow-deep hover:-translate-y-1 transition-all duration-300 group">
+              <AnimateOnScroll key={item.title} className="h-full">
+                <div className="bg-white rounded-2xl p-8 shadow-card border border-warm-100/50 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 group h-full flex flex-col">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mb-5 group-hover:from-green-100 group-hover:to-green-200 transition-all duration-300">
                     <item.icon className="w-7 h-7 text-green-500" />
                   </div>
                   <h3 className="font-heading text-lg text-warm-900 mb-3">{item.title}</h3>
-                  <p className="text-warm-600 leading-relaxed text-sm">{item.body}</p>
+                  <p className="text-warm-600 leading-relaxed text-sm flex-grow">{item.body}</p>
                 </div>
               </AnimateOnScroll>
             ))}

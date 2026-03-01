@@ -7,7 +7,7 @@ export default function Footer() {
   const phoneClean = global.phone.replace(/-/g, "");
 
   return (
-    <footer className="bg-warm-950 text-warm-300 pb-24 md:pb-0">
+    <footer className="bg-gradient-dark text-warm-300 pb-24 md:pb-0">
       <div className="border-t border-warm-800" />
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-16">
         {/* Mini CTA */}

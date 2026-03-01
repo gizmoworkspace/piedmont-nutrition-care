@@ -20,7 +20,7 @@ export default function Insurance() {
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               You deserve to know what this costs before you commit.
             </h1>
-            <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               No surprises. No hidden fees. No calling three departments to find out if your insurance covers it. Piedmont Nutrition Care believes pricing transparency is a basic right — and that understanding your investment upfront is the first step toward trusting the process.
             </p>
           </div>

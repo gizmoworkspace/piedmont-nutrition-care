@@ -38,13 +38,14 @@ export default function CTASection({
   const trigs = clickTriggers || triggers;
 
   return (
-    <section className="bg-green-800">
-      <div className="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center">
-        <h2 className="font-heading text-2xl md:text-4xl text-white mb-8 leading-snug">{headline}</h2>
+    <section className="bg-gradient-cta relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-green-400/5 rounded-full blur-3xl" />
+      <div className="max-w-3xl mx-auto px-6 py-24 md:py-32 text-center relative z-10">
+        <h2 className="font-heading text-2xl md:text-4xl text-white mb-10 leading-snug tracking-tight">{headline}</h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <Link
             href={pHref}
-            className="inline-block bg-white text-green-800 px-8 py-4 rounded-[8px] font-body font-semibold hover:bg-green-50 transition-colors shadow-soft"
+            className="inline-block bg-white text-green-800 px-8 py-4 rounded-[8px] font-body font-semibold hover:bg-green-50 hover:scale-[1.02] transition-all duration-300 shadow-card hover:shadow-deep"
           >
             {pText}
           </Link>

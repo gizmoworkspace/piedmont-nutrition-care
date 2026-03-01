@@ -39,7 +39,7 @@ export default function ConditionPage({
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               {headline}
             </h1>
-            <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">{subheadline}</p>
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">{subheadline}</p>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">

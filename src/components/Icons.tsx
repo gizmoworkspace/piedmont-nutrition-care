@@ -177,3 +177,84 @@ export function ArrowRightIcon({ className = "" }: { className?: string }) {
     </svg>
   );
 }
+
+// Stethoscope icon for medical assessment
+export function StethoscopeIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 9.75a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM17.25 12v3a4.5 4.5 0 01-4.5 4.5h-1.5a4.5 4.5 0 01-4.5-4.5V8.25m0 0A2.25 2.25 0 019 6V4.5m-2.25 3.75A2.25 2.25 0 014.5 6V4.5" />
+    </svg>
+  );
+}
+
+// Leaf icon for nutrition/food
+export function LeafIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21c-1.5 0-6-2-7.5-7.5C3 8 6.5 3 12 3c5.5 0 8 5 6.5 10.5C17 18 13.5 21 12 21zm0 0V10m0 0c-2 0-4 1-5 3m5-3c2 0 4 1 5 3" />
+    </svg>
+  );
+}
+
+// Chart/trending up icon for progress
+export function ChartUpIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+    </svg>
+  );
+}
+
+// Ear/listen icon
+export function EarIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+    </svg>
+  );
+}
+
+// Test tube / lab icon
+export function TestTubeIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+    </svg>
+  );
+}
+
+// Droplet icon for blood/diabetes
+export function DropletIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a8.25 8.25 0 006.222-13.666L12 2.25 5.778 7.334A8.25 8.25 0 0012 21z" />
+    </svg>
+  );
+}
+
+// Lungs/digestive icon
+export function DigestiveIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5m0 0l.797 2.39A2.25 2.25 0 007.934 18.5h8.132a2.25 2.25 0 002.137-1.61L19 14.5m-14 0h14m-9.25-11.396a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19 14.5" />
+    </svg>
+  );
+}
+
+// Ribbon icon for oncology
+export function RibbonIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 2.25c-2.5 0-4.5 2-4.5 4.5 0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5c0-2.5-2-4.5-4.5-4.5zM7.5 11.25L5.25 21.75l6.75-3 6.75 3-2.25-10.5" />
+    </svg>
+  );
+}
+
+// Scale/balance icon for weight
+export function ScaleIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg {...iconProps} className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0-17.25c-1.33 0-2.605.203-3.806.59A2.25 2.25 0 006 5.94v.81M12 3c1.33 0 2.605.203 3.806.59A2.25 2.25 0 0118 5.94v.81M3 18.75h18M6 6.75l-3 12h6l-3-12zm12 0l-3 12h6l-3-12z" />
+    </svg>
+  );
+}
