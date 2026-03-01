@@ -17,7 +17,7 @@ const conditions = [
     Icon: DropletIcon,
     accent: "from-red-50 to-amber-50",
     iconColor: "text-red-500",
-    size: "md:col-span-2",
+    size: "",
   },
   {
     title: "IBS & Digestive Disorders",
@@ -53,7 +53,7 @@ const conditions = [
     Icon: ScaleIcon,
     iconColor: "text-blue-500",
     accent: "from-blue-50 to-cyan-50",
-    size: "md:col-span-2",
+    size: "",
   },
 ];
 
@@ -81,9 +81,35 @@ export default function Conditions() {
 
       <section className="py-14 md:py-20 px-6 md:px-8 bg-cream">
         <div className="container-wide">
-          <div className="grid md:grid-cols-3 gap-8 stagger-children">
-            {conditions.map((c) => (
-              <AnimateOnScroll key={c.href} className={c.size}>
+          {/* Top row: 3 cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-6 stagger-children">
+            {conditions.slice(0, 3).map((c) => (
+              <AnimateOnScroll key={c.href} className="h-full">
+                <Link
+                  href={c.href}
+                  className={`block h-full bg-gradient-to-br ${c.accent} rounded-2xl p-8 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/30 hover:-translate-y-[2px] relative overflow-hidden`}
+                >
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 rounded-xl bg-white/80 flex items-center justify-center mb-5 shadow-soft">
+                      <c.Icon className={`w-6 h-6 ${c.iconColor}`} />
+                    </div>
+                    <h2 className="font-heading text-xl md:text-2xl text-warm-900 group-hover:text-green-600 mb-3 transition-colors tracking-tight">
+                      {c.title}
+                    </h2>
+                    <p className="text-warm-600 leading-relaxed mb-5 text-sm">{c.hook}</p>
+                    <span className="inline-flex items-center gap-1 text-green-600 font-medium text-sm group-hover:gap-2 transition-all duration-300">
+                      Learn more
+                      <ArrowRightIcon className="w-4 h-4" />
+                    </span>
+                  </div>
+                </Link>
+              </AnimateOnScroll>
+            ))}
+          </div>
+          {/* Bottom row: 2 cards centered */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto stagger-children">
+            {conditions.slice(3).map((c) => (
+              <AnimateOnScroll key={c.href} className="h-full">
                 <Link
                   href={c.href}
                   className={`block h-full bg-gradient-to-br ${c.accent} rounded-2xl p-8 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/30 hover:-translate-y-[2px] relative overflow-hidden`}
