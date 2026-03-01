@@ -46,29 +46,66 @@ export default function Home() {
         <div className="absolute -top-20 -right-20 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-green-600/15 rounded-full blur-[120px]" />
         <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] bg-amber-500/8 rounded-full blur-[100px]" />
 
-        {/* Right side: layered abstract organic shapes */}
+        {/* Right side: nutrition-themed SVG shapes */}
         <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
-          {/* Large primary shape — soft rounded rectangle */}
-          <div className="absolute top-[10%] right-[5%] w-[340px] h-[420px] lg:w-[400px] lg:h-[500px] rounded-[60px] bg-gradient-to-br from-green-600/20 to-green-800/10 rotate-[12deg]" />
-          {/* Overlapping secondary shape */}
-          <div className="absolute top-[20%] right-[15%] w-[280px] h-[350px] lg:w-[340px] lg:h-[420px] rounded-[50px] bg-gradient-to-tr from-green-500/15 to-amber-500/8 -rotate-[8deg]" />
-          {/* Smaller accent shape — top */}
-          <div className="absolute top-[5%] right-[25%] w-[180px] h-[220px] lg:w-[220px] lg:h-[260px] rounded-[40px] bg-gradient-to-b from-green-400/12 to-transparent rotate-[20deg]" />
-          {/* Warm accent — bottom */}
-          <div className="absolute bottom-[10%] right-[8%] w-[200px] h-[240px] lg:w-[260px] lg:h-[300px] rounded-[45px] bg-gradient-to-tl from-amber-500/10 to-green-600/8 -rotate-[15deg]" />
-          {/* Small floating pill shapes */}
-          <div className="absolute top-[35%] right-[40%] w-[100px] h-[60px] lg:w-[130px] lg:h-[70px] rounded-full bg-green-300/10 rotate-[25deg]" />
-          <div className="absolute bottom-[25%] right-[30%] w-[80px] h-[50px] lg:w-[110px] lg:h-[60px] rounded-full bg-amber-400/8 -rotate-[10deg]" />
-          <div className="absolute top-[15%] right-[10%] w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full bg-green-400/10" />
-          {/* Thin ring accent */}
-          <div className="absolute top-[25%] right-[20%] w-[200px] h-[200px] lg:w-[260px] lg:h-[260px] rounded-full border-2 border-green-400/10 rotate-[5deg]" />
-          <div className="absolute bottom-[20%] right-[15%] w-[150px] h-[150px] lg:w-[180px] lg:h-[180px] rounded-full border border-amber-400/8" />
+          {/* Large leaf — top right */}
+          <svg className="absolute top-[8%] right-[8%] w-[220px] h-[280px] lg:w-[280px] lg:h-[360px] rotate-[15deg]" viewBox="0 0 200 260" fill="none">
+            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="url(#leaf1)" />
+            <path d="M100 40 C100 40 100 240 100 240" stroke="rgba(255,255,255,0.08)" strokeWidth="2" />
+            <path d="M100 80 C80 100 60 130 50 160" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" fill="none" />
+            <path d="M100 80 C120 100 140 130 150 160" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" fill="none" />
+            <defs><linearGradient id="leaf1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="rgba(74,222,128,0.15)" /><stop offset="100%" stopColor="rgba(34,197,94,0.05)" /></linearGradient></defs>
+          </svg>
+
+          {/* Citrus cross-section — center */}
+          <svg className="absolute top-[35%] right-[30%] w-[160px] h-[160px] lg:w-[200px] lg:h-[200px]" viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="90" fill="rgba(251,191,36,0.08)" />
+            <circle cx="100" cy="100" r="70" fill="rgba(251,191,36,0.05)" />
+            <path d="M100 30 L100 170" stroke="rgba(251,191,36,0.08)" strokeWidth="1.5" />
+            <path d="M30 100 L170 100" stroke="rgba(251,191,36,0.08)" strokeWidth="1.5" />
+            <path d="M50 50 L150 150" stroke="rgba(251,191,36,0.06)" strokeWidth="1.5" />
+            <path d="M150 50 L50 150" stroke="rgba(251,191,36,0.06)" strokeWidth="1.5" />
+          </svg>
+
+          {/* Small leaf — bottom right */}
+          <svg className="absolute bottom-[12%] right-[10%] w-[140px] h-[180px] lg:w-[180px] lg:h-[230px] -rotate-[25deg]" viewBox="0 0 200 260" fill="none">
+            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="url(#leaf2)" />
+            <path d="M100 40 L100 240" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" />
+            <defs><linearGradient id="leaf2" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stopColor="rgba(34,197,94,0.12)" /><stop offset="100%" stopColor="rgba(74,222,128,0.04)" /></linearGradient></defs>
+          </svg>
+
+          {/* Apple silhouette — upper center-right */}
+          <svg className="absolute top-[12%] right-[35%] w-[120px] h-[140px] lg:w-[150px] lg:h-[170px] rotate-[-8deg]" viewBox="0 0 120 140" fill="none">
+            <path d="M60 25 C60 15 65 5 70 5 C75 5 75 15 70 20 C80 15 100 20 105 45 C110 75 100 120 60 135 C20 120 10 75 15 45 C20 20 40 15 50 20 C45 15 45 5 50 5 C55 5 60 15 60 25Z" fill="rgba(74,222,128,0.10)" />
+          </svg>
+
+          {/* Seed/grain shapes scattered */}
+          <svg className="absolute top-[55%] right-[45%] w-[60px] h-[30px] lg:w-[80px] lg:h-[40px] rotate-[30deg]" viewBox="0 0 80 40" fill="none">
+            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(251,191,36,0.07)" />
+          </svg>
+          <svg className="absolute top-[20%] right-[18%] w-[50px] h-[25px] lg:w-[65px] lg:h-[32px] rotate-[-15deg]" viewBox="0 0 80 40" fill="none">
+            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(74,222,128,0.08)" />
+          </svg>
+          <svg className="absolute bottom-[30%] right-[22%] w-[45px] h-[22px] lg:w-[55px] lg:h-[28px] rotate-[50deg]" viewBox="0 0 80 40" fill="none">
+            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(251,191,36,0.06)" />
+          </svg>
+
+          {/* Plate circle outline */}
+          <svg className="absolute bottom-[22%] right-[38%] w-[120px] h-[120px] lg:w-[160px] lg:h-[160px]" viewBox="0 0 160 160" fill="none">
+            <circle cx="80" cy="80" r="70" stroke="rgba(74,222,128,0.08)" strokeWidth="2" />
+            <circle cx="80" cy="80" r="50" stroke="rgba(74,222,128,0.05)" strokeWidth="1" />
+          </svg>
         </div>
 
-        {/* Mobile: subtle shapes behind text */}
+        {/* Mobile: subtle leaf shapes */}
         <div className="md:hidden absolute inset-0 overflow-hidden">
-          <div className="absolute -top-10 -right-10 w-[250px] h-[300px] rounded-[50px] bg-gradient-to-br from-green-600/15 to-green-800/5 rotate-[15deg]" />
-          <div className="absolute -bottom-10 -right-5 w-[200px] h-[250px] rounded-[40px] bg-gradient-to-tl from-amber-500/8 to-green-600/5 -rotate-[10deg]" />
+          <svg className="absolute -top-4 -right-8 w-[140px] h-[180px] rotate-[20deg] opacity-60" viewBox="0 0 200 260" fill="none">
+            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="rgba(74,222,128,0.12)" />
+          </svg>
+          <svg className="absolute bottom-16 -right-4 w-[100px] h-[100px] opacity-50" viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="90" fill="rgba(251,191,36,0.08)" />
+            <path d="M100 20 L100 180 M20 100 L180 100" stroke="rgba(251,191,36,0.08)" strokeWidth="2" />
+          </svg>
         </div>
 
         <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
