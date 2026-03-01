@@ -280,27 +280,19 @@ export default function HeroAnimation() {
     // Items to draw - positions in 0-1 space, scaled to canvas
     type Item = { type: string; x: number; y: number; size: number; amp: number; speed: number; color?: string };
     const items: Item[] = [
-      { type: "broccoli", x: 0.6, y: 0.2, size: 120, amp: 15, speed: 0.7 },
-      { type: "tomato", x: 0.25, y: 0.12, size: 50, amp: 12, speed: 1.0 },
-      { type: "tomato", x: 0.88, y: 0.55, size: 38, amp: 10, speed: 0.85 },
-      { type: "avocado", x: 0.45, y: 0.65, size: 90, amp: 12, speed: 0.6 },
-      { type: "pepper", x: 0.8, y: 0.3, size: 60, amp: 11, speed: 0.8, color: "yellow" },
-      { type: "pepper", x: 0.2, y: 0.5, size: 50, amp: 10, speed: 0.9, color: "orange" },
-      { type: "leaf", x: 0.1, y: 0.22, size: 55, amp: 16, speed: 1.2 },
-      { type: "leaf", x: 0.72, y: 0.48, size: 50, amp: 14, speed: 1.0 },
-      { type: "leaf", x: 0.38, y: 0.85, size: 45, amp: 13, speed: 1.3 },
-      { type: "leaf", x: 0.92, y: 0.1, size: 40, amp: 12, speed: 0.7 },
-      { type: "leaf", x: 0.58, y: 0.8, size: 35, amp: 11, speed: 1.1 },
-      { type: "blueberry", x: 0.15, y: 0.72, size: 22, amp: 8, speed: 1.3 },
-      { type: "blueberry", x: 0.68, y: 0.62, size: 18, amp: 7, speed: 1.1 },
-      { type: "blueberry", x: 0.48, y: 0.35, size: 16, amp: 6, speed: 1.4 },
-      { type: "blueberry", x: 0.32, y: 0.42, size: 17, amp: 7, speed: 0.9 },
-      { type: "dna", x: 0.5, y: 0.5, size: 55, amp: 6, speed: 0.4 },
-      { type: "dna", x: 0.15, y: 0.42, size: 40, amp: 5, speed: 0.5 },
+      { type: "broccoli", x: 0.55, y: 0.22, size: 110, amp: 12, speed: 0.6 },
+      { type: "tomato", x: 0.3, y: 0.15, size: 42, amp: 10, speed: 0.9 },
+      { type: "avocado", x: 0.45, y: 0.65, size: 85, amp: 10, speed: 0.55 },
+      { type: "pepper", x: 0.8, y: 0.35, size: 55, amp: 9, speed: 0.7, color: "yellow" },
+      { type: "leaf", x: 0.15, y: 0.4, size: 45, amp: 14, speed: 1.0 },
+      { type: "leaf", x: 0.7, y: 0.7, size: 38, amp: 12, speed: 0.85 },
+      { type: "leaf", x: 0.88, y: 0.12, size: 32, amp: 10, speed: 0.75 },
+      { type: "blueberry", x: 0.2, y: 0.75, size: 18, amp: 7, speed: 1.1 },
+      { type: "blueberry", x: 0.65, y: 0.5, size: 15, amp: 6, speed: 1.0 },
     ];
 
     // Particles
-    const particles = Array.from({ length: 30 }, () => ({
+    const particles = Array.from({ length: 15 }, () => ({
       x: Math.random(), y: Math.random(),
       size: Math.random() * 3 + 1.5,
       speed: Math.random() * 0.2 + 0.08,
@@ -313,9 +305,9 @@ export default function HeroAnimation() {
       ctx.clearRect(0, 0, w, h);
       t += 0.012;
 
-      // Soft ambient glow
+      // Soft ambient glow (subtle)
       ctx.save();
-      [[0.6, 0.25, 160, "#48bb78"], [0.35, 0.7, 130, "#fbbf24"], [0.8, 0.75, 100, "#86efac"]].forEach(
+      [[0.6, 0.25, 120, "#48bb78"], [0.4, 0.7, 100, "#fbbf24"]].forEach(
         ([x, y, r, c]) => {
           ctx.globalAlpha = 0.07 + Math.sin(t * 0.5) * 0.02;
           ctx.beginPath();
@@ -353,19 +345,7 @@ export default function HeroAnimation() {
         }
       });
 
-      // Orbiting dots ring
-      ctx.save();
-      ctx.globalAlpha = 0.2;
-      for (let i = 0; i < 16; i++) {
-        const angle = (i / 16) * Math.PI * 2 + t * 0.2;
-        const rx = w * 0.5 + Math.cos(angle) * w * 0.4;
-        const ry = h * 0.5 + Math.sin(angle) * h * 0.38;
-        ctx.beginPath();
-        ctx.arc(rx, ry, 3, 0, Math.PI * 2);
-        ctx.fillStyle = i % 2 === 0 ? "#86efac" : "#fbbf24";
-        ctx.fill();
-      }
-      ctx.restore();
+      // (removed orbiting ring for cleaner look)
 
       animId = requestAnimationFrame(draw);
     };
