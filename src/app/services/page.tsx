@@ -238,19 +238,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section className="section-padding bg-cream">
-        <div className="container-narrow">
-          <AnimateOnScroll>
-            <TestimonialCard
-              quote="After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better. I'm living and eating with far less abdominal pain and digestive issues."
-              author="M. Cooper"
-              context="IBS Recovery"
-            />
-          </AnimateOnScroll>
-        </div>
-      </section>
-
       {/* COMPARISON */}
       <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
         <div className="container-wide relative z-10">
