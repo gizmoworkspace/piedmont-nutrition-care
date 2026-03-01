@@ -178,7 +178,7 @@ export default function About() {
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-3 text-center">The Invitation</h2>
             <div className="w-12 h-1 bg-gradient-to-r from-green-400 to-amber-400 rounded-full mx-auto mb-10" />
           </AnimateOnScroll>
-          <div className="max-w-2xl mx-auto space-y-4 md:space-y-6">
+          <div className="max-w-2xl mx-auto space-y-4 md:space-y-6 text-center">
             <AnimateOnScroll delay={100}>
               <p className="text-base md:text-lg text-warm-600 leading-relaxed">
                 <span className="hidden md:inline">If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.</span>
