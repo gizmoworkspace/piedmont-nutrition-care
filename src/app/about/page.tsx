@@ -22,15 +22,16 @@ export default function About() {
           <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-12">
             {/* Left: text */}
             <div className="md:w-[58%]">
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
+              <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white leading-tight mb-4 md:mb-6 animate-fade-in-up drop-shadow-lg">
                 You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
               </h1>
-              <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
-                Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.
+              <p className="text-base md:text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+                <span className="hidden md:inline">Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.</span>
+                <span className="md:hidden">After 20 years watching generic nutrition advice fail patients, Jeanne earned her MS in Nutrition from UNCG and built Piedmont Nutrition Care to connect food science to real lives.</span>
               </p>
             </div>
             {/* Right: photo */}
-            <div className="md:w-[42%] flex justify-center mb-8 md:mb-0">
+            <div className="md:w-[42%] flex justify-center mb-6 md:mb-0">
               <div className="relative md:translate-y-8">
                 <div className="rounded-2xl overflow-hidden shadow-xl ring-4 ring-green-400/20">
                   <Image
@@ -38,7 +39,7 @@ export default function About() {
                     alt="Jeanne Doherty, MS, RD, LDN"
                     width={400}
                     height={666}
-                    className="w-[260px] md:w-[340px] lg:w-[400px] h-auto object-cover"
+                    className="w-[200px] md:w-[340px] lg:w-[400px] h-auto object-cover"
                     priority
                   />
                 </div>
@@ -162,15 +163,17 @@ export default function About() {
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-3 text-center">The Invitation</h2>
             <div className="w-12 h-1 bg-gradient-to-r from-green-400 to-amber-400 rounded-full mx-auto mb-10" />
           </AnimateOnScroll>
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-2xl mx-auto space-y-4 md:space-y-6">
             <AnimateOnScroll delay={100}>
-              <p className="text-lg text-warm-600 leading-relaxed">
-                If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.
+              <p className="text-base md:text-lg text-warm-600 leading-relaxed">
+                <span className="hidden md:inline">If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.</span>
+                <span className="md:hidden">If nothing has worked so far, the next step is a conversation with someone who will actually listen.</span>
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
-              <p className="text-lg text-warm-600 leading-relaxed">
-                Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.
+              <p className="text-base md:text-lg text-warm-600 leading-relaxed">
+                <span className="hidden md:inline">Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
+                <span className="md:hidden">BCBS, Aetna, and Medicare accepted. 60-minute sessions in Winston-Salem or virtual. You&apos;ll leave with a clear plan.</span>
               </p>
             </AnimateOnScroll>
           </div>
