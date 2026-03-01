@@ -55,11 +55,11 @@ export default function Home() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
             style={{
-              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.8) 60%, black 90%)",
-              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.8) 60%, black 90%)",
+              maskImage: "linear-gradient(to right, transparent 0%, transparent 10%, rgba(0,0,0,0.15) 25%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.8) 70%, black 90%)",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 10%, rgba(0,0,0,0.15) 25%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.8) 70%, black 90%)",
             }}
           />
-          <div className="absolute inset-0 bg-green-950/40" />
+          <div className="absolute inset-0 bg-green-950/30" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
