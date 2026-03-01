@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
+import ProofBar from "@/components/ProofBar";
+import { CheckIcon, XMarkIcon, ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Services & How It Works | Piedmont Nutrition Care",
@@ -12,13 +14,13 @@ export default function Services() {
   return (
     <>
       {/* HERO */}
-      <section className="section-padding bg-gradient-to-br from-sage-50 via-warm-50 to-cream">
+      <section className="section-padding bg-warm-50">
         <div className="container-wide">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-4xl md:text-5xl text-sage-900 leading-tight mb-6">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 leading-tight mb-6">
               Clinical nutrition therapy that fixes the cause — not just the symptoms
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-warm-600 leading-relaxed max-w-2xl">
               Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out.
             </p>
           </div>
@@ -26,40 +28,36 @@ export default function Services() {
       </section>
 
       {/* PROOF BAR */}
-      <section className="bg-sage-700 text-white py-5">
-        <div className="container-wide">
-          <div className="flex flex-wrap justify-center gap-4 md:gap-10 text-sm md:text-base font-medium text-center">
-            <span>✅ Registered Dietitian Nutritionist (RDN)</span>
-            <span>📋 Licensed Dietitian Nutritionist (LDN)</span>
-            <span>🎓 MS in Nutrition from UNCG</span>
-            <span>🔬 Food Chemistry Specialization</span>
-            <span>⭐ 5.0 Google Rating</span>
-          </div>
-        </div>
-      </section>
+      <ProofBar items={[
+        { icon: "shield", text: "Registered Dietitian Nutritionist (RDN)" },
+        { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
+        { icon: "academic", text: "MS in Nutrition from UNCG" },
+        { icon: "beaker", text: "Food Chemistry Specialization" },
+        { icon: "star", text: "5.0 Google Rating" },
+      ]} />
 
       {/* AGITATION */}
       <section className="section-padding">
         <div className="container-narrow">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-8">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
             Why the advice you&apos;ve been following was designed to fail
           </h2>
-          <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
             <p>
               Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.
             </p>
             <p>
               These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction. Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.
             </p>
-            <p className="font-semibold text-sage-700">That&apos;s not your failure. That&apos;s biology.</p>
+            <p className="font-semibold text-green-700">That&apos;s not your failure. That&apos;s biology.</p>
           </div>
         </div>
       </section>
 
       {/* CROSSHEAD */}
-      <section className="py-12 bg-sage-50">
+      <section className="py-16 bg-green-50">
         <div className="container-narrow text-center">
-          <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-sage-700 italic">
+          <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug">
             Restore the system, and the symptoms resolve themselves.
           </p>
         </div>
@@ -68,10 +66,10 @@ export default function Services() {
       {/* WHAT IS MNT */}
       <section className="section-padding">
         <div className="container-narrow">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
             What Medical Nutrition Therapy Actually Is
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg text-warm-600 leading-relaxed">
             Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes.
           </p>
         </div>
@@ -80,10 +78,10 @@ export default function Services() {
       {/* 4-STEP PROCESS */}
       <section className="section-padding bg-warm-50">
         <div className="container-wide">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-12 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
             Your 4-Step Process
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-6">
             {[
               {
                 step: "1",
@@ -110,17 +108,17 @@ export default function Services() {
                 body: "You receive a clinical nutrition plan built from your unique data. It centers on better versions of the foods you already enjoy — not elimination, not deprivation. Your family can eat the same foundational meals with minor adjustments. The plan evolves with you through ongoing sessions as your lab markers improve and your goals shift — so that you have a living, adaptable strategy instead of a static document that stops working in three weeks.",
               },
             ].map((item) => (
-              <div key={item.step} className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-sage-100">
+              <div key={item.step} className="bg-white rounded-[8px] p-8 md:p-10 shadow-card">
                 <div className="flex items-start gap-5">
                   <div className="flex-shrink-0">
-                    <span className="w-14 h-14 rounded-full bg-sage-600 text-white font-heading text-xl font-bold flex items-center justify-center">
+                    <span className="w-12 h-12 rounded-full bg-green-500 text-white font-heading text-lg font-bold flex items-center justify-center">
                       {item.step}
                     </span>
                   </div>
                   <div>
-                    <p className="text-sage-600 font-semibold text-sm uppercase tracking-wide mb-1">{item.label}</p>
-                    <h3 className="font-heading text-xl md:text-2xl text-sage-800 mb-3">{item.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{item.body}</p>
+                    <p className="text-green-600 font-medium text-sm uppercase tracking-wide mb-1">{item.label}</p>
+                    <h3 className="font-heading text-xl md:text-2xl text-warm-900 mb-3">{item.title}</h3>
+                    <p className="text-warm-600 leading-relaxed">{item.body}</p>
                   </div>
                 </div>
               </div>
@@ -132,7 +130,7 @@ export default function Services() {
       {/* WHAT'S INCLUDED */}
       <section className="section-padding">
         <div className="container-narrow">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-8 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
             What&apos;s Included in Every Session
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -144,9 +142,9 @@ export default function Services() {
               "Ongoing progress tracking with objective, measurable benchmarks",
               "Coordination with your primary care physician when clinically appropriate",
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 bg-sage-50 rounded-xl p-4">
-                <span className="text-sage-600 mt-0.5 flex-shrink-0">✓</span>
-                <p className="text-gray-700 text-sm">{item}</p>
+              <div key={i} className="flex items-start gap-3 bg-green-50 rounded-[8px] p-4">
+                <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <p className="text-warm-700 text-sm">{item}</p>
               </div>
             ))}
           </div>
@@ -154,9 +152,9 @@ export default function Services() {
       </section>
 
       {/* CONDITIONS ADDRESSED */}
-      <section className="section-padding bg-sage-50">
+      <section className="section-padding bg-warm-50">
         <div className="container-wide">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-10 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
             Conditions We Specialize In
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -167,10 +165,13 @@ export default function Services() {
               { title: "Cardiovascular Health", desc: "Cholesterol optimization, blood pressure support", href: "/conditions/heart-health" },
               { title: "Weight Management", desc: "Root-cause metabolic repair, GLP-1 off-ramp support", href: "/conditions/weight-management" },
             ].map((c) => (
-              <Link key={c.href} href={c.href} className="bg-white rounded-xl p-6 shadow-sm border border-sage-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
-                <h3 className="font-heading text-lg text-sage-800 group-hover:text-sage-600 mb-2">{c.title}</h3>
-                <p className="text-gray-500 text-sm mb-3">{c.desc}</p>
-                <span className="text-sage-600 text-sm font-semibold">Learn more →</span>
+              <Link key={c.href} href={c.href} className="bg-white rounded-[8px] p-6 shadow-card hover:shadow-lifted transition-all duration-200 group">
+                <h3 className="font-heading text-lg text-warm-900 group-hover:text-green-600 mb-2 transition-colors">{c.title}</h3>
+                <p className="text-warm-500 text-sm mb-4">{c.desc}</p>
+                <span className="inline-flex items-center gap-1 text-green-600 text-sm font-medium">
+                  Learn more
+                  <ArrowRightIcon className="w-4 h-4" />
+                </span>
               </Link>
             ))}
           </div>
@@ -190,18 +191,18 @@ export default function Services() {
       {/* SWITCH SECTION */}
       <section className="section-padding bg-warm-50">
         <div className="container-wide">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-10 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
             How this compares to what you&apos;ve tried
           </h2>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[600px] border-collapse">
+            <table className="w-full min-w-[600px]">
               <thead>
-                <tr className="border-b-2 border-sage-300">
-                  <th className="text-left py-4 px-4 font-heading text-sage-600">The Old Way</th>
-                  <th className="text-left py-4 px-4 font-heading text-sage-800">Piedmont Nutrition Care</th>
+                <tr className="border-b-2 border-warm-200">
+                  <th className="text-left py-4 px-4 text-warm-500 font-normal text-sm uppercase tracking-wide">The Old Way</th>
+                  <th className="text-left py-4 px-4 text-warm-900 font-normal text-sm uppercase tracking-wide">Piedmont Nutrition Care</th>
                 </tr>
               </thead>
-              <tbody className="text-gray-600">
+              <tbody className="text-sm">
                 {[
                   ["Calorie-counting apps", "Clinical food chemistry based on your lab data"],
                   ["Generic meal plan handouts", "Personalized protocols built from your biochemistry"],
@@ -210,9 +211,19 @@ export default function Services() {
                   ["Symptom management forever", "Root-cause resolution"],
                   ["GLP-1 dependency with no exit plan", "Medication Off-Ramp that rebuilds metabolic resilience"],
                 ].map(([old, newWay], i) => (
-                  <tr key={i} className="border-b border-sage-100">
-                    <td className="py-4 px-4 text-gray-400">{old}</td>
-                    <td className="py-4 px-4 text-sage-700 font-medium">{newWay}</td>
+                  <tr key={i} className="border-b border-warm-100">
+                    <td className="py-4 px-4 text-warm-400">
+                      <span className="flex items-start gap-2">
+                        <XMarkIcon className="w-4 h-4 text-warm-300 flex-shrink-0 mt-0.5" />
+                        <span>{old}</span>
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-warm-800 font-medium">
+                      <span className="flex items-start gap-2">
+                        <CheckIcon className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>{newWay}</span>
+                      </span>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -224,8 +235,8 @@ export default function Services() {
       {/* CLOSE */}
       <section className="section-padding">
         <div className="container-narrow text-center">
-          <h2 className="font-heading text-2xl md:text-3xl text-sage-800 mb-6">For People Still Deciding</h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">For People Still Deciding</h2>
+          <p className="text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
             If you&apos;re comparing providers, here&apos;s what matters: Piedmont Nutrition Care is a one-on-one clinical practice, not a platform. You see the same credentialed practitioner at every session. Your plan is built from your actual lab data, not a template. And the goal isn&apos;t to manage your symptoms indefinitely — it&apos;s to resolve the underlying cause so your body starts working for you again.
           </p>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDownIcon } from "./Icons";
 
 interface AccordionItemProps {
   question: string;
@@ -11,28 +12,27 @@ function AccordionItem({ question, answer }: AccordionItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-sage-200">
+    <div className="border-b border-warm-200">
       <button
         className="w-full text-left py-5 px-1 flex items-center justify-between gap-4 group"
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
       >
-        <span className="font-heading text-lg text-sage-800 group-hover:text-sage-600 transition-colors">
+        <span className="font-heading text-lg text-warm-900 group-hover:text-green-600 transition-colors">
           {question}
         </span>
-        <span
-          className={`text-sage-500 text-2xl transition-transform duration-300 flex-shrink-0 ${
-            isOpen ? "rotate-45" : ""
+        <ChevronDownIcon
+          className={`w-5 h-5 text-warm-400 transition-transform duration-200 flex-shrink-0 ${
+            isOpen ? "rotate-180" : ""
           }`}
-        >
-          +
-        </span>
+        />
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-[1000px] pb-5" : "max-h-0"
         }`}
       >
-        <p className="text-gray-600 leading-relaxed px-1">{answer}</p>
+        <p className="text-warm-600 leading-relaxed px-1">{answer}</p>
       </div>
     </div>
   );

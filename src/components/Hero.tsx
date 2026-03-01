@@ -18,14 +18,14 @@ export default function Hero({
   imageAlt = "Warm, inviting clinical nutrition office with natural light",
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-sage-50 via-warm-50 to-earth-50 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative bg-warm-50 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-sage-900 leading-tight mb-6">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 leading-tight mb-6">
               {headline}
             </h1>
-            <p className="text-lg md:text-xl text-sage-800/80 leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-warm-600 leading-relaxed mb-8 max-w-xl">
               {subheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
@@ -39,13 +39,13 @@ export default function Hero({
               )}
             </div>
             {clickTriggers && (
-              <p className="text-sm text-sage-600 font-sans">
-                {clickTriggers.join(" · ")}
+              <p className="text-sm text-warm-500 font-body">
+                {clickTriggers.join("  ·  ")}
               </p>
             )}
           </div>
           <div className="hidden lg:block">
-            <div className="bg-warm-200/50 rounded-2xl aspect-[4/3] flex items-center justify-center text-warm-500 text-sm font-sans p-8 text-center">
+            <div className="bg-warm-200/50 rounded-[8px] aspect-[4/3] flex items-center justify-center text-warm-400 text-sm font-body p-8 text-center">
               [Photo: {imageAlt}]
             </div>
           </div>

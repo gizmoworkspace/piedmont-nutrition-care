@@ -6,14 +6,18 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ quote, author, context }: TestimonialCardProps) {
   return (
-    <div className="bg-white rounded-2xl p-8 shadow-sm border border-sage-100 hover:shadow-md transition-shadow duration-300">
-      <div className="text-sage-400 text-4xl font-heading mb-3">&ldquo;</div>
-      <p className="text-gray-700 leading-relaxed italic mb-4">{quote}</p>
-      <div className="flex items-center gap-2">
-        <div className="w-8 h-0.5 bg-sage-400"></div>
-        <span className="text-sage-700 font-semibold text-sm">{author}</span>
+    <blockquote className="bg-white rounded-[8px] p-8 shadow-card border-l-4 border-green-400 relative">
+      <div className="absolute top-4 right-6 text-green-200 text-5xl font-heading leading-none select-none" aria-hidden="true">
+        &ldquo;
       </div>
-      {context && <p className="text-gray-400 text-xs mt-1 ml-10">{context}</p>}
-    </div>
+      <p className="text-warm-700 leading-relaxed italic mb-6 relative z-10">{quote}</p>
+      <footer className="flex items-center gap-3">
+        <div className="w-8 h-[2px] bg-green-400 rounded-full" />
+        <div>
+          <span className="text-warm-900 font-semibold text-sm">{author}</span>
+          {context && <span className="text-warm-500 text-sm ml-1">· {context}</span>}
+        </div>
+      </footer>
+    </blockquote>
   );
 }

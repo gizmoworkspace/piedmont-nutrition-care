@@ -74,13 +74,13 @@ const gettingStartedQuestions = [
 export default function FAQ() {
   return (
     <>
-      <section className="section-padding bg-gradient-to-br from-sage-50 via-warm-50 to-cream">
+      <section className="section-padding bg-warm-50">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-4xl md:text-5xl text-sage-900 leading-tight mb-6">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 leading-tight mb-6">
               Frequently Asked Questions
             </h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-warm-600">
               Everything you need to know before your first appointment.
             </p>
           </div>
@@ -91,30 +91,30 @@ export default function FAQ() {
         <div className="container-narrow">
           <div className="space-y-12">
             <div>
-              <h2 className="font-heading text-2xl text-sage-800 mb-6">About the Practice</h2>
+              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">About the Practice</h2>
               <Accordion items={practiceQuestions} />
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-sage-800 mb-6">About the Approach</h2>
+              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">About the Approach</h2>
               <Accordion items={approachQuestions} />
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-sage-800 mb-6">About Insurance &amp; Cost</h2>
+              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">About Insurance &amp; Cost</h2>
               <Accordion items={insuranceQuestions} />
             </div>
             <div>
-              <h2 className="font-heading text-2xl text-sage-800 mb-6">Getting Started</h2>
+              <h2 className="font-heading text-xl text-warm-900 mb-6 pb-2 border-b-2 border-green-200">Getting Started</h2>
               <Accordion items={gettingStartedQuestions} />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-sage-50">
+      <section className="section-padding bg-green-50">
         <div className="container-narrow text-center">
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-warm-600 mb-6">
             Still have questions? Call{" "}
-            <a href="tel:3369865388" className="text-sage-700 font-semibold hover:underline">336-986-5388</a>.
+            <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>.
           </p>
         </div>
       </section>

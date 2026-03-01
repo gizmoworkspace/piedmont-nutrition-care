@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDownIcon } from "./Icons";
 
 function Accordion({ question, answer }: { question: string; answer: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,17 +12,15 @@ function Accordion({ question, answer }: { question: string; answer: string }) {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <span className="font-heading text-lg text-sage-800">{question}</span>
-        <span className={`shrink-0 text-sage-500 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </span>
+        <span className="font-heading text-lg text-warm-900">{question}</span>
+        <ChevronDownIcon
+          className={`w-5 h-5 shrink-0 text-warm-400 transition-transform duration-200 mt-1 ${isOpen ? "rotate-180" : ""}`}
+        />
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[800px] pb-5" : "max-h-0"}`}
       >
-        <p className="text-sage-700/80 leading-relaxed">{answer}</p>
+        <p className="text-warm-600 leading-relaxed">{answer}</p>
       </div>
     </div>
   );
@@ -37,7 +36,7 @@ export default function FAQAccordions({ sections }: { sections: FAQSection[] }) 
     <>
       {sections.map((section) => (
         <div key={section.title} className="mb-12">
-          <h2 className="font-heading text-xl md:text-2xl text-sage-800 mb-4 pb-2 border-b-2 border-sage-200">
+          <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-4 pb-2 border-b-2 border-green-200">
             {section.title}
           </h2>
           <div>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
+import ProofBar from "@/components/ProofBar";
+import { BeakerIcon, BuildingIcon, ChatBubbleIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "About Jeanne Doherty, MS, RD, LDN | Piedmont Nutrition Care",
@@ -11,13 +13,13 @@ export default function About() {
   return (
     <>
       {/* HERO */}
-      <section className="section-padding bg-gradient-to-br from-sage-50 via-warm-50 to-cream">
+      <section className="section-padding bg-warm-50">
         <div className="container-wide">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-4xl md:text-5xl text-sage-900 leading-tight mb-6">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 leading-tight mb-6">
               You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-warm-600 leading-relaxed max-w-2xl">
               Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.
             </p>
           </div>
@@ -25,25 +27,21 @@ export default function About() {
       </section>
 
       {/* PROOF BAR */}
-      <section className="bg-sage-700 text-white py-5">
-        <div className="container-wide">
-          <div className="flex flex-wrap justify-center gap-4 md:gap-10 text-sm md:text-base font-medium text-center">
-            <span>🎓 MS in Nutrition (UNCG)</span>
-            <span>✅ Registered Dietitian Nutritionist (RDN)</span>
-            <span>📋 Licensed Dietitian Nutritionist (LDN)</span>
-            <span>💼 20+ Years Health Industry Experience</span>
-            <span>⭐ 5.0 Google Rating</span>
-          </div>
-        </div>
-      </section>
+      <ProofBar items={[
+        { icon: "academic", text: "MS in Nutrition (UNCG)" },
+        { icon: "shield", text: "Registered Dietitian Nutritionist (RDN)" },
+        { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
+        { icon: "building", text: "20+ Years Health Industry Experience" },
+        { icon: "star", text: "5.0 Google Rating" },
+      ]} />
 
       {/* ORIGIN STORY */}
       <section className="section-padding">
         <div className="container-narrow">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-8">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
             Why Piedmont Nutrition Care Exists
           </h2>
-          <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
             <p>
               For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern thousands of times: a patient develops a chronic condition. Their doctor prescribes medication and tells them to &ldquo;eat less, move more.&rdquo; The patient tries. It doesn&apos;t work. They blame themselves. The condition worsens. More medication. More co-pays. More shame.
             </p>
@@ -60,31 +58,35 @@ export default function About() {
       {/* WHAT MAKES JEANNE DIFFERENT */}
       <section className="section-padding bg-warm-50">
         <div className="container-wide">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-10 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
             What Makes Jeanne Different
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sage-100">
-              <div className="w-14 h-14 rounded-full bg-sage-100 flex items-center justify-center text-2xl mb-4">🔬</div>
-              <h3 className="font-heading text-xl text-sage-800 mb-3">Clinical Credentials</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Your nutrition plan is built by a Registered Dietitian Nutritionist with a Master of Science in Nutrition and a specialization in food chemistry. That&apos;s different from a health coach, a wellness influencer, or a telehealth provider matched to you by an algorithm. Jeanne understands the molecular mechanisms behind why certain foods affect your blood sugar, your gut bacteria, and your inflammatory markers — and she translates that into plain-English recommendations you can act on today.
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sage-100">
-              <div className="w-14 h-14 rounded-full bg-sage-100 flex items-center justify-center text-2xl mb-4">🏥</div>
-              <h3 className="font-heading text-xl text-sage-800 mb-3">Health System Expertise</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Twenty years inside the health insurance industry gave Jeanne something most dietitians don&apos;t have: a deep understanding of how the healthcare system actually works — the billing, the coverage gaps, the reasons patients fall through the cracks. That experience shapes everything about how Piedmont Nutrition Care operates, from upfront pricing transparency to insurance coordination to ensuring you never feel like a number in a system designed to process you as fast as possible.
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sage-100">
-              <div className="w-14 h-14 rounded-full bg-sage-100 flex items-center justify-center text-2xl mb-4">🎤</div>
-              <h3 className="font-heading text-xl text-sage-800 mb-3">Communication Skill</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Jeanne is a former TV host and live cooking demo presenter. She&apos;s spent years making nutrition science engaging and accessible to real audiences — not dumbing it down, but translating it. When she explains why your gut microbiome is affecting your cravings, you&apos;ll understand it. When she walks you through your lab results, you&apos;ll know exactly what the numbers mean and what to do about them.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: BeakerIcon,
+                title: "Clinical Credentials",
+                body: "Your nutrition plan is built by a Registered Dietitian Nutritionist with a Master of Science in Nutrition and a specialization in food chemistry. That's different from a health coach, a wellness influencer, or a telehealth provider matched to you by an algorithm. Jeanne understands the molecular mechanisms behind why certain foods affect your blood sugar, your gut bacteria, and your inflammatory markers — and she translates that into plain-English recommendations you can act on today.",
+              },
+              {
+                icon: BuildingIcon,
+                title: "Health System Expertise",
+                body: "Twenty years inside the health insurance industry gave Jeanne something most dietitians don't have: a deep understanding of how the healthcare system actually works — the billing, the coverage gaps, the reasons patients fall through the cracks. That experience shapes everything about how Piedmont Nutrition Care operates, from upfront pricing transparency to insurance coordination to ensuring you never feel like a number in a system designed to process you as fast as possible.",
+              },
+              {
+                icon: ChatBubbleIcon,
+                title: "Communication Skill",
+                body: "Jeanne is a former TV host and live cooking demo presenter. She's spent years making nutrition science engaging and accessible to real audiences — not dumbing it down, but translating it. When she explains why your gut microbiome is affecting your cravings, you'll understand it. When she walks you through your lab results, you'll know exactly what the numbers mean and what to do about them.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-white rounded-[8px] p-8 shadow-card border-t-2 border-green-400">
+                <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mb-5">
+                  <item.icon className="w-6 h-6 text-green-500" />
+                </div>
+                <h3 className="font-heading text-lg text-warm-900 mb-3">{item.title}</h3>
+                <p className="text-warm-600 leading-relaxed text-sm">{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -92,7 +94,7 @@ export default function About() {
       {/* DEEP PROOF */}
       <section className="section-padding">
         <div className="container-narrow">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             <TestimonialCard
               quote="She understands the science of food as well as how to share it with me, apply it to my specific needs, and guide me to helpful resources. I'm excited about moving forward with the plan she has developed for me."
               author="Ann"
@@ -107,13 +109,13 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="section-padding bg-sage-50">
+      <section className="section-padding bg-green-50">
         <div className="container-narrow text-center">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-6">The Invitation</h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-4">
+          <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">The Invitation</h2>
+          <p className="text-lg text-warm-600 leading-relaxed mb-4 max-w-2xl mx-auto">
             If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.
           </p>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
             Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.
           </p>
         </div>

@@ -1,19 +1,21 @@
 import Link from "next/link";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
+import ProofBar from "@/components/ProofBar";
+import { CheckIcon, XMarkIcon } from "@/components/Icons";
 
 export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-gradient-to-br from-sage-50 via-warm-50 to-cream section-padding pt-12 md:pt-20">
+      <section className="relative bg-warm-50 section-padding pt-16 md:pt-24">
         <div className="container-wide">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-sage-900 leading-tight mb-6 animate-fade-in-up">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 leading-tight mb-6 animate-fade-in-up">
               Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
-              <span className="text-sage-600">They&apos;re gut health failures.</span>
+              <span className="text-green-600">They&apos;re gut health failures.</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 animate-fade-in-up-delay-1">
+            <p className="text-lg md:text-xl text-warm-600 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
               You&apos;ve done everything &ldquo;right&rdquo; — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with &ldquo;eat less, move more.&rdquo; Your body kept fighting back. Because no one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-in-up-delay-2">
@@ -24,32 +26,28 @@ export default function Home() {
                 Check If Your Insurance Covers It
               </Link>
             </div>
-            <p className="text-sage-600 text-sm animate-fade-in-up-delay-3">
-              60-minute consultations · BCBS, Aetna &amp; Medicare accepted · In-person or virtual
+            <p className="text-warm-500 text-sm animate-fade-in-up-delay-3">
+              60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
             </p>
           </div>
         </div>
       </section>
 
       {/* PROOF BAR */}
-      <section className="bg-sage-700 text-white py-5">
-        <div className="container-wide">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-sm md:text-base font-medium text-center">
-            <span>⭐ 5.0 Google Rating</span>
-            <span>🎓 MS, RD, LDN Credentials</span>
-            <span>📋 20+ Years Clinical Experience</span>
-            <span>🏥 Accepted by Major NC Insurers</span>
-          </div>
-        </div>
-      </section>
+      <ProofBar items={[
+        { icon: "star", text: "5.0 Google Rating" },
+        { icon: "academic", text: "MS, RD, LDN Credentials" },
+        { icon: "clipboard", text: "20+ Years Clinical Experience" },
+        { icon: "building", text: "Accepted by Major NC Insurers" },
+      ]} />
 
       {/* AGITATION */}
       <section className="section-padding">
         <div className="container-narrow">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-8">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
             You&apos;ve been doing everything right. So why does your body keep working against you?
           </h2>
-          <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
             <p>
               Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
             </p>
@@ -70,9 +68,9 @@ export default function Home() {
       </section>
 
       {/* CROSSHEAD */}
-      <section className="py-12 bg-sage-50">
+      <section className="py-16 bg-green-50">
         <div className="container-narrow text-center">
-          <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-sage-700 italic">
+          <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug">
             Your metabolism isn&apos;t broken. It&apos;s been getting the wrong instructions.
           </p>
         </div>
@@ -81,10 +79,10 @@ export default function Home() {
       {/* HOW SECTION */}
       <section className="section-padding">
         <div className="container-wide">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-12 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
             How Piedmont Nutrition Care works: four steps from confused to confident
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {[
               {
                 step: "1",
@@ -107,19 +105,18 @@ export default function Home() {
                 body: "You aren't handed a plan and sent on your way. Jeanne tracks your lab markers, adjusts your protocol as your body responds, and serves as your ongoing clinical partner — so that you have someone carrying the cognitive load with you, translating the science into simple daily steps as your health evolves.",
               },
             ].map((item) => (
-              <div key={item.step} className="bg-white rounded-2xl p-8 shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
+              <div key={item.step} className="bg-white rounded-[8px] p-8 shadow-card border-t-2 border-green-400 hover:shadow-lifted transition-shadow duration-200">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="w-12 h-12 rounded-full bg-sage-100 text-sage-700 font-heading text-xl font-bold flex items-center justify-center flex-shrink-0">
+                  <span className="w-10 h-10 rounded-full bg-green-100 text-green-700 font-heading text-lg font-bold flex items-center justify-center flex-shrink-0">
                     {item.step}
                   </span>
-                  <h3 className="font-heading text-xl text-sage-800">{item.title}</h3>
+                  <h3 className="font-heading text-lg text-warm-900">{item.title}</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">{item.body}</p>
+                <p className="text-warm-600 leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
 
-          {/* Woven testimonial */}
           <div className="mt-12 max-w-2xl mx-auto">
             <TestimonialCard
               quote="After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better. I'm living and eating with far less abdominal pain and digestive issues."
@@ -129,10 +126,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DEEP PROOF / TESTIMONIALS */}
+      {/* TESTIMONIALS */}
       <section className="section-padding bg-warm-50">
         <div className="container-wide">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <TestimonialCard
               quote="Jeanne is extremely knowledgeable about food, food chemistry, and the latest research findings on nutrition. She can suggest dietary changes to prevent cancer, boost a sluggish metabolism, improve blood sugar, or lower LDL. Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun."
               author="Liz"
@@ -150,21 +147,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SWITCH SECTION */}
+      {/* COMPARISON TABLE */}
       <section className="section-padding">
         <div className="container-wide">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-10 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
             You&apos;ve tried the old way. Here&apos;s what&apos;s different.
           </h2>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[600px] border-collapse">
+            <table className="w-full min-w-[600px]">
               <thead>
-                <tr className="border-b-2 border-sage-300">
-                  <th className="text-left py-4 px-4 font-heading text-sage-600">What You&apos;ve Tried</th>
-                  <th className="text-left py-4 px-4 font-heading text-sage-800">Piedmont Nutrition Care</th>
+                <tr className="border-b-2 border-warm-200">
+                  <th className="text-left py-4 px-4 font-heading text-warm-500 font-normal text-sm uppercase tracking-wide">What You&apos;ve Tried</th>
+                  <th className="text-left py-4 px-4 font-heading text-warm-900 font-normal text-sm uppercase tracking-wide">Piedmont Nutrition Care</th>
                 </tr>
               </thead>
-              <tbody className="text-gray-600">
+              <tbody className="text-sm">
                 {[
                   ["Starving yourself on restrictive diets, losing 20 lbs, gaining 30 back", "Understanding your gut chemistry and building a sustainable metabolic foundation"],
                   ["10-minute doctor visits ending with \"eat less, move more\"", "60-minute consultations where your symptoms are validated and your labs are analyzed"],
@@ -174,9 +171,17 @@ export default function Home() {
                   ["Faceless telehealth where your dietitian might not show up", "A dedicated local practitioner who knows your name, family, and full medical history"],
                   ["GLP-1 injections and dreading the day you stop", "Rebuilding your metabolic resilience so your body maintains results naturally"],
                 ].map(([old, newWay], i) => (
-                  <tr key={i} className="border-b border-sage-100">
-                    <td className="py-4 px-4 text-gray-400">{old}</td>
-                    <td className="py-4 px-4 text-sage-700 font-medium">{newWay}</td>
+                  <tr key={i} className="border-b border-warm-100">
+                    <td className="py-4 px-4 text-warm-400 flex items-start gap-2">
+                      <XMarkIcon className="w-4 h-4 text-warm-300 flex-shrink-0 mt-0.5" />
+                      <span>{old}</span>
+                    </td>
+                    <td className="py-4 px-4 text-warm-800 font-medium">
+                      <span className="flex items-start gap-2">
+                        <CheckIcon className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>{newWay}</span>
+                      </span>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -188,10 +193,10 @@ export default function Home() {
       {/* OBJECTION HANDLING */}
       <section className="section-padding bg-warm-50">
         <div className="container-narrow">
-          <h2 className="font-heading text-3xl md:text-4xl text-sage-800 mb-10 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
             Your questions, answered honestly
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-6">
             {[
               {
                 q: "\"I've tried everything. My body is just broken.\"",
@@ -210,16 +215,16 @@ export default function Home() {
                 a: "Every appointment at Piedmont Nutrition Care is 60 minutes, one-on-one, unhurried. Jeanne's patients consistently describe feeling heard, validated, and respected for the first time in their medical journey. This is a partnership, not a lecture.",
               },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-sage-100">
-                <h3 className="font-heading text-xl text-sage-800 mb-3">{item.q}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.a}</p>
+              <div key={i} className="bg-white rounded-[8px] p-6 md:p-8 shadow-card">
+                <h3 className="font-heading text-lg text-warm-900 mb-3">{item.q}</h3>
+                <p className="text-warm-600 leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
 
           {/* STAKES */}
-          <div className="mt-12 bg-sage-700 text-white rounded-2xl p-8 md:p-10 text-center">
-            <p className="text-lg leading-relaxed">
+          <div className="mt-12 bg-green-800 text-white rounded-[8px] p-8 md:p-10 text-center">
+            <p className="text-lg leading-relaxed text-green-50">
               Your A1C doesn&apos;t pause while you decide. Your gut symptoms don&apos;t improve on their own. Every month without addressing the root cause is another month of cravings you can&apos;t explain, energy you don&apos;t have, and lab numbers moving in the wrong direction. You&apos;ve spent years trying to solve this alone. The next step isn&apos;t another app or another 30-day challenge.
             </p>
           </div>
