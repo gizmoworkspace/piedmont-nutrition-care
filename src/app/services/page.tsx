@@ -15,17 +15,22 @@ export default function Services() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-gradient-hero overflow-hidden min-h-[50vh] sm:min-h-[55vh] max-h-[700px] flex items-center">
+      <section className="relative bg-gradient-hero overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0 bg-black/15" />
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-20 sm:py-24 md:py-32 lg:py-36 w-full relative z-10">
-          <div className="max-w-2xl lg:max-w-3xl">
-            <h1 className="font-heading text-[1.75rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl text-white leading-[1.12] mb-5 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
               Clinical nutrition therapy that fixes the cause — not just the symptoms
             </h1>
-            <p className="text-[0.95rem] sm:text-base md:text-lg text-white/65 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out.
             </p>
           </div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[50px]">
+            <path d="M0,60 C300,20 900,20 1200,60 L1200,60 L0,60 Z" fill="#FDFBF7" />
+          </svg>
         </div>
       </section>
 
@@ -43,7 +48,7 @@ export default function Services() {
         <div className="container-narrow">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">The Approach</p>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-10 tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-10 tracking-tight leading-[1.1]">
               What Medical Nutrition Therapy Actually Is
             </h2>
             <p className="text-base md:text-lg text-warm-600 leading-relaxed max-w-2xl">
@@ -55,10 +60,10 @@ export default function Services() {
 
       {/* 4-STEP PROCESS (EXPANDED) */}
       <section className="section-padding bg-warm-50">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">The Process</p>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               Your 4-Step Process
             </h2>
           </AnimateOnScroll>
@@ -94,7 +99,7 @@ export default function Services() {
               },
             ].map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-lifted transition-shadow duration-300 border border-warm-100/50">
+                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-lifted transition-all duration-300 border border-warm-100/50 hover:-translate-y-[2px]">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 flex flex-col items-center gap-3">
                       <span className="text-warm-200 font-heading font-bold text-2xl">{item.step}</span>
@@ -120,7 +125,7 @@ export default function Services() {
         <div className="container-narrow">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Every Session</p>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               What&apos;s Included
             </h2>
           </AnimateOnScroll>
@@ -134,7 +139,7 @@ export default function Services() {
               "Coordination with your primary care physician when clinically appropriate",
             ].map((item, i) => (
               <AnimateOnScroll key={i}>
-                <div className="flex items-start gap-4 bg-white rounded-2xl p-6 border border-warm-100/50 hover:shadow-card transition-shadow duration-300">
+                <div className="flex items-start gap-4 bg-white rounded-2xl p-6 border border-warm-100/50 hover:shadow-card transition-all duration-300 hover:-translate-y-[1px]">
                   <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                   <p className="text-warm-700 text-sm leading-relaxed">{item}</p>
                 </div>
@@ -146,10 +151,10 @@ export default function Services() {
 
       {/* CONDITIONS */}
       <section className="section-padding bg-warm-50">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Specializations</p>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               Conditions We Specialize In
             </h2>
           </AnimateOnScroll>
@@ -162,10 +167,10 @@ export default function Services() {
               { title: "Weight Management", desc: "Root-cause metabolic repair, GLP-1 off-ramp support", href: "/conditions/weight-management" },
             ].map((c) => (
               <AnimateOnScroll key={c.href}>
-                <Link href={c.href} className="block h-full bg-white rounded-2xl p-8 shadow-card hover:shadow-lifted transition-shadow duration-300 group border border-warm-100/50">
+                <Link href={c.href} className="block h-full bg-white rounded-2xl p-8 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/50 hover:-translate-y-[2px]">
                   <h3 className="font-heading text-lg md:text-xl text-warm-900 group-hover:text-green-600 mb-3 transition-colors">{c.title}</h3>
                   <p className="text-warm-500 text-sm mb-6 leading-relaxed">{c.desc}</p>
-                  <span className="inline-flex items-center gap-1 text-green-600 text-sm font-medium group-hover:gap-2 transition-shadow duration-300">
+                  <span className="inline-flex items-center gap-1 text-green-600 text-sm font-medium group-hover:gap-2 transition-all duration-300">
                     Learn more
                     <ArrowRightIcon className="w-4 h-4" />
                   </span>
@@ -191,10 +196,10 @@ export default function Services() {
 
       {/* COMPARISON */}
       <section className="section-padding bg-warm-50">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">The Difference</p>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
               How this compares to what you&apos;ve tried
             </h2>
           </AnimateOnScroll>

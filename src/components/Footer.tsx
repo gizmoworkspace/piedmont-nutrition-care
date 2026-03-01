@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-dark text-warm-300 pb-24 md:pb-0">
       <div className="border-t border-warm-800" />
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-16 sm:py-20 md:py-28">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
         {/* Mini CTA */}
         <div className="text-center mb-16 pb-16 border-b border-warm-800">
           <h3 className="font-heading text-2xl md:text-3xl text-white mb-6">
@@ -18,7 +18,7 @@ export default function Footer() {
           <p className="text-warm-400 mb-10 max-w-xl mx-auto leading-relaxed">
             Book your Gut &amp; Metabolic Foundation Assessment and take the first step toward understanding what your body has been trying to tell you.
           </p>
-          <Link href={global.bookingUrl} className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-3.5 px-8 rounded-[8px] transition-shadow duration-300 hover:scale-[1.02]">
+          <Link href={global.bookingUrl} className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 hover:scale-[1.02]">
             Book Your Assessment
           </Link>
         </div>

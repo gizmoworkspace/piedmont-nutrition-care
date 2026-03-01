@@ -21,7 +21,7 @@ function AccordionItem({ question, answer }: AccordionItemProps) {
         <span className="font-heading text-lg text-warm-900 group-hover:text-green-600 transition-colors">
           {question}
         </span>
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-shadow duration-300 ${isOpen ? "bg-green-100 rotate-180" : "bg-warm-100 group-hover:bg-green-50"}`}>
+        <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? "bg-green-100 rotate-180" : "bg-warm-100 group-hover:bg-green-50"}`}>
           <ChevronDownIcon
             className={`w-4 h-4 transition-colors duration-200 ${isOpen ? "text-green-600" : "text-warm-400"}`}
           />

@@ -14,25 +14,30 @@ export default function Contact() {
       {/* HERO */}
       <section className="relative bg-gradient-hero overflow-hidden min-h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-black/15" />
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-20 sm:py-24 md:py-32 lg:py-36 w-full relative z-10">
-          <div className="max-w-2xl lg:max-w-3xl">
-            <h1 className="font-heading text-[1.75rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl text-white leading-[1.12] mb-5 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
               Your next step: 60 minutes that change how you understand your body.
             </h1>
-            <p className="text-[0.95rem] sm:text-base md:text-lg text-white/65 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Book your Gut &amp; Metabolic Foundation Assessment with Jeanne Doherty, MS, RD, LDN. Your first session is a comprehensive 60-minute evaluation of your health history, current symptoms, lab work, and goals — so you leave with a clear understanding of what&apos;s been driving your symptoms and a concrete plan to address it.
             </p>
           </div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[50px]">
+            <path d="M0,60 C300,20 900,20 1200,60 L1200,60 L0,60 Z" fill="#FDFBF7" />
+          </svg>
         </div>
       </section>
 
       {/* BOOKING OPTIONS */}
       <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12 stagger-children">
             {/* Book Online */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
                 <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-6">
                   <CalendarIcon className="w-7 h-7 text-green-600" />
                 </div>
@@ -49,7 +54,7 @@ export default function Contact() {
 
             {/* Call */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
                 <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-6">
                   <PhoneIcon className="w-7 h-7 text-green-600" />
                 </div>
@@ -68,7 +73,7 @@ export default function Contact() {
 
             {/* Email */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
                 <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-6">
                   <EnvelopeIcon className="w-7 h-7 text-green-600" />
                 </div>
@@ -93,7 +98,7 @@ export default function Contact() {
         <div className="container-narrow">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Your Visit</p>
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-12 text-center tracking-tight leading-[1.1]">What to Expect</h2>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-12 text-center tracking-tight leading-[1.1]">What to Expect</h2>
           </AnimateOnScroll>
           <div className="space-y-5 stagger-children">
             {[
@@ -114,7 +119,7 @@ export default function Contact() {
               },
             ].map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="flex items-start gap-5 bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 hover:shadow-card transition-shadow duration-300">
+                <div className="flex items-start gap-5 bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 hover:shadow-card transition-all duration-300">
                   <span className="text-warm-200 font-heading font-bold text-xl flex-shrink-0">{item.step}</span>
                   <div>
                     <h3 className="font-semibold text-warm-900 mb-1 text-sm">{item.label}</h3>
@@ -129,7 +134,7 @@ export default function Contact() {
 
       {/* LOCATION + MAP */}
       <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
             <AnimateOnScroll animation="fade-left">
               <div>

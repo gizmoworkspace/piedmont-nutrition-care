@@ -25,37 +25,37 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-shadow duration-300 ${
+      className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white/90 backdrop-blur-xl shadow-card border-b border-warm-100/50"
           : "bg-white/70 backdrop-blur-md border-b border-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="Piedmont Nutrition Care"
-              width={140}
-              height={42}
-              className="h-8 sm:h-10 md:h-12 w-auto object-contain"
+              width={160}
+              height={48}
+              className="h-10 md:h-12 w-auto object-contain"
               style={{ mixBlendMode: "multiply" }}
               priority
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-warm-600 hover:text-green-600 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-green-500 after:transition-all after:duration-300 hover:after:w-full whitespace-nowrap"
+                className="text-sm text-warm-600 hover:text-green-600 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-green-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
+            <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-6">
               Book Now
             </Link>
           </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-shadow duration-300 ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
