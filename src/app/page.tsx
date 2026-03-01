@@ -335,7 +335,7 @@ export default function Home() {
                   <div className="w-10 h-10 rounded-full bg-warm-300/40 flex items-center justify-center">
                     <XMarkIcon className="w-5 h-5 text-warm-400" />
                   </div>
-                  <h3 className="font-heading text-lg text-warm-400 uppercase tracking-widest">What You&apos;ve Tried</h3>
+                  <h3 className="font-heading text-lg text-warm-600 uppercase tracking-widest">What You&apos;ve Tried</h3>
                 </div>
                 <div className="space-y-4 flex-grow">
                   {[
@@ -348,8 +348,8 @@ export default function Home() {
                     "GLP-1 injections and dreading the day you stop",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <XMarkIcon className="w-4 h-4 text-warm-300 flex-shrink-0 mt-1" />
-                      <span className="text-warm-400 text-sm leading-relaxed">{item}</span>
+                      <XMarkIcon className="w-4 h-4 text-warm-400 flex-shrink-0 mt-1" />
+                      <span className="text-warm-600 text-sm leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
