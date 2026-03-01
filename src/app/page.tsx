@@ -214,7 +214,7 @@ export default function Home() {
           </div>
 
           {/* Inline testimonial */}
-          <AnimateOnScroll className="mt-16">
+          <AnimateOnScroll className="mt-16 relative z-20">
             <div className="max-w-2xl mx-auto">
               <TestimonialCard
                 quote="After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better. I'm living and eating with far less abdominal pain and digestive issues."
