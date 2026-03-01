@@ -29,17 +29,17 @@ export default function ConditionPage({
       <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
-          <div className="mb-6">
+          <div className="mb-6 max-w-4xl mx-auto">
             <Link href="/conditions" className="inline-flex items-center gap-1.5 text-green-300/80 text-sm hover:text-white transition-colors">
               <ArrowLeftIcon className="w-4 h-4" />
               All Conditions
             </Link>
           </div>
-          <div className="max-w-3xl">
+          <div className="max-w-4xl mx-auto">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               {headline}
             </h1>
-            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">{subheadline}</p>
+            <p className="text-lg text-green-100/90 leading-relaxed animate-fade-in-up-delay-1">{subheadline}</p>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
