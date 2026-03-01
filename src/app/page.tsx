@@ -3,7 +3,6 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import HeroAnimation from "@/components/HeroAnimation";
 import { CheckIcon, XMarkIcon, StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
 import ResponsiveText from "@/components/ResponsiveText";
 
@@ -43,23 +42,21 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-[90vh] md:min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-overlay">
-        {/* Mobile: food image with better visibility */}
-        <div
-          className="absolute inset-0 opacity-20 bg-cover bg-center md:hidden"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1600&h=900&fit=crop')" }}
-        />
-        {/* Mobile gradient overlay — fades image out toward bottom for text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-green-950/60 via-green-950/80 to-green-950/95 md:hidden" />
-
-        {/* Shared ambient elements */}
-        <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-
-        {/* Desktop: animated illustration */}
-        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
-          <HeroAnimation />
-        </div>
+        {/* Color layers — organic shapes and gradients only */}
+        {/* Large warm glow — top right */}
+        <div className="absolute -top-20 -right-20 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-green-600/20 rounded-full blur-[120px]" />
+        {/* Deep amber accent — bottom left */}
+        <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-amber-500/10 rounded-full blur-[100px]" />
+        {/* Mid green wash — center right */}
+        <div className="absolute top-1/3 right-[10%] w-[300px] h-[400px] md:w-[500px] md:h-[600px] bg-green-500/15 rounded-full blur-[80px]" />
+        {/* Subtle warm highlight — upper center */}
+        <div className="absolute top-10 left-1/3 w-[200px] h-[200px] md:w-[350px] md:h-[350px] bg-green-300/8 rounded-full blur-[60px]" />
+        {/* Deep shadow anchor — bottom right */}
+        <div className="absolute bottom-0 right-0 w-[400px] h-[300px] md:w-[600px] md:h-[400px] bg-green-950/40 rounded-full blur-[100px]" />
+        {/* Small accent orbs */}
+        <div className="absolute top-[20%] right-[25%] w-32 h-32 md:w-48 md:h-48 bg-amber-400/8 rounded-full blur-[50px]" />
+        <div className="absolute bottom-[30%] right-[15%] w-24 h-24 md:w-40 md:h-40 bg-green-400/10 rounded-full blur-[40px]" />
+        <div className="absolute top-[60%] right-[35%] w-20 h-20 md:w-32 md:h-32 bg-green-300/6 rounded-full blur-[30px]" />
 
         <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
           <div className="relative">
