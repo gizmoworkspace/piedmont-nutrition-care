@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import TestimonialCard from "@/components/TestimonialCard";
-import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { CheckIcon, XMarkIcon, ArrowRightIcon, EarIcon, BeakerIcon, TestTubeIcon, DocumentTextIcon } from "@/components/Icons";
@@ -300,13 +299,6 @@ export default function Services() {
           </AnimateOnScroll>
         </div>
       </section>
-
-      {/* FINAL CTA */}
-      <CTASection
-        headline="Your next step isn't another app. It's a real assessment with a real clinician."
-        primaryLabel="Book Your Gut & Metabolic Foundation Assessment"
-        triggers={["60-minute sessions", "Insurance accepted", "In-person or virtual", "336-986-5388"]}
-      />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import TestimonialCard from "@/components/TestimonialCard";
-import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { BeakerIcon, BuildingIcon, ChatBubbleIcon } from "@/components/Icons";
@@ -195,12 +194,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* FINAL CTA */}
-      <CTASection
-        headline="Book Your Assessment with Jeanne"
-        triggers={["60 minutes, one-on-one", "Same practitioner every visit", "Insurance accepted", "In-person or virtual"]}
-      />
     </>
   );
 }

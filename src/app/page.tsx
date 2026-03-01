@@ -1,6 +1,5 @@
 import Link from "next/link";
 import TestimonialCard from "@/components/TestimonialCard";
-import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { CheckIcon, XMarkIcon, StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
@@ -456,17 +455,6 @@ export default function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <CTASection
-        headline="Your gut has been trying to tell you something. Let's find out what."
-        primaryLabel="Book Your Gut & Metabolic Foundation Assessment"
-        secondaryLabel="Check If Your Insurance Covers It"
-        secondaryHref="/insurance"
-        triggers={["60-minute sessions", "Same practitioner every visit", "Blue Cross Blue Shield, Aetna & Medicare accepted", "In-person or virtual"]}
-        testimonial={{
-          quote: "Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun.",
-          author: "Liz",
-        }}
-      />
     </>
   );
 }

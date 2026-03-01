@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Accordion from "@/components/Accordion";
-import CTASection from "@/components/CTASection";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
@@ -135,11 +134,6 @@ export default function FAQ() {
           </AnimateOnScroll>
         </div>
       </section>
-
-      <CTASection
-        headline="Book Your Assessment"
-        triggers={["60 minutes", "Same practitioner every visit", "Insurance accepted"]}
-      />
     </>
   );
 }

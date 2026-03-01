@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CTASection from "@/components/CTASection";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { ArrowRightIcon, DropletIcon, DigestiveIcon, RibbonIcon, HeartIcon, ScaleIcon } from "@/components/Icons";
 
@@ -133,12 +132,6 @@ export default function Conditions() {
           </div>
         </div>
       </section>
-
-      {/* FINAL CTA */}
-      <CTASection
-        headline="Not sure which condition applies? Start with a conversation."
-        triggers={["60-minute assessment", "Insurance accepted", "In-person or virtual"]}
-      />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CTASection from "@/components/CTASection";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { CheckIcon, ShieldCheckIcon } from "@/components/Icons";
 
@@ -152,12 +151,6 @@ export default function Insurance() {
       </section>
 
       {/* FINAL CTA */}
-      <CTASection
-        headline="Know your cost before you commit"
-        primaryLabel="Verify My Insurance Coverage"
-        primaryHref="/contact"
-        triggers={["No surprise bills", "Blue Cross Blue Shield, Aetna & Medicare accepted"]}
-      />
     </>
   );
 }
