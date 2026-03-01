@@ -16,7 +16,7 @@ export default function Insurance() {
       <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
-          <div className="max-w-3xl">
+          <div className="text-center">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               You deserve to know what this costs before you commit.
             </h1>
