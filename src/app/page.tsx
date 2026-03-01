@@ -72,17 +72,18 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right column: hero image (desktop only) */}
+            {/* Right column: hero image (desktop only) — blends into background */}
             <div className="hidden md:block md:w-[45%] relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=800&h=600&fit=crop"
+                  src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=900&h=700&fit=crop"
                   alt="Fresh healthy food"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[550px] object-cover opacity-60"
                 />
-                {/* Gradient overlay fading into the dark green background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-green-950/80 via-green-950/30 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-950/40 to-transparent" />
+                {/* Heavy gradient overlays to blend into dark green hero background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/70 to-green-950/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-950 via-transparent to-green-950/60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-green-950/50 via-transparent to-green-950" />
               </div>
             </div>
           </div>
