@@ -50,7 +50,6 @@ export default function Services() {
             {/* Left column — headline + first paragraph */}
             <div>
               <AnimateOnScroll>
-                <p className="text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-amber-500 mb-3">The Problem</p>
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
                   Why the advice you&apos;ve been following was designed to fail
                 </h2>

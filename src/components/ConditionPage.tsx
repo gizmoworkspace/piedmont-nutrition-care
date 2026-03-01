@@ -55,7 +55,6 @@ export default function ConditionPage({
             <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-amber-400 via-amber-500 to-green-500 rounded-l-3xl" />
             <div className="px-8 py-10 md:px-14 md:py-14 lg:px-20 lg:py-16">
               <AnimateOnScroll>
-                <p className="text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-amber-500 mb-3">Sound Familiar?</p>
               </AnimateOnScroll>
               <div className="space-y-6 text-warm-600 leading-relaxed text-base md:text-lg max-w-3xl">
                 {agitation.map((p, i) => {
@@ -96,7 +95,6 @@ export default function ConditionPage({
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
-            <p className="text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-green-500 mb-3 text-center">The Approach</p>
             <h2 className="font-heading text-3xl md:text-4xl text-warm-950 mb-12 text-center">
               How Jeanne Treats This
             </h2>

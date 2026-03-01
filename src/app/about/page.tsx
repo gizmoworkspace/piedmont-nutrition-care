@@ -69,7 +69,6 @@ export default function About() {
             {/* Left column — headline + first paragraph */}
             <div>
               <AnimateOnScroll>
-                <p className="text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-green-500 mb-3">The Story</p>
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
                   Why Piedmont Nutrition Care Exists
                 </h2>
