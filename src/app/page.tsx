@@ -52,13 +52,13 @@ export default function Home() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover object-right"
           />
-          {/* Very wide left gradient — matches image bg color #1A2420 */}
+          {/* Strong left gradient — 100% solid at 50% (middle of screen), fades to right */}
           <div className="absolute inset-0" style={{
-            background: "linear-gradient(to right, #1A2420 0%, #1A2420 15%, rgba(26,36,32,0.95) 30%, rgba(26,36,32,0.6) 50%, rgba(26,36,32,0.2) 70%, transparent 90%)"
+            background: "linear-gradient(to right, #1A2420 0%, #1A2420 50%, rgba(26,36,32,0.85) 65%, rgba(26,36,32,0.5) 78%, rgba(26,36,32,0.2) 88%, transparent 100%)"
           }} />
           {/* Top/bottom edge fade */}
           <div className="absolute inset-0" style={{
-            background: "linear-gradient(to bottom, #1A2420 0%, transparent 15%, transparent 85%, #1A2420 100%)"
+            background: "linear-gradient(to bottom, #1A2420 0%, transparent 20%, transparent 80%, #1A2420 100%)"
           }} />
         </div>
 
