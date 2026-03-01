@@ -223,7 +223,8 @@ export default function Home() {
         <div className="container-wide relative z-10">
           <AnimateOnScroll animation="scale-up">
             <p className="font-heading text-2xl md:text-3xl lg:text-5xl text-white text-center leading-snug max-w-3xl mx-auto tracking-tight">
-              Your metabolism isn&apos;t broken.{" "}
+              Your metabolism isn&apos;t broken.
+              <br />
               <span className="text-green-300">It&apos;s been getting the wrong instructions.</span>
             </p>
           </AnimateOnScroll>
