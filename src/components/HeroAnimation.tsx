@@ -116,16 +116,18 @@ export default function HeroAnimation() {
 
     // A few scattered leaf icons - concentrated bottom-right, fading toward top-left
     const leaves = [
-      { x: 0.92, y: 0.88, size: 28, angle: 0.3, baseAlpha: 0.35 },
-      { x: 0.75, y: 0.92, size: 22, angle: -0.5, baseAlpha: 0.30 },
-      { x: 0.85, y: 0.68, size: 20, angle: 0.8, baseAlpha: 0.25 },
-      { x: 0.95, y: 0.55, size: 16, angle: -0.2, baseAlpha: 0.20 },
-      { x: 0.68, y: 0.78, size: 18, angle: 1.2, baseAlpha: 0.22 },
-      { x: 0.6, y: 0.65, size: 14, angle: 0.6, baseAlpha: 0.15 },
-      { x: 0.82, y: 0.48, size: 12, angle: -0.8, baseAlpha: 0.12 },
-      { x: 0.55, y: 0.85, size: 16, angle: 0.4, baseAlpha: 0.18 },
-      { x: 0.9, y: 0.35, size: 10, angle: 1.0, baseAlpha: 0.10 },
-      { x: 0.5, y: 0.55, size: 10, angle: -0.3, baseAlpha: 0.08 },
+      { x: 0.93, y: 0.88, size: 36, angle: 0.3, baseAlpha: 0.38 },
+      { x: 0.75, y: 0.93, size: 30, angle: -0.5, baseAlpha: 0.33 },
+      { x: 0.86, y: 0.65, size: 28, angle: 0.8, baseAlpha: 0.28 },
+      { x: 0.95, y: 0.5, size: 24, angle: -0.2, baseAlpha: 0.24 },
+      { x: 0.65, y: 0.8, size: 26, angle: 1.2, baseAlpha: 0.25 },
+      { x: 0.58, y: 0.62, size: 20, angle: 0.6, baseAlpha: 0.18 },
+      { x: 0.82, y: 0.42, size: 18, angle: -0.8, baseAlpha: 0.16 },
+      { x: 0.5, y: 0.87, size: 22, angle: 0.4, baseAlpha: 0.20 },
+      { x: 0.9, y: 0.3, size: 16, angle: 1.0, baseAlpha: 0.14 },
+      { x: 0.45, y: 0.52, size: 14, angle: -0.3, baseAlpha: 0.10 },
+      { x: 0.78, y: 0.22, size: 14, angle: 0.7, baseAlpha: 0.10 },
+      { x: 0.42, y: 0.72, size: 18, angle: -0.6, baseAlpha: 0.15 },
     ];
 
     // Dot grid texture - denser bottom-right, sparse top-left
@@ -180,13 +182,93 @@ export default function HeroAnimation() {
         drawLeaf(l.x * cw, l.y * ch + bob, l.size, rot, l.baseAlpha);
       });
 
-      // A few veggies - bottom-right, matching the texture style
-      const bob = (seed: number) => Math.sin(t * 0.6 + seed) * 4;
-      drawTomato(cw * 0.88, ch * 0.82 + bob(1), 14, 0.28);
-      drawTomato(cw * 0.72, ch * 0.9 + bob(3), 10, 0.22);
-      drawAvocado(cw * 0.8, ch * 0.6 + bob(2), 22, Math.sin(t * 0.4) * 0.1, 0.22);
-      drawBroccoli(cw * 0.92, ch * 0.45 + bob(4), 26, 0.18);
-      drawBroccoli(cw * 0.65, ch * 0.75 + bob(5), 18, 0.15);
+      // Mini nutrition charts - bottom-right area
+      const bob = (seed: number) => Math.sin(t * 0.6 + seed) * 3;
+
+      // Bar chart
+      const drawBarChart = (cx: number, cy: number, size: number, alpha: number) => {
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        const barW = size * 0.15;
+        const gap = size * 0.22;
+        const heights = [0.5, 0.8, 0.6, 0.9, 0.7];
+        const colors = ["#48bb78", "#68d391", "#38a169", "#86efac", "#48bb78"];
+        heights.forEach((h, i) => {
+          const x = cx - (heights.length * gap) / 2 + i * gap;
+          const barH = size * h;
+          ctx.beginPath();
+          ctx.roundRect(x, cy - barH, barW, barH, 2);
+          ctx.fillStyle = colors[i];
+          ctx.fill();
+        });
+        // Baseline
+        ctx.beginPath();
+        ctx.moveTo(cx - size * 0.6, cy);
+        ctx.lineTo(cx + size * 0.6, cy);
+        ctx.strokeStyle = "rgba(134,239,172,0.2)";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.restore();
+      };
+
+      // Pie/donut chart
+      const drawDonut = (cx: number, cy: number, r: number, alpha: number) => {
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        const segments = [0.35, 0.25, 0.22, 0.18];
+        const colors = ["#48bb78", "#86efac", "#fbbf24", "#38a169"];
+        let startAngle = -Math.PI / 2 + t * 0.15;
+        segments.forEach((seg, i) => {
+          const endAngle = startAngle + seg * Math.PI * 2;
+          ctx.beginPath();
+          ctx.arc(cx, cy, r, startAngle, endAngle);
+          ctx.arc(cx, cy, r * 0.55, endAngle, startAngle, true);
+          ctx.closePath();
+          ctx.fillStyle = colors[i];
+          ctx.fill();
+          startAngle = endAngle;
+        });
+        ctx.restore();
+      };
+
+      // Line chart
+      const drawLineChart = (cx: number, cy: number, size: number, alpha: number) => {
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        const points = [0.7, 0.4, 0.6, 0.2, 0.35, 0.15];
+        ctx.beginPath();
+        points.forEach((p, i) => {
+          const x = cx - size * 0.5 + (i / (points.length - 1)) * size;
+          const y = cy - size * 0.3 + p * size * 0.6;
+          if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        });
+        ctx.strokeStyle = "#86efac";
+        ctx.lineWidth = 2;
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+        ctx.stroke();
+        // Dots at points
+        points.forEach((p, i) => {
+          const x = cx - size * 0.5 + (i / (points.length - 1)) * size;
+          const y = cy - size * 0.3 + p * size * 0.6;
+          ctx.beginPath();
+          ctx.arc(x, y, 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = "#86efac";
+          ctx.fill();
+        });
+        // Baseline
+        ctx.beginPath();
+        ctx.moveTo(cx - size * 0.55, cy + size * 0.2);
+        ctx.lineTo(cx + size * 0.55, cy + size * 0.2);
+        ctx.strokeStyle = "rgba(134,239,172,0.15)";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.restore();
+      };
+
+      drawBarChart(cw * 0.85, ch * 0.82 + bob(1), 50, 0.25);
+      drawDonut(cw * 0.7, ch * 0.6 + bob(2), 18, 0.2);
+      drawLineChart(cw * 0.55, ch * 0.78 + bob(3), 55, 0.18);
 
       animId = requestAnimationFrame(draw);
     };
