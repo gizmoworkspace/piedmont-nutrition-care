@@ -77,10 +77,10 @@ export default function Home() {
               <img
                 src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1000&h=800&fit=crop"
                 alt=""
-                className="absolute inset-0 w-full h-full object-cover opacity-40"
+                className="absolute inset-0 w-full h-full object-cover opacity-50"
                 style={{
-                  maskImage: "radial-gradient(ellipse 70% 60% at 75% 50%, black 20%, transparent 70%)",
-                  WebkitMaskImage: "radial-gradient(ellipse 70% 60% at 75% 50%, black 20%, transparent 70%)",
+                  maskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 10%, transparent 65%)",
+                  WebkitMaskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 10%, transparent 65%)",
                 }}
               />
             </div>
