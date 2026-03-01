@@ -18,7 +18,7 @@ export default function About() {
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="container-wide relative z-10">
-          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-12">
+          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-16 lg:gap-20">
             {/* Left: text */}
             <div className="md:w-[58%]">
               <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white leading-tight mb-4 md:mb-6 animate-fade-in-up drop-shadow-lg">
