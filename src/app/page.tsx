@@ -52,14 +52,14 @@ export default function Home() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover object-right"
           />
-          {/* Dark green overlay to tint the whole image first */}
-          <div className="absolute inset-0 bg-green-950/50" />
-          {/* Very wide left gradient — covers 60% of the image width */}
+          {/* Very wide left gradient — matches image bg color #1A2420 */}
           <div className="absolute inset-0" style={{
-            background: "linear-gradient(to right, rgb(2,26,18) 0%, rgb(2,26,18) 20%, rgba(2,26,18,0.95) 35%, rgba(2,26,18,0.7) 55%, rgba(2,26,18,0.3) 75%, transparent 100%)"
+            background: "linear-gradient(to right, #1A2420 0%, #1A2420 15%, rgba(26,36,32,0.95) 30%, rgba(26,36,32,0.6) 50%, rgba(26,36,32,0.2) 70%, transparent 90%)"
           }} />
           {/* Top/bottom edge fade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-green-950 via-transparent to-green-950" />
+          <div className="absolute inset-0" style={{
+            background: "linear-gradient(to bottom, #1A2420 0%, transparent 15%, transparent 85%, #1A2420 100%)"
+          }} />
         </div>
 
         <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
