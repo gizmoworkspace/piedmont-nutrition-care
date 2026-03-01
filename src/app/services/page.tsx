@@ -86,18 +86,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* CROSSHEAD */}
-      <section className="relative py-10 md:py-14 px-6 md:px-8 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
-        <div className="container-narrow text-center relative z-10">
-          <AnimateOnScroll animation="scale-up">
-            <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug">
-              Restore the system, and the symptoms resolve themselves.
-            </p>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
       {/* WHAT IS MNT */}
       <section className="relative section-padding bg-gradient-to-tl from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="container-wide">
