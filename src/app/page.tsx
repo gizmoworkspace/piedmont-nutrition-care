@@ -97,7 +97,7 @@ export default function Home() {
                 </Link>
               </div>
               <p className="hidden md:block text-green-200/60 text-sm animate-fade-in-up-delay-3">
-                60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
+                60-minute consultations  ·  Blue Cross Blue Shield, Aetna &amp; Medicare accepted  ·  In-person or virtual
               </p>
             </div>
           </div>
@@ -426,8 +426,8 @@ export default function Home() {
               },
               {
                 q: "\"Will my insurance cover this?\"",
-                a: "Piedmont Nutrition Care accepts BCBS, Aetna, and Medicare. Medical Nutrition Therapy is a covered benefit under most plans for conditions including diabetes, high cholesterol, IBS, and obesity. You can verify your specific coverage before your first session — no surprises, no hidden fees.",
-                aShort: "We accept BCBS, Aetna, and Medicare. MNT is covered for diabetes, high cholesterol, IBS, and obesity. Verify your coverage before your first session — no surprises.",
+                a: "Piedmont Nutrition Care accepts Blue Cross Blue Shield, Aetna, and Medicare. Medical Nutrition Therapy is a covered benefit under most plans for conditions including diabetes, high cholesterol, IBS, and obesity. You can verify your specific coverage before your first session — no surprises, no hidden fees.",
+                aShort: "We accept Blue Cross Blue Shield, Aetna, and Medicare. MNT is covered for diabetes, high cholesterol, IBS, and obesity. Verify your coverage before your first session — no surprises.",
                 accent: "border-l-amber-300",
               },
               {
@@ -474,7 +474,7 @@ export default function Home() {
         primaryLabel="Book Your Gut & Metabolic Foundation Assessment"
         secondaryLabel="Check If Your Insurance Covers It"
         secondaryHref="/insurance"
-        triggers={["60-minute sessions", "Same practitioner every visit", "BCBS, Aetna & Medicare accepted", "In-person or virtual"]}
+        triggers={["60-minute sessions", "Same practitioner every visit", "Blue Cross Blue Shield, Aetna & Medicare accepted", "In-person or virtual"]}
         testimonial={{
           quote: "Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun.",
           author: "Liz",

@@ -37,6 +37,6 @@
   "finalCTA": {
     "headline": "Know your cost before you commit",
     "primaryLabel": "Verify My Insurance Coverage",
-    "triggers": ["No surprise bills", "BCBS, Aetna & Medicare accepted"]
+    "triggers": ["No surprise bills", "Blue Cross Blue Shield, Aetna & Medicare accepted"]
   }
 }

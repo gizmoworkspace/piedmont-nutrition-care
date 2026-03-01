@@ -172,8 +172,8 @@ export default function About() {
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
               <p className="text-base md:text-lg text-warm-600 leading-relaxed">
-                <span className="hidden md:inline">Jeanne accepts BCBS, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
-                <span className="md:hidden">BCBS, Aetna, and Medicare accepted. 60-minute sessions in Winston-Salem or virtual. You&apos;ll leave with a clear plan.</span>
+                <span className="hidden md:inline">Jeanne accepts Blue Cross Blue Shield, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
+                <span className="md:hidden">Blue Cross Blue Shield, Aetna, and Medicare accepted. 60-minute sessions in Winston-Salem or virtual. You&apos;ll leave with a clear plan.</span>
               </p>
             </AnimateOnScroll>
           </div>

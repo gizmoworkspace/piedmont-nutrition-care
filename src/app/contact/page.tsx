@@ -194,7 +194,7 @@ export default function Contact() {
               to verify your coverage before booking.
             </p>
             <p className="text-warm-500 text-sm">
-              BCBS, Aetna &amp; Medicare accepted  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual
+              Blue Cross Blue Shield, Aetna &amp; Medicare accepted  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual
             </p>
           </AnimateOnScroll>
         </div>

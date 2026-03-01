@@ -6,7 +6,7 @@ import { CheckIcon, ShieldCheckIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Insurance & Pricing | Piedmont Nutrition Care",
-  description: "Transparent pricing and insurance information. BCBS, Aetna, and Medicare accepted. Medical Nutrition Therapy coverage details.",
+  description: "Transparent pricing and insurance information. Blue Cross Blue Shield, Aetna, and Medicare accepted. Medical Nutrition Therapy coverage details.",
 };
 
 export default function Insurance() {
@@ -48,7 +48,7 @@ export default function Insurance() {
             <h3 className="font-heading text-xl text-warm-900 mb-4">Accepted Insurance</h3>
           </AnimateOnScroll>
           <div className="grid sm:grid-cols-3 gap-4 mb-12 stagger-children">
-            {["Blue Cross Blue Shield (BCBS)", "Aetna", "Medicare"].map((carrier) => (
+            {["Blue Cross Blue Shield", "Aetna", "Medicare"].map((carrier) => (
               <AnimateOnScroll key={carrier}>
                 <div className="bg-gradient-to-br from-green-50 to-green-100/50 rounded-2xl p-6 text-center border border-green-200/50 hover:shadow-card transition-all duration-300 hover:-translate-y-0.5">
                   <ShieldCheckIcon className="w-8 h-8 text-green-500 mx-auto mb-3" />
@@ -154,7 +154,7 @@ export default function Insurance() {
         headline="Know your cost before you commit"
         primaryLabel="Verify My Insurance Coverage"
         primaryHref="/contact"
-        triggers={["No surprise bills", "BCBS, Aetna & Medicare accepted"]}
+        triggers={["No surprise bills", "Blue Cross Blue Shield, Aetna & Medicare accepted"]}
       />
     </>
   );
