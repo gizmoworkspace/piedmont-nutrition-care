@@ -46,22 +46,37 @@ export default function Services() {
 
       {/* AGITATION */}
       <section className="section-padding bg-cream">
-        <div className="container-narrow">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
-              Why the advice you&apos;ve been following was designed to fail
-            </h2>
-          </AnimateOnScroll>
-          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
-            <AnimateOnScroll delay={100}><p>
-              <span className="hidden md:inline">Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.</span>
-              <span className="md:hidden">Calorie apps, elimination diets, and GLP-1 medications all share the same flaw: they manage symptoms without rebuilding the metabolic foundation that produces lasting results.</span>
-            </p></AnimateOnScroll>
-            <AnimateOnScroll delay={200}><p>
-              <span className="hidden md:inline">These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction. Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.</span>
-              <span className="md:hidden">Your gut microbiome controls blood sugar, hunger hormones, and inflammation. When that ecosystem is damaged, no amount of willpower or restriction can produce sustainable results.</span>
-            </p></AnimateOnScroll>
-            <AnimateOnScroll delay={300}><p className="font-semibold text-green-700 text-xl">That&apos;s not your failure. That&apos;s biology.</p></AnimateOnScroll>
+        <div className="container-wide">
+          <div className="relative bg-white rounded-3xl shadow-card border border-warm-100/60 overflow-hidden">
+            {/* Left accent bar */}
+            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-amber-400 via-amber-500 to-green-500 rounded-l-3xl" />
+            
+            <div className="px-8 py-10 md:px-14 md:py-14 lg:px-20 lg:py-16">
+              <AnimateOnScroll>
+                <p className="text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-amber-500 mb-3">The Problem</p>
+                <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 md:mb-10">
+                  Why the advice you&apos;ve been following was designed to fail
+                </h2>
+              </AnimateOnScroll>
+              <div className="space-y-6 text-warm-600 leading-relaxed text-base md:text-lg max-w-3xl">
+                <AnimateOnScroll delay={100}><p>
+                  <span className="hidden md:inline">Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.</span>
+                  <span className="md:hidden">Calorie apps, elimination diets, and GLP-1 medications all share the same flaw: they manage symptoms without rebuilding the metabolic foundation that produces lasting results.</span>
+                </p></AnimateOnScroll>
+                <AnimateOnScroll delay={200}>
+                  <p className="text-warm-800 font-medium text-lg md:text-xl italic border-l-4 border-amber-300/60 pl-5 my-2">
+                    These approaches share a common flaw: they manage symptoms without addressing the underlying biological dysfunction.
+                  </p>
+                </AnimateOnScroll>
+                <AnimateOnScroll delay={300}><p>
+                  <span className="hidden md:inline">Your gut microbiome (the trillions of bacteria in your digestive tract) directly controls blood sugar regulation, hunger hormone signaling, inflammatory response, and nutrient absorption. When that ecosystem is damaged, no amount of willpower, calorie restriction, or medication alone can produce sustainable results.</span>
+                  <span className="md:hidden">Your gut microbiome controls blood sugar, hunger hormones, and inflammation. When that ecosystem is damaged, no amount of willpower or restriction can produce sustainable results.</span>
+                </p></AnimateOnScroll>
+                <AnimateOnScroll delay={400}>
+                  <p className="font-semibold text-green-700 text-xl mt-2">That&apos;s not your failure. That&apos;s biology.</p>
+                </AnimateOnScroll>
+              </div>
+            </div>
           </div>
         </div>
       </section>
