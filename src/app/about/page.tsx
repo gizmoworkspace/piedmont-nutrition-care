@@ -65,24 +65,41 @@ export default function About() {
 
       {/* ORIGIN STORY */}
       <section className="section-padding bg-cream">
-        <div className="container-narrow">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
-              Why Piedmont Nutrition Care Exists
-            </h2>
-          </AnimateOnScroll>
-          <div className="space-y-6 text-warm-600 leading-relaxed text-lg">
-            <AnimateOnScroll delay={100}><p>
-              <span className="hidden md:inline">For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern thousands of times: a patient develops a chronic condition. Their doctor prescribes medication and tells them to &ldquo;eat less, move more.&rdquo; The patient tries. It doesn&apos;t work. They blame themselves. The condition worsens. More medication. More co-pays. More shame.</span>
-              <span className="md:hidden">For two decades, Jeanne watched the same pattern inside the health insurance industry: patients told to &ldquo;eat less, move more,&rdquo; failing, and blaming themselves. The condition always worsened.</span>
-            </p></AnimateOnScroll>
-            <AnimateOnScroll delay={200}><p>
-              The missing piece was always the same: no one was looking at the food. Not the calories — the actual chemistry of what they were eating and how their body was processing it.
-            </p></AnimateOnScroll>
-            <AnimateOnScroll delay={300}><p>
-              <span className="hidden md:inline">Jeanne earned her MS in Nutrition from UNCG with a focus on food science and food chemistry. She founded Piedmont Nutrition Care to be the practice she wished existed for every patient she&apos;d watched struggle: one where a credentialed clinician takes 60 minutes (not 10), reviews your actual lab work (not just your weight), and builds a plan around better versions of the foods you love (not a generic handout you&apos;ll throw away).</span>
-              <span className="md:hidden">She earned her MS in Nutrition from UNCG and founded Piedmont Nutrition Care: 60-minute sessions, real lab analysis, and plans built around foods you love.</span>
-            </p></AnimateOnScroll>
+        <div className="container-wide">
+          <div className="relative bg-white rounded-3xl shadow-card border border-warm-100/60 overflow-hidden">
+            {/* Decorative left accent bar */}
+            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-green-400 via-green-500 to-amber-400 rounded-l-3xl" />
+            
+            {/* Subtle corner leaf decoration */}
+            <div className="absolute top-6 right-6 md:top-8 md:right-8 opacity-[0.06]">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <path d="M40 0C40 22.1 22.1 40 0 40C22.1 40 40 57.9 40 80C40 57.9 57.9 40 80 40C57.9 40 40 22.1 40 0Z" fill="#6AA84F"/>
+              </svg>
+            </div>
+
+            <div className="px-8 py-10 md:px-14 md:py-14 lg:px-20 lg:py-16">
+              <AnimateOnScroll>
+                <p className="text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-green-500 mb-3">The Story</p>
+                <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 md:mb-10">
+                  Why Piedmont Nutrition Care Exists
+                </h2>
+              </AnimateOnScroll>
+              <div className="space-y-6 text-warm-600 leading-relaxed text-base md:text-lg max-w-3xl">
+                <AnimateOnScroll delay={100}><p>
+                  <span className="hidden md:inline">For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern thousands of times: a patient develops a chronic condition. Their doctor prescribes medication and tells them to &ldquo;eat less, move more.&rdquo; The patient tries. It doesn&apos;t work. They blame themselves. The condition worsens. More medication. More co-pays. More shame.</span>
+                  <span className="md:hidden">For two decades, Jeanne watched the same pattern inside the health insurance industry: patients told to &ldquo;eat less, move more,&rdquo; failing, and blaming themselves. The condition always worsened.</span>
+                </p></AnimateOnScroll>
+                <AnimateOnScroll delay={200}>
+                  <p className="text-warm-800 font-medium text-lg md:text-xl italic border-l-4 border-green-300/60 pl-5 my-2">
+                    The missing piece was always the same: no one was looking at the food. Not the calories — the actual chemistry of what they were eating and how their body was processing it.
+                  </p>
+                </AnimateOnScroll>
+                <AnimateOnScroll delay={300}><p>
+                  <span className="hidden md:inline">Jeanne earned her MS in Nutrition from UNCG with a focus on food science and food chemistry. She founded Piedmont Nutrition Care to be the practice she wished existed for every patient she&apos;d watched struggle: one where a credentialed clinician takes 60 minutes (not 10), reviews your actual lab work (not just your weight), and builds a plan around better versions of the foods you love (not a generic handout you&apos;ll throw away).</span>
+                  <span className="md:hidden">She earned her MS in Nutrition from UNCG and founded Piedmont Nutrition Care: 60-minute sessions, real lab analysis, and plans built around foods you love.</span>
+                </p></AnimateOnScroll>
+              </div>
+            </div>
           </div>
         </div>
       </section>
