@@ -109,9 +109,9 @@ export default function Home() {
             </h2>
           </AnimateOnScroll>
 
-          {/* Top row: two cards */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <AnimateOnScroll delay={100}>
+          {/* Three cards in a row */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12 stagger-children">
+            <AnimateOnScroll className="h-full">
               <div className="bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 shadow-card h-full">
                 <div className="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center mb-4">
                   <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -119,56 +119,50 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="font-heading text-lg text-warm-900 mb-3">The symptoms you can&apos;t explain</h3>
-                <p className="text-warm-600 leading-relaxed">
+                <p className="text-warm-600 leading-relaxed text-sm">
                   Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
                 </p>
               </div>
             </AnimateOnScroll>
-            <AnimateOnScroll delay={200}>
+            <AnimateOnScroll className="h-full">
               <div className="bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 shadow-card h-full">
                 <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center mb-4">
                   <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.008H9.375V9.75zm5.25 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.008h-.008V9.75z" />
                   </svg>
                 </div>
                 <h3 className="font-heading text-lg text-warm-900 mb-3">The toll it&apos;s taken</h3>
-                <p className="text-warm-600 leading-relaxed">
-                  Every failed program chips away at your confidence. You start to believe your body is just &ldquo;broken.&rdquo; The shame compounds — you blame yourself for not having enough discipline, even though discipline was never the problem. Meanwhile, the co-pays stack up and the lab numbers keep moving in the wrong direction.
+                <p className="text-warm-600 leading-relaxed text-sm">
+                  Every failed program chips away at your confidence. You start to believe your body is just &ldquo;broken.&rdquo; The shame compounds — you blame yourself for not having enough discipline, even though discipline was never the problem.
                 </p>
               </div>
             </AnimateOnScroll>
-          </div>
-
-          {/* Center callout card */}
-          <AnimateOnScroll delay={300}>
-            <div className="bg-warm-100/60 rounded-2xl p-6 md:p-8 border border-warm-200/40 mb-6 max-w-2xl mx-auto text-center">
-              <p className="text-warm-500 leading-relaxed italic text-lg">
-                The healthcare system wasn&apos;t built to solve this. It was built to manage symptoms, write prescriptions, and move to the next patient. You deserve more than that.
-              </p>
-            </div>
-          </AnimateOnScroll>
-
-          {/* Bottom row: the answer */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <AnimateOnScroll delay={400}>
-              <div className="bg-green-50/50 rounded-2xl p-6 md:p-8 border border-green-200/30 h-full flex items-center">
-                <p className="text-warm-800 leading-relaxed font-medium text-lg">
-                  None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
-                </p>
-              </div>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={500}>
-              <div className="bg-white rounded-2xl p-6 md:p-8 border border-green-200/30 shadow-card h-full">
+            <AnimateOnScroll className="h-full">
+              <div className="bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 shadow-card h-full">
                 <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center mb-4">
                   <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
                   </svg>
                 </div>
                 <h3 className="font-heading text-lg text-warm-900 mb-3">The real problem</h3>
-                <p className="text-warm-600 leading-relaxed">
-                  Your gut microbiome directly controls blood sugar regulation, hunger hormone signaling, and inflammatory response. When that ecosystem is damaged — by years of restrictive dieting, stress, and medications — no amount of restriction can produce lasting results. The system needs to be repaired, not overridden.
+                <p className="text-warm-600 leading-relaxed text-sm">
+                  Your gut microbiome directly controls blood sugar regulation, hunger hormone signaling, and inflammatory response. When that ecosystem is damaged, no amount of restriction can produce lasting results.
                 </p>
               </div>
+            </AnimateOnScroll>
+          </div>
+
+          {/* Text below cards */}
+          <div className="max-w-2xl mx-auto text-center space-y-6">
+            <AnimateOnScroll>
+              <p className="text-warm-800 leading-relaxed font-medium text-lg">
+                None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={100}>
+              <p className="text-warm-500 leading-relaxed italic">
+                The healthcare system wasn&apos;t built to solve this. It was built to manage symptoms, write prescriptions, and move to the next patient. You deserve more than that.
+              </p>
             </AnimateOnScroll>
           </div>
         </div>
