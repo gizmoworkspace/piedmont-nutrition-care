@@ -12,16 +12,23 @@ export default function HeroAnimation() {
     let animId: number;
     let t = 0;
 
+    const dpr = window.devicePixelRatio || 1;
+    let cw = 0, ch = 0;
     const resize = () => {
       const p = canvas.parentElement!;
-      canvas.width = p.offsetWidth * 2;
-      canvas.height = p.offsetHeight * 2;
+      cw = p.offsetWidth;
+      ch = p.offsetHeight;
+      canvas.width = cw * dpr;
+      canvas.height = ch * dpr;
+      canvas.style.width = cw + "px";
+      canvas.style.height = ch + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     resize();
     window.addEventListener("resize", resize);
 
-    const W = () => canvas.width;
-    const H = () => canvas.height;
+    const W = () => cw;
+    const H = () => ch;
 
     // ---- DRAWING HELPERS ----
 
@@ -273,23 +280,23 @@ export default function HeroAnimation() {
     // Items to draw - positions in 0-1 space, scaled to canvas
     type Item = { type: string; x: number; y: number; size: number; amp: number; speed: number; color?: string };
     const items: Item[] = [
-      { type: "broccoli", x: 0.55, y: 0.2, size: 80, amp: 12, speed: 0.7 },
-      { type: "tomato", x: 0.3, y: 0.15, size: 32, amp: 10, speed: 1.0 },
-      { type: "tomato", x: 0.85, y: 0.55, size: 25, amp: 8, speed: 0.85 },
-      { type: "avocado", x: 0.45, y: 0.65, size: 60, amp: 10, speed: 0.6 },
-      { type: "pepper", x: 0.78, y: 0.3, size: 40, amp: 9, speed: 0.8, color: "yellow" },
-      { type: "pepper", x: 0.25, y: 0.5, size: 35, amp: 8, speed: 0.9, color: "orange" },
-      { type: "leaf", x: 0.15, y: 0.25, size: 40, amp: 14, speed: 1.2 },
-      { type: "leaf", x: 0.7, y: 0.45, size: 35, amp: 12, speed: 1.0 },
-      { type: "leaf", x: 0.4, y: 0.85, size: 30, amp: 11, speed: 1.3 },
-      { type: "leaf", x: 0.9, y: 0.12, size: 28, amp: 10, speed: 0.7 },
-      { type: "leaf", x: 0.6, y: 0.78, size: 24, amp: 9, speed: 1.1 },
-      { type: "blueberry", x: 0.2, y: 0.72, size: 14, amp: 7, speed: 1.3 },
-      { type: "blueberry", x: 0.65, y: 0.6, size: 12, amp: 6, speed: 1.1 },
-      { type: "blueberry", x: 0.5, y: 0.35, size: 10, amp: 5, speed: 1.4 },
-      { type: "blueberry", x: 0.35, y: 0.42, size: 11, amp: 6, speed: 0.9 },
-      { type: "dna", x: 0.5, y: 0.5, size: 40, amp: 5, speed: 0.4 },
-      { type: "dna", x: 0.18, y: 0.45, size: 30, amp: 4, speed: 0.5 },
+      { type: "broccoli", x: 0.6, y: 0.2, size: 120, amp: 15, speed: 0.7 },
+      { type: "tomato", x: 0.25, y: 0.12, size: 50, amp: 12, speed: 1.0 },
+      { type: "tomato", x: 0.88, y: 0.55, size: 38, amp: 10, speed: 0.85 },
+      { type: "avocado", x: 0.45, y: 0.65, size: 90, amp: 12, speed: 0.6 },
+      { type: "pepper", x: 0.8, y: 0.3, size: 60, amp: 11, speed: 0.8, color: "yellow" },
+      { type: "pepper", x: 0.2, y: 0.5, size: 50, amp: 10, speed: 0.9, color: "orange" },
+      { type: "leaf", x: 0.1, y: 0.22, size: 55, amp: 16, speed: 1.2 },
+      { type: "leaf", x: 0.72, y: 0.48, size: 50, amp: 14, speed: 1.0 },
+      { type: "leaf", x: 0.38, y: 0.85, size: 45, amp: 13, speed: 1.3 },
+      { type: "leaf", x: 0.92, y: 0.1, size: 40, amp: 12, speed: 0.7 },
+      { type: "leaf", x: 0.58, y: 0.8, size: 35, amp: 11, speed: 1.1 },
+      { type: "blueberry", x: 0.15, y: 0.72, size: 22, amp: 8, speed: 1.3 },
+      { type: "blueberry", x: 0.68, y: 0.62, size: 18, amp: 7, speed: 1.1 },
+      { type: "blueberry", x: 0.48, y: 0.35, size: 16, amp: 6, speed: 1.4 },
+      { type: "blueberry", x: 0.32, y: 0.42, size: 17, amp: 7, speed: 0.9 },
+      { type: "dna", x: 0.5, y: 0.5, size: 55, amp: 6, speed: 0.4 },
+      { type: "dna", x: 0.15, y: 0.42, size: 40, amp: 5, speed: 0.5 },
     ];
 
     // Particles
