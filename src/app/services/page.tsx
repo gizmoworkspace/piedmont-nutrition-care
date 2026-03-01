@@ -93,7 +93,7 @@ export default function Services() {
       </section>
 
       {/* WHAT IS MNT */}
-      <section className="relative section-padding bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="relative section-padding bg-gradient-to-tl from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6 text-center">
