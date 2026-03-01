@@ -46,18 +46,20 @@ export default function Home() {
         <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] bg-amber-500/8 rounded-full blur-[100px]" />
 
         {/* Right side: generated food scene, strong gradient blend to left */}
-        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[60%] overflow-hidden">
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[65%] overflow-hidden">
           <img
             src="/hero-generated.png"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-right"
           />
-          {/* Strong dark gradient fading from left to reveal image on right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/90 via-40% to-transparent" />
+          {/* Dark green overlay to tint the whole image first */}
+          <div className="absolute inset-0 bg-green-950/50" />
+          {/* Very wide left gradient — covers 60% of the image width */}
+          <div className="absolute inset-0" style={{
+            background: "linear-gradient(to right, rgb(2,26,18) 0%, rgb(2,26,18) 20%, rgba(2,26,18,0.95) 35%, rgba(2,26,18,0.7) 55%, rgba(2,26,18,0.3) 75%, transparent 100%)"
+          }} />
           {/* Top/bottom edge fade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-green-950/80 via-transparent to-green-950/80" />
-          {/* Subtle green tint */}
-          <div className="absolute inset-0 bg-green-900/20 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-b from-green-950 via-transparent to-green-950" />
         </div>
 
         <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
