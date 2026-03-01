@@ -61,7 +61,7 @@ export default function Home() {
           <HeroAnimation />
         </div>
 
-        <div className="relative z-10 px-6 md:px-8 py-20 md:py-24 lg:py-32 w-full">
+        <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
           <div className="relative">
             {/* Left column: text */}
             <div className="max-w-3xl md:max-w-[50%]">
@@ -69,7 +69,7 @@ export default function Home() {
                 Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
                 <span className="text-green-300">They&apos;re gut health failures.</span>
               </h1>
-              <p className="text-base md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
+              <p className="text-lg md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
                 <span className="hidden md:inline">No one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.</span>
                 <span className="md:hidden">Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to.</span>
               </p>
@@ -89,10 +89,10 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 animate-fade-in-up-delay-2">
-                <Link href="/contact" className="btn-primary text-base md:text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
+                <Link href="/contact" className="btn-primary text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
                   Book Your Assessment
                 </Link>
-                <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3 md:py-3.5 px-6 md:px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5 text-sm md:text-base">
+                <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5">
                   Check If Your Insurance Covers It
                 </Link>
               </div>
