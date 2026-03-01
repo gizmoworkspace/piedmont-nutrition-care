@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import HeroIllustration from "@/components/HeroIllustration";
 import { CheckIcon, XMarkIcon, StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
 
 export default function Home() {
@@ -36,35 +38,41 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[88svh] sm:min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-overlay">
+      <section className="hero-section relative min-h-[88svh] sm:min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden grain-overlay">
         <div
-          className="absolute inset-0 opacity-[0.08] bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1600&h=900&fit=crop')" }}
+          className="hero-parallax absolute inset-0 opacity-[0.08] bg-cover bg-center scale-110"
+          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
         />
         <div className="absolute inset-0 bg-black/25" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 md:px-8 py-16 sm:py-20 md:py-28 lg:py-36 w-full">
-          <div className="max-w-2xl lg:max-w-3xl">
-            <h1 className="font-heading text-[1.65rem] sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] text-white leading-[1.25] sm:leading-[1.2] mb-5 sm:mb-6 md:mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
-              Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
-              <span className="text-green-300">They&apos;re gut health failures.</span>
-            </h1>
-            <p className="text-[0.9rem] sm:text-base md:text-lg lg:text-xl text-green-100/80 leading-relaxed mb-6 sm:mb-8 md:mb-10 max-w-xl lg:max-w-2xl animate-fade-in-up-delay-1">
-              You&apos;ve done everything &ldquo;right&rdquo; — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with &ldquo;eat less, move more.&rdquo; Your body kept fighting back. Because no one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-5 sm:mb-8 animate-fade-in-up-delay-2">
-              <Link href="/contact" className="btn-primary !text-base sm:!text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
-                Book Your Assessment
-              </Link>
-              <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3 px-6 sm:py-3.5 sm:px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5 text-sm sm:text-base">
-                Check If Your Insurance Covers It
-              </Link>
+        <div className="hero-content relative z-10 max-w-6xl mx-auto px-5 sm:px-6 md:px-8 py-16 sm:py-20 md:py-28 lg:py-36 w-full">
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-3">
+              <h1 className="font-heading text-[1.65rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] text-white leading-[1.25] sm:leading-[1.2] mb-5 sm:mb-6 md:mb-8 animate-fade-in-up drop-shadow-lg tracking-tight">
+                Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
+                <span className="text-green-300">They&apos;re gut health failures.</span>
+              </h1>
+              <p className="text-[0.9rem] sm:text-base md:text-lg text-green-100/75 leading-relaxed mb-6 sm:mb-8 max-w-xl animate-fade-in-up-delay-1">
+                No one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-5 sm:mb-8 animate-fade-in-up-delay-2">
+                <Link href="/contact" className="btn-primary !text-base sm:!text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
+                  Book Your Assessment
+                </Link>
+                <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3 px-6 sm:py-3.5 sm:px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5 text-sm sm:text-base">
+                  Check Insurance Coverage
+                </Link>
+              </div>
+              <p className="text-green-200/50 text-xs sm:text-sm animate-fade-in-up-delay-3">
+                60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
+              </p>
             </div>
-            <p className="text-green-200/50 text-xs sm:text-sm animate-fade-in-up-delay-3">
-              60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
-            </p>
+            {/* Hero illustration — right side */}
+            <div className="hidden lg:block lg:col-span-2 animate-fade-in-up-delay-2">
+              <HeroIllustration />
+            </div>
           </div>
         </div>
 
@@ -87,13 +95,13 @@ export default function Home() {
       />
 
       {/* AGITATION */}
-      <section className="section-padding bg-cream">
-        <div className="container-narrow">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 tracking-tight leading-[1.15]">
+      <section className="section-padding bg-cream relative overflow-hidden">
+        {/* Subtle background texture */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-100/20 rounded-full blur-[120px] -mr-40 -mt-40" />
+        <div className="container-narrow relative z-10">
+          <h2 className="gsap-heading font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 tracking-tight leading-[1.15]">
               You&apos;ve been doing everything right. So why does your body keep working against you?
             </h2>
-          </AnimateOnScroll>
           <div className="space-y-6 sm:space-y-8 text-warm-600 leading-relaxed text-[0.95rem] sm:text-base md:text-lg max-w-2xl">
             <AnimateOnScroll delay={100}>
               <p className="border-l-2 border-green-300/40 pl-6">
@@ -127,33 +135,30 @@ export default function Home() {
       {/* CROSSHEAD */}
       <section className="relative py-16 sm:py-20 md:py-28 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.04]" />
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-500 to-amber-500 rounded-r-full" />
+        <div className="gsap-line-grow absolute left-0 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-500 to-amber-500 rounded-r-full" />
         <div className="container-narrow text-center relative z-10 px-5 sm:px-6">
-          <AnimateOnScroll animation="scale-up">
-            <p className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-green-800 italic leading-snug max-w-2xl mx-auto">
+          <p className="gsap-quote font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-green-800 italic leading-snug max-w-2xl mx-auto">
               Your metabolism isn&apos;t broken. It&apos;s been getting the wrong instructions.
             </p>
-          </AnimateOnScroll>
         </div>
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="section-padding bg-cream">
-        <div className="container-wide">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-3 sm:mb-4 text-center tracking-tight leading-[1.15]">
+      <section className="section-padding bg-cream relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-100/15 rounded-full blur-[100px] -ml-32 -mb-32" />
+        <div className="container-wide relative z-10">
+          <h2 className="gsap-heading font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-3 sm:mb-4 text-center tracking-tight leading-[1.15]">
               How Piedmont Nutrition Care works
             </h2>
             <p className="text-warm-500 text-center mb-10 sm:mb-12 md:mb-16 text-sm sm:text-base md:text-lg max-w-xl mx-auto">Four steps from confused to confident</p>
-          </AnimateOnScroll>
 
           {/* Desktop timeline */}
           <div className="hidden md:block relative">
             <div className="absolute top-10 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-0.5 bg-gradient-to-r from-green-300 via-green-400 to-green-300 z-0" />
 
-            <div className="grid md:grid-cols-4 gap-8 relative z-10 stagger-children">
+            <div className="gsap-card-group grid md:grid-cols-4 gap-8 relative z-10">
               {steps.map((item) => (
-                <AnimateOnScroll key={item.step} className="text-center group h-full">
+                <div key={item.step} className="gsap-card text-center group h-full">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white shadow-card mx-auto mb-4 sm:mb-6 flex items-center justify-center group-hover:shadow-deep group-hover:-translate-y-[2px] transition-all duration-300 border border-green-100">
                     <item.Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-green-600" />
                   </div>
@@ -166,7 +171,7 @@ export default function Home() {
                     </div>
                     <p className="text-warm-600 leading-relaxed text-xs sm:text-sm flex-grow">{item.body}</p>
                   </div>
-                </AnimateOnScroll>
+                </div>
               ))}
             </div>
           </div>
@@ -206,47 +211,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PARALLAX IMAGE BREAK */}
+      <section className="relative h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden">
+        <div className="gsap-parallax-img absolute inset-0 -top-20 -bottom-20">
+          <Image
+            src="/section-food.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-warm-50/80 via-transparent to-warm-50/80" />
+        </div>
+      </section>
+
       {/* TESTIMONIALS */}
       <section className="relative section-padding bg-warm-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-green-50/30 rounded-full blur-[120px] -ml-48 -mt-48" />
         <div className="container-wide relative z-10">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 md:mb-14 text-center tracking-tight leading-[1.15]">
+          <h2 className="gsap-heading font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 md:mb-14 text-center tracking-tight leading-[1.15]">
               What our patients say
             </h2>
-          </AnimateOnScroll>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 stagger-children">
-            <AnimateOnScroll className="h-full">
+          <div className="gsap-card-group grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+            <div className="gsap-card h-full">
               <TestimonialCard
                 quote="Jeanne is extremely knowledgeable about food, food chemistry, and the latest research findings on nutrition. She can suggest dietary changes to prevent cancer, boost a sluggish metabolism, improve blood sugar, or lower LDL. Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun."
                 author="Liz"
               />
-            </AnimateOnScroll>
-            <AnimateOnScroll className="h-full">
+            </div>
+            <div className="gsap-card h-full">
               <TestimonialCard
                 quote="As a cancer survivor struggling with weight and gut issues, I'm so grateful to have found Jeanne. She understands the science of food as well as how to share it with me, apply it to my specific needs, and guide me to helpful resources. I'm excited about moving forward with the plan she has developed for me."
                 author="Ann"
                 context="Cancer survivor"
               />
-            </AnimateOnScroll>
-            <AnimateOnScroll className="h-full">
+            </div>
+            <div className="gsap-card h-full sm:col-span-2 lg:col-span-1">
               <TestimonialCard
                 quote="I highly recommend Jeanne Doherty as a nutritionist. Recently I have worked with her to lower my blood sugars and improve cholesterol. Her advice is practical and food suggestions are enjoyable, better versions of my favorite foods. I am grateful for the transformative impact she has had on my lifestyle and wellbeing."
                 author="Doug"
               />
-            </AnimateOnScroll>
+            </div>
           </div>
         </div>
       </section>
 
       {/* COMPARISON */}
-      <section className="section-padding bg-cream">
-        <div className="container-wide">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 md:mb-12 text-center tracking-tight leading-[1.15]">
+      <section className="section-padding bg-cream relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-green-50/30 rounded-full blur-[100px] -mr-60 -mt-60" />
+        <div className="container-wide relative z-10">
+          <h2 className="gsap-heading font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 md:mb-12 text-center tracking-tight leading-[1.15]">
               You&apos;ve tried the old way. Here&apos;s what&apos;s different.
             </h2>
-          </AnimateOnScroll>
 
           <AnimateOnScroll>
             <div className="grid md:grid-cols-2 gap-5 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
@@ -312,12 +330,11 @@ export default function Home() {
       {/* OBJECTION HANDLING */}
       <section className="relative section-padding bg-warm-50 overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-amber-50/30 rounded-full blur-[120px] -mr-40 -mb-40" />
         <div className="container-narrow relative z-10">
-          <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 md:mb-12 text-center tracking-tight leading-[1.15]">
+          <h2 className="gsap-heading font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 sm:mb-10 md:mb-12 text-center tracking-tight leading-[1.15]">
               Your questions, answered honestly
             </h2>
-          </AnimateOnScroll>
           <div className="space-y-5 sm:space-y-6 md:space-y-8 stagger-children">
             {[
               {
