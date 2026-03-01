@@ -19,11 +19,11 @@ export default function Services() {
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="container-wide relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Clinical nutrition therapy that fixes the cause — not just the symptoms
             </h1>
-            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl mx-auto animate-fade-in-up-delay-1">
               Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out.
             </p>
           </div>
