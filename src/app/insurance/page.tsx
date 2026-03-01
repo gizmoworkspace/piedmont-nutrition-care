@@ -85,21 +85,23 @@ export default function Insurance() {
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">Self-Pay Options</h2>
-            <div className="bg-white rounded-2xl p-8 shadow-card border border-warm-100/50">
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-3 border-b border-warm-100">
-                  <span className="text-warm-700 font-medium">Initial Assessment (60 minutes)</span>
-                  <span className="text-green-700 font-semibold bg-green-50 px-3 py-1 rounded-full text-sm">Contact for pricing</span>
+            <div className="grid sm:grid-cols-2 gap-4 mb-6">
+              {[
+                { service: "Initial Assessment", duration: "60 minutes" },
+                { service: "Follow-Up Session", duration: "60 minutes" },
+              ].map((item) => (
+                <div key={item.service} className="bg-white rounded-2xl p-6 shadow-card border border-warm-100/50 text-center">
+                  <h3 className="font-heading text-lg text-warm-900 mb-1">{item.service}</h3>
+                  <p className="text-warm-500 text-sm mb-4">{item.duration}</p>
+                  <a href="tel:3369865388" className="inline-block bg-green-50 text-green-700 font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-green-100 transition-colors">
+                    Call for Pricing
+                  </a>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-warm-100">
-                  <span className="text-warm-700 font-medium">Follow-Up Session (60 minutes)</span>
-                  <span className="text-green-700 font-semibold bg-green-50 px-3 py-1 rounded-full text-sm">Contact for pricing</span>
-                </div>
-              </div>
-              <p className="text-warm-500 text-sm mt-6">
-                Call <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a> for current self-pay rates. Transparent, upfront pricing — no billing surprises.
-              </p>
+              ))}
             </div>
+            <p className="text-warm-500 text-sm text-center">
+              Call <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a> for current self-pay rates. Transparent, upfront pricing — no billing surprises.
+            </p>
           </AnimateOnScroll>
         </div>
       </section>
