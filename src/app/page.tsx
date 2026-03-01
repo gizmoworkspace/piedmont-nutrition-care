@@ -46,107 +46,21 @@ export default function Home() {
         <div className="absolute -top-20 -right-20 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-green-600/15 rounded-full blur-[120px]" />
         <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] bg-amber-500/8 rounded-full blur-[100px]" />
 
-        {/* Right side: nutrition-themed SVG shapes with hover animations */}
-        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[60%] overflow-hidden">
-
-          {/* Large leaf — top right */}
-          <svg className="absolute top-[5%] right-[3%] w-[260px] h-[340px] lg:w-[320px] lg:h-[400px] rotate-[15deg] animate-[float_6s_ease-in-out_infinite]" viewBox="0 0 200 260" fill="none">
-            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="url(#leaf1)" />
-            <path d="M100 40 L100 240" stroke="rgba(255,255,255,0.1)" strokeWidth="2" />
-            <path d="M100 70 C85 90 65 120 55 155" stroke="rgba(255,255,255,0.07)" strokeWidth="1.5" fill="none" />
-            <path d="M100 70 C115 90 135 120 145 155" stroke="rgba(255,255,255,0.07)" strokeWidth="1.5" fill="none" />
-            <path d="M100 110 C88 125 72 148 65 175" stroke="rgba(255,255,255,0.05)" strokeWidth="1" fill="none" />
-            <path d="M100 110 C112 125 128 148 135 175" stroke="rgba(255,255,255,0.05)" strokeWidth="1" fill="none" />
-            <defs><linearGradient id="leaf1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="rgba(74,222,128,0.18)" /><stop offset="100%" stopColor="rgba(34,197,94,0.06)" /></linearGradient></defs>
-          </svg>
-
-          {/* Medium leaf — far left of right zone */}
-          <svg className="absolute top-[30%] right-[48%] w-[160px] h-[210px] lg:w-[200px] lg:h-[260px] rotate-[-35deg] animate-[float_7s_ease-in-out_1.5s_infinite]" viewBox="0 0 200 260" fill="none">
-            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="url(#leaf3)" />
-            <path d="M100 40 L100 240" stroke="rgba(255,255,255,0.07)" strokeWidth="1.5" />
-            <path d="M100 80 C82 100 62 135 55 170" stroke="rgba(255,255,255,0.05)" strokeWidth="1" fill="none" />
-            <path d="M100 80 C118 100 138 135 145 170" stroke="rgba(255,255,255,0.05)" strokeWidth="1" fill="none" />
-            <defs><linearGradient id="leaf3" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="rgba(74,222,128,0.14)" /><stop offset="100%" stopColor="rgba(34,197,94,0.04)" /></linearGradient></defs>
-          </svg>
-
-          {/* Citrus cross-section — center right */}
-          <svg className="absolute top-[22%] right-[22%] w-[180px] h-[180px] lg:w-[220px] lg:h-[220px] animate-[float_8s_ease-in-out_0.5s_infinite]" viewBox="0 0 200 200" fill="none">
-            <circle cx="100" cy="100" r="90" fill="rgba(251,191,36,0.10)" />
-            <circle cx="100" cy="100" r="70" fill="rgba(251,191,36,0.06)" />
-            <circle cx="100" cy="100" r="45" fill="rgba(251,191,36,0.03)" />
-            <path d="M100 20 L100 180" stroke="rgba(251,191,36,0.10)" strokeWidth="1.5" />
-            <path d="M20 100 L180 100" stroke="rgba(251,191,36,0.10)" strokeWidth="1.5" />
-            <path d="M42 42 L158 158" stroke="rgba(251,191,36,0.07)" strokeWidth="1.5" />
-            <path d="M158 42 L42 158" stroke="rgba(251,191,36,0.07)" strokeWidth="1.5" />
-          </svg>
-
-          {/* Small leaf — bottom right */}
-          <svg className="absolute bottom-[8%] right-[6%] w-[170px] h-[220px] lg:w-[210px] lg:h-[270px] -rotate-[25deg] animate-[float_7s_ease-in-out_2s_infinite]" viewBox="0 0 200 260" fill="none">
-            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="url(#leaf2)" />
-            <path d="M100 40 L100 240" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
-            <path d="M100 75 C82 95 60 130 52 165" stroke="rgba(255,255,255,0.06)" strokeWidth="1" fill="none" />
-            <path d="M100 75 C118 95 140 130 148 165" stroke="rgba(255,255,255,0.06)" strokeWidth="1" fill="none" />
-            <defs><linearGradient id="leaf2" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stopColor="rgba(34,197,94,0.15)" /><stop offset="100%" stopColor="rgba(74,222,128,0.05)" /></linearGradient></defs>
-          </svg>
-
-          {/* Apple silhouette — upper far right */}
-          <svg className="absolute top-[50%] right-[5%] w-[130px] h-[150px] lg:w-[160px] lg:h-[180px] rotate-[-5deg] animate-[float_9s_ease-in-out_3s_infinite]" viewBox="0 0 120 140" fill="none">
-            <path d="M60 25 C60 15 65 5 70 5 C75 5 75 15 70 20 C80 15 100 20 105 45 C110 75 100 120 60 135 C20 120 10 75 15 45 C20 20 40 15 50 20 C45 15 45 5 50 5 C55 5 60 15 60 25Z" fill="rgba(74,222,128,0.12)" />
-            <path d="M60 30 L60 130" stroke="rgba(255,255,255,0.05)" strokeWidth="1" />
-          </svg>
-
-          {/* Leaf — bottom far left of zone */}
-          <svg className="absolute bottom-[25%] right-[42%] w-[120px] h-[155px] lg:w-[150px] lg:h-[195px] rotate-[45deg] animate-[float_6.5s_ease-in-out_1s_infinite]" viewBox="0 0 200 260" fill="none">
-            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="rgba(74,222,128,0.09)" />
-            <path d="M100 40 L100 240" stroke="rgba(255,255,255,0.05)" strokeWidth="1" />
-          </svg>
-
-          {/* Seed/grain shapes — well spread */}
-          <svg className="absolute top-[65%] right-[32%] w-[70px] h-[35px] lg:w-[90px] lg:h-[45px] rotate-[30deg] animate-[float_5s_ease-in-out_2.5s_infinite]" viewBox="0 0 80 40" fill="none">
-            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(251,191,36,0.09)" />
-            <ellipse cx="40" cy="20" rx="20" ry="9" fill="rgba(251,191,36,0.05)" />
-          </svg>
-          <svg className="absolute top-[10%] right-[40%] w-[55px] h-[28px] lg:w-[70px] lg:h-[35px] rotate-[-20deg] animate-[float_6s_ease-in-out_4s_infinite]" viewBox="0 0 80 40" fill="none">
-            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(74,222,128,0.10)" />
-            <ellipse cx="40" cy="20" rx="20" ry="9" fill="rgba(74,222,128,0.05)" />
-          </svg>
-          <svg className="absolute bottom-[40%] right-[15%] w-[50px] h-[25px] lg:w-[65px] lg:h-[32px] rotate-[55deg] animate-[float_7s_ease-in-out_3.5s_infinite]" viewBox="0 0 80 40" fill="none">
-            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(251,191,36,0.07)" />
-          </svg>
-          <svg className="absolute top-[75%] right-[48%] w-[45px] h-[22px] lg:w-[55px] lg:h-[28px] rotate-[-40deg] animate-[float_5.5s_ease-in-out_1.8s_infinite]" viewBox="0 0 80 40" fill="none">
-            <ellipse cx="40" cy="20" rx="38" ry="18" fill="rgba(74,222,128,0.07)" />
-          </svg>
-
-          {/* Citrus slice — small, bottom center */}
-          <svg className="absolute bottom-[15%] right-[28%] w-[100px] h-[100px] lg:w-[130px] lg:h-[130px] animate-[float_8.5s_ease-in-out_2.8s_infinite]" viewBox="0 0 200 200" fill="none">
-            <circle cx="100" cy="100" r="90" fill="rgba(251,191,36,0.07)" />
-            <path d="M100 25 L100 175" stroke="rgba(251,191,36,0.07)" strokeWidth="1" />
-            <path d="M25 100 L175 100" stroke="rgba(251,191,36,0.07)" strokeWidth="1" />
-          </svg>
-
-          {/* Plate ring outlines — spread */}
-          <svg className="absolute top-[42%] right-[38%] w-[140px] h-[140px] lg:w-[180px] lg:h-[180px] animate-[float_9s_ease-in-out_0.8s_infinite]" viewBox="0 0 160 160" fill="none">
-            <circle cx="80" cy="80" r="70" stroke="rgba(74,222,128,0.09)" strokeWidth="2" />
-            <circle cx="80" cy="80" r="50" stroke="rgba(74,222,128,0.05)" strokeWidth="1" />
-          </svg>
-          <svg className="absolute top-[8%] right-[15%] w-[90px] h-[90px] lg:w-[110px] lg:h-[110px] animate-[float_7.5s_ease-in-out_3.2s_infinite]" viewBox="0 0 160 160" fill="none">
-            <circle cx="80" cy="80" r="70" stroke="rgba(74,222,128,0.06)" strokeWidth="1.5" />
-          </svg>
-        </div>
-
-        {/* Mobile: subtle nutrition shapes */}
-        <div className="md:hidden absolute inset-0 overflow-hidden">
-          <svg className="absolute -top-4 -right-8 w-[140px] h-[180px] rotate-[20deg] opacity-60 animate-[float_6s_ease-in-out_infinite]" viewBox="0 0 200 260" fill="none">
-            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="rgba(74,222,128,0.12)" />
-            <path d="M100 40 L100 240" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" />
-          </svg>
-          <svg className="absolute bottom-20 -right-4 w-[100px] h-[100px] opacity-50 animate-[float_8s_ease-in-out_1s_infinite]" viewBox="0 0 200 200" fill="none">
-            <circle cx="100" cy="100" r="90" fill="rgba(251,191,36,0.08)" />
-            <path d="M100 20 L100 180 M20 100 L180 100" stroke="rgba(251,191,36,0.08)" strokeWidth="2" />
-          </svg>
-          <svg className="absolute top-[40%] -right-6 w-[90px] h-[115px] rotate-[-30deg] opacity-50 animate-[float_7s_ease-in-out_2s_infinite]" viewBox="0 0 200 260" fill="none">
-            <path d="M100 10 C40 60 10 140 30 200 C50 240 80 255 100 250 C120 255 150 240 170 200 C190 140 160 60 100 10Z" fill="rgba(74,222,128,0.10)" />
-          </svg>
+        {/* Right side: food photography, masked to blend into dark green */}
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
+          <img
+            src="/hero-detail.jpg"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover opacity-[0.35]"
+            style={{
+              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.5) 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 15%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.6) 85%, transparent 100%)",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.5) 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 15%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.6) 85%, transparent 100%)",
+              maskComposite: "intersect",
+              WebkitMaskComposite: "source-in",
+            }}
+          />
+          {/* Color tint overlay to match hero green */}
+          <div className="absolute inset-0 bg-green-900/30 mix-blend-multiply" />
         </div>
 
         <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
