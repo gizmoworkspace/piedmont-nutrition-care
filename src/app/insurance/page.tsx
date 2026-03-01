@@ -14,20 +14,15 @@ export default function Insurance() {
       {/* HERO */}
       <section className="relative bg-gradient-hero overflow-hidden min-h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-black/15" />
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-20 sm:py-24 md:py-32 lg:py-36 w-full relative z-10">
+          <div className="max-w-2xl lg:max-w-3xl">
+            <h1 className="font-heading text-[1.75rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl text-white leading-[1.12] mb-5 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
               You deserve to know what this costs before you commit.
             </h1>
-            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-[0.95rem] sm:text-base md:text-lg text-white/65 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               No surprises. No hidden fees. No calling three departments to find out if your insurance covers it. Piedmont Nutrition Care believes pricing transparency is a basic right — and that understanding your investment upfront is the first step toward trusting the process.
             </p>
           </div>
-        </div>
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[50px]">
-            <path d="M0,60 C300,20 900,20 1200,60 L1200,60 L0,60 Z" fill="#FDFBF7" />
-          </svg>
         </div>
       </section>
 
@@ -36,7 +31,7 @@ export default function Insurance() {
         <div className="container-narrow">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">Coverage</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-10 tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-10 tracking-tight leading-[1.1]">
               Your insurance likely covers Medical Nutrition Therapy
             </h2>
             <p className="text-base md:text-lg text-warm-600 leading-relaxed mb-16 max-w-2xl">
@@ -50,7 +45,7 @@ export default function Insurance() {
           <div className="grid sm:grid-cols-3 gap-6 mb-16 stagger-children">
             {["Blue Cross Blue Shield (BCBS)", "Aetna", "Medicare"].map((carrier) => (
               <AnimateOnScroll key={carrier}>
-                <div className="bg-white rounded-2xl p-8 text-center border border-warm-100/50 hover:shadow-card transition-all duration-300 hover:-translate-y-[1px]">
+                <div className="bg-white rounded-2xl p-8 text-center border border-warm-100/50 hover:shadow-card transition-shadow duration-300">
                   <ShieldCheckIcon className="w-8 h-8 text-green-500 mx-auto mb-4" />
                   <span className="text-warm-800 font-semibold">{carrier}</span>
                 </div>
@@ -68,7 +63,7 @@ export default function Insurance() {
               { step: "03", text: "You'll know your exact out-of-pocket cost before you walk in the door." },
             ].map((item) => (
               <AnimateOnScroll key={item.step}>
-                <div className="flex items-start gap-5 bg-white rounded-2xl p-6 border border-warm-100/50 hover:shadow-card transition-all duration-300">
+                <div className="flex items-start gap-5 bg-white rounded-2xl p-6 border border-warm-100/50 hover:shadow-card transition-shadow duration-300">
                   <span className="text-warm-200 font-heading font-bold text-xl flex-shrink-0">{item.step}</span>
                   <p className="text-warm-600 leading-relaxed">{item.text}</p>
                 </div>
@@ -108,7 +103,7 @@ export default function Insurance() {
         <div className="container-narrow">
           <AnimateOnScroll>
             <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Perspective</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-12 text-center tracking-tight leading-[1.1]">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-12 text-center tracking-tight leading-[1.1]">
               Compare the real cost
             </h2>
           </AnimateOnScroll>
@@ -127,7 +122,7 @@ export default function Insurance() {
         <div className="container-narrow">
           <div className="space-y-6 stagger-children">
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted transition-all duration-300">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300">
                 <h3 className="font-heading text-lg md:text-xl text-warm-900 mb-4">&ldquo;I&apos;m on a high-deductible plan&rdquo;</h3>
                 <p className="text-warm-600 leading-relaxed max-w-2xl">
                   Even with a high-deductible plan, MNT sessions count toward your deductible and are often available at negotiated in-network rates. Piedmont Nutrition Care will verify your specific benefit level before your first session so there are no financial surprises. Compare this to what you&apos;ve already spent on supplements, apps, programs, and co-pays for approaches that didn&apos;t address the root cause.
@@ -135,7 +130,7 @@ export default function Insurance() {
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted transition-all duration-300">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300">
                 <h3 className="font-heading text-lg md:text-xl text-warm-900 mb-4">&ldquo;I don&apos;t know if my condition qualifies&rdquo;</h3>
                 <p className="text-warm-600 leading-relaxed max-w-2xl">
                   If you have a diagnosis of diabetes, pre-diabetes, high cholesterol, IBS, obesity, cardiovascular disease, or an oncology-related nutrition need, you likely qualify for covered Medical Nutrition Therapy. Not sure? Call{" "}

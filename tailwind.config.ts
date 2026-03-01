@@ -105,15 +105,7 @@ const config: Config = {
         },
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-8px)" },
-        },
-        "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(106, 168, 79, 0.2)" },
-          "50%": { boxShadow: "0 0 30px rgba(106, 168, 79, 0.4)" },
-        },
-        "shimmer": {
-          "0%": { backgroundPosition: "-200% 0" },
-          "100%": { backgroundPosition: "200% 0" },
+          "50%": { transform: "translateY(-6px)" },
         },
       },
       animation: {
@@ -124,8 +116,6 @@ const config: Config = {
         "scale-in": "scale-in 0.5s ease-out forwards",
         "count-up": "count-up 0.4s ease-out forwards",
         "float": "float 6s ease-in-out infinite",
-        "pulse-glow": "pulse-glow 3s ease-in-out infinite",
-        "shimmer": "shimmer 2s linear infinite",
       },
     },
   },

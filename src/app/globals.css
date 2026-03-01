@@ -16,32 +16,33 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block bg-gradient-btn text-white font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 shadow-card hover:shadow-glow-green hover:-translate-y-0.5 active:translate-y-0 hover:scale-[1.02];
+    @apply inline-block bg-gradient-btn text-white font-medium py-3 px-6 sm:py-3.5 sm:px-8 rounded-[8px] transition-colors duration-200 shadow-card hover:shadow-lifted;
   }
   .btn-secondary {
-    @apply inline-block border-2 border-green-500 text-green-600 hover:bg-green-50 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 hover:-translate-y-0.5;
+    @apply inline-block border-2 border-green-500 text-green-600 hover:bg-green-50 font-medium py-3 px-6 sm:py-3.5 sm:px-8 rounded-[8px] transition-colors duration-200;
   }
   .btn-primary-light {
-    @apply inline-block bg-white text-green-800 px-8 py-4 rounded-[8px] font-body font-semibold transition-all duration-300 shadow-card hover:shadow-deep hover:-translate-y-0.5 hover:scale-[1.02];
+    @apply inline-block bg-white text-green-800 px-6 sm:px-8 py-3.5 sm:py-4 rounded-[8px] font-body font-semibold transition-colors duration-200 shadow-card hover:shadow-lifted hover:bg-green-50;
   }
   .section-padding {
-    @apply py-28 md:py-36 lg:py-44 px-6 md:px-12 lg:px-20;
+    @apply py-20 sm:py-24 md:py-32 lg:py-40 px-5 sm:px-8 md:px-12 lg:px-20;
   }
   .section-padding-sm {
-    @apply py-20 md:py-28 lg:py-32 px-6 md:px-12 lg:px-20;
+    @apply py-16 sm:py-20 md:py-28 lg:py-32 px-5 sm:px-8 md:px-12 lg:px-20;
   }
   .container-narrow {
-    @apply max-w-3xl mx-auto;
+    @apply max-w-3xl mx-auto px-5 sm:px-8 md:px-0;
   }
   .container-wide {
-    @apply max-w-6xl mx-auto;
+    @apply max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20;
   }
 }
 
-/* Scroll-triggered animations */
+/* Scroll-triggered animations — lightweight, GPU-only */
 .animate-on-scroll {
   opacity: 0;
-  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .animate-on-scroll.is-visible {
@@ -49,28 +50,28 @@
 }
 
 .animate-on-scroll.fade-up {
-  transform: translateY(32px);
+  transform: translateY(16px);
 }
 .animate-on-scroll.fade-up.is-visible {
   transform: translateY(0);
 }
 
 .animate-on-scroll.fade-left {
-  transform: translateX(-32px);
+  transform: translateX(-16px);
 }
 .animate-on-scroll.fade-left.is-visible {
   transform: translateX(0);
 }
 
 .animate-on-scroll.fade-right {
-  transform: translateX(32px);
+  transform: translateX(16px);
 }
 .animate-on-scroll.fade-right.is-visible {
   transform: translateX(0);
 }
 
 .animate-on-scroll.scale-up {
-  transform: scale(0.95);
+  transform: scale(0.97);
 }
 .animate-on-scroll.scale-up.is-visible {
   transform: scale(1);
@@ -85,14 +86,14 @@
   clip-path: inset(0 0% 0 0);
 }
 
-/* Staggered children */
+/* Staggered children — tight intervals */
 .stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 150ms; }
-.stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 300ms; }
-.stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 450ms; }
-.stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 600ms; }
-.stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 750ms; }
-.stagger-children .animate-on-scroll:nth-child(7) { transition-delay: 900ms; }
+.stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
+.stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+.stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
+.stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
+.stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 400ms; }
+.stagger-children .animate-on-scroll:nth-child(7) { transition-delay: 480ms; }
 
 /* Hero page animations (immediate, not scroll-triggered) */
 @keyframes fadeInUp {

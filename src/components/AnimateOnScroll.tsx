@@ -6,7 +6,6 @@ interface AnimateOnScrollProps {
   children: React.ReactNode;
   className?: string;
   animation?: "fade-up" | "fade-left" | "fade-right" | "scale-up";
-  delay?: number;
   threshold?: number;
 }
 
@@ -14,8 +13,7 @@ export default function AnimateOnScroll({
   children,
   className = "",
   animation = "fade-up",
-  delay = 0,
-  threshold = 0.15,
+  threshold = 0.1,
 }: AnimateOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -26,16 +24,16 @@ export default function AnimateOnScroll({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add("is-visible"), delay);
+          el.classList.add("is-visible");
           observer.unobserve(el);
         }
       },
-      { threshold }
+      { threshold, rootMargin: "0px 0px -40px 0px" }
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [delay, threshold]);
+  }, [threshold]);
 
   return (
     <div ref={ref} className={`animate-on-scroll ${animation} ${className}`}>

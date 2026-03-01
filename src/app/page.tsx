@@ -56,40 +56,30 @@ export default function Home() {
   return (
     <>
       {/* ===== 01. HERO ===== */}
-      <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.07] bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1600&h=900&fit=crop')" }}
-        />
-        <div className="absolute inset-0 bg-black/30" />
+      <section className="relative h-[100svh] min-h-[580px] max-h-[900px] flex items-center bg-gradient-hero overflow-hidden">
+        <div className="absolute inset-0 bg-black/20" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full">
-          <div className="max-w-3xl">
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-7xl text-white leading-[1.05] mb-10 animate-fade-in-up tracking-tight">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20 w-full">
+          <div className="max-w-2xl lg:max-w-3xl">
+            <h1 className="font-heading text-[1.75rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] xl:text-[3.5rem] text-white leading-[1.12] mb-5 sm:mb-6 md:mb-8 animate-fade-in-up tracking-tight">
               Your cravings, weight resistance, and gut pain aren&apos;t willpower failures.{" "}
               <span className="text-green-300">They&apos;re gut health failures.</span>
             </h1>
-            <p className="text-lg md:text-xl text-green-100/70 leading-relaxed mb-12 max-w-2xl animate-fade-in-up-delay-1">
-              You&apos;ve done everything &ldquo;right&rdquo; — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with &ldquo;eat less, move more.&rdquo; Your body kept fighting back. Because no one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
+            <p className="text-[0.95rem] sm:text-base md:text-lg text-white/60 leading-relaxed mb-6 sm:mb-8 max-w-xl lg:max-w-2xl animate-fade-in-up-delay-1">
+              No one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up-delay-2">
-              <Link href="/contact" className="btn-primary text-lg text-center !shadow-glow-green">
+            <div className="flex flex-col sm:flex-row gap-3 mb-5 animate-fade-in-up-delay-2">
+              <Link href="/contact" className="btn-primary text-center text-sm sm:text-base">
                 Book Your Assessment
               </Link>
-              <Link href="/insurance" className="inline-block border border-white/20 text-white hover:bg-white/10 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5">
-                Check If Your Insurance Covers It
+              <Link href="/insurance" className="inline-block border border-white/20 text-white hover:bg-white/10 font-medium py-3 px-6 sm:py-3.5 sm:px-8 rounded-[8px] transition-colors duration-300 text-center text-sm sm:text-base">
+                Check Insurance Coverage
               </Link>
             </div>
-            <p className="text-green-200/40 text-sm animate-fade-in-up-delay-3">
-              60-minute consultations  ·  BCBS, Aetna &amp; Medicare accepted  ·  In-person or virtual
+            <p className="text-white/30 text-xs sm:text-sm animate-fade-in-up-delay-3">
+              60-min consultations · Insurance accepted · In-person or virtual
             </p>
           </div>
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[50px]">
-            <path d="M0,60 C300,20 900,20 1200,60 L1200,60 L0,60 Z" fill="#FDFBF7" />
-          </svg>
         </div>
       </section>
 
@@ -104,50 +94,51 @@ export default function Home() {
       />
 
       {/* ===== 03. THE PROBLEM / SOLUTION ===== */}
-      <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="max-w-2xl">
+      {/* Cool color temperature — tension */}
+      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-gradient-to-b from-cream to-warm-50">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
+          <div className="max-w-2xl mb-10 md:mb-14">
             <AnimateOnScroll>
-              <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">The Problem</p>
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-10 tracking-tight leading-[1.1]">
+              <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3">The Problem</p>
+              <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 tracking-tight leading-[1.1]">
                 You&apos;ve been doing everything right. So why does your body keep working against you?
               </h2>
             </AnimateOnScroll>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-            <div className="space-y-8 text-warm-600 leading-relaxed text-base md:text-lg max-w-2xl">
-              <AnimateOnScroll delay={100}>
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
+            <div className="lg:col-span-3 space-y-6 text-warm-600 leading-relaxed text-[0.95rem] sm:text-base md:text-lg">
+              <AnimateOnScroll>
                 <p>
                   Your A1C keeps creeping up. Your stomach bloats so badly after meals you look six months pregnant. You&apos;re mentally mapping public restrooms before you leave the house.
                 </p>
               </AnimateOnScroll>
-              <AnimateOnScroll delay={200}>
+              <AnimateOnScroll>
                 <p>
                   You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
                 </p>
               </AnimateOnScroll>
-              <AnimateOnScroll delay={300}>
+              <AnimateOnScroll>
                 <p>
                   And every doctor you&apos;ve seen has said the same thing: eat less, move more. In a 10-minute appointment that felt more like a lecture than a conversation.
                 </p>
               </AnimateOnScroll>
-              <AnimateOnScroll delay={400}>
+              <AnimateOnScroll>
                 <p className="font-medium text-warm-800">
                   None of it worked. Not because you lack willpower or discipline. You have more of both than most people will ever need.
                 </p>
               </AnimateOnScroll>
-              <AnimateOnScroll delay={500}>
+              <AnimateOnScroll>
                 <p>
                   It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
                 </p>
               </AnimateOnScroll>
             </div>
 
-            {/* Pull quote as oversized typographic moment */}
-            <div className="lg:sticky lg:top-32">
-              <AnimateOnScroll animation="scale-up">
-                <p className="font-heading text-3xl md:text-4xl lg:text-5xl text-green-700 italic leading-[1.15] tracking-tight">
+            {/* Pull quote — typographic anchor */}
+            <div className="lg:col-span-2 lg:sticky lg:top-32">
+              <AnimateOnScroll animation="fade-up">
+                <p className="font-heading text-2xl sm:text-3xl md:text-4xl text-green-700 italic leading-[1.2] tracking-tight">
                   Your metabolism isn&apos;t broken. It&apos;s been getting the wrong instructions.
                 </p>
               </AnimateOnScroll>
@@ -157,27 +148,28 @@ export default function Home() {
       </section>
 
       {/* ===== 04. HOW IT WORKS ===== */}
-      <section className="section-padding bg-warm-50">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+      {/* Warming back up — confidence builds */}
+      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-gradient-to-b from-warm-50 to-green-50/30">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">How It Works</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-6 text-center tracking-tight leading-[1.1]">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">How It Works</p>
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-4 text-center tracking-tight leading-[1.1]">
               Four steps from confused to confident
             </h2>
-            <p className="text-warm-500 text-center mb-16 text-base md:text-lg max-w-xl mx-auto">A clinical process, not a cookie-cutter program.</p>
+            <p className="text-warm-500 text-center mb-12 md:mb-16 text-sm sm:text-base md:text-lg max-w-xl mx-auto">A clinical process, not a cookie-cutter program.</p>
           </AnimateOnScroll>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 stagger-children">
+          <div className="grid sm:grid-cols-2 gap-5 sm:gap-6 md:gap-8">
             {steps.map((item) => (
               <AnimateOnScroll key={item.step} className="h-full">
-                <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted hover:-translate-y-[2px] transition-all duration-300 h-full flex flex-col group">
-                  <div className="flex items-start gap-5 mb-5">
-                    <span className="section-number text-2xl text-warm-200 font-heading font-bold leading-none mt-1">{item.step}</span>
-                    <div className="w-12 h-12 rounded-2xl bg-green-50 flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
-                      <item.Icon className="w-6 h-6 text-green-600" />
+                <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 shadow-card border border-warm-100/50 hover:shadow-lifted transition-shadow duration-300 h-full flex flex-col group">
+                  <div className="flex items-start gap-4 mb-4">
+                    <span className="text-warm-200 font-heading font-bold text-xl leading-none mt-0.5">{item.step}</span>
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
+                      <item.Icon className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                     </div>
                   </div>
-                  <h3 className="font-heading text-lg md:text-xl text-warm-900 mb-3">{item.title}</h3>
+                  <h3 className="font-heading text-base sm:text-lg md:text-xl text-warm-900 mb-2">{item.title}</h3>
                   <p className="text-warm-600 leading-relaxed text-sm md:text-base flex-grow">{item.body}</p>
                 </div>
               </AnimateOnScroll>
@@ -187,15 +179,16 @@ export default function Home() {
       </section>
 
       {/* ===== 05. SOCIAL PROOF ===== */}
-      <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+      {/* Warm — trust and humanity */}
+      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-cream">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">What Patients Say</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-16 text-center tracking-tight leading-[1.1]">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">What Patients Say</p>
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-warm-950 mb-10 md:mb-14 text-center tracking-tight leading-[1.1]">
               Results that speak for themselves
             </h2>
           </AnimateOnScroll>
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12 stagger-children">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
             <AnimateOnScroll className="h-full">
               <TestimonialCard
                 quote="Jeanne is extremely knowledgeable about food, food chemistry, and the latest research findings on nutrition. She can suggest dietary changes to prevent cancer, boost a sluggish metabolism, improve blood sugar, or lower LDL. Her intelligence, compassion and sense of humor make working with her not only helpful, but also fun."
@@ -209,7 +202,7 @@ export default function Home() {
                 context="Cancer survivor"
               />
             </AnimateOnScroll>
-            <AnimateOnScroll className="h-full">
+            <AnimateOnScroll className="h-full sm:col-span-2 lg:col-span-1">
               <TestimonialCard
                 quote="After months of intense IBS symptoms, I met with Jeanne to help figure out which foods to avoid and which foods to eat so that I wouldn't have to continue taking steroids and antibiotics. After following her recommendations, I am feeling so much better."
                 author="M. Cooper"
@@ -221,11 +214,11 @@ export default function Home() {
       </section>
 
       {/* ===== 06. OBJECTION HANDLING (Accordion) ===== */}
-      <section className="section-padding bg-warm-50">
-        <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-20">
+      <section className="py-20 sm:py-24 md:py-32 lg:py-40 bg-warm-50">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
           <AnimateOnScroll>
-            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Common Concerns</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-12 text-center tracking-tight leading-[1.1]">
+            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-3 text-center">Common Concerns</p>
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-warm-950 mb-10 md:mb-12 text-center tracking-tight leading-[1.1]">
               Your questions, answered honestly
             </h2>
           </AnimateOnScroll>
