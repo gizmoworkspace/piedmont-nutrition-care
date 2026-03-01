@@ -102,7 +102,7 @@ export default function About() {
       </section>
 
       {/* WHAT MAKES JEANNE DIFFERENT */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
@@ -170,7 +170,7 @@ export default function About() {
       </section>
 
       {/* CLOSE / INVITATION */}
-      <section className="relative section-padding bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="section-padding bg-cream">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>

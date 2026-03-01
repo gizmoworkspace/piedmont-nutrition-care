@@ -98,7 +98,7 @@ export default function Contact() {
       </section>
 
       {/* WHAT TO EXPECT */}
-      <section className="relative section-padding bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="section-padding bg-cream">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>

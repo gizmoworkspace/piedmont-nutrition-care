@@ -287,7 +287,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="relative section-padding bg-warm-50 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
@@ -395,7 +395,7 @@ export default function Home() {
       </section>
 
       {/* OBJECTION HANDLING */}
-      <section className="relative section-padding bg-warm-50 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>

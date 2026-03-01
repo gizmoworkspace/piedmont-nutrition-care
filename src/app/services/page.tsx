@@ -86,7 +86,7 @@ export default function Services() {
       </section>
 
       {/* WHAT IS MNT */}
-      <section className="relative section-padding bg-gradient-to-tl from-green-50 via-cream to-amber-50 overflow-hidden">
+      <section className="section-padding bg-cream">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6 text-center">
@@ -101,7 +101,7 @@ export default function Services() {
       </section>
 
       {/* 4-STEP PROCESS */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
@@ -200,7 +200,7 @@ export default function Services() {
       </section>
 
       {/* CONDITIONS */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
@@ -231,7 +231,7 @@ export default function Services() {
       </section>
 
       {/* COMPARISON */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">

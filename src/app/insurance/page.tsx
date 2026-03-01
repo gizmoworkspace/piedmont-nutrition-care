@@ -80,7 +80,7 @@ export default function Insurance() {
       </section>
 
       {/* SELF-PAY */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="container-narrow relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6 text-center">Self-Pay Options</h2>
@@ -125,7 +125,7 @@ export default function Insurance() {
       </section>
 
       {/* OBJECTIONS */}
-      <section className="relative section-padding bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="section-padding bg-white">
         <div className="container-narrow relative z-10">
           <div className="space-y-6 stagger-children">
             <AnimateOnScroll>
