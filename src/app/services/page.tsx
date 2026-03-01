@@ -86,7 +86,7 @@ export default function Services() {
       </section>
 
       {/* WHAT IS MNT */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6 text-center">
@@ -101,7 +101,7 @@ export default function Services() {
       </section>
 
       {/* 4-STEP PROCESS */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-cream">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
@@ -200,7 +200,7 @@ export default function Services() {
       </section>
 
       {/* CONDITIONS */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-cream">
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
@@ -282,7 +282,7 @@ export default function Services() {
       </section>
 
       {/* CLOSE */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-cream">
         <div className="container-narrow text-center">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">For People Still Deciding</h2>
