@@ -175,15 +175,52 @@ export default function Home() {
       </section>
 
       {/* CROSSHEAD */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.04]" />
-        <div className="absolute left-5 top-1/2 -translate-y-1/2 w-1 h-24 bg-gradient-to-b from-green-400 to-amber-400 rounded-full" />
-        <div className="container-narrow text-center relative z-10 flex items-center justify-center min-h-[120px]">
+      <section className="relative py-16 md:py-24 bg-gradient-to-br from-green-900 via-green-950 to-green-900 overflow-hidden">
+        {/* Background texture */}
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.06]" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-green-400/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-amber-400/5 rounded-full blur-3xl" />
+
+        <div className="container-wide relative z-10">
+          {/* Decorative line above */}
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-green-400/50" />
+            <div className="w-2 h-2 rounded-full bg-green-400/60" />
+            <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-green-400/50" />
+          </div>
+
           <AnimateOnScroll animation="scale-up">
-            <p className="font-heading text-2xl md:text-3xl lg:text-4xl text-green-700 italic leading-snug max-w-2xl mx-auto">
-              Your metabolism isn&apos;t broken. It&apos;s been getting the wrong instructions.
+            <p className="font-heading text-2xl md:text-3xl lg:text-5xl text-white text-center italic leading-snug max-w-3xl mx-auto tracking-tight">
+              Your metabolism isn&apos;t broken.{" "}
+              <span className="text-green-300">It&apos;s been getting the wrong instructions.</span>
             </p>
           </AnimateOnScroll>
+
+          {/* Supporting line */}
+          <AnimateOnScroll delay={200}>
+            <p className="text-green-200/60 text-center text-base md:text-lg mt-6 max-w-xl mx-auto">
+              Restore the system, and the symptoms resolve themselves.
+            </p>
+          </AnimateOnScroll>
+
+          {/* Decorative line below */}
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-green-400/50" />
+            <div className="w-2 h-2 rounded-full bg-green-400/60" />
+            <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-green-400/50" />
+          </div>
+        </div>
+
+        {/* Section divider curves */}
+        <div className="absolute top-0 left-0 right-0">
+          <svg viewBox="0 0 1200 40" preserveAspectRatio="none" className="block w-full h-[20px] md:h-[30px] rotate-180">
+            <path d="M0,40 C300,10 900,10 1200,40 L1200,40 L0,40 Z" fill="#FDFBF7" />
+          </svg>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1200 40" preserveAspectRatio="none" className="block w-full h-[20px] md:h-[30px]">
+            <path d="M0,40 C300,10 900,10 1200,40 L1200,40 L0,40 Z" fill="#FDFBF7" />
+          </svg>
         </div>
       </section>
 
