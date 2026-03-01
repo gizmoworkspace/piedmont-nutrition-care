@@ -45,21 +45,19 @@ export default function Home() {
         <div className="absolute -top-20 -right-20 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-green-600/15 rounded-full blur-[120px]" />
         <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] bg-amber-500/8 rounded-full blur-[100px]" />
 
-        {/* Right side: food photography, masked to blend into dark green */}
-        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[55%] overflow-hidden">
+        {/* Right side: generated food scene, strong gradient blend to left */}
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[60%] overflow-hidden">
           <img
-            src="/hero-detail.jpg"
+            src="/hero-generated.png"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover opacity-[0.35]"
-            style={{
-              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.5) 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 15%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.6) 85%, transparent 100%)",
-              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.5) 85%, transparent 100%), linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 15%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.6) 85%, transparent 100%)",
-              maskComposite: "intersect",
-              WebkitMaskComposite: "source-in",
-            }}
+            className="absolute inset-0 w-full h-full object-cover"
           />
-          {/* Color tint overlay to match hero green */}
-          <div className="absolute inset-0 bg-green-900/30 mix-blend-multiply" />
+          {/* Strong dark gradient fading from left to reveal image on right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/90 via-40% to-transparent" />
+          {/* Top/bottom edge fade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-green-950/80 via-transparent to-green-950/80" />
+          {/* Subtle green tint */}
+          <div className="absolute inset-0 bg-green-900/20 mix-blend-multiply" />
         </div>
 
         <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-24 lg:py-32 w-full">
