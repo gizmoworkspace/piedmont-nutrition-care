@@ -82,7 +82,7 @@ export default function ConditionPage({
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="section-padding bg-cream">
+      <section className="py-10 md:py-14 px-6 md:px-8 bg-cream">
         <div className="container-wide max-w-3xl mx-auto">
           <AnimateOnScroll>
             <TestimonialCard
