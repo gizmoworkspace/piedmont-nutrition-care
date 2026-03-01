@@ -14,6 +14,7 @@ const conditions = [
     hook: "A1C reduction, insulin sensitivity, and blood sugar stabilization through food chemistry — not just calorie restriction.",
     href: "/conditions/diabetes",
     Icon: DropletIcon,
+    accent: "from-red-50 to-amber-50",
     iconColor: "text-red-500",
     size: "md:col-span-2",
   },
@@ -23,6 +24,7 @@ const conditions = [
     href: "/conditions/ibs",
     Icon: DigestiveIcon,
     iconColor: "text-green-600",
+    accent: "from-green-50 to-emerald-50",
     size: "",
   },
   {
@@ -31,6 +33,7 @@ const conditions = [
     href: "/conditions/oncology",
     Icon: RibbonIcon,
     iconColor: "text-purple-500",
+    accent: "from-purple-50 to-pink-50",
     size: "",
   },
   {
@@ -39,6 +42,7 @@ const conditions = [
     href: "/conditions/heart-health",
     Icon: HeartIcon,
     iconColor: "text-rose-500",
+    accent: "from-rose-50 to-red-50",
     size: "",
   },
   {
@@ -47,6 +51,7 @@ const conditions = [
     href: "/conditions/weight-management",
     Icon: ScaleIcon,
     iconColor: "text-blue-500",
+    accent: "from-blue-50 to-cyan-50",
     size: "md:col-span-2",
   },
 ];
@@ -54,14 +59,14 @@ const conditions = [
 export default function Conditions() {
   return (
     <>
-      <section className="relative bg-gradient-hero overflow-hidden min-h-[50vh] flex items-center">
-        <div className="absolute inset-0 bg-black/15" />
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
+      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="container-wide relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg tracking-tight">
               Your condition is specific. Your nutrition plan should be, too.
             </h1>
-            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl mx-auto animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl mx-auto animate-fade-in-up-delay-1">
               Piedmont Nutrition Care provides evidence-based Medical Nutrition Therapy for chronic metabolic, gastrointestinal, and weight-related conditions. Select your condition below to see how a root-cause, food-chemistry approach applies to your specific situation.
             </p>
           </div>
@@ -74,25 +79,27 @@ export default function Conditions() {
       </section>
 
       <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12 stagger-children">
+        <div className="container-wide">
+          <div className="grid md:grid-cols-3 gap-8 stagger-children">
             {conditions.map((c) => (
               <AnimateOnScroll key={c.href} className={c.size}>
                 <Link
                   href={c.href}
-                  className="block h-full bg-white rounded-2xl p-8 md:p-10 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/50 hover:-translate-y-[2px]"
+                  className={`block h-full bg-gradient-to-br ${c.accent} rounded-2xl p-8 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/30 hover:-translate-y-[2px] relative overflow-hidden`}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-warm-50 flex items-center justify-center mb-6 group-hover:bg-green-50 transition-colors">
-                    <c.Icon className={`w-6 h-6 ${c.iconColor}`} />
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 rounded-xl bg-white/80 flex items-center justify-center mb-5 shadow-soft">
+                      <c.Icon className={`w-6 h-6 ${c.iconColor}`} />
+                    </div>
+                    <h2 className="font-heading text-xl md:text-2xl text-warm-900 group-hover:text-green-600 mb-3 transition-colors tracking-tight">
+                      {c.title}
+                    </h2>
+                    <p className="text-warm-600 leading-relaxed mb-5 text-sm">{c.hook}</p>
+                    <span className="inline-flex items-center gap-1 text-green-600 font-medium text-sm group-hover:gap-2 transition-all duration-300">
+                      Learn more
+                      <ArrowRightIcon className="w-4 h-4" />
+                    </span>
                   </div>
-                  <h2 className="font-heading text-xl md:text-2xl text-warm-900 group-hover:text-green-600 mb-4 transition-colors tracking-tight">
-                    {c.title}
-                  </h2>
-                  <p className="text-warm-600 leading-relaxed mb-6 text-sm">{c.hook}</p>
-                  <span className="inline-flex items-center gap-1 text-green-600 font-medium text-sm group-hover:gap-2 transition-all duration-300">
-                    Learn more
-                    <ArrowRightIcon className="w-4 h-4" />
-                  </span>
                 </Link>
               </AnimateOnScroll>
             ))}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { CalendarIcon, PhoneIcon, EnvelopeIcon } from "@/components/Icons";
+import { CalendarIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Contact & Book Your Assessment | Piedmont Nutrition Care",
@@ -12,14 +12,15 @@ export default function Contact() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-gradient-hero overflow-hidden min-h-[50vh] flex items-center">
-        <div className="absolute inset-0 bg-black/15" />
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
+      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-amber-400/5 rounded-full blur-3xl" />
+        <div className="container-wide relative z-10">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Your next step: 60 minutes that change how you understand your body.
             </h1>
-            <p className="text-lg text-green-100/70 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
               Book your Gut &amp; Metabolic Foundation Assessment with Jeanne Doherty, MS, RD, LDN. Your first session is a comprehensive 60-minute evaluation of your health history, current symptoms, lab work, and goals — so you leave with a clear understanding of what&apos;s been driving your symptoms and a concrete plan to address it.
             </p>
           </div>
@@ -33,19 +34,22 @@ export default function Contact() {
 
       {/* BOOKING OPTIONS */}
       <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12 stagger-children">
+        <div className="container-wide">
+          <div className="grid md:grid-cols-3 gap-6 stagger-children">
             {/* Book Online */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
-                <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-6">
-                  <CalendarIcon className="w-7 h-7 text-green-600" />
+              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-5">
+                  <CalendarIcon className="w-7 h-7 text-green-500" />
                 </div>
-                <h2 className="font-heading text-lg md:text-xl text-warm-900 mb-3">Book Online</h2>
-                <p className="text-warm-600 mb-8 text-sm leading-relaxed flex-grow">
+                <h2 className="font-heading text-xl text-warm-900 mb-3">Book Online</h2>
+                <p className="text-warm-600 mb-6 text-sm leading-relaxed">
                   Select a time that works for you. In-person or virtual appointments available.
                 </p>
-                <a href="tel:3369865388" className="btn-primary block">
+                <a
+                  href="tel:3369865388"
+                  className="btn-primary block"
+                >
                   Call to Schedule
                 </a>
                 <p className="text-warm-400 text-xs mt-3">Online booking coming soon</p>
@@ -54,18 +58,18 @@ export default function Contact() {
 
             {/* Call */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
-                <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-6">
-                  <PhoneIcon className="w-7 h-7 text-green-600" />
+              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-5">
+                  <PhoneIcon className="w-7 h-7 text-green-500" />
                 </div>
-                <h2 className="font-heading text-lg md:text-xl text-warm-900 mb-3">Call</h2>
+                <h2 className="font-heading text-xl text-warm-900 mb-3">Call</h2>
                 <a
                   href="tel:3369865388"
-                  className="text-2xl font-heading text-green-700 hover:text-green-600 transition-colors block mb-6"
+                  className="text-2xl font-heading text-green-700 hover:text-green-600 transition-colors block mb-4"
                 >
                   336-986-5388
                 </a>
-                <p className="text-warm-600 text-sm leading-relaxed flex-grow">
+                <p className="text-warm-600 text-sm leading-relaxed">
                   Prefer to talk first? Call during office hours and we&apos;ll walk you through what to expect, verify your insurance, and find a time that works.
                 </p>
               </div>
@@ -73,18 +77,18 @@ export default function Contact() {
 
             {/* Email */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
-                <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center mx-auto mb-6">
-                  <EnvelopeIcon className="w-7 h-7 text-green-600" />
+              <div className="bg-white rounded-2xl p-8 shadow-card text-center border border-warm-100/50 hover:shadow-lifted transition-all duration-300 hover:-translate-y-[2px] h-full flex flex-col">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-5">
+                  <EnvelopeIcon className="w-7 h-7 text-green-500" />
                 </div>
-                <h2 className="font-heading text-lg md:text-xl text-warm-900 mb-3">Email</h2>
+                <h2 className="font-heading text-xl text-warm-900 mb-3">Email</h2>
                 <a
                   href="mailto:jeanne@piedmontnutritioncare.com"
-                  className="text-green-600 hover:text-green-700 font-semibold transition-colors block mb-6 text-sm"
+                  className="text-green-600 hover:text-green-700 font-semibold transition-colors block mb-4 text-sm"
                 >
                   jeanne@piedmontnutritioncare.com
                 </a>
-                <p className="text-warm-600 text-sm leading-relaxed flex-grow">
+                <p className="text-warm-600 text-sm leading-relaxed">
                   Have questions before booking? Send an email and we&apos;ll respond within one business day.
                 </p>
               </div>
@@ -94,36 +98,33 @@ export default function Contact() {
       </section>
 
       {/* WHAT TO EXPECT */}
-      <section className="section-padding bg-warm-50">
-        <div className="container-narrow">
+      <section className="relative section-padding bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="container-narrow relative z-10">
           <AnimateOnScroll>
-            <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4 text-center">Your Visit</p>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-warm-950 mb-12 text-center tracking-tight leading-[1.1]">What to Expect</h2>
+            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-8 text-center">What to Expect</h2>
           </AnimateOnScroll>
-          <div className="space-y-5 stagger-children">
+          <div className="space-y-4 stagger-children">
             {[
               {
-                step: "01",
                 label: "Before your appointment",
                 text: "You'll receive intake forms to complete at your own pace, including health history and current medications.",
               },
               {
-                step: "02",
                 label: "At your appointment",
                 text: "60 minutes, one-on-one with Jeanne. Bring your recent lab work, insurance card, and any questions.",
               },
               {
-                step: "03",
                 label: "After your appointment",
                 text: "You'll leave with a clear assessment, initial recommendations, and a plan for next steps.",
               },
             ].map((item) => (
-              <AnimateOnScroll key={item.step}>
-                <div className="flex items-start gap-5 bg-white rounded-2xl p-6 md:p-8 border border-warm-100/50 hover:shadow-card transition-all duration-300">
-                  <span className="text-warm-200 font-heading font-bold text-xl flex-shrink-0">{item.step}</span>
+              <AnimateOnScroll key={item.label}>
+                <div className="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-card border border-warm-100/50 hover:shadow-deep transition-all duration-300">
+                  <div className="w-3 h-3 rounded-full bg-gradient-btn mt-2 flex-shrink-0 shadow-glow-green" />
                   <div>
                     <h3 className="font-semibold text-warm-900 mb-1 text-sm">{item.label}</h3>
-                    <p className="text-warm-600 text-sm leading-relaxed">{item.text}</p>
+                    <p className="text-warm-600 text-sm">{item.text}</p>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -134,20 +135,19 @@ export default function Contact() {
 
       {/* LOCATION + MAP */}
       <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="container-wide">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <AnimateOnScroll animation="fade-left">
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">Location</p>
-                <h2 className="font-heading text-3xl md:text-4xl text-warm-950 mb-6 tracking-tight leading-[1.1]">Our Office</h2>
-                <address className="not-italic text-warm-600 text-lg leading-relaxed mb-8">
+                <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-4">Our Location</h2>
+                <address className="not-italic text-warm-600 text-lg leading-relaxed mb-6">
                   2990 Bethesda Place, Suite 603C<br />
                   Winston-Salem, NC 27104
                 </address>
-                <p className="text-warm-500 text-sm mb-8">
+                <p className="text-warm-500 text-sm mb-6">
                   Located in the Bethesda Place professional building. Free parking available.
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <p>
                     <a href="tel:3369865388" className="inline-flex items-center gap-2 text-warm-700 hover:text-green-600 transition-colors">
                       <PhoneIcon className="w-4 h-4 text-green-500" />
@@ -182,18 +182,18 @@ export default function Contact() {
       </section>
 
       {/* INSURANCE QUICK CHECK */}
-      <section className="py-20 bg-warm-50">
-        <div className="container-narrow text-center">
+      <section className="relative py-16 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+        <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-6 tracking-tight">Not sure if your insurance covers it?</h2>
-            <p className="text-warm-600 mb-6 max-w-2xl mx-auto">
+            <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-4">Not sure if your insurance covers it?</h2>
+            <p className="text-warm-600 mb-6">
               Call{" "}
               <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>{" "}
               or visit our{" "}
               <Link href="/insurance" className="text-green-600 font-semibold hover:underline">Insurance &amp; Pricing page</Link>{" "}
               to verify your coverage before booking.
             </p>
-            <p className="text-warm-400 text-sm">
+            <p className="text-warm-500 text-sm">
               BCBS, Aetna &amp; Medicare accepted  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual
             </p>
           </AnimateOnScroll>

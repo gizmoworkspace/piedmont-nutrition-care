@@ -75,14 +75,14 @@ const gettingStartedQuestions = [
 export default function FAQ() {
   return (
     <>
-      <section className="relative bg-gradient-hero overflow-hidden min-h-[40vh] flex items-center">
-        <div className="absolute inset-0 bg-black/15" />
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-36 lg:py-44 w-full relative z-10">
+      <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
+        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
+        <div className="container-wide relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Frequently Asked Questions
             </h1>
-            <p className="text-lg text-green-100/70 animate-fade-in-up-delay-1">
+            <p className="text-lg text-green-100/90 animate-fade-in-up-delay-1">
               Everything you need to know before your first appointment.
             </p>
           </div>
@@ -96,28 +96,28 @@ export default function FAQ() {
 
       <section className="section-padding bg-cream">
         <div className="container-narrow">
-          <div className="space-y-16">
+          <div className="space-y-12">
             <AnimateOnScroll>
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">About the Practice</p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About the Practice</h2>
                 <Accordion items={practiceQuestions} />
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll>
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">About the Approach</p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About the Approach</h2>
                 <Accordion items={approachQuestions} />
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll>
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">Insurance &amp; Cost</p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About Insurance &amp; Cost</h2>
                 <Accordion items={insuranceQuestions} />
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll>
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-warm-400 font-medium mb-4">Getting Started</p>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">Getting Started</h2>
                 <Accordion items={gettingStartedQuestions} />
               </div>
             </AnimateOnScroll>
@@ -125,10 +125,10 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="py-20 bg-warm-50">
-        <div className="container-narrow text-center">
+      <section className="relative py-16 bg-gradient-to-br from-green-50 via-cream to-amber-50 overflow-hidden">
+        <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
-            <p className="text-base md:text-lg text-warm-600">
+            <p className="text-lg text-warm-600 mb-6">
               Still have questions? Call{" "}
               <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>.
             </p>
