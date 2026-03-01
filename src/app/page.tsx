@@ -199,12 +199,33 @@ export default function Home() {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-green-400/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-amber-400/5 rounded-full blur-3xl" />
 
+        {/* Scattered leaf silhouettes */}
+        <svg className="absolute top-6 left-8 md:left-16 w-12 h-12 md:w-16 md:h-16 text-green-400/10 rotate-[-25deg]" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4C32 4 8 20 8 40c0 12 10 20 24 20s24-8 24-20C56 20 32 4 32 4zM32 52c-8 0-16-4-16-12 0-12 16-24 16-24s16 12 16 24c0 8-8 12-16 12z" />
+        </svg>
+        <svg className="absolute top-10 right-12 md:right-24 w-8 h-8 md:w-12 md:h-12 text-green-300/8 rotate-[40deg]" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4C32 4 8 20 8 40c0 12 10 20 24 20s24-8 24-20C56 20 32 4 32 4z" />
+        </svg>
+        <svg className="absolute bottom-8 left-16 md:left-32 w-10 h-10 md:w-14 md:h-14 text-amber-400/8 rotate-[15deg]" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4C32 4 8 20 8 40c0 12 10 20 24 20s24-8 24-20C56 20 32 4 32 4z" />
+        </svg>
+        <svg className="absolute bottom-12 right-8 md:right-20 w-8 h-8 md:w-10 md:h-10 text-green-400/6 rotate-[-50deg]" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4C32 4 8 20 8 40c0 12 10 20 24 20s24-8 24-20C56 20 32 4 32 4zM32 52c-8 0-16-4-16-12 0-12 16-24 16-24s16 12 16 24c0 8-8 12-16 12z" />
+        </svg>
+        {/* Small citrus slice accent */}
+        <svg className="absolute top-1/2 -translate-y-1/2 right-[10%] w-10 h-10 md:w-14 md:h-14 text-amber-400/8 hidden md:block" viewBox="0 0 64 64" fill="currentColor">
+          <circle cx="32" cy="32" r="28" fillOpacity="0.5" />
+          <path d="M32 8v48M8 32h48M14 14l36 36M50 14L14 50" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.6" />
+        </svg>
+
         <div className="container-wide relative z-10">
-          {/* Decorative line above */}
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-green-400/50" />
-            <div className="w-2 h-2 rounded-full bg-green-400/60" />
-            <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-green-400/50" />
+          {/* Leaf divider above */}
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <svg className="w-5 h-5 text-green-400/40 rotate-[-30deg]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 4 8 4 15c0 4.5 3.5 7 8 7s8-2.5 8-7C20 8 12 2 12 2z" /></svg>
+            <div className="h-px w-12 md:w-20 bg-green-400/30" />
+            <svg className="w-4 h-4 text-amber-400/40" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fillOpacity="0.5" /><path d="M12 4v16M4 12h16" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.6" /></svg>
+            <div className="h-px w-12 md:w-20 bg-green-400/30" />
+            <svg className="w-5 h-5 text-green-400/40 rotate-[30deg]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 4 8 4 15c0 4.5 3.5 7 8 7s8-2.5 8-7C20 8 12 2 12 2z" /></svg>
           </div>
 
           <AnimateOnScroll animation="scale-up">
@@ -221,23 +242,26 @@ export default function Home() {
             </p>
           </AnimateOnScroll>
 
-          {/* Decorative line below */}
-          <div className="flex items-center justify-center gap-4 mt-8">
-            <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-green-400/50" />
-            <div className="w-2 h-2 rounded-full bg-green-400/60" />
-            <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-green-400/50" />
+          {/* Leaf divider below */}
+          <div className="flex items-center justify-center gap-3 mt-8">
+            <svg className="w-5 h-5 text-green-400/40 rotate-[150deg]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 4 8 4 15c0 4.5 3.5 7 8 7s8-2.5 8-7C20 8 12 2 12 2z" /></svg>
+            <div className="h-px w-12 md:w-20 bg-green-400/30" />
+            <svg className="w-4 h-4 text-amber-400/40" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fillOpacity="0.5" /><path d="M12 4v16M4 12h16" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.6" /></svg>
+            <div className="h-px w-12 md:w-20 bg-green-400/30" />
+            <svg className="w-5 h-5 text-green-400/40 rotate-[-150deg]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 4 8 4 15c0 4.5 3.5 7 8 7s8-2.5 8-7C20 8 12 2 12 2z" /></svg>
           </div>
         </div>
 
-        {/* Section divider curves */}
-        <div className="absolute top-0 left-0 right-0">
-          <svg viewBox="0 0 1200 40" preserveAspectRatio="none" className="block w-full h-[20px] md:h-[30px] rotate-180">
-            <path d="M0,40 C300,10 900,10 1200,40 L1200,40 L0,40 Z" fill="#FDFBF7" />
+        {/* Top edge: organic leaf silhouettes instead of wave */}
+        <div className="absolute top-0 left-0 right-0 overflow-hidden">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[40px]" fill="#FDFBF7">
+            <path d="M0,60 C100,40 150,20 200,35 C250,50 300,15 400,30 C500,45 550,10 600,25 C650,40 700,15 800,30 C900,45 950,20 1050,35 C1100,45 1150,25 1200,40 L1200,0 L0,0 Z" />
           </svg>
         </div>
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1200 40" preserveAspectRatio="none" className="block w-full h-[20px] md:h-[30px]">
-            <path d="M0,40 C300,10 900,10 1200,40 L1200,40 L0,40 Z" fill="#FDFBF7" />
+        {/* Bottom edge: organic leaf silhouettes instead of wave */}
+        <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="block w-full h-[30px] md:h-[40px]" fill="#FDFBF7">
+            <path d="M0,0 C100,20 150,40 200,25 C250,10 300,45 400,30 C500,15 550,50 600,35 C650,20 700,45 800,30 C900,15 950,40 1050,25 C1100,15 1150,35 1200,20 L1200,60 L0,60 Z" />
           </svg>
         </div>
       </section>
