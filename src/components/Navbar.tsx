@@ -36,7 +36,7 @@ export default function Navbar() {
           : "bg-white/70 backdrop-blur-md border-b border-transparent"
       }`}
     >
-      <div className="max-w-[90rem] mx-auto px-6 md:px-10 lg:px-16">
+      <div className="max-w-[90rem] mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-3">
             <Image
