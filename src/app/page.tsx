@@ -48,6 +48,23 @@ export default function Home() {
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
 
+        {/* Right-side food image — blended into background */}
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-1/2 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1200&h=900&fit=crop"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{
+              opacity: 0.35,
+              maskImage: "linear-gradient(to right, transparent 0%, black 40%, black 100%), linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 40%, black 100%), linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)",
+              maskComposite: "intersect",
+              WebkitMaskComposite: "destination-in",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/60 to-transparent" />
+        </div>
+
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-32 w-full">
           <div className="relative">
             {/* Left column: text */}
@@ -72,18 +89,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right column: hero image (desktop only) — seamlessly blended */}
-            <div className="hidden md:block md:w-[45%] absolute right-0 top-0 bottom-0 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1000&h=800&fit=crop"
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover opacity-50"
-                style={{
-                  maskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 10%, transparent 65%)",
-                  WebkitMaskImage: "radial-gradient(ellipse 80% 70% at 70% 50%, black 10%, transparent 65%)",
-                }}
-              />
-            </div>
+{/* Right image now placed at section level */}
           </div>
         </div>
 
