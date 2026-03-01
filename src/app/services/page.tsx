@@ -80,12 +80,12 @@ export default function Services() {
 
       {/* WHAT IS MNT */}
       <section className="section-padding bg-white">
-        <div className="container-narrow">
+        <div className="container-wide">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6 text-center">
               What Medical Nutrition Therapy Actually Is
             </h2>
-            <p className="text-lg text-warm-600 leading-relaxed">
+            <p className="text-lg text-warm-600 leading-relaxed max-w-3xl mx-auto text-center">
               <span className="hidden md:inline">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes.</span>
               <span className="md:hidden">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment using your lab data and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans.</span>
             </p>
