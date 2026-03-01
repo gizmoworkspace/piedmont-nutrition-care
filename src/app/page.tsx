@@ -63,7 +63,7 @@ export default function Home() {
                 <span className="text-green-300">They&apos;re gut health failures.</span>
               </h1>
               <p className="text-lg md:text-xl text-green-100/90 leading-relaxed mb-8 max-w-2xl animate-fade-in-up-delay-1">
-                You&apos;ve done everything &ldquo;right&rdquo; — counted calories, survived elimination diets, sat through 10-minute doctor visits that ended with &ldquo;eat less, move more.&rdquo; Your body kept fighting back. Because no one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
+                No one looked at the root cause: what&apos;s happening inside your digestive tract. Piedmont Nutrition Care uses clinical food science to repair your gut, rebalance your metabolism, and build a plan your body actually responds to — with better versions of the foods you already love.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-in-up-delay-2">
                 <Link href="/contact" className="btn-primary text-lg text-center !shadow-glow-green hover:scale-[1.02] transition-transform">
@@ -131,9 +131,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-lg text-warm-900 mb-3">The things you&apos;ve already tried</h3>
+                <h3 className="font-heading text-lg text-warm-900 mb-3">The toll it&apos;s taken</h3>
                 <p className="text-warm-600 leading-relaxed">
-                  You&apos;ve cut your calories to 1,200 a day. You&apos;ve tried Keto, Whole30, calorie-counting apps. Maybe you&apos;re on Ozempic and dreading the day you have to stop. You&apos;ve spent thousands on supplements, 30-day challenges, and programs that promised everything and delivered nothing.
+                  Every failed program chips away at your confidence. You start to believe your body is just &ldquo;broken.&rdquo; The shame compounds — you blame yourself for not having enough discipline, even though discipline was never the problem. Meanwhile, the co-pays stack up and the lab numbers keep moving in the wrong direction.
                 </p>
               </div>
             </AnimateOnScroll>
@@ -143,7 +143,7 @@ export default function Home() {
           <AnimateOnScroll delay={300}>
             <div className="bg-warm-100/60 rounded-2xl p-6 md:p-8 border border-warm-200/40 mb-6 max-w-2xl mx-auto text-center">
               <p className="text-warm-500 leading-relaxed italic text-lg">
-                And every doctor you&apos;ve seen has said the same thing: eat less, move more. In a 10-minute appointment that felt more like a lecture than a conversation.
+                The healthcare system wasn&apos;t built to solve this. It was built to manage symptoms, write prescriptions, and move to the next patient. You deserve more than that.
               </p>
             </div>
           </AnimateOnScroll>
@@ -166,7 +166,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-heading text-lg text-warm-900 mb-3">The real problem</h3>
                 <p className="text-warm-600 leading-relaxed">
-                  It didn&apos;t work because no one addressed the actual problem: a compromised gut that can&apos;t properly regulate your blood sugar, your hunger hormones, or your inflammatory response. You&apos;ve been fighting your biology with restriction — and biology always wins.
+                  Your gut microbiome directly controls blood sugar regulation, hunger hormone signaling, and inflammatory response. When that ecosystem is damaged — by years of restrictive dieting, stress, and medications — no amount of restriction can produce lasting results. The system needs to be repaired, not overridden.
                 </p>
               </div>
             </AnimateOnScroll>
