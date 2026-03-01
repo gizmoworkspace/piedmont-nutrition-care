@@ -60,7 +60,7 @@ export default function About() {
         { icon: "shield", text: "Registered Dietitian Nutritionist (RDN)" },
         { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
         { icon: "building", text: "20+ Years Health Industry Experience" },
-        { icon: "star", text: "5.0 Google Rating" },
+        { icon: "star", text: "5.0 Health Grades Rating" },
       ]} />
 
       {/* ORIGIN STORY */}

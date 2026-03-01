@@ -41,7 +41,7 @@ export default function Services() {
         { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
         { icon: "academic", text: "MS in Nutrition from UNCG" },
         { icon: "beaker", text: "Food Chemistry Specialization" },
-        { icon: "star", text: "5.0 Google Rating" },
+        { icon: "star", text: "5.0 Health Grades Rating" },
       ]} />
 
       {/* AGITATION */}

@@ -87,7 +87,7 @@ export default function Home() {
               {/* Mobile: trust indicators inline */}
               <div className="flex flex-wrap gap-3 mb-6 md:hidden animate-fade-in-up-delay-1">
                 {[
-                  { icon: "★", text: "5.0 Google Rating" },
+                  { icon: "★", text: "5.0 Health Grades Rating" },
                   { icon: "🎓", text: "MS, RD, LDN" },
                   { icon: "🏥", text: "Insurance Accepted" },
                 ].map((item) => (
@@ -124,7 +124,7 @@ export default function Home() {
       <ProofBar
         floating
         items={[
-          { icon: "star", text: "5.0 Google Rating" },
+          { icon: "star", text: "5.0 Health Grades Rating" },
           { icon: "academic", text: "MS, RD, LDN Credentials" },
           { icon: "clipboard", text: "20+ Years Health Industry Experience" },
           { icon: "building", text: "Accepted by Major NC Insurers" },

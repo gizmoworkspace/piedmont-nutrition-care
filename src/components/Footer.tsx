@@ -67,7 +67,7 @@ export default function Footer() {
             <div className="mt-5 flex items-center gap-2">
               <div className="flex items-center gap-1.5 bg-warm-900 rounded-[8px] px-3 py-2 text-sm">
                 <StarIcon className="w-4 h-4 text-amber-400" />
-                <span className="text-warm-200">{global.googleRating} Google Rating</span>
+                <span className="text-warm-200">{global.googleRating} Health Grades Rating</span>
               </div>
             </div>
           </div>

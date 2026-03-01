@@ -48,7 +48,7 @@ export default function ProofBar({ items, floating = false }: ProofBarProps) {
                     <span className={floating ? "text-warm-800" : "text-green-50"}>
                       {isRating ? (
                         <>
-                          <StatCounter end={5.0} decimals={1} className="font-bold" /> Google Rating
+                          <StatCounter end={5.0} decimals={1} className="font-bold" /> Health Grades Rating
                         </>
                       ) : isYears ? (
                         <>
