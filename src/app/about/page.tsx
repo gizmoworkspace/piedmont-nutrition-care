@@ -17,7 +17,7 @@ export default function About() {
       <section className="relative py-12 md:py-16 lg:py-20 px-6 md:px-8 bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl" />
-        <div className="container-wide relative z-10">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-10 md:gap-20 lg:gap-28">
             {/* Left: text */}
             <div className="md:w-[55%]">
