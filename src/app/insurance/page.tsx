@@ -112,7 +112,7 @@ export default function Insurance() {
       {/* ROI FRAMING */}
       <section className="section-padding bg-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <AnimateOnScroll>
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
@@ -125,7 +125,7 @@ export default function Insurance() {
                 </p>
               </AnimateOnScroll>
             </div>
-            <div>
+            <div className="flex items-center">
               <AnimateOnScroll delay={200}>
                 <div className="border-l-4 border-green-400 pl-6 py-2">
                   <p className="text-warm-800 font-medium text-lg md:text-xl leading-relaxed">
