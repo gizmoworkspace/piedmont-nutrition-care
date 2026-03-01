@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
-import ScrollAnimations from "@/components/ScrollAnimations";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -37,7 +36,6 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <MobileCTA />
-        <ScrollAnimations />
       </body>
     </html>
   );

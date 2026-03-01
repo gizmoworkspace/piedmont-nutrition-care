@@ -47,7 +47,7 @@ export default function About() {
       <section className="section-padding bg-cream">
         <div className="container-narrow">
           <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
               Why Piedmont Nutrition Care Exists
             </h2>
           </AnimateOnScroll>
@@ -70,7 +70,7 @@ export default function About() {
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="container-wide relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
+            <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
               What Makes Jeanne Different
             </h2>
           </AnimateOnScroll>
