@@ -39,6 +39,7 @@ export default function Footer() {
               <li><Link href="/services" className="text-warm-400 hover:text-white transition-colors">How It Works</Link></li>
               <li><Link href="/conditions" className="text-warm-400 hover:text-white transition-colors">Conditions We Treat</Link></li>
               <li><Link href="/insurance" className="text-warm-400 hover:text-white transition-colors">Pricing</Link></li>
+              <li><Link href="/videos" className="text-warm-400 hover:text-white transition-colors">Videos &amp; Recipes</Link></li>
               <li><Link href="/faq" className="text-warm-400 hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="text-warm-400 hover:text-white transition-colors">Book Your Assessment</Link></li>
             </ul>

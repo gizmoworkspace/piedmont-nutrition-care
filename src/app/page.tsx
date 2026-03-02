@@ -4,10 +4,8 @@ import ProofBar from "@/components/ProofBar";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { CheckIcon, XMarkIcon, StethoscopeIcon, BeakerIcon, LeafIcon, ChartUpIcon } from "@/components/Icons";
 import ResponsiveText from "@/components/ResponsiveText";
-import { getGlobal } from "@/lib/content";
 
 export default function Home() {
-  const global = getGlobal();
   const steps = [
     {
       step: "1",
@@ -455,75 +453,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* YOUTUBE VIDEO */}
-      {global.youtubeVideoUrl && (
-        <section className="section-padding bg-cream">
-          <div className="max-w-4xl mx-auto">
-            <AnimateOnScroll>
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
-                Latest from Jeanne
-              </h2>
-            </AnimateOnScroll>
-            <AnimateOnScroll>
-              <div className="rounded-2xl overflow-hidden shadow-deep aspect-video">
-                <iframe
-                  src={global.youtubeVideoUrl.replace("watch?v=", "embed/")}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="Latest video from Jeanne Doherty"
-                />
-              </div>
-            </AnimateOnScroll>
-          </div>
-        </section>
-      )}
-
-      {/* RECIPE OF THE WEEK */}
-      {global.recipeOfTheWeek?.title && (
-        <section className={`section-padding ${global.youtubeVideoUrl ? 'bg-white' : 'bg-cream'}`}>
-          <div className="max-w-4xl mx-auto">
-            <AnimateOnScroll>
-              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8 text-center">
-                Recipe of the Week
-              </h2>
-            </AnimateOnScroll>
-            <AnimateOnScroll>
-              <div className="bg-white rounded-2xl shadow-card border border-warm-100/50 overflow-hidden">
-                <div className={`${global.recipeOfTheWeek.imageUrl ? 'grid md:grid-cols-2' : ''}`}>
-                  {global.recipeOfTheWeek.imageUrl && (
-                    <div className="aspect-video md:aspect-auto">
-                      <img
-                        src={global.recipeOfTheWeek.imageUrl}
-                        alt={global.recipeOfTheWeek.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="p-8 flex flex-col justify-center">
-                    <h3 className="font-heading text-xl md:text-2xl text-warm-900 mb-3">{global.recipeOfTheWeek.title}</h3>
-                    {global.recipeOfTheWeek.description && (
-                      <p className="text-warm-600 leading-relaxed mb-4">{global.recipeOfTheWeek.description}</p>
-                    )}
-                    {global.recipeOfTheWeek.youtubeUrl && (
-                      <a href={global.recipeOfTheWeek.youtubeUrl} target="_blank" rel="noopener noreferrer" className="text-green-600 font-semibold hover:underline text-sm mb-2">
-                        Watch the video →
-                      </a>
-                    )}
-                    {global.recipeOfTheWeek.linkUrl && (
-                      <a href={global.recipeOfTheWeek.linkUrl} target="_blank" rel="noopener noreferrer" className="text-green-600 font-semibold hover:underline text-sm">
-                        View full recipe →
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </AnimateOnScroll>
-          </div>
-        </section>
-      )}
     </>
   );
 }
