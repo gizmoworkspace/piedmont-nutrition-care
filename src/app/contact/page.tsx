@@ -143,9 +143,14 @@ export default function Contact() {
                   2990 Bethesda Place, Suite 603C<br />
                   Winston-Salem, NC 27104
                 </address>
-                <p className="text-warm-500 text-sm mb-6">
+                <p className="text-warm-500 text-sm mb-4">
                   Located in the Bethesda Place professional building. Free parking available.
                 </p>
+                <div className="bg-cream rounded-xl p-4 mb-6 border border-warm-100/50">
+                  <h3 className="font-semibold text-warm-900 text-sm mb-2">Hours of Operation</h3>
+                  <p className="text-warm-600 text-sm">Monday – Friday: 9am – 5pm</p>
+                  <p className="text-warm-500 text-sm">Saturday &amp; Sunday: Closed</p>
+                </div>
                 <div className="space-y-3">
                   <p>
                     <a href="tel:3369865388" className="inline-flex items-center gap-2 text-warm-700 hover:text-green-600 transition-colors">
