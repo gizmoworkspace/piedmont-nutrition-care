@@ -184,8 +184,8 @@ export default function About() {
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
               <p className="text-base md:text-lg text-warm-600 leading-relaxed">
-                <span className="hidden md:inline">Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. HSA/FSA accepted, and superbills are provided for out-of-network reimbursement. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
-                <span className="md:hidden">60-minute sessions in Winston-Salem or virtual. HSA/FSA accepted, superbills provided. You&apos;ll leave with a clear plan.</span>
+                <span className="hidden md:inline">Your first session is 60 minutes, with 45-minute follow-ups — always one-on-one, in Winston-Salem or virtual. HSA/FSA accepted, and superbills are provided for out-of-network reimbursement. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
+                <span className="md:hidden">60-minute initial session, 45-minute follow-ups. In Winston-Salem or virtual. HSA/FSA accepted, superbills provided.</span>
               </p>
             </AnimateOnScroll>
           </div>

@@ -198,7 +198,7 @@ export default function Contact() {
               for full details.
             </p>
             <p className="text-warm-500 text-sm">
-              HSA/FSA accepted  ·  Superbills for reimbursement  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual
+              HSA/FSA accepted  ·  Superbills for reimbursement  ·  60-min initial / 45-min follow-ups  ·  Same practitioner every visit  ·  In-person or virtual
             </p>
           </AnimateOnScroll>
         </div>

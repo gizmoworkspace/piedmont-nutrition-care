@@ -171,7 +171,7 @@ export default function Services() {
           </AnimateOnScroll>
           <div className="grid sm:grid-cols-2 gap-4 stagger-children">
             {[
-              "60-minute one-on-one consultation with Jeanne (never a substitute provider)",
+              "One-on-one consultation with Jeanne — 60 minutes initial, 45 minutes follow-up (never a substitute provider)",
               "Review and interpretation of current lab work and clinical markers",
               "Personalized food chemistry recommendations based on your biochemistry",
               "Practical meal strategies adapted to your family, schedule, and food preferences",
@@ -254,7 +254,7 @@ export default function Services() {
                   {[
                     "Clinical food chemistry based on your lab data",
                     "Personalized protocols built from your biochemistry",
-                    "60-minute unhurried consultations",
+                    "Unhurried consultations (60 min initial, 45 min follow-up)",
                     "Same credentialed practitioner every visit",
                     "Root-cause resolution",
                     "Medication Off-Ramp that rebuilds metabolic resilience",

@@ -98,7 +98,7 @@ export default function Home() {
                 </Link>
               </div>
               <p className="hidden md:block text-green-200/60 text-sm animate-fade-in-up-delay-3">
-                60-minute consultations  ·  HSA/FSA accepted  ·  In-person or virtual
+                60-min initial assessment  ·  HSA/FSA accepted  ·  In-person or virtual
               </p>
             </div>
           </div>
@@ -374,7 +374,7 @@ export default function Home() {
                   <div className="space-y-4 flex-grow">
                     {[
                       "Understanding your gut chemistry and building a sustainable metabolic foundation",
-                      "60-minute consultations where your labs are actually analyzed",
+                      "Unhurried consultations where your labs are actually analyzed",
                       "Personalized food chemistry protocols with better versions of your favorite foods",
                       "Healing the gut dysfunction that's creating the cravings",
                       "One expert who identifies the root cause and gives you a clear map",
@@ -423,8 +423,8 @@ export default function Home() {
               },
               {
                 q: "\"I'm worried about being judged.\"",
-                a: "We completely understand. Every appointment at Piedmont Nutrition Care is 60 minutes, one-on-one, and unhurried. The first step is always to hear you — really listen to your story, your concerns, and your goals. Our patients consistently describe feeling heard, validated, and respected for the first time. This is a person-centered partnership, not a lecture.",
-                aShort: "We get it. 60 minutes, one-on-one, unhurried. The first step is always to hear you. Our patients describe feeling heard and respected for the first time. A partnership, not a lecture.",
+                a: "We completely understand. Your first appointment is a full 60 minutes, and follow-ups are 45 minutes — always one-on-one and unhurried. The first step is always to hear you — really listen to your story, your concerns, and your goals. Our patients consistently describe feeling heard, validated, and respected for the first time. This is a person-centered partnership, not a lecture.",
+                aShort: "We get it. Your first visit is 60 minutes, follow-ups are 45 — always one-on-one and unhurried. Our patients describe feeling heard and respected for the first time. A partnership, not a lecture.",
                 accent: "border-l-amber-300",
               },
             ].map((item, i) => (
