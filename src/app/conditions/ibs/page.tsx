@@ -26,9 +26,6 @@ export default function IBS() {
       subheadline={data.subheadline}
       agitation={data.agitation}
       howItWorks={data.howItWorks}
-      testimonial={data.testimonial}
-      ctaLabel={data.ctaLabel}
-      ctaTriggers={data.ctaTriggers}
     />
   );
 }

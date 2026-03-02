@@ -99,8 +99,7 @@ export default function Contact() {
 
       {/* WHAT TO EXPECT */}
       <section className="section-padding bg-cream">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-narrow relative z-10">
+        <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-8 text-center">What to Expect</h2>
           </AnimateOnScroll>

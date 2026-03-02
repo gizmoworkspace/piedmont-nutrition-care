@@ -288,8 +288,7 @@ export default function Home() {
 
       {/* TESTIMONIALS */}
       <section className="section-padding bg-white">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-14 text-center tracking-tight">
               What our patients say
@@ -396,8 +395,7 @@ export default function Home() {
 
       {/* OBJECTION HANDLING */}
       <section className="section-padding bg-white">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-narrow relative z-10">
+        <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center tracking-tight">
               Your questions, answered honestly

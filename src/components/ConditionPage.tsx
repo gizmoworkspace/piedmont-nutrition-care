@@ -7,9 +7,6 @@ interface ConditionPageProps {
   subheadline: string;
   agitation: string[];
   howItWorks: string[];
-  testimonial: { quote: string; author: string; context?: string };
-  ctaLabel?: string;
-  ctaTriggers?: string[];
 }
 
 export default function ConditionPage({
@@ -17,9 +14,6 @@ export default function ConditionPage({
   subheadline,
   agitation,
   howItWorks,
-  testimonial,
-  ctaLabel,
-  ctaTriggers,
 }: ConditionPageProps) {
   return (
     <>

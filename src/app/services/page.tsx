@@ -17,7 +17,7 @@ export default function Services() {
       <section className="relative section-padding bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden grain-overlay">
         <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-amber-400/5 rounded-full blur-3xl" />
-        <div className="container-wide relative z-10">
+        <div className="container-wide">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
               Clinical nutrition therapy that fixes the cause — not just the symptoms
@@ -102,8 +102,7 @@ export default function Services() {
 
       {/* 4-STEP PROCESS */}
       <section className="section-padding bg-cream">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
               Your 4-Step Process
@@ -201,7 +200,7 @@ export default function Services() {
 
       {/* CONDITIONS */}
       <section className="section-padding bg-cream">
-        <div className="container-wide relative z-10">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
               Conditions We Specialize In
@@ -232,7 +231,7 @@ export default function Services() {
 
       {/* COMPARISON */}
       <section className="section-padding bg-white">
-        <div className="container-wide relative z-10">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-10 text-center">
               How this compares to what you&apos;ve tried

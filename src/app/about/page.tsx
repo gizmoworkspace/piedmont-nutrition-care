@@ -103,8 +103,7 @@ export default function About() {
 
       {/* WHAT MAKES JEANNE DIFFERENT */}
       <section className="section-padding bg-white">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-wide relative z-10">
+        <div className="container-wide">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-12 text-center">
               What Makes Jeanne Different
@@ -171,8 +170,7 @@ export default function About() {
 
       {/* CLOSE / INVITATION */}
       <section className="section-padding bg-cream">
-        <div className="absolute inset-0 bg-dot-pattern bg-dot opacity-[0.03]" />
-        <div className="container-narrow relative z-10">
+        <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-3 text-center">The Invitation</h2>
             <div className="w-12 h-1 bg-gradient-to-r from-green-400 to-amber-400 rounded-full mx-auto mb-10" />
