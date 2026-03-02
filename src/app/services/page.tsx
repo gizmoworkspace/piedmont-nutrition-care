@@ -34,15 +34,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* PROOF BAR */}
-      <ProofBar floating items={[
-        { icon: "shield", text: "Registered Dietitian Nutritionist (RDN)" },
-        { icon: "clipboard", text: "Licensed Dietitian Nutritionist (LDN)" },
-        { icon: "academic", text: "MS in Nutrition from UNCG" },
-        { icon: "beaker", text: "Food Chemistry Specialization" },
-        { icon: "star", text: "5.0 Health Grades Rating" },
-      ]} />
-
       {/* AGITATION */}
       <section className="section-padding bg-cream">
         <div className="max-w-7xl mx-auto">
