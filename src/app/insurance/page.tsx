@@ -151,7 +151,7 @@ export default function Insurance() {
             </div>
             <div className="flex items-center justify-center">
               <AnimateOnScroll>
-                <div className="border-l-4 border-green-400 pl-6 py-2 text-center">
+                <div className="border-l-4 border-green-400 pl-6 py-2">
                   <p className="text-warm-800 font-medium text-lg md:text-xl leading-relaxed">
                     A session with a credentialed clinical dietitian who identifies the root cause and builds a permanent protocol? That&apos;s the investment that actually resolves the problem.
                   </p>
