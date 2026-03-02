@@ -7,8 +7,11 @@ const data = getContent<{
   metaDescription: string;
   headline: string;
   subheadline: string;
+  subheadlineShort?: string;
   agitation: string[];
+  agitationShort?: string[];
   howItWorks: string[];
+  howItWorksShort?: string[];
   testimonial: { quote: string; author: string; context: string };
   ctaLabel: string;
   ctaTriggers: string[];
@@ -25,7 +28,10 @@ export default function Diabetes() {
       headline={data.headline}
       subheadline={data.subheadline}
       agitation={data.agitation}
+      agitationShort={data.agitationShort}
       howItWorks={data.howItWorks}
+      howItWorksShort={data.howItWorksShort}
+      subheadlineShort={data.subheadlineShort}
     />
   );
 }

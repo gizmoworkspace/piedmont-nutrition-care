@@ -9,7 +9,7 @@
     "Meanwhile, the next lab panel is approaching and you're bracing for the same conversation: \"numbers haven't improved, let's increase the dose.\""
   ],
   "howItWorks": [
-    "Jeanne reviews your full lipid panel — not just total cholesterol, but the particle sizes, ratios, and inflammatory markers that actually predict cardiovascular risk. She identifies which dietary patterns are driving your specific lipid profile and builds a protocol that targets those drivers directly.",
+    "Jeanne reviews your full lipid panel \u2014 not just total cholesterol, but the particle sizes, ratios, and inflammatory markers that actually predict cardiovascular risk. She identifies which dietary patterns are driving your specific lipid profile and builds a protocol that targets those drivers directly.",
     "You'll learn which foods lower LDL through real mechanisms (not marketing claims), how to raise HDL through food choices, and which so-called \"heart-healthy\" products are actually making things worse."
   ],
   "testimonial": {
@@ -18,5 +18,16 @@
     "context": ""
   },
   "ctaLabel": "Book Your Cardiovascular Nutrition Assessment",
-  "ctaTriggers": ["Walk into your next appointment with numbers that surprise both of you"]
+  "ctaTriggers": [
+    "Walk into your next appointment with numbers that surprise both of you"
+  ],
+  "subheadlineShort": "High cholesterol and blood pressure aren't fixed by cutting fat and taking statins alone. Piedmont Nutrition Care addresses the metabolic dysfunction driving your numbers.",
+  "agitationShort": [
+    "You've cut red meat, switched to \"heart-healthy\" margarine, and your LDL still won't budge. Maybe your doctor added a second medication.",
+    "The generic advice isn't working because it doesn't account for your unique biochemistry."
+  ],
+  "howItWorksShort": [
+    "Jeanne analyzes your full lipid panel, inflammatory markers, and metabolic indicators to identify what's actually driving your cardiovascular risk.",
+    "Your protocol targets the specific mechanisms \u2014 not just \"eat less fat\" but which fats reduce inflammation and which foods optimize your lipid ratios."
+  ]
 }

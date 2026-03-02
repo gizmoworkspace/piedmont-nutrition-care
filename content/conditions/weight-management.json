@@ -3,13 +3,13 @@
   "metaTitle": "Sustainable Weight Management | Piedmont Nutrition Care",
   "metaDescription": "Root-cause metabolic repair for weight-loss resistance. GLP-1 medication off-ramp support. Functional nutrition in Winston-Salem, NC.",
   "headline": "You've lost the weight before. Your gut is the reason it came back.",
-  "subheadline": "Weight-loss resistance, yo-yo dieting, and post-GLP-1 weight regain aren't willpower problems. They're gut health problems. When your digestive tract is compromised, your hunger hormones misfire, your metabolism adapts downward, and your body fights to regain every pound you've lost. Piedmont Nutrition Care rebuilds the metabolic foundation that makes weight management sustainable — without starvation, deprivation, or a lifetime prescription.",
+  "subheadline": "Weight-loss resistance, yo-yo dieting, and post-GLP-1 weight regain aren't willpower problems. They're gut health problems. When your digestive tract is compromised, your hunger hormones misfire, your metabolism adapts downward, and your body fights to regain every pound you've lost. Piedmont Nutrition Care rebuilds the metabolic foundation that makes weight management sustainable \u2014 without starvation, deprivation, or a lifetime prescription.",
   "agitation": [
-    "You've cut your calories to 1,200 a day. You've done Keto, Whole30, intermittent fasting. You've lost 20 pounds and gained 30 back. Maybe you're on Ozempic and it's working — but you're terrified of what happens when you stop. Maybe you've already stopped and watched the weight return faster than you lost it.",
+    "You've cut your calories to 1,200 a day. You've done Keto, Whole30, intermittent fasting. You've lost 20 pounds and gained 30 back. Maybe you're on Ozempic and it's working \u2014 but you're terrified of what happens when you stop. Maybe you've already stopped and watched the weight return faster than you lost it.",
     "The cycle isn't a character flaw. It's a biological pattern called metabolic adaptation: each round of severe restriction damages your gut microbiome, increases leptin resistance (so your brain never hears the \"I'm full\" signal), and lowers your resting metabolic rate. You're not failing the diet. The diet is systematically making your biology harder to work with."
   ],
   "howItWorks": [
-    "Jeanne starts with your metabolic baseline: lab markers, hormonal indicators, gut health assessment, and a full history of what you've tried and how your body responded. She identifies the specific disruptions — leptin resistance, gut dysbiosis, insulin sensitivity, cortisol-driven belly fat accumulation — and builds a food chemistry protocol that repairs each one systematically.",
+    "Jeanne starts with your metabolic baseline: lab markers, hormonal indicators, gut health assessment, and a full history of what you've tried and how your body responded. She identifies the specific disruptions \u2014 leptin resistance, gut dysbiosis, insulin sensitivity, cortisol-driven belly fat accumulation \u2014 and builds a food chemistry protocol that repairs each one systematically.",
     "For patients on or coming off GLP-1 medications (Ozempic, Wegovy, Mounjaro): Jeanne provides a \"Medication Off-Ramp\" protocol that rebuilds the gut flora and metabolic resilience your body needs to maintain results after medication ends. This isn't anti-medication. It's ensuring the medication's results are preserved by a biological foundation, not dependent on a continued prescription."
   ],
   "testimonial": {
@@ -18,5 +18,18 @@
     "context": ""
   },
   "ctaLabel": "Book Your Metabolic Foundation Assessment",
-  "ctaTriggers": ["Stop fighting your biology. Start repairing it.", "Insurance accepted", "60-minute sessions"]
+  "ctaTriggers": [
+    "Stop fighting your biology. Start repairing it.",
+    "Insurance accepted",
+    "60-minute sessions"
+  ],
+  "subheadlineShort": "Weight-loss resistance and yo-yo dieting aren't willpower problems \u2014 they're gut health problems. Piedmont Nutrition Care rebuilds the metabolic foundation for sustainable results.",
+  "agitationShort": [
+    "You've done Keto, Whole30, and intermittent fasting. Lost 20 pounds, gained 30 back. Maybe Ozempic is working \u2014 but you're terrified of what happens when you stop.",
+    "The cycle isn't a character flaw. Each round of restriction damages your gut microbiome and increases leptin resistance. The diet is making your biology harder to work with."
+  ],
+  "howItWorksShort": [
+    "Jeanne identifies the specific disruptions \u2014 leptin resistance, gut dysbiosis, insulin sensitivity \u2014 and builds a protocol that repairs each one systematically.",
+    "For patients on or coming off GLP-1 medications: a \"Medication Off-Ramp\" protocol that rebuilds the metabolic resilience your body needs to maintain results."
+  ]
 }
