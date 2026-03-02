@@ -274,41 +274,37 @@ export default function Services() {
       {/* WORKPLACE WELLNESS */}
       <section className="section-padding bg-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <AnimateOnScroll>
-                <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
-                  Workplace Wellness
-                </h2>
-              </AnimateOnScroll>
-              <AnimateOnScroll>
-                <p className="text-warm-600 leading-relaxed text-base md:text-lg">
-                  <span className="hidden md:inline">The foods your team eats directly affect focus, energy, and productivity. Piedmont Nutrition Care offers on-site workshops, culinary medicine classes, and wellness consulting retainers designed to improve employee health and reduce absenteeism — with programs tailored to your organization&apos;s specific needs.</span>
-                  <span className="md:hidden">Improve your team&apos;s focus, energy, and productivity with on-site nutrition workshops and wellness programs tailored to your organization.</span>
-                </p>
-              </AnimateOnScroll>
-            </div>
-            <div>
-              <AnimateOnScroll>
-                <div className="space-y-4">
-                  {[
-                    "On-site nutrition workshops and seminars",
-                    "Culinary medicine classes",
-                    "Grocery store tours",
-                    "Monthly wellness consulting retainers",
-                    "Customized programs for your team",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <p className="text-warm-700 text-sm">{item}</p>
-                    </div>
-                  ))}
-                  <div className="pt-2">
-                    <Link href="/insurance" className="inline-flex items-center gap-1 text-green-600 font-semibold hover:underline text-sm ml-8">View pricing →</Link>
+          <div className="max-w-4xl mx-auto">
+            <AnimateOnScroll>
+              <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
+                Workplace Wellness
+              </h2>
+            </AnimateOnScroll>
+            <AnimateOnScroll>
+              <p className="text-warm-600 leading-relaxed text-base md:text-lg mb-10">
+                <span className="hidden md:inline">The foods your team eats directly affect focus, energy, and productivity. Piedmont Nutrition Care offers on-site workshops, culinary medicine classes, and wellness consulting retainers designed to improve employee health and reduce absenteeism — with programs tailored to your organization&apos;s specific needs.</span>
+                <span className="md:hidden">Improve your team&apos;s focus, energy, and productivity with on-site nutrition workshops and wellness programs tailored to your organization.</span>
+              </p>
+            </AnimateOnScroll>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+              {[
+                "On-site nutrition workshops and seminars",
+                "Culinary medicine classes",
+                "Grocery store tours",
+                "Monthly wellness consulting retainers",
+                "Customized programs for your team",
+              ].map((item) => (
+                <AnimateOnScroll key={item}>
+                  <div className="flex items-start gap-3 bg-white rounded-2xl p-5 border border-warm-100/50">
+                    <CheckIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-warm-700 text-sm">{item}</p>
                   </div>
-                </div>
-              </AnimateOnScroll>
+                </AnimateOnScroll>
+              ))}
             </div>
+            <AnimateOnScroll>
+              <Link href="/insurance" className="text-green-600 font-semibold hover:underline text-sm">View pricing →</Link>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
