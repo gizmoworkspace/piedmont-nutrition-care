@@ -303,7 +303,8 @@ export default function Services() {
                       <p className="text-warm-700 text-sm">{item}</p>
                     </div>
                   ))}
-                  <div className="mt-6">
+                  <div className="flex items-start gap-3 mt-4">
+                    <div className="w-5 flex-shrink-0" />
                     <Link href="/insurance" className="text-green-600 font-semibold hover:underline text-sm">View pricing →</Link>
                   </div>
                 </div>
