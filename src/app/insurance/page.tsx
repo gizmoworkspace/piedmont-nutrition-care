@@ -126,7 +126,7 @@ export default function Insurance() {
       {/* PAYMENT INFO */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <AnimateOnScroll>
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
