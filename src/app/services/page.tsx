@@ -274,7 +274,7 @@ export default function Services() {
       {/* WORKPLACE WELLNESS */}
       <section className="section-padding bg-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-14 lg:gap-24 items-start">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <AnimateOnScroll>
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-6">
@@ -282,7 +282,7 @@ export default function Services() {
                 </h2>
               </AnimateOnScroll>
               <AnimateOnScroll>
-                <p className="text-warm-600 leading-relaxed text-base md:text-lg mb-6">
+                <p className="text-warm-600 leading-relaxed text-base md:text-lg">
                   <span className="hidden md:inline">The foods your team eats directly affect focus, energy, and productivity. Piedmont Nutrition Care offers on-site workshops, culinary medicine classes, and wellness consulting retainers designed to improve employee health and reduce absenteeism — with programs tailored to your organization&apos;s specific needs.</span>
                   <span className="md:hidden">Improve your team&apos;s focus, energy, and productivity with on-site nutrition workshops and wellness programs tailored to your organization.</span>
                 </p>
@@ -290,7 +290,7 @@ export default function Services() {
             </div>
             <div>
               <AnimateOnScroll>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {[
                     "On-site nutrition workshops and seminars",
                     "Culinary medicine classes",
@@ -303,9 +303,8 @@ export default function Services() {
                       <p className="text-warm-700 text-sm">{item}</p>
                     </div>
                   ))}
-                  <div className="flex items-start gap-3 mt-4">
-                    <div className="w-5 flex-shrink-0" />
-                    <Link href="/insurance" className="text-green-600 font-semibold hover:underline text-sm">View pricing →</Link>
+                  <div className="pt-2">
+                    <Link href="/insurance" className="inline-flex items-center gap-1 text-green-600 font-semibold hover:underline text-sm ml-8">View pricing →</Link>
                   </div>
                 </div>
               </AnimateOnScroll>
