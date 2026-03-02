@@ -203,7 +203,7 @@ export default function Services() {
               { title: "IBS & Digestive Disorders", desc: "Bloating, abdominal pain, gut microbiome restoration", href: "/conditions/ibs" },
               { title: "Oncology Nutrition", desc: "Post-treatment gut recovery, immune support, weight management", href: "/conditions/oncology" },
               { title: "Cardiovascular Health", desc: "Cholesterol optimization, blood pressure support", href: "/conditions/heart-health" },
-              { title: "Weight Management", desc: "Root-cause metabolic repair, GLP-1 off-ramp support", href: "/conditions/weight-management" },
+              { title: "Weight Management", desc: "Sustainable metabolic support and root-cause repair", href: "/conditions/weight-management" },
             ].map((c) => (
               <AnimateOnScroll key={c.href}>
                 <Link href={c.href} className="block h-full bg-white rounded-2xl p-6 shadow-card hover:shadow-lifted transition-all duration-300 group border border-warm-100/50 hover:-translate-y-[2px]">
@@ -239,7 +239,7 @@ export default function Services() {
                     "10-minute rushed appointments",
                     "Rotating providers who don't know you",
                     "Symptom management forever",
-                    "GLP-1 dependency with no exit plan",
+                    "Medications without a long-term plan",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <XMarkIcon className="w-4 h-4 text-warm-400 flex-shrink-0 mt-1" />
@@ -257,7 +257,7 @@ export default function Services() {
                     "Unhurried consultations (60 min initial, 45 min follow-up)",
                     "Same credentialed practitioner every visit",
                     "Root-cause resolution",
-                    "Medication Off-Ramp that rebuilds metabolic resilience",
+                    "A sustainable path forward — not another quick fix",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <CheckIcon className="w-4 h-4 text-green-500 flex-shrink-0 mt-1" />

@@ -18,7 +18,7 @@ export default function Home() {
       step: "2",
       Icon: BeakerIcon,
       title: "Gather Specifics",
-      body: "Jeanne reviews your blood panels, cholesterol markers, A1C, inflammation levels, and digestive function — the data most providers glance at for 30 seconds. She identifies the specific biological mechanisms driving your symptoms: gut microbiome disruption, leptin resistance (when your brain stops hearing the \"I'm full\" signal), blood sugar dysregulation, or hormonal imbalances — so that you understand exactly WHY your body has been working against you, not just that it has.",
+      body: "Jeanne reviews your blood panels, cholesterol markers, A1C, inflammation levels, and digestive function — the data most providers glance at for 30 seconds. She identifies the specific biological mechanisms driving your symptoms: gut microbiome disruption, leptin resistance (when your brain stops hearing the \"I'm full\" signal), blood sugar dysregulation, or hormonal imbalances — so that you finally understand what's been going on and what to do about it.",
       bodyShort: "Jeanne analyzes your blood panels, A1C, inflammation, and digestive function in depth — identifying the specific biological mechanisms driving your symptoms.",
     },
     {
@@ -351,7 +351,7 @@ export default function Home() {
                     "Generic meal plan handouts that ignore your life",
                     "Fighting daily cravings with willpower",
                     "Spending thousands on supplements and 30-day challenges",
-                    "GLP-1 injections and dreading the day you stop",
+                    "Medications without an exit plan",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <XMarkIcon className="w-4 h-4 text-warm-400 flex-shrink-0 mt-1" />
@@ -376,7 +376,7 @@ export default function Home() {
                       "Understanding your gut chemistry and building a sustainable metabolic foundation",
                       "Unhurried consultations where your labs are actually analyzed",
                       "Personalized food chemistry protocols with better versions of your favorite foods",
-                      "Healing the gut dysfunction that's creating the cravings",
+                      "Understanding why the cravings happen — and addressing the root cause",
                       "One expert who identifies the root cause and gives you a clear map",
                       "A dedicated local practitioner who knows your full medical history",
                     ].map((item, i) => (
