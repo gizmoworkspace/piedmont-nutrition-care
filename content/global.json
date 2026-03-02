@@ -13,5 +13,13 @@
   },
   "insuranceCarriers": [],
   "googleRating": "5.0",
-  "yearsExperience": "20+"
+  "yearsExperience": "20+",
+  "youtubeVideoUrl": "",
+  "recipeOfTheWeek": {
+    "title": "",
+    "description": "",
+    "imageUrl": "",
+    "youtubeUrl": "",
+    "linkUrl": ""
+  }
 }

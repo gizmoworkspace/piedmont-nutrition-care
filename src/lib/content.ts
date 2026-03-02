@@ -21,6 +21,14 @@ export function getGlobal() {
     insuranceCarriers: string[];
     googleRating: string;
     yearsExperience: string;
+    youtubeVideoUrl: string;
+    recipeOfTheWeek: {
+      title: string;
+      description: string;
+      imageUrl: string;
+      youtubeUrl: string;
+      linkUrl: string;
+    };
   }>("global.json");
 }
 

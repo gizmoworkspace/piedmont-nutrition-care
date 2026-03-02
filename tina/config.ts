@@ -63,6 +63,19 @@ export default defineConfig({
           },
           { type: "string", name: "googleRating", label: "Google Rating" },
           { type: "string", name: "yearsExperience", label: "Years of Experience" },
+          { type: "string", name: "youtubeVideoUrl", label: "Featured YouTube Video URL (paste full YouTube link — leave empty to hide)" },
+          {
+            type: "object",
+            name: "recipeOfTheWeek",
+            label: "Recipe of the Week (leave title empty to hide)",
+            fields: [
+              { type: "string", name: "title", label: "Recipe Title" },
+              { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              { type: "image", name: "imageUrl", label: "Recipe Photo" },
+              { type: "string", name: "youtubeUrl", label: "Recipe Video URL (YouTube)" },
+              { type: "string", name: "linkUrl", label: "Full Recipe Link" },
+            ],
+          },
         ],
       },
       {
