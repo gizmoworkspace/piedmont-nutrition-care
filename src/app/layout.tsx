@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   description:
     "Clinical nutrition therapy that fixes the cause — not just the symptoms. Medical Nutrition Therapy for diabetes, IBS, oncology nutrition, heart health, and weight management in Winston-Salem, NC.",
   keywords: "dietitian Winston-Salem, nutrition therapy NC, IBS dietitian, diabetes nutrition, functional nutrition, Jeanne Doherty RD",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
