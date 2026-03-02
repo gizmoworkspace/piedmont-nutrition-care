@@ -98,7 +98,7 @@ export default function Contact() {
       </section>
 
       {/* WHAT TO EXPECT */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-white">
         <div className="container-narrow">
           <AnimateOnScroll>
             <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-8 text-center">What to Expect</h2>
@@ -181,7 +181,7 @@ export default function Contact() {
       </section>
 
       {/* INSURANCE QUICK CHECK */}
-      <section className="relative py-10 md:py-14 px-6 md:px-8 bg-gradient-to-br from-warm-50 via-cream to-green-50/30 overflow-hidden">
+      <section className="relative py-10 md:py-14 px-6 md:px-8 bg-cream overflow-hidden">
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
             <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-4">Not sure if your insurance covers it?</h2>

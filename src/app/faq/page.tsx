@@ -124,7 +124,7 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="relative py-10 md:py-14 px-6 md:px-8 bg-cream overflow-hidden">
+      <section className="relative py-10 md:py-14 px-6 md:px-8 bg-white overflow-hidden">
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
             <p className="text-lg text-warm-600 mb-6">

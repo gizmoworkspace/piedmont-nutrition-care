@@ -148,7 +148,7 @@ export default function About() {
       </section>
 
       {/* DEEP PROOF */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-cream">
         <div className="container-narrow">
           <div className="grid md:grid-cols-2 gap-6 stagger-children">
             <AnimateOnScroll>
