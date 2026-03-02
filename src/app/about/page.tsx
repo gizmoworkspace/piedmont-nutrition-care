@@ -22,11 +22,11 @@ export default function About() {
             {/* Left: text */}
             <div className="md:w-[55%]">
               <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl text-white leading-tight mb-4 md:mb-6 animate-fade-in-up drop-shadow-lg">
-                You deserve a clinician who listens longer than 10 minutes and looks deeper than a calorie count.
+                We&apos;re here to help you eat better, feel better, and live better.
               </h1>
               <p className="text-base md:text-lg text-green-100/90 leading-relaxed max-w-2xl animate-fade-in-up-delay-1">
-                <span className="hidden md:inline">Jeanne Doherty, MS, RD, LDN spent 20 years in the health insurance industry watching chronic disease devastate people&apos;s lives — and watching generic nutrition advice fail them over and over. She went back to school, earned her Master of Science in Nutrition from UNCG, and built Piedmont Nutrition Care to do what she saw the system couldn&apos;t: connect the science of food chemistry to the real lives of real people.</span>
-                <span className="md:hidden">After 20 years watching generic nutrition advice fail patients, Jeanne earned her MS in Nutrition from UNCG and built Piedmont Nutrition Care to connect food science to real lives.</span>
+                <span className="hidden md:inline">Jeanne Doherty, MS, RD, LDN brings a unique combination of 20+ years in the health industry and a deep passion for food science. She earned her Master of Science in Nutrition from UNCG and built Piedmont Nutrition Care to help people find and eat better versions of the foods they love — so they can improve their health deliciously, one bite at a time.</span>
+                <span className="md:hidden">Jeanne brings 20+ years of health industry experience and a passion for food science. She built Piedmont Nutrition Care to help people eat better versions of the foods they love.</span>
               </p>
             </div>
             {/* Right: photo */}
@@ -75,8 +75,8 @@ export default function About() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={100}>
                 <p className="text-warm-600 leading-relaxed text-base md:text-lg">
-                  <span className="hidden md:inline">For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern thousands of times: a patient develops a chronic condition. Their doctor prescribes medication and tells them to &ldquo;eat less, move more.&rdquo; The patient tries. It doesn&apos;t work. They blame themselves. The condition worsens. More medication. More co-pays. More shame.</span>
-                  <span className="md:hidden">For two decades, Jeanne watched the same pattern inside the health insurance industry: patients told to &ldquo;eat less, move more,&rdquo; failing, and blaming themselves. The condition always worsened.</span>
+                  <span className="hidden md:inline">For two decades, Jeanne worked inside the health insurance industry. She saw the same pattern over and over: people doing their best to follow advice that just wasn&apos;t working — &ldquo;eat less, move more&rdquo; — and blaming themselves when it didn&apos;t stick. She knew there had to be a better way to help people find foods that actually worked for their bodies.</span>
+                  <span className="md:hidden">For two decades, Jeanne watched people do their best to follow advice that wasn&apos;t working — and blame themselves. She knew there had to be a better way.</span>
                 </p>
               </AnimateOnScroll>
             </div>
@@ -92,8 +92,8 @@ export default function About() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={300}>
                 <p className="text-warm-600 leading-relaxed text-base md:text-lg">
-                  <span className="hidden md:inline">Jeanne earned her MS in Nutrition from UNCG with a focus on food science and food chemistry. She founded Piedmont Nutrition Care to be the practice she wished existed for every patient she&apos;d watched struggle: one where a credentialed clinician takes 60 minutes (not 10), reviews your actual lab work (not just your weight), and builds a plan around better versions of the foods you love (not a generic handout you&apos;ll throw away).</span>
-                  <span className="md:hidden">She earned her MS in Nutrition from UNCG and founded Piedmont Nutrition Care: 60-minute sessions, real lab analysis, and plans built around foods you love.</span>
+                  <span className="hidden md:inline">Jeanne earned her MS in Nutrition from UNCG with a focus on food science and food chemistry. She founded Piedmont Nutrition Care to be person-centered — the kind of practice where someone takes 60 minutes to really hear you, reviews your actual lab work, and builds a plan around better versions of the foods you love. Because the focus should be on quality, not quantity.</span>
+                  <span className="md:hidden">She earned her MS in Nutrition from UNCG and founded Piedmont Nutrition Care: person-centered, 60-minute sessions focused on quality, not quantity.</span>
                 </p>
               </AnimateOnScroll>
             </div>
@@ -120,14 +120,14 @@ export default function About() {
               {
                 icon: BuildingIcon,
                 title: "Health System Expertise",
-                body: "Twenty years inside the health insurance industry gave Jeanne something most dietitians don't have: a deep understanding of how the healthcare system actually works — the billing, the coverage gaps, the reasons patients fall through the cracks. That experience shapes everything about how Piedmont Nutrition Care operates, from upfront pricing transparency to ensuring you never feel like a number in a system designed to process you as fast as possible.",
-                bodyShort: "20 years in health insurance means Jeanne understands billing, coverage gaps, and why patients fall through the cracks. Transparent pricing, no surprises.",
+                body: "Twenty years inside the health insurance industry gave Jeanne something most dietitians don't have: a deep understanding of how the healthcare system works — and where it lets people down. That experience shapes everything about Piedmont Nutrition Care, from transparent pricing to making sure you never feel like just a number. Here, you're a person with goals and needs, and everything is centered around you.",
+                bodyShort: "20 years in health insurance means Jeanne understands the system — and where it lets people down. Transparent pricing, person-centered care.",
               },
               {
                 icon: ChatBubbleIcon,
                 title: "Communication Skill",
-                body: "Jeanne is a former TV host and live cooking demo presenter. She's spent years making nutrition science engaging and accessible to real audiences — not dumbing it down, but translating it. When she explains why your gut microbiome is affecting your cravings, you'll understand it. When she walks you through your lab results, you'll know exactly what the numbers mean and what to do about them.",
-                bodyShort: "Former TV host and cooking demo presenter. Jeanne makes nutrition science engaging and understandable — you'll know exactly what your lab results mean.",
+                body: "Jeanne has a marketing background and even hosted \"Generation X-files\" on Winston-Salem public access TV. She's spent years making nutrition science engaging and accessible — not dumbing it down, but translating it into plain English. When she explains why your gut microbiome is affecting your cravings, you'll understand it. When she walks you through your lab results, you'll know exactly what the numbers mean and what to do about them. Outside the office, you'll find her biking, hiking, or playing tennis with WFU alumni friends.",
+                bodyShort: "Former TV host of \"Generation X-files\" on local public access. Jeanne makes nutrition science engaging and understandable. Outside work, she's biking, hiking, or playing tennis.",
               },
             ].map((item) => (
               <AnimateOnScroll key={item.title} className="h-full">
@@ -178,8 +178,8 @@ export default function About() {
           <div className="max-w-2xl mx-auto space-y-4 md:space-y-6 text-center">
             <AnimateOnScroll delay={100}>
               <p className="text-base md:text-lg text-warm-600 leading-relaxed">
-                <span className="hidden md:inline">If your doctor&apos;s advice hasn&apos;t worked, if the apps and 30-day challenges have left you more frustrated than when you started, if you&apos;re tired of managing your health as a full-time job — the next step is a conversation with someone who will actually listen.</span>
-                <span className="md:hidden">If nothing has worked so far, the next step is a conversation with someone who will actually listen.</span>
+                <span className="hidden md:inline">If you&apos;re ready to stop guessing and start understanding what your body actually needs, we&apos;d love to meet you. The first step is simply a conversation — no pressure, no judgment, just someone who will truly listen.</span>
+                <span className="md:hidden">Ready to stop guessing? The first step is a conversation with someone who will truly listen.</span>
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>

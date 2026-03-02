@@ -7,7 +7,7 @@ import { CheckIcon, XMarkIcon, ArrowRightIcon, EarIcon, BeakerIcon, TestTubeIcon
 
 export const metadata: Metadata = {
   title: "Services & How It Works | Piedmont Nutrition Care",
-  description: "Clinical nutrition therapy that fixes the cause — not just the symptoms. Learn about Medical Nutrition Therapy and our 4-step process.",
+  description: "Person-centered nutrition care to help you eat better, feel better, and live better. Learn about Medical Nutrition Therapy and our 4-step process.",
 };
 
 export default function Services() {
@@ -20,10 +20,10 @@ export default function Services() {
         <div className="container-wide">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
-              Clinical nutrition therapy that fixes the cause — not just the symptoms
+              Person-centered nutrition care that helps you eat better, feel better, and live better
             </h1>
             <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl mx-auto animate-fade-in-up-delay-1">
-              Your cravings, weight resistance, and digestive pain are downstream symptoms of a compromised gut. Piedmont Nutrition Care identifies the root-cause biological dysfunction — through your lab work, your health history, and clinical food science — and builds a personalized protocol that restores your metabolic foundation from the inside out.
+              We help you find and eat better versions of the foods you love so you can improve your health deliciously, one bite at a time. Through your lab work, your health history, and clinical food science, we build a person-centered plan that works with your body — not against it.
             </p>
           </div>
         </div>
@@ -42,13 +42,13 @@ export default function Services() {
             <div>
               <AnimateOnScroll>
                 <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl text-warm-950 mb-8">
-                  Why the advice you&apos;ve been following was designed to fail
+                  Why the usual advice hasn&apos;t worked for you
                 </h2>
               </AnimateOnScroll>
               <AnimateOnScroll delay={100}>
                 <p className="text-warm-600 leading-relaxed text-base md:text-lg">
-                  <span className="hidden md:inline">Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. GLP-1 medications suppress your appetite chemically without rebuilding the metabolic foundation that keeps weight off long-term. And your doctor&apos;s 10-minute appointment doesn&apos;t leave time to investigate why your body stopped responding in the first place.</span>
-                  <span className="md:hidden">Calorie apps, elimination diets, and GLP-1 medications all share the same flaw: they manage symptoms without rebuilding the metabolic foundation that produces lasting results.</span>
+                  <span className="hidden md:inline">Calorie-counting apps treat your body like a math equation. Elimination diets treat food like the enemy. And most appointments don&apos;t leave enough time to really understand what&apos;s going on with you. These approaches focus on quantity instead of quality — and they miss what makes your body unique.</span>
+                  <span className="md:hidden">Calorie apps and elimination diets focus on quantity, not quality — and they miss what makes your body unique.</span>
                 </p>
               </AnimateOnScroll>
             </div>
@@ -69,7 +69,7 @@ export default function Services() {
                 </p>
               </AnimateOnScroll>
               <AnimateOnScroll delay={400}>
-                <p className="font-semibold text-green-700 text-xl">That&apos;s not your failure. That&apos;s biology.</p>
+                <p className="font-semibold text-green-700 text-xl">It&apos;s not your fault. And there is a better way.</p>
               </AnimateOnScroll>
             </div>
           </div>
@@ -317,9 +317,9 @@ export default function Services() {
       <section className="section-padding bg-white">
         <div className="container-narrow text-center">
           <AnimateOnScroll>
-            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">For People Still Deciding</h2>
+            <h2 className="font-heading text-2xl md:text-3xl text-warm-950 mb-6">Still Thinking It Over?</h2>
             <p className="text-lg text-warm-600 leading-relaxed max-w-2xl mx-auto">
-              If you&apos;re comparing providers, here&apos;s what matters: Piedmont Nutrition Care is a one-on-one clinical practice, not a platform. You see the same credentialed practitioner at every session. Your plan is built from your actual lab data, not a template. And the goal isn&apos;t to manage your symptoms indefinitely — it&apos;s to resolve the underlying cause so your body starts working for you again.
+              We understand — choosing the right person to help with your health is a big decision. At Piedmont Nutrition Care, you see the same practitioner every visit. Your plan is built from your actual lab data, not a template. And everything is person-centered to meet your goals and needs. We&apos;re here to help you eat better, feel better, and live better.
             </p>
           </AnimateOnScroll>
         </div>

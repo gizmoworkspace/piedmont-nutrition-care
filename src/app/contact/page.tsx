@@ -5,7 +5,7 @@ import { CalendarIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from "@/components/
 
 export const metadata: Metadata = {
   title: "Contact & Book Your Assessment | Piedmont Nutrition Care",
-  description: "Book your 60-minute Gut & Metabolic Foundation Assessment with Jeanne Doherty, MS, RD, LDN in Winston-Salem, NC. Call 336-986-5388.",
+  description: "Book your 60-minute session with Jeanne Doherty, MS, RD, LDN in Winston-Salem, NC. Person-centered nutrition care. Call 336-986-5388.",
 };
 
 export default function Contact() {
@@ -18,10 +18,10 @@ export default function Contact() {
         <div className="container-wide relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-in-up drop-shadow-lg">
-              Your next step: 60 minutes that change how you understand your body.
+              Ready to eat better, feel better, and live better? Let&apos;s get started.
             </h1>
             <p className="text-lg text-green-100/90 leading-relaxed max-w-2xl mx-auto animate-fade-in-up-delay-1">
-              Book your Gut &amp; Metabolic Foundation Assessment with Jeanne Doherty, MS, RD, LDN. Your first session is a comprehensive 60-minute evaluation of your health history, current symptoms, lab work, and goals — so you leave with a clear understanding of what&apos;s been driving your symptoms and a concrete plan to address it.
+              Book your first session with Jeanne Doherty, MS, RD, LDN. We&apos;ll take 60 minutes to really hear you — your health history, your symptoms, your goals — and start building a person-centered plan around better versions of the foods you love.
             </p>
           </div>
         </div>
