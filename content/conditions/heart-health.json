@@ -2,14 +2,14 @@
   "slug": "heart-health",
   "metaTitle": "Cardiovascular Health & Cholesterol | Piedmont Nutrition Care",
   "metaDescription": "Lower LDL, raise HDL, reduce triglycerides through targeted food chemistry. Cardiovascular nutrition therapy in Winston-Salem, NC.",
-  "headline": "Your cholesterol numbers are heading the wrong direction. The right foods can turn them around.",
-  "subheadline": "High LDL, low HDL, elevated triglycerides, and high blood pressure aren't conditions you just \"manage with medication.\" They're signals that your body needs a different nutritional foundation. Piedmont Nutrition Care uses your actual lipid panel data to build a food chemistry protocol that targets the specific cardiovascular risk factors in your bloodwork.",
+  "headline": "Your cholesterol numbers don't have to keep heading the wrong direction. The right foods can help.",
+  "subheadline": "High cholesterol and cardiovascular risk don't have to mean a lifetime of medication alone. Piedmont Nutrition Care uses your lab data to build a targeted food plan that supports your heart health from the inside out — with foods you'll actually enjoy eating.",
   "agitation": [
-    "Your doctor put you on a statin and said \"watch your diet.\" But watching your diet hasn't changed the numbers. You're not sure which fats are actually dangerous, which foods genuinely help, and whether the conflicting advice you've read online is based on real science or marketing.",
-    "Meanwhile, the next lab panel is approaching and you're bracing for the same conversation: \"numbers haven't improved, let's increase the dose.\""
+    "Your numbers keep going up despite doing what you were told — eating less fat, taking your statin, trying to exercise more. It can feel like your body isn't cooperating, but the truth is the approach may need to be more specific to you.",
+    "Heart health is deeply connected to what you eat — not just avoiding \"bad\" foods, but understanding which specific foods support your cardiovascular system based on your unique bloodwork and biology."
   ],
   "howItWorks": [
-    "Jeanne reviews your full lipid panel \u2014 not just total cholesterol, but the particle sizes, ratios, and inflammatory markers that actually predict cardiovascular risk. She identifies which dietary patterns are driving your specific lipid profile and builds a protocol that targets those drivers directly.",
+    "Jeanne reviews your full lipid panel — not just total cholesterol, but the particle sizes, ratios, and inflammatory markers that actually predict cardiovascular risk. She identifies which dietary patterns are driving your specific lipid profile and builds a protocol that targets those drivers directly.",
     "You'll learn which foods lower LDL through real mechanisms (not marketing claims), how to raise HDL through food choices, and which so-called \"heart-healthy\" products are actually making things worse."
   ],
   "testimonial": {
@@ -19,15 +19,17 @@
   },
   "ctaLabel": "Book Your Cardiovascular Nutrition Assessment",
   "ctaTriggers": [
-    "Walk into your next appointment with numbers that surprise both of you"
+    "60-minute initial assessment",
+    "HSA/FSA accepted",
+    "Walk into your next appointment with confidence"
   ],
-  "subheadlineShort": "High cholesterol and blood pressure aren't fixed by cutting fat and taking statins alone. Piedmont Nutrition Care addresses the metabolic dysfunction driving your numbers.",
+  "subheadlineShort": "High cholesterol doesn't have to mean medication alone. We build a food plan that supports your heart health with foods you'll enjoy.",
   "agitationShort": [
-    "You've cut red meat, switched to \"heart-healthy\" margarine, and your LDL still won't budge. Maybe your doctor added a second medication.",
-    "The generic advice isn't working because it doesn't account for your unique biochemistry."
+    "Your numbers keep rising despite following advice. The approach may need to be more specific to your body.",
+    "Heart health is about more than avoiding \"bad\" foods — it's understanding which foods support your cardiovascular system."
   ],
   "howItWorksShort": [
     "Jeanne analyzes your full lipid panel, inflammatory markers, and metabolic indicators to identify what's actually driving your cardiovascular risk.",
-    "Your protocol targets the specific mechanisms \u2014 not just \"eat less fat\" but which fats reduce inflammation and which foods optimize your lipid ratios."
+    "Your protocol targets the specific mechanisms — not just \"eat less fat\" but which fats reduce inflammation and which foods optimize your lipid ratios."
   ]
 }

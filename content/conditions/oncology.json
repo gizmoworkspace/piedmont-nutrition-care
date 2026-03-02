@@ -2,15 +2,15 @@
   "slug": "oncology",
   "metaTitle": "Oncology Nutrition | Piedmont Nutrition Care",
   "metaDescription": "Post-cancer treatment nutrition support. Gut recovery, immune rebuilding, and weight management for cancer survivors in Winston-Salem, NC.",
-  "headline": "Cancer treatment saved your life. Now your gut needs rebuilding.",
-  "subheadline": "Chemotherapy, radiation, and immunotherapy are powerful \u2014 but they devastate your digestive tract, immune function, and nutritional status. Post-treatment, your body needs targeted nutritional rehabilitation to restore gut integrity, rebuild immune resilience, and manage the weight and energy changes that cancer treatment leaves behind. Piedmont Nutrition Care provides clinical oncology nutrition support from a credentialed RD who understands the specific biochemical damage treatment causes.",
+  "headline": "Cancer treatment saved your life. Now let's help your body recover and rebuild.",
+  "subheadline": "After treatment, your body needs rebuilding — and that starts with what you eat. Piedmont Nutrition Care works alongside your care team to support your recovery with targeted nutrition, helping you regain energy, manage weight changes, and nourish your body through healing.",
   "agitation": [
-    "You survived treatment. But your body doesn't feel like yours anymore. Your gut is wrecked. Foods you used to enjoy cause nausea or pain. Your energy is gone. Your weight has shifted in ways that feel out of your control.",
-    "And the nutrition advice you've received so far has been generic \u2014 \"eat healthy\" \u2014 without anyone explaining what \"healthy\" means for a body that's been through what yours has."
+    "Treatment took a toll on your body — your appetite changed, foods taste different, your energy is unpredictable, and your weight may have shifted in ways that feel out of your control. That's a normal response to what your body has been through.",
+    "Most post-treatment nutrition advice is generic: \"eat healthy, stay hydrated.\" But your body has specific needs right now, and understanding what those are can make a real difference in how you feel day to day."
   ],
   "howItWorks": [
     "Jeanne builds a recovery-stage nutrition protocol that addresses the specific damage treatment caused: gut lining repair, microbiome recolonization, immune-supporting nutrient optimization, and energy restoration.",
-    "Your plan is coordinated with your oncology team and adapted to your current treatment phase \u2014 so that your nutrition works with your medical care, not in isolation from it."
+    "Your plan is coordinated with your oncology team and adapted to your current treatment phase — so that your nutrition works with your medical care, not in isolation from it."
   ],
   "testimonial": {
     "quote": "As a cancer survivor struggling with weight and gut issues, I'm so grateful to have found Jeanne. She understands the science of food as well as how to share it with me, apply it to my specific needs, and guide me to helpful resources.",
@@ -19,17 +19,17 @@
   },
   "ctaLabel": "Book Your Oncology Nutrition Assessment",
   "ctaTriggers": [
-    "60-minute sessions",
+    "60-minute initial assessment",
     "Coordinated with your care team",
-    "Insurance accepted"
+    "HSA/FSA accepted"
   ],
-  "subheadlineShort": "Cancer treatments devastate your gut. Piedmont Nutrition Care rebuilds your digestive function, supports immune recovery, and manages treatment side effects through clinical nutrition.",
+  "subheadlineShort": "After treatment, rebuilding starts with what you eat. We support your recovery with targeted nutrition alongside your care team.",
   "agitationShort": [
-    "Treatment is over, but your body doesn't feel like yours. Your digestion is wrecked, your energy is gone, and the generic advice isn't helping.",
-    "You need someone who understands the biochemistry of recovery \u2014 not just \"eat healthy\" platitudes."
+    "Treatment changed your appetite, energy, and relationship with food. That's a normal response to what your body has been through.",
+    "Generic advice like \"eat healthy\" isn't enough. Your body has specific needs right now."
   ],
   "howItWorksShort": [
     "Jeanne assesses your gut damage from treatment, identifies nutrient deficiencies, and builds a protocol targeting immune recovery and digestive restoration.",
-    "Your plan accounts for treatment side effects \u2014 taste changes, nausea, inflammation \u2014 with foods that actually support healing."
+    "Your plan accounts for treatment side effects — taste changes, nausea, inflammation — with foods that actually support healing."
   ]
 }

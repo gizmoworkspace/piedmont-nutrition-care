@@ -2,15 +2,15 @@
   "slug": "diabetes",
   "metaTitle": "Diabetes & Blood Sugar Management | Piedmont Nutrition Care",
   "metaDescription": "A1C reduction, insulin sensitivity, and blood sugar stabilization through clinical food chemistry. Medical Nutrition Therapy for diabetes in Winston-Salem, NC.",
-  "headline": "Your A1C is climbing. Your doctor said \"eat less.\" Your gut says otherwise.",
-  "subheadline": "Type 2 diabetes, pre-diabetes, and blood sugar dysregulation aren't solved by calorie restriction alone. When your gut microbiome is compromised, your body can't regulate insulin properly \u2014 no matter how strictly you eat. Piedmont Nutrition Care identifies the root-cause metabolic dysfunction behind your numbers and builds a food chemistry protocol that stabilizes your blood sugar from the inside out.",
+  "headline": "Managing diabetes is about so much more than counting carbs. Let's find what works for your body.",
+  "subheadline": "Rising blood sugar, medication adjustments, and conflicting advice can feel overwhelming. Piedmont Nutrition Care takes the time to understand your unique metabolism and builds a food plan around better versions of the foods you love — so you can manage your diabetes with confidence, not confusion.",
   "agitation": [
-    "You were given metformin and told to cut carbs. Your A1C dropped a little, then plateaued. Your doctor mentioned increasing the dose. Maybe adding insulin. And nobody asked what you're actually eating, how your gut is processing it, or why your body stopped responding to the interventions that were supposed to work.",
-    "Meanwhile, you're checking your glucose four times a day, avoiding meals you used to enjoy, and still watching the numbers refuse to cooperate. It's exhausting. And it feels like your body is betraying you."
+    "You've been told to count carbs, cut sugar, eat less, move more. But your A1C keeps creeping up anyway. The frustrating part is you're doing your best — the advice just isn't specific enough for your body.",
+    "Generic meal plans don't account for how your unique metabolism processes different foods. What spikes one person's blood sugar may be perfectly fine for you, and vice versa. Without understanding your specific biochemistry, it's guesswork."
   ],
   "howItWorks": [
-    "Jeanne analyzes your full metabolic picture: A1C trends, fasting insulin, glucose patterns, inflammatory markers, and gut health indicators. She identifies the specific biological disruptions \u2014 insulin resistance at the cellular level, gut bacteria imbalances affecting glucose metabolism, or micronutrient deficiencies undermining your pancreatic function \u2014 and builds a targeted food chemistry protocol that addresses each one.",
-    "Your plan won't eliminate carbohydrates. It will teach you which carbohydrates stabilize your blood sugar, which spike it, and why \u2014 so that you make choices from understanding rather than fear. Better versions of your favorite foods, not a list of restrictions."
+    "Jeanne analyzes your full metabolic picture: A1C trends, fasting insulin, glucose patterns, inflammatory markers, and gut health indicators. She identifies the specific biological disruptions — insulin resistance at the cellular level, gut bacteria imbalances affecting glucose metabolism, or micronutrient deficiencies undermining your pancreatic function — and builds a targeted food chemistry protocol that addresses each one.",
+    "Your plan won't eliminate carbohydrates. It will teach you which carbohydrates stabilize your blood sugar, which spike it, and why — so that you make choices from understanding rather than fear. Better versions of your favorite foods, not a list of restrictions."
   ],
   "testimonial": {
     "quote": "I have worked with her to lower my blood sugars and improve cholesterol. Her advice is practical and food suggestions are enjoyable, better versions of my favorite foods.",
@@ -19,16 +19,17 @@
   },
   "ctaLabel": "Book Your Diabetes Nutrition Assessment",
   "ctaTriggers": [
-    "Blue Cross Blue Shield, Aetna & Medicare accepted",
-    "Medical Nutrition Therapy for diabetes is a covered benefit under most plans"
+    "60-minute initial assessment",
+    "HSA/FSA accepted",
+    "Person-centered care for your goals"
   ],
-  "subheadlineShort": "Diabetes and blood sugar issues aren't solved by calorie restriction alone. Piedmont Nutrition Care finds the root cause and builds a protocol that stabilizes your blood sugar from the inside out.",
+  "subheadlineShort": "Rising blood sugar and conflicting advice can feel overwhelming. We build a food plan around better versions of foods you love — managing diabetes with confidence.",
   "agitationShort": [
-    "You cut carbs, took metformin, and your A1C still won't budge. Nobody asked what your gut is actually doing with the food you eat.",
-    "You're checking glucose four times a day, avoiding meals you love, and the numbers still won't cooperate. It's exhausting."
+    "You're doing your best — counting carbs, cutting sugar — but your A1C keeps rising. The advice just isn't specific enough for your body.",
+    "Generic meal plans don't account for your unique metabolism. Without understanding your biochemistry, it's guesswork."
   ],
   "howItWorksShort": [
-    "Jeanne analyzes your A1C trends, insulin, glucose patterns, and gut health to identify the specific disruptions driving your numbers \u2014 then builds a targeted food chemistry protocol.",
-    "You won't eliminate carbs. You'll learn which ones stabilize your blood sugar and which spike it \u2014 better versions of your favorite foods, not restrictions."
+    "Jeanne analyzes your A1C trends, insulin, glucose patterns, and gut health to identify the specific disruptions driving your numbers — then builds a targeted food chemistry protocol.",
+    "You won't eliminate carbs. You'll learn which ones stabilize your blood sugar and which spike it — better versions of your favorite foods, not restrictions."
   ]
 }
