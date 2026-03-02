@@ -84,8 +84,8 @@ export default function Services() {
               What Medical Nutrition Therapy Actually Is
             </h2>
             <p className="text-lg text-warm-600 leading-relaxed max-w-3xl mx-auto text-center">
-              <span className="hidden md:inline">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans because it produces measurable clinical outcomes.</span>
-              <span className="md:hidden">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment using your lab data and biochemistry to create a targeted nutrition intervention — covered by most major insurance plans.</span>
+              <span className="hidden md:inline">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment delivered by a credentialed Registered Dietitian. It&apos;s not a meal plan from an app. It&apos;s not advice from a wellness influencer. It&apos;s a diagnostic and therapeutic process that uses your actual lab data, health history, and biochemistry to create a targeted nutrition intervention that produces measurable clinical outcomes.</span>
+              <span className="md:hidden">Medical Nutrition Therapy (MNT) is a clinical, evidence-based treatment using your lab data and biochemistry to create a targeted nutrition intervention with measurable outcomes.</span>
             </p>
           </AnimateOnScroll>
         </div>

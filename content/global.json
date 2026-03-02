@@ -11,11 +11,7 @@
     "state": "NC",
     "zip": "27104"
   },
-  "insuranceCarriers": [
-    "Blue Cross Blue Shield",
-    "Aetna",
-    "Medicare"
-  ],
+  "insuranceCarriers": [],
   "googleRating": "5.0",
   "yearsExperience": "20+"
 }

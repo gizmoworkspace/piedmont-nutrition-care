@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/about", label: "About Jeanne" },
   { href: "/services", label: "How It Works" },
   { href: "/conditions", label: "Conditions" },
-  { href: "/insurance", label: "Insurance & Pricing" },
+  { href: "/insurance", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
 ];
 

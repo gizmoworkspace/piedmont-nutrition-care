@@ -38,18 +38,18 @@ export default function Footer() {
               <li><Link href="/about" className="text-warm-400 hover:text-white transition-colors">About Jeanne</Link></li>
               <li><Link href="/services" className="text-warm-400 hover:text-white transition-colors">How It Works</Link></li>
               <li><Link href="/conditions" className="text-warm-400 hover:text-white transition-colors">Conditions We Treat</Link></li>
-              <li><Link href="/insurance" className="text-warm-400 hover:text-white transition-colors">Insurance &amp; Pricing</Link></li>
+              <li><Link href="/insurance" className="text-warm-400 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/faq" className="text-warm-400 hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="text-warm-400 hover:text-white transition-colors">Book Your Assessment</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-heading text-lg text-white mb-4">Insurance Accepted</h4>
+            <h4 className="font-heading text-lg text-white mb-4">Payment</h4>
             <ul className="space-y-2.5 text-sm text-warm-400">
-              {global.insuranceCarriers.map((carrier) => (
-                <li key={carrier}>{carrier}</li>
-              ))}
+              <li>Cash pay — no insurance hassles</li>
+              <li>HSA &amp; FSA cards accepted</li>
+              <li>Superbills for out-of-network reimbursement</li>
             </ul>
             <div className="mt-5 flex items-center gap-2">
               <div className="flex items-center gap-1.5 bg-warm-900 rounded-[8px] px-3 py-2 text-sm">

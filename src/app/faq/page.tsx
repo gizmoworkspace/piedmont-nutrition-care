@@ -4,7 +4,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | Piedmont Nutrition Care",
-  description: "Answers to common questions about Medical Nutrition Therapy, insurance coverage, and what to expect at Piedmont Nutrition Care.",
+  description: "Answers to common questions about Medical Nutrition Therapy, pricing, and what to expect at Piedmont Nutrition Care.",
 };
 
 const practiceQuestions = [
@@ -45,29 +45,29 @@ const approachQuestions = [
   },
 ];
 
-const insuranceQuestions = [
+const pricingQuestions = [
   {
-    question: "Does my insurance cover this?",
-    answer: "Piedmont Nutrition Care accepts Blue Cross Blue Shield, Aetna, and Medicare. Medical Nutrition Therapy is covered by most major plans for qualifying conditions. You can verify your specific coverage before your first session — call 336-986-5388 or visit our Insurance & Pricing page.",
+    question: "How much does this cost?",
+    answer: "Your initial comprehensive assessment is $150 for a full 60-minute session. Follow-ups are $100 for 45 minutes. Save with the Intensive Support Package — 4 sessions for $350. Payment is due at the time of service. Visit our Pricing page for full details including group and corporate rates.",
   },
   {
-    question: "What if I don't have insurance or my plan doesn't cover MNT?",
-    answer: "Self-pay options are available with transparent, upfront pricing. See our Insurance & Pricing page for current rates. No billing surprises.",
+    question: "Do you accept insurance?",
+    answer: "Piedmont Nutrition Care is a cash-pay practice — no insurance billing hassles. However, superbills are provided for out-of-network reimbursement, and many patients successfully submit them to their insurer. HSA and FSA cards are also accepted.",
   },
   {
     question: "Do I need a referral from my doctor?",
-    answer: "In most cases, no referral is required for Medical Nutrition Therapy. Some insurance plans may have specific requirements — Piedmont Nutrition Care will help you verify this before your appointment.",
+    answer: "No referral is required. You can book directly by calling 336-986-5388 or through this website.",
   },
 ];
 
 const gettingStartedQuestions = [
   {
     question: "What should I bring to my first appointment?",
-    answer: "Your most recent lab work (blood panels, A1C, lipid panel — even if they're a few months old), a list of current medications and supplements, your insurance card, and any questions you've been wanting to ask a dietitian but never had the time to in a 10-minute appointment. If you don't have recent labs, Jeanne can coordinate with your physician to order them.",
+    answer: "Your most recent lab work (blood panels, A1C, lipid panel — even if they're a few months old), a list of current medications and supplements, and any questions you've been wanting to ask a dietitian but never had the time to in a 10-minute appointment. If you don't have recent labs, Jeanne can coordinate with your physician to order them.",
   },
   {
     question: "How do I book?",
-    answer: "Book online through this website, or call 336-986-5388. If you want to verify insurance coverage first, visit our Insurance & Pricing page or call the office directly.",
+    answer: "Book online through this website, or call 336-986-5388. Visit our Pricing page for full details on rates and packages.",
   },
 ];
 
@@ -110,8 +110,8 @@ export default function FAQ() {
             </AnimateOnScroll>
             <AnimateOnScroll>
               <div className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-warm-100/50">
-                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">About Insurance &amp; Cost</h2>
-                <Accordion items={insuranceQuestions} />
+                <h2 className="font-heading text-xl text-warm-900 mb-6 pb-3 border-b-2 border-green-300 inline-block">Pricing &amp; Payment</h2>
+                <Accordion items={pricingQuestions} />
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll>

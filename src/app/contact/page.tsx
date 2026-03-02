@@ -70,7 +70,7 @@ export default function Contact() {
                   336-986-5388
                 </a>
                 <p className="text-warm-600 text-sm leading-relaxed">
-                  Prefer to talk first? Call during office hours and we&apos;ll walk you through what to expect, verify your insurance, and find a time that works.
+                  Prefer to talk first? Call during office hours and we&apos;ll walk you through what to expect, answer pricing questions, and find a time that works.
                 </p>
               </div>
             </AnimateOnScroll>
@@ -111,7 +111,7 @@ export default function Contact() {
               },
               {
                 label: "At your appointment",
-                text: "60 minutes, one-on-one with Jeanne. Bring your recent lab work, insurance card, and any questions.",
+                text: "60 minutes, one-on-one with Jeanne. Bring your recent lab work and any questions.",
               },
               {
                 label: "After your appointment",
@@ -184,16 +184,16 @@ export default function Contact() {
       <section className="relative py-10 md:py-14 px-6 md:px-8 bg-cream overflow-hidden">
         <div className="container-narrow text-center relative z-10">
           <AnimateOnScroll>
-            <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-4">Not sure if your insurance covers it?</h2>
+            <h2 className="font-heading text-xl md:text-2xl text-warm-900 mb-4">Questions about pricing?</h2>
             <p className="text-warm-600 mb-6">
               Call{" "}
               <a href="tel:3369865388" className="text-green-600 font-semibold hover:underline">336-986-5388</a>{" "}
               or visit our{" "}
-              <Link href="/insurance" className="text-green-600 font-semibold hover:underline">Insurance &amp; Pricing page</Link>{" "}
-              to verify your coverage before booking.
+              <Link href="/insurance" className="text-green-600 font-semibold hover:underline">Pricing page</Link>{" "}
+              for full details.
             </p>
             <p className="text-warm-500 text-sm">
-              Blue Cross Blue Shield, Aetna &amp; Medicare accepted  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual
+              HSA/FSA accepted  ·  Superbills for reimbursement  ·  60-minute sessions  ·  Same practitioner every visit  ·  In-person or virtual
             </p>
           </AnimateOnScroll>
         </div>

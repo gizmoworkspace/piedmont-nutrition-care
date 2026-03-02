@@ -80,7 +80,7 @@ export default function Home() {
                 {[
                   { icon: "★", text: "5.0 Health Grades Rating" },
                   { icon: "🎓", text: "MS, RD, LDN" },
-                  { icon: "🏥", text: "Insurance Accepted" },
+                  { icon: "🏥", text: "HSA/FSA Accepted" },
                 ].map((item) => (
                   <span key={item.text} className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-green-100 text-xs font-medium px-3 py-1.5 rounded-full border border-white/10">
                     <span>{item.icon}</span>
@@ -94,11 +94,11 @@ export default function Home() {
                   Book Your Assessment
                 </Link>
                 <Link href="/insurance" className="inline-block border-2 border-white/30 text-white hover:bg-white/10 font-medium py-3.5 px-8 rounded-[8px] transition-all duration-300 text-center hover:-translate-y-0.5">
-                  Check If Your Insurance Covers It
+                  View Pricing
                 </Link>
               </div>
               <p className="hidden md:block text-green-200/60 text-sm animate-fade-in-up-delay-3">
-                60-minute consultations  ·  Blue Cross Blue Shield, Aetna &amp; Medicare accepted  ·  In-person or virtual
+                60-minute consultations  ·  HSA/FSA accepted  ·  In-person or virtual
               </p>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
           { icon: "star", text: "5.0 Health Grades Rating" },
           { icon: "academic", text: "MS, RD, LDN Credentials" },
           { icon: "clipboard", text: "20+ Years Health Industry Experience" },
-          { icon: "building", text: "Accepted by Major NC Insurers" },
+          { icon: "building", text: "HSA/FSA Accepted" },
         ]}
       />
 
@@ -410,9 +410,9 @@ export default function Home() {
                 accent: "border-l-green-300",
               },
               {
-                q: "\"Will my insurance cover this?\"",
-                a: "Piedmont Nutrition Care accepts Blue Cross Blue Shield, Aetna, and Medicare. Medical Nutrition Therapy is a covered benefit under most plans for conditions including diabetes, high cholesterol, IBS, and obesity. You can verify your specific coverage before your first session — no surprises, no hidden fees.",
-                aShort: "We accept Blue Cross Blue Shield, Aetna, and Medicare. MNT is covered for diabetes, high cholesterol, IBS, and obesity. Verify your coverage before your first session — no surprises.",
+                q: "\"What does this cost?\"",
+                a: "Your initial comprehensive assessment is $150 for a full 60-minute session. Follow-ups are $100 for 45 minutes, or save with the Intensive Support Package — 4 sessions for $350. Payment is due at the time of service. HSA/FSA cards accepted, and superbills are provided for out-of-network reimbursement.",
+                aShort: "Initial assessment: $150 (60 min). Follow-ups: $100 (45 min). Package of 4: $350. HSA/FSA accepted. Superbills provided for reimbursement.",
                 accent: "border-l-amber-300",
               },
               {

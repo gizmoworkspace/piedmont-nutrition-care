@@ -120,7 +120,7 @@ export default function About() {
               {
                 icon: BuildingIcon,
                 title: "Health System Expertise",
-                body: "Twenty years inside the health insurance industry gave Jeanne something most dietitians don't have: a deep understanding of how the healthcare system actually works — the billing, the coverage gaps, the reasons patients fall through the cracks. That experience shapes everything about how Piedmont Nutrition Care operates, from upfront pricing transparency to insurance coordination to ensuring you never feel like a number in a system designed to process you as fast as possible.",
+                body: "Twenty years inside the health insurance industry gave Jeanne something most dietitians don't have: a deep understanding of how the healthcare system actually works — the billing, the coverage gaps, the reasons patients fall through the cracks. That experience shapes everything about how Piedmont Nutrition Care operates, from upfront pricing transparency to ensuring you never feel like a number in a system designed to process you as fast as possible.",
                 bodyShort: "20 years in health insurance means Jeanne understands billing, coverage gaps, and why patients fall through the cracks. Transparent pricing, no surprises.",
               },
               {
@@ -184,8 +184,8 @@ export default function About() {
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
               <p className="text-base md:text-lg text-warm-600 leading-relaxed">
-                <span className="hidden md:inline">Jeanne accepts Blue Cross Blue Shield, Aetna, and Medicare. Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
-                <span className="md:hidden">Blue Cross Blue Shield, Aetna, and Medicare accepted. 60-minute sessions in Winston-Salem or virtual. You&apos;ll leave with a clear plan.</span>
+                <span className="hidden md:inline">Sessions are 60 minutes, one-on-one, in Winston-Salem or virtual. HSA/FSA accepted, and superbills are provided for out-of-network reimbursement. You&apos;ll walk out of your first appointment with a clear understanding of what&apos;s driving your symptoms and a concrete plan to address it.</span>
+                <span className="md:hidden">60-minute sessions in Winston-Salem or virtual. HSA/FSA accepted, superbills provided. You&apos;ll leave with a clear plan.</span>
               </p>
             </AnimateOnScroll>
           </div>
